@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">AI Model Training and Inference Flow</text>
+  
+  <!-- Training Pipeline (Left Side) -->
+  <rect x="50" y="80" width="300" height="380" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="200" y="110" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Model Training Pipeline</text>
+  
+  <!-- Data Collection -->
+  <rect x="80" y="130" width="240" height="60" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="200" y="160" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Data Collection</text>
+  <text x="200" y="180" font-family="Arial" font-size="12" text-anchor="middle">Interview Q&amp;A, Resumes, Code Samples</text>
+  
+  <!-- Data Processing -->
+  <rect x="80" y="210" width="240" height="60" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="200" y="240" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Data Processing</text>
+  <text x="200" y="260" font-family="Arial" font-size="12" text-anchor="middle">Cleaning, Augmentation, Annotation</text>
+  
+  <!-- Model Training -->
+  <rect x="80" y="290" width="240" height="80" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="200" y="320" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Model Training</text>
+  <text x="200" y="340" font-family="Arial" font-size="12" text-anchor="middle">Fine-tuning Pre-trained Models</text>
+  <text x="200" y="360" font-family="Arial" font-size="12" text-anchor="middle">(Transformer, TensorFlow.js, etc.)</text>
+  
+  <!-- Model Evaluation -->
+  <rect x="80" y="390" width="240" height="50" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="200" y="415" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Evaluation &amp; Optimization</text>
+  <text x="200" y="430" font-family="Arial" font-size="12" text-anchor="middle">Metrics: Accuracy, F1, BLEU, Perplexity</text>
+  
+  <!-- Inference Pipeline (Right Side) -->
+  <rect x="450" y="80" width="300" height="380" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="600" y="110" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Model Inference Pipeline</text>
+  
+  <!-- User Input -->
+  <rect x="480" y="130" width="240" height="50" rx="5" ry="5" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="600" y="155" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">User Input Collection</text>
+  <text x="600" y="170" font-family="Arial" font-size="12" text-anchor="middle">Resume, Video, Audio, Code</text>
+  
+  <!-- Preprocessing -->
+  <rect x="480" y="200" width="240" height="50" rx="5" ry="5" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="600" y="225" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Input Preprocessing</text>
+  <text x="600" y="240" font-family="Arial" font-size="12" text-anchor="middle">Normalization, Tokenization, Feature Extraction</text>
+  
+  <!-- Model Inference -->
+  <rect x="480" y="270" width="240" height="70" rx="5" ry="5" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="600" y="295" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Model Inference</text>
+  <text x="600" y="315" font-family="Arial" font-size="12" text-anchor="middle">NLP, Computer Vision, Code Analysis</text>
+  <text x="600" y="330" font-family="Arial" font-size="12" text-anchor="middle">Running Locally in Browser/Node.js</text>
+  
+  <!-- Post Processing -->
+  <rect x="480" y="360" width="240" height="80" rx="5" ry="5" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="600" y="385" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Feedback Generation</text>
+  <text x="600" y="405" font-family="Arial" font-size="12" text-anchor="middle">Score Calculation, Report Generation</text>
+  <text x="600" y="420" font-family="Arial" font-size="12" text-anchor="middle">Personalized Recommendations</text>
+  
+  <!-- Connecting Flow -->
+  <path d="M320 330 L380 330 L380 280 L450 280" fill="none" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="445,280 455,275 455,285" fill="#9e9e9e" />
+  
+  <!-- Local Model Storage -->
+  <rect x="350" y="170" width="100" height="80" rx="5" ry="5" fill="#ffecb3" stroke="#ffa000" stroke-width="1" />
+  <text x="400" y="200" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Local Model</text>
+  <text x="400" y="220" font-family="Arial" font-size="12" text-anchor="middle">Storage</text>
+  <text x="400" y="240" font-family="Arial" font-size="10" text-anchor="middle">(Optimized for Browser/Node.js)</text>
+  
+  <!-- Model Storage Connections -->
+  <path d="M320 330 L330 330 L330 210 L350 210" fill="none" stroke="#9e9e9e" stroke-width="2" />
+  <polygon points="345,210 355,205 355,215" fill="#9e9e9e" />
+  
+  <path d="M450 210 L470 210 L470 280 L480 280" fill="none" stroke="#9e9e9e" stroke-width="2" />
+  <polygon points="475,280 485,275 485,285" fill="#9e9e9e" />
+</svg>

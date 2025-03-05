@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Resume Analysis Workflow</text>
+  
+  <!-- Document Parsing -->
+  <rect x="50" y="100" width="150" height="70" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="125" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Document Parsing</text>
+  <text x="125" y="150" font-family="Arial" font-size="12" text-anchor="middle">PDF.js / docx-parser</text>
+  
+  <!-- Text Extraction -->
+  <rect x="250" y="100" width="150" height="70" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="325" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Text Extraction</text>
+  <text x="325" y="150" font-family="Arial" font-size="12" text-anchor="middle">Section Identification</text>
+  
+  <!-- Entity Recognition -->
+  <rect x="450" y="100" width="150" height="70" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="525" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Entity Recognition</text>
+  <text x="525" y="150" font-family="Arial" font-size="12" text-anchor="middle">Skills, Education, Exp.</text>
+  
+  <!-- Format Analysis -->
+  <rect x="650" y="100" width="100" height="70" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="700" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Format</text>
+  <text x="700" y="150" font-family="Arial" font-size="12" text-anchor="middle">Analysis</text>
+  
+  <!-- Job Database -->
+  <rect x="50" y="240" width="150" height="70" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="125" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Job Database</text>
+  <text x="125" y="290" font-family="Arial" font-size="12" text-anchor="middle">Company Requirements</text>
+  
+  <!-- Keyword Matching -->
+  <rect x="250" y="240" width="150" height="70" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="325" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Keyword Matching</text>
+  <text x="325" y="290" font-family="Arial" font-size="12" text-anchor="middle">Relevance Scoring</text>
+  
+  <!-- Gap Analysis -->
+  <rect x="450" y="240" width="150" height="70" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="525" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Gap Analysis</text>
+  <text x="525" y="290" font-family="Arial" font-size="12" text-anchor="middle">Missing Skills/Experience</text>
+  
+  <!-- Recommendation -->
+  <rect x="650" y="240" width="100" height="70" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="700" y="270" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Resume</text>
+  <text x="700" y="290" font-family="Arial" font-size="12" text-anchor="middle">Improvement</text>
+  
+  <!-- Arrows -->
+  <line x1="200" y1="135" x2="250" y2="135" stroke="#2196f3" stroke-width="2" />
+  <polygon points="245,135 255,130 255,140" fill="#2196f3" />
+  
+  <line x1="400" y1="135" x2="450" y2="135" stroke="#2196f3" stroke-width="2" />
+  <polygon points="445,135 455,130 455,140" fill="#2196f3" />
+  
+  <line x1="600" y1="135" x2="650" y2="135" stroke="#2196f3" stroke-width="2" />
+  <polygon points="645,135 655,130 655,140" fill="#2196f3" />
+  
+  <line x1="200" y1="275" x2="250" y2="275" stroke="#4caf50" stroke-width="2" />
+  <polygon points="245,275 255,270 255,280" fill="#4caf50" />
+  
+  <line x1="400" y1="275" x2="450" y2="275" stroke="#4caf50" stroke-width="2" />
+  <polygon points="445,275 455,270 455,280" fill="#4caf50" />
+  
+  <line x1="600" y1="275" x2="650" y2="275" stroke="#4caf50" stroke-width="2" />
+  <polygon points="645,275 655,270 655,280" fill="#4caf50" />
+  
+  <!-- Connecting the two flows -->
+  <line x1="525" y1="170" x2="525" y2="240" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="525,235 520,245 530,245" fill="#9e9e9e" />
+  
+  <line x1="700" y1="170" x2="700" y2="240" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="700,235 695,245 705,245" fill="#9e9e9e" />
+</svg>

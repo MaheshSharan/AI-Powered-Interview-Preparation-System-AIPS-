@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Technical Assessment Workflow</text>
+  
+  <!-- Problem Selection -->
+  <rect x="50" y="100" width="150" height="200" rx="10" ry="10" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" />
+  <text x="125" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Problem Selection</text>
+  
+  <rect x="70" y="150" width="110" height="40" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="125" y="175" font-family="Arial" font-size="12" text-anchor="middle">Difficulty Level</text>
+  
+  <rect x="70" y="200" width="110" height="40" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="125" y="225" font-family="Arial" font-size="12" text-anchor="middle">Domain Focus</text>
+  
+  <rect x="70" y="250" width="110" height="40" rx="5" ry="5" fill="#bbdefb" stroke="#1e88e5" stroke-width="1" />
+  <text x="125" y="275" font-family="Arial" font-size="12" text-anchor="middle">Company Specific</text>
+  
+  <!-- Coding Environment -->
+  <rect x="250" y="100" width="150" height="200" rx="10" ry="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+  <text x="325" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Coding Environment</text>
+  
+  <rect x="270" y="150" width="110" height="40" rx="5" ry="5" fill="#ffe0b2" stroke="#fb8c00" stroke-width="1" />
+  <text x="325" y="175" font-family="Arial" font-size="12" text-anchor="middle">Monaco Editor</text>
+  
+  <rect x="270" y="200" width="110" height="40" rx="5" ry="5" fill="#ffe0b2" stroke="#fb8c00" stroke-width="1" />
+  <text x="325" y="225" font-family="Arial" font-size="12" text-anchor="middle">Syntax Highlighting</text>
+  
+  <rect x="270" y="250" width="110" height="40" rx="5" ry="5" fill="#ffe0b2" stroke="#fb8c00" stroke-width="1" />
+  <text x="325" y="275" font-family="Arial" font-size="12" text-anchor="middle">Error Checking</text>
+  
+  <!-- Code Execution -->
+  <rect x="450" y="100" width="150" height="200" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+  <text x="525" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Code Execution</text>
+  
+  <rect x="470" y="150" width="110" height="40" rx="5" ry="5" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="525" y="175" font-family="Arial" font-size="12" text-anchor="middle">Docker Container</text>
+  
+  <rect x="470" y="200" width="110" height="40" rx="5" ry="5" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="525" y="225" font-family="Arial" font-size="12" text-anchor="middle">Test Cases</text>
+  
+  <rect x="470" y="250" width="110" height="40" rx="5" ry="5" fill="#c8e6c9" stroke="#43a047" stroke-width="1" />
+  <text x="525" y="275" font-family="Arial" font-size="12" text-anchor="middle">Performance Analysis</text>
+  
+  <!-- Evaluation -->
+  <rect x="650" y="100" width="100" height="200" rx="10" ry="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" />
+  <text x="700" y="130" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Evaluation</text>
+  
+  <rect x="665" y="150" width="70" height="40" rx="5" ry="5" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" />
+  <text x="700" y="175" font-family="Arial" font-size="12" text-anchor="middle">Correctness</text>
+  
+  <rect x="665" y="200" width="70" height="40" rx="5" ry="5" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" />
+  <text x="700" y="225" font-family="Arial" font-size="12" text-anchor="middle">Efficiency</text>
+  
+  <rect x="665" y="250" width="70" height="40" rx="5" ry="5" fill="#e1bee7" stroke="#8e24aa" stroke-width="1" />
+  <text x="700" y="275" font-family="Arial" font-size="12" text-anchor="middle">Style</text>
+  
+  <!-- Arrows -->
+  <line x1="200" y1="200" x2="250" y2="200" stroke="#2196f3" stroke-width="2" />
+  <polygon points="245,200 255,195 255,205" fill="#2196f3" />
+  
+  <line x1="400" y1="200" x2="450" y2="200" stroke="#ff9800" stroke-width="2" />
+  <polygon points="445,200 455,195 455,205" fill="#ff9800" />
+  
+  <line x1="600" y1="200" x2="650" y2="200" stroke="#4caf50" stroke-width="2" />
+  <polygon points="645,200 655,195 655,205" fill="#4caf50" />
+  
+  <!-- Feedback flow -->
+  <path d="M700 300 L700 330 L125 330 L125 300" fill="none" stroke="#9c27b0" stroke-width="2" stroke-dasharray="5,5" />
+  <polygon points="125,305 120,300 130,300" fill="#9c27b0" />
+  <text x="400" y="350" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Adaptive Difficulty Adjustment</text>
+</svg>
