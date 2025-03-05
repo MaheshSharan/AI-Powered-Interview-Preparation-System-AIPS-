@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import './App.css';
 import axios from 'axios';
-import { create } from 'zustand';
+import { useAuthStore } from './store/authStore';
+import { AnimatePresence } from 'framer-motion';
 
 // Landing Page Component
 import HeroSection from './components/landing/HeroSection';
@@ -11,6 +11,7 @@ import HeroSection from './components/landing/HeroSection';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import ServerStatusNotification from './components/common/ServerStatusNotification';
+import LoadingScreen from './components/common/LoadingScreen';
 
 // Auth Components
 import LoginForm from './components/auth/LoginForm';
@@ -28,57 +29,33 @@ axios.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
     if (token) {
-      config.headers['x-auth-token'] = token;
+      config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
   },
   (error) => Promise.reject(error)
 );
 
-// Create a simple auth store
-const useAuthStore = create((set) => ({
-  isAuthenticated: false,
-  user: null,
-  loading: true,
-  setAuth: (isAuthenticated, user) => set({ isAuthenticated, user }),
-  logout: () => {
-    localStorage.removeItem('token');
-    set({ isAuthenticated: false, user: null });
-  },
-  checkAuth: async () => {
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        set({ isAuthenticated: false, user: null, loading: false });
-        return;
-      }
-      
-      const res = await axios.get('/auth/me');
-      set({ isAuthenticated: true, user: res.data.user, loading: false });
-    } catch (error) {
-      localStorage.removeItem('token');
-      set({ isAuthenticated: false, user: null, loading: false });
-    }
-  }
-}));
-
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useAuthStore();
-  
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!loading && !isAuthenticated) {
+      navigate('/login');
+    }
+  }, [isAuthenticated, loading, navigate]);
+
   if (loading) {
-    return <div className="flex justify-center items-center h-screen">Loading...</div>;
+    return <LoadingScreen />;
   }
-  
-  if (!isAuthenticated) {
-    return <Navigate to="/" />;
-  }
-  
-  return children;
+
+  return isAuthenticated ? children : null;
 };
 
 function App() {
-  const { checkAuth, loading, isAuthenticated } = useAuthStore();
+  const { checkAuth, loading } = useAuthStore();
   const [initialized, setInitialized] = useState(false);
   const [darkMode, setDarkMode] = useState(true); // Default to dark mode
 
@@ -100,37 +77,58 @@ function App() {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    let timeoutId;
+    const mainContent = document.querySelector('main');
+
+    const handleScroll = () => {
+      if (mainContent) {
+        // Show scrollbar
+        mainContent.classList.add('is-scrolling');
+        
+        // Clear any existing timeout
+        clearTimeout(timeoutId);
+        
+        // Hide scrollbar after 1 second of no scrolling
+        timeoutId = setTimeout(() => {
+          mainContent.classList.remove('is-scrolling');
+        }, 1000);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   if (!initialized && loading) {
-    return (
-      <div className="flex justify-center items-center h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-500"></div>
-      </div>
-    );
+    return <LoadingScreen />;
   }
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen w-full dark:bg-dark-primary dark:text-dark-text transition-colors duration-300">
+      <div className="flex flex-col min-h-screen bg-white dark:bg-slate-900">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-        <main className="flex-grow w-full px-4 py-8">
-          <Routes>
-            <Route path="/login" element={<LoginForm />} />
-            <Route path="/register" element={<RegisterForm />} />
-            
-            <Route path="/dashboard" element={
-              <ProtectedRoute>
-                <Dashboard />
-              </ProtectedRoute>
-            } />
-            
-            <Route path="/about" element={<AboutUs />} />
-            
-            <Route path="/" element={
-              isAuthenticated ? <Navigate to="/dashboard" /> : <HeroSection />
-            } />
-            
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
+        <main className="flex-1 w-full mt-16 custom-scrollbar">
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<HeroSection />} />
+              <Route path="/login" element={<LoginForm />} />
+              <Route path="/register" element={<RegisterForm />} />
+              <Route 
+                path="/dashboard" 
+                element={
+                  <ProtectedRoute>
+                    <Dashboard />
+                  </ProtectedRoute>
+                } 
+              />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+          </AnimatePresence>
         </main>
         <Footer />
         <ServerStatusNotification />
