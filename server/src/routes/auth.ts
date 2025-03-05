@@ -27,15 +27,22 @@ router.post('/register', async (req, res) => {
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    // Create user
+    // Create user with basic info only
     const user = await prisma.user.create({
       data: {
         name,
         email,
         password: hashedPassword,
-        progressStatus: {
-          create: {} // Create default progress status
-        }
+        registrationStep: 1,
+        educationStatus: null, // Add null values for optional fields
+        university: null,
+        graduationYear: null,
+        major: null,
+        workStatus: null,
+        experience: null,
+        targetRole: null,
+        linkedinUrl: null,
+        githubUrl: null
       },
     });
 
@@ -47,13 +54,13 @@ router.post('/register', async (req, res) => {
     );
 
     res.status(201).json({
-      message: 'User registered successfully',
       token,
       user: {
         id: user.id,
         name: user.name,
         email: user.email,
-      },
+        registrationStep: user.registrationStep
+      }
     });
   } catch (error) {
     console.error('Registration error:', error);
@@ -61,43 +68,85 @@ router.post('/register', async (req, res) => {
   }
 });
 
+// Add new endpoint for updating registration step
+router.put('/registration-step', async (req, res) => {
+  try {
+    const { userId, step, formData } = req.body;
+
+    const updatedUser = await prisma.user.update({
+      where: { id: userId },
+      data: {
+        registrationStep: step,
+        ...formData // Spread any additional form data
+      }
+    });
+
+    res.json({
+      success: true,
+      user: {
+        id: updatedUser.id,
+        registrationStep: updatedUser.registrationStep
+      }
+    });
+  } catch (error) {
+    console.error('Update registration step error:', error);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
+
 // Login user
 router.post('/login', async (req, res) => {
+  console.log('Login attempt:', { email: req.body.email });
+  
   try {
     const { email, password } = req.body;
 
-    // Check if user exists
     const user = await prisma.user.findUnique({
-      where: { email },
-      include: { progressStatus: true },
+      where: { email }
+    });
+
+    console.log('User lookup result:', { 
+      found: !!user,
+      userId: user?.id
     });
 
     if (!user) {
+      console.log('Login failed: User not found');
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
-    // Check password
     const isPasswordValid = await bcrypt.compare(password, user.password);
+    console.log('Password validation:', { isValid: isPasswordValid });
+    
     if (!isPasswordValid) {
+      console.log('Login failed: Invalid password');
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 
-    // Create JWT token
     const token = jwt.sign(
-      { id: user.id, email: user.email },
-      JWT_SECRET,
+      { id: user.id },
+      process.env.JWT_SECRET || 'your-secret-key',
       { expiresIn: '24h' }
     );
+    console.log('JWT token generated');
+
+    // Send user data without sensitive information
+    const userData = {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      educationStatus: user.educationStatus,
+      registrationStep: user.registrationStep
+    };
+
+    console.log('Login successful:', { 
+      userId: userData.id,
+      hasToken: !!token
+    });
 
     res.json({
-      message: 'Login successful',
       token,
-      user: {
-        id: user.id,
-        name: user.name,
-        email: user.email,
-        progress: user.progressStatus,
-      },
+      user: userData
     });
   } catch (error) {
     console.error('Login error:', error);
@@ -107,38 +156,43 @@ router.post('/login', async (req, res) => {
 
 // Get current user
 router.get('/me', async (req, res) => {
+  console.log('Authenticating user from token');
+  const token = req.headers.authorization?.split(' ')[1]; // Get token from Bearer header
+
+  if (!token) {
+    console.log('Authentication failed: No token provided');
+    return res.status(401).json({ message: 'No token provided' });
+  }
+
   try {
-    // Get token from header
-    const token = req.header('x-auth-token');
-
-    if (!token) {
-      return res.status(401).json({ message: 'No token, authorization denied' });
-    }
-
-    // Verify token
-    const decoded = jwt.verify(token, JWT_SECRET) as { id: string };
+    console.log('Verifying JWT token');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your-secret-key') as { id: string };
+    console.log('Token verified, fetching user:', { userId: decoded.id });
     
-    // Get user
     const user = await prisma.user.findUnique({
-      where: { id: decoded.id },
-      include: { progressStatus: true },
+      where: { id: decoded.id }
     });
 
+    console.log('User lookup result:', { found: !!user });
+
     if (!user) {
+      console.log('Authentication failed: User not found');
       return res.status(404).json({ message: 'User not found' });
     }
 
-    res.json({
-      user: {
-        id: user.id,
-        name: user.name,
-        email: user.email,
-        progress: user.progressStatus,
-      },
-    });
+    const userData = {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      educationStatus: user.educationStatus,
+      registrationStep: user.registrationStep
+    };
+
+    console.log('Authentication successful:', { userId: userData.id });
+    res.json({ user: userData });
   } catch (error) {
     console.error('Auth error:', error);
-    res.status(401).json({ message: 'Token is not valid' });
+    res.status(401).json({ message: 'Invalid token' });
   }
 });
 

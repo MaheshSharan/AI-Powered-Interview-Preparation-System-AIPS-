@@ -1,18 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
-import { create } from 'zustand';
-
-// Use the auth store from App.jsx
-const useAuthStore = create((set) => ({
-  isAuthenticated: false,
-  user: null,
-  setAuth: (isAuthenticated, user) => set({ isAuthenticated, user }),
-  logout: () => {
-    localStorage.removeItem('token');
-    set({ isAuthenticated: false, user: null });
-  },
-}));
+import { motion, AnimatePresence } from 'framer-motion';
+import { useAuthStore } from '../../store/authStore';
+import LoadingScreen from '../common/LoadingScreen';
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -21,8 +12,22 @@ const LoginForm = () => {
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
   const setAuth = useAuthStore((state) => state.setAuth);
+  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const navigate = useNavigate();
+
+  // Check if user is already authenticated
+  useEffect(() => {
+    if (isAuthenticated) {
+      console.log('User is already authenticated, redirecting to dashboard...');
+      setLoading(true);
+      setTimeout(() => {
+        navigate('/dashboard');
+        setLoading(false);
+      }, 1000);
+    }
+  }, [isAuthenticated, navigate]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,92 +35,148 @@ const LoginForm = () => {
       ...prev,
       [name]: value
     }));
+    setError(''); // Clear error when user starts typing
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     setLoading(true);
-    
+    console.log('Login attempt with:', { email: formData.email });
+
+    // Validate fields
+    if (!formData.email || !formData.password) {
+      setError('Please fill in all fields');
+      setLoading(false);
+      return;
+    }
+
     try {
+      console.log('Sending login request...');
       const response = await axios.post('/auth/login', formData);
+      console.log('Login response:', { 
+        status: response.status,
+        hasUser: !!response.data.user,
+        hasToken: !!response.data.token
+      });
       
-      // Store token in localStorage
-      localStorage.setItem('token', response.data.token);
+      // Update auth state with user and token
+      setAuth(response.data.user, response.data.token);
+      console.log('Auth state updated');
       
-      // Update auth state
-      setAuth(true, response.data.user);
+      // Show success message
+      setSuccess(true);
       
-      // Redirect to dashboard
-      navigate('/');
+      // Keep loading state while redirecting
+      setTimeout(() => {
+        navigate('/dashboard');
+        setLoading(false);
+      }, 1000);
+
     } catch (err) {
+      console.error('Login error:', err.response?.data || err.message);
       setError(
         err.response?.data?.message || 
         'Invalid credentials. Please check your email and password.'
       );
-    } finally {
       setLoading(false);
     }
   };
 
+  if (isAuthenticated || loading) {
+    return <LoadingScreen />;
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-dark-primary py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
-      <div className="max-w-md w-full space-y-8 bg-white dark:bg-dark-secondary p-8 rounded-xl shadow-lg animate-fade-in transition-all duration-300">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-dark-text animate-slide-down">
-            Sign in to your account
-          </h2>
-          <p className="mt-2 text-center text-sm text-gray-600 dark:text-dark-muted animate-slide-down">
-            Or{' '}
-            <Link to="/register" className="font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors">
-              create a new account
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.1 }}
+        transition={{ duration: 1.5 }}
+        className="absolute inset-0 bg-gradient-to-r from-indigo-500/30 via-purple-500/30 to-indigo-500/30"
+      />
+      
+      <AnimatePresence>
+        {success && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.3 }}
+            className="fixed bottom-4 right-4 z-50"
+          >
+            <div className="rounded-lg backdrop-blur-sm shadow-lg p-4 flex items-center space-x-3 bg-slate-800/80 border border-[#646cff]/30">
+              <div className="flex-shrink-0">
+                <div className="h-2 w-2 rounded-full bg-[#646cff] animate-pulse" />
+              </div>
+              <div className="flex-1">
+                <p className="text-sm font-medium text-white">Login successful!</p>
+                <p className="text-xs text-gray-400">Redirecting to dashboard...</p>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <div className="w-full max-w-md px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="bg-slate-900/50 backdrop-blur-sm p-8 rounded-xl shadow-xl border border-slate-700/50"
+        >
+          <h2 className="text-3xl font-bold text-white text-center mb-2">Welcome Back</h2>
+          <p className="text-slate-400 text-center mb-8">
+            Don't have an account?{' '}
+            <Link to="/register" className="text-indigo-400 hover:text-indigo-300 transition-colors">
+              Register here
             </Link>
           </p>
-        </div>
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          <div className="rounded-md shadow-sm -space-y-px">
-            <div>
-              <label htmlFor="email" className="sr-only">Email address</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-dark-text bg-white dark:bg-dark-accent rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm transition-colors duration-300"
-                placeholder="Email address"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label htmlFor="password" className="sr-only">Password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                required
-                className="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 text-gray-900 dark:text-dark-text bg-white dark:bg-dark-accent rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm transition-colors duration-300"
-                placeholder="Password"
-                value={formData.password}
-                onChange={handleChange}
-              />
-            </div>
-          </div>
 
-          {error && (
-            <div className="text-red-500 dark:text-red-400 text-sm text-center p-3 bg-red-50 dark:bg-red-900/20 rounded-md animate-fade-in">
-              {error}
-            </div>
-          )}
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+              required
+            />
 
-          <div>
+            <AnimatePresence>
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="rounded-lg backdrop-blur-sm shadow-lg p-4 flex items-center space-x-3 bg-slate-800/80 border border-red-500/30"
+                >
+                  <div className="flex-shrink-0">
+                    <div className="h-2 w-2 rounded-full bg-red-500" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-white">{error}</p>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+
             <button
               type="submit"
               disabled={loading}
-              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-700 dark:hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-70 transform transition-all duration-300 hover:scale-105 shadow-md hover:shadow-lg"
+              className="w-full py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
-                <span className="flex items-center">
+                <span className="flex items-center justify-center">
                   <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -124,8 +185,8 @@ const LoginForm = () => {
                 </span>
               ) : 'Sign in'}
             </button>
-          </div>
-        </form>
+          </form>
+        </motion.div>
       </div>
     </div>
   );
