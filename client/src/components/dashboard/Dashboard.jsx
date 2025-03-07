@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuthStore } from '../../store/authStore';
 import { motion } from 'framer-motion';
+import { useNavigate, useLocation } from 'react-router-dom';
 import SidebarNav from './SidebarNav';
 import { 
   ArrowLeftIcon,
@@ -20,10 +21,22 @@ const companies = [
 
 const Dashboard = () => {
   const { user } = useAuthStore();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [activeSection, setActiveSection] = useState('overview');
   const [selectedCompany, setSelectedCompany] = useState('');
   const [selectedRole, setSelectedRole] = useState('');
   const [experienceLevel, setExperienceLevel] = useState('');
+
+  // Set active section based on URL path
+  useEffect(() => {
+    const path = location.pathname.split('/').pop();
+    if (path && path !== 'dashboard') {
+      setActiveSection(path);
+    } else {
+      setActiveSection('overview');
+    }
+  }, [location.pathname]);
 
   // Determine current step based on selections
   const currentStep = !selectedCompany ? 1 : (!selectedRole ? 2 : (!experienceLevel ? 3 : 4));
@@ -130,7 +143,10 @@ const Dashboard = () => {
 
           <div className="flex justify-end">
             <button
-              onClick={() => setActiveSection('overview')}
+              onClick={() => {
+                setActiveSection('resume');
+                navigate('/dashboard/resume');
+              }}
               disabled={!selectedRole || !experienceLevel}
               className="px-6 py-2 bg-indigo-600 text-white rounded-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-indigo-700 transition-colors duration-200"
             >
@@ -328,17 +344,14 @@ const Dashboard = () => {
       default:
         return (
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-white dark:bg-slate-800 rounded-lg border border-gray-100 dark:border-slate-700 p-6 shadow-sm hover:shadow-md transition-all duration-300"
+            className="flex items-center justify-center h-full"
           >
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              {activeSection.charAt(0).toUpperCase() + activeSection.slice(1)}
+            <h2 className="text-xl font-medium text-gray-900 dark:text-white">
+              Coming Soon...
             </h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              This section is under development. Please check back soon!
-            </p>
           </motion.div>
         );
     }
@@ -352,7 +365,7 @@ const Dashboard = () => {
       </div>
 
       {/* Vertical separator line */}
-      <div className="hidden lg:block w-px bg-gradient-to-b from-transparent via-slate-700 to-transparent opacity-50"></div>
+      <div className="hidden lg:block w-px bg-slate-700"></div>
 
       {/* Main content */}
       <div className="flex-1 flex flex-col overflow-hidden">
@@ -361,7 +374,7 @@ const Dashboard = () => {
             {renderContent()}
           </div>
         </main>
-        <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent opacity-50"></div>
+        <div className="h-px bg-slate-700"></div>
       </div>
     </div>
   );
