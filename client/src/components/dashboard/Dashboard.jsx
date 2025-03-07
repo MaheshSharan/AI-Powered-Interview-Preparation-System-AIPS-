@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useAuthStore } from '../../store/authStore';
 import { motion } from 'framer-motion';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import SidebarNav from './SidebarNav';
 import { 
   ArrowLeftIcon,
@@ -243,119 +243,118 @@ const Dashboard = () => {
     </div>
   );
 
-  const renderContent = () => {
-    switch (activeSection) {
-      case 'company':
-        return renderCompanySelection();
-      case 'overview':
-        return (
-          <div className="space-y-6">
-            <motion.div 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className="flex items-center justify-between"
-            >
-              <div>
-                <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                  Dashboard
-                </h1>
-                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                  Here's an overview of your interview preparation progress
-                </p>
-              </div>
-            </motion.div>
-            {renderOverviewStats()}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.4 }}
-                className="bg-white dark:bg-slate-800 rounded-lg border border-gray-100 dark:border-slate-700 p-6 shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-base font-semibold text-gray-900 dark:text-white">
-                    Next Steps
-                  </h2>
-                </div>
-                <div className="space-y-3">
-                  <button 
-                    onClick={() => setActiveSection('company')}
-                    className="w-full flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-200 group"
-                  >
-                    <div className="flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                      </svg>
-                      <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
-                        Select Target Company
-                      </span>
-                    </div>
-                    <ArrowLeftIcon className="w-5 h-5 text-gray-400 rotate-180 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-transform duration-200 group-hover:translate-x-1" />
-                  </button>
-                  <button 
-                    onClick={() => setActiveSection('resume')}
-                    className="w-full flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-200 group"
-                  >
-                    <div className="flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
-                        Upload Resume
-                      </span>
-                    </div>
-                    <ArrowLeftIcon className="w-5 h-5 text-gray-400 rotate-180 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-transform duration-200 group-hover:translate-x-1" />
-                  </button>
-                  <button 
-                    onClick={() => setActiveSection('technical')}
-                    className="w-full flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-200 group"
-                  >
-                    <div className="flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                      </svg>
-                      <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
-                        Start Technical Practice
-                      </span>
-                    </div>
-                    <ArrowLeftIcon className="w-5 h-5 text-gray-400 rotate-180 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-transform duration-200 group-hover:translate-x-1" />
-                  </button>
-                </div>
-              </motion.div>
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.5 }}
-                className="bg-white dark:bg-slate-800 rounded-lg border border-gray-100 dark:border-slate-700 p-6 shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-base font-semibold text-gray-900 dark:text-white">
-                    Recent Activity
-                  </h2>
-                </div>
-                <div className="text-sm text-center text-gray-500 dark:text-gray-400 py-8">
-                  No recent activity to show
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        );
-      default:
-        return (
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            className="flex items-center justify-center h-full"
-          >
-            <h2 className="text-xl font-medium text-gray-900 dark:text-white">
-              Coming Soon...
+  const ComingSoon = () => (
+    <motion.div 
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="flex items-center justify-center h-full"
+    >
+      <h2 className="text-xl font-medium text-gray-900 dark:text-white">
+        Coming Soon...
+      </h2>
+    </motion.div>
+  );
+
+  const Overview = () => (
+    <div className="space-y-6">
+      <motion.div 
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
+          Welcome back, {user?.name || 'User'}!
+        </h1>
+        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+          Here's an overview of your interview preparation progress
+        </p>
+      </motion.div>
+      {renderOverviewStats()}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          className="bg-white dark:bg-slate-800 rounded-lg border border-gray-100 dark:border-slate-700 p-6 shadow-sm hover:shadow-md transition-all duration-300"
+        >
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white">
+              Next Steps
             </h2>
-          </motion.div>
-        );
-    }
-  };
+          </div>
+          <div className="space-y-3">
+            <button 
+              onClick={() => {
+                setActiveSection('company');
+                navigate('/dashboard/company');
+              }}
+              className="w-full flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-200 group"
+            >
+              <div className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
+                  Select Target Company
+                </span>
+              </div>
+              <ArrowLeftIcon className="w-5 h-5 text-gray-400 rotate-180 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-transform duration-200 group-hover:translate-x-1" />
+            </button>
+            <button 
+              onClick={() => {
+                setActiveSection('resume');
+                navigate('/dashboard/resume');
+              }}
+              className="w-full flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-200 group"
+            >
+              <div className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
+                  Upload Resume
+                </span>
+              </div>
+              <ArrowLeftIcon className="w-5 h-5 text-gray-400 rotate-180 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-transform duration-200 group-hover:translate-x-1" />
+            </button>
+            <button 
+              onClick={() => {
+                setActiveSection('technical');
+                navigate('/dashboard/technical');
+              }}
+              className="w-full flex items-center justify-between p-3 rounded-lg bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-200 group"
+            >
+              <div className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+                <span className="ml-3 text-sm font-medium text-gray-900 dark:text-white">
+                  Start Technical Practice
+                </span>
+              </div>
+              <ArrowLeftIcon className="w-5 h-5 text-gray-400 rotate-180 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-transform duration-200 group-hover:translate-x-1" />
+            </button>
+          </div>
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.5 }}
+          className="bg-white dark:bg-slate-800 rounded-lg border border-gray-100 dark:border-slate-700 p-6 shadow-sm hover:shadow-md transition-all duration-300"
+        >
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white">
+              Recent Activity
+            </h2>
+          </div>
+          <div className="text-sm text-center text-gray-500 dark:text-gray-400 py-8">
+            No recent activity to show
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
 
   return (
     <div className="flex h-screen bg-gray-50 dark:bg-slate-900">
@@ -371,7 +370,17 @@ const Dashboard = () => {
       <div className="flex-1 flex flex-col overflow-hidden">
         <main className="flex-1 overflow-y-auto py-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {renderContent()}
+            <Routes>
+              <Route index element={<Overview />} />
+              <Route path="company" element={renderCompanySelection()} />
+              <Route path="resume" element={<ComingSoon />} />
+              <Route path="technical" element={<ComingSoon />} />
+              <Route path="interview" element={<ComingSoon />} />
+              <Route path="analytics" element={<ComingSoon />} />
+              <Route path="support" element={<ComingSoon />} />
+              <Route path="documentation" element={<ComingSoon />} />
+              <Route path="settings" element={<ComingSoon />} />
+            </Routes>
           </div>
         </main>
         <div className="h-px bg-slate-700"></div>
