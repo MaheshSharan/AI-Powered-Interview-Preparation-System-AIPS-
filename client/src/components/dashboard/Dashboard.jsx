@@ -12,8 +12,8 @@ import {
 } from '@heroicons/react/24/outline';
 
 const companies = [
-  { id: 'amazon', name: 'Amazon', logo: '/logos/amazon.svg' },
-  { id: 'apple', name: 'Apple', logo: '/logos/apple.svg' },
+  { id: 'amazon', name: 'Amazon', logo: '/logos/amazon.svg', whiteIcon: true },
+  { id: 'apple', name: 'Apple', logo: '/logos/apple.svg', whiteIcon: true },
   { id: 'meta', name: 'Meta', logo: '/logos/meta.svg' },
   { id: 'microsoft', name: 'Microsoft', logo: '/logos/microsoft.svg' },
   { id: 'netflix', name: 'Netflix', logo: '/logos/netflix.svg' },
@@ -82,7 +82,7 @@ const Dashboard = () => {
               <img 
                 src={company.logo} 
                 alt={`${company.name} logo`} 
-                className="w-full h-full object-contain"
+                className={`w-full h-full object-contain ${company.whiteIcon ? 'dark:invert' : ''}`}
               />
             </div>
             <h3 className="text-lg font-medium text-gray-900 dark:text-white">
@@ -358,17 +358,15 @@ const Dashboard = () => {
 
   return (
     <div className="flex h-screen bg-gray-50 dark:bg-slate-900">
-      {/* Sidebar */}
-      <div className="hidden lg:block w-64 border-r border-gray-100 dark:border-slate-800 bg-white dark:bg-slate-800">
-        <SidebarNav activeSection={activeSection} setActiveSection={setActiveSection} />
-      </div>
-
-      {/* Vertical separator line */}
-      <div className="hidden lg:block w-px bg-slate-700"></div>
-
       {/* Main content */}
-      <div className="flex-1 flex flex-col overflow-hidden">
-        <main className="flex-1 overflow-y-auto py-6">
+      <div className="flex-1 flex">
+        {/* Sidebar */}
+        <aside className="w-64 border-r-2 border-slate-800/80">
+          <SidebarNav activeSection={activeSection} setActiveSection={setActiveSection} />
+        </aside>
+
+        {/* Dashboard content */}
+        <main className="flex-1 overflow-y-auto bg-slate-900 pt-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <Routes>
               <Route index element={<Overview />} />
@@ -383,7 +381,6 @@ const Dashboard = () => {
             </Routes>
           </div>
         </main>
-        <div className="h-px bg-slate-700"></div>
       </div>
     </div>
   );

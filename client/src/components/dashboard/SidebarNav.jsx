@@ -80,38 +80,43 @@ const SidebarNav = ({ activeSection, setActiveSection }) => {
   };
 
   return (
-    <nav className="h-full flex flex-col justify-between">
-      <div className="py-6">
-        <div className="px-4 mb-4 flex justify-between items-center">
+    <nav className="flex flex-col h-[calc(100vh-4rem)] bg-slate-900">
+      {/* Top section */}
+      <div className="flex-none p-4">
+        <div className="flex justify-between items-center">
           <span className="text-sm font-medium text-white font-outfit">Overview</span>
-          <span className="text-xs font-medium text-slate-500 dark:text-slate-400">Ver 1.0</span>
-        </div>
-        <div className="space-y-0.5 px-3">
-          {navigationItems.map((item, index) => (
-            <div key={item.id}>
-              <Link
-                to={item.to}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(item);
-                }}
-                className={`flex items-center w-full px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
-                  activeSection === item.id
-                  ? 'bg-white/10 text-white'
-                  : 'text-white hover:text-white/80 hover:bg-white/10'
-                }`}
-              >
-                <item.icon className="w-4 h-4 text-white" />
-                <span className="ml-3 font-outfit">{item.name}</span>
-              </Link>
-              {index < navigationItems.length - 1 && (
-                <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent my-1 mx-4 opacity-50"></div>
-              )}
-            </div>
-          ))}
+          <span className="text-xs font-medium text-slate-500">Ver 1.0</span>
         </div>
       </div>
-      <div className="px-3 pb-4">
+
+      {/* Main navigation */}
+      <div className="flex-1 px-3 overflow-y-auto">
+        {navigationItems.map((item, index) => (
+          <div key={item.id}>
+            <Link
+              to={item.to}
+              onClick={(e) => {
+                e.preventDefault();
+                handleNavClick(item);
+              }}
+              className={`flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+                activeSection === item.id
+                  ? 'bg-white/10 text-white'
+                  : 'text-slate-400 hover:text-white hover:bg-white/10'
+              }`}
+            >
+              <item.icon className="flex-shrink-0 w-5 h-5 mr-3" />
+              <span>{item.name}</span>
+            </Link>
+            {index < navigationItems.length - 1 && (
+              <div className="mx-4 my-1 border-t border-slate-800/50"></div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom navigation */}
+      <div className="flex-none px-3 pb-2">
         {bottomNavItems.map((item, index) => (
           <div key={item.id}>
             <Link
@@ -120,13 +125,17 @@ const SidebarNav = ({ activeSection, setActiveSection }) => {
                 e.preventDefault();
                 handleNavClick(item);
               }}
-              className="flex items-center w-full px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-white hover:text-white/80 hover:bg-white/10"
+              className={`flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+                activeSection === item.id
+                  ? 'bg-white/10 text-white'
+                  : 'text-slate-400 hover:text-white hover:bg-white/10'
+              }`}
             >
-              <item.icon className="w-4 h-4 text-white" />
-              <span className="ml-3 font-outfit">{item.name}</span>
+              <item.icon className="flex-shrink-0 w-5 h-5 mr-3" />
+              <span>{item.name}</span>
             </Link>
             {index < bottomNavItems.length - 1 && (
-              <div className="h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent my-1 mx-4 opacity-50"></div>
+              <div className="mx-4 my-1 border-t border-slate-800/50"></div>
             )}
           </div>
         ))}
