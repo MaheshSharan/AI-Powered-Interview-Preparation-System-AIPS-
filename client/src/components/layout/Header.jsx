@@ -106,12 +106,12 @@ const Header = () => {
                     About Us
                   </Link>
 
-                  <button
+                  <Link
                     onClick={() => setShowContactModal(true)}
                     className="flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 text-slate-400 hover:text-white hover:bg-white/10"
                   >
                     Contact
-                  </button>
+                  </Link>
                 </>
               ) : (
                 <div className="flex items-center space-x-1">
