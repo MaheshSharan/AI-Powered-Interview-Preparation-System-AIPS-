@@ -21,7 +21,7 @@ const companies = [
     id: 'tcs',
     name: 'TCS',
     fullName: 'Tata Consultancy Services',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/512px-Tata_Consultancy_Services_Logo.svg.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg',
     description: 'Global leader in IT services, consulting, and business solutions with a large presence in India and worldwide.',
     roles: ['ASE', 'SE', 'Systems Engineer', 'Digital Specialist', 'Business Analyst']
   },
@@ -45,7 +45,7 @@ const companies = [
     id: 'google',
     name: 'Google',
     fullName: 'Google LLC',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/archive/c/c1/20200429221626%21Google_%22G%22_logo.svg',
     description: 'Technology company specializing in Internet-related services and products, including online advertising technologies, search engine, cloud computing, and software.',
     roles: ['Software Engineer', 'SWE', 'Research Engineer', 'Product Manager', 'UX Designer']
   },
@@ -53,7 +53,7 @@ const companies = [
     id: 'flipkart',
     name: 'Flipkart',
     fullName: 'Flipkart Internet Private Limited',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Flipkart_logo.svg/512px-Flipkart_logo.svg.png',
+    logo: 'https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png',
     description: 'Indian e-commerce company headquartered in Bangalore, Karnataka, India. The company initially focused on online book sales before expanding into other product categories.',
     roles: ['SDE', 'Software Engineer', 'Product Manager', 'Data Scientist', 'Business Analyst']
   },
@@ -61,7 +61,7 @@ const companies = [
     id: 'amazon',
     name: 'Amazon',
     fullName: 'Amazon.com, Inc.',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/512px-Amazon_logo.svg.png',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/archive/d/de/20171005153411%21Amazon_icon.png',
     description: 'Multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.',
     roles: ['SDE', 'Software Development Engineer', 'Solutions Architect', 'Product Manager', 'Data Scientist']
   }
@@ -193,54 +193,78 @@ const CompanySelection = () => {
   // Render company selection step
   const renderCompanySelection = () => (
     <motion.div
-      variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="max-w-4xl mx-auto"
+      variants={containerVariants}
+      className="space-y-8"
     >
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Select Your Target Company</h2>
-      <p className="text-gray-600 dark:text-gray-300 mb-8">
-        Choose the company you're preparing to interview with. We'll tailor the preparation process specifically for this company.
-      </p>
+      <div className="mb-8">
+        <Link
+          to="/dashboard"
+          className="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors duration-200"
+        >
+          <ArrowLeftIcon className="w-5 h-5 mr-1" />
+          Back to Dashboard
+        </Link>
+      </div>
       
-      {/* Search bar */}
+      <div className="space-y-2 mb-8">
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+          Select Target Company
+        </h1>
+        <p className="text-gray-600 dark:text-gray-400">
+          Choose the company you want to prepare for. We'll tailor the interview process based on your selection.
+        </p>
+      </div>
+      
       <div className="relative mb-8">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
           <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" />
         </div>
         <input
           type="text"
-          className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md leading-5 bg-white dark:bg-slate-800 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-          placeholder="Search for a company..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          className="block w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-700 rounded-lg leading-5 bg-white dark:bg-slate-800 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          placeholder="Search companies..."
         />
       </div>
       
-      {/* Company grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filteredCompanies.map((company) => (
           <motion.div
             key={company.id}
             variants={itemVariants}
-            className={`border rounded-xl p-6 cursor-pointer transition-all duration-200 ${
+            className={`relative rounded-xl border ${
               selectedCompany === company.id
-                ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/20 shadow-md'
-                : 'border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-sm'
-            }`}
+                ? 'border-indigo-500 ring-2 ring-indigo-500'
+                : 'border-gray-200 dark:border-gray-700'
+            } bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-shadow duration-200 cursor-pointer`}
             onClick={() => handleCompanySelect(company.id)}
           >
-            <div className="flex items-center justify-between mb-4">
-              <div className="h-12 w-12 flex items-center justify-center bg-white dark:bg-slate-800 rounded-lg p-2 shadow-sm">
-                <img src={company.logo} alt={company.name} className="max-h-full max-w-full" />
+            <div className="flex items-start justify-between">
+              <div className="flex items-center space-x-4">
+                <img
+                  src={company.logo}
+                  alt={company.name}
+                  className="w-12 h-12 object-contain"
+                />
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    {company.name}
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    {company.fullName}
+                  </p>
+                </div>
               </div>
               {selectedCompany === company.id && (
-                <CheckCircleIcon className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+                <CheckCircleIcon className="w-6 h-6 text-indigo-500" />
               )}
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{company.name}</h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{company.fullName}</p>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-3 line-clamp-3">{company.description}</p>
+            <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
+              {company.description}
+            </p>
           </motion.div>
         ))}
       </div>
@@ -253,16 +277,18 @@ const CompanySelection = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="max-w-4xl mx-auto"
+      className="max-w-7xl mx-auto"
     >
-      <Link
-        to="#"
-        onClick={handleBack}
-        className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 px-3 py-1 rounded-md border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-900/20 mr-auto"
-      >
-        <ArrowLeftIcon className="h-4 w-4 mr-1" />
-        <span>Back to company selection</span>
-      </Link>
+      <div className="mb-8">
+        <Link
+          to="#"
+          onClick={handleBack}
+          className="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors duration-200"
+        >
+          <ArrowLeftIcon className="w-5 h-5 mr-1" />
+          Back to company selection
+        </Link>
+      </div>
       
       <div className="flex items-center mb-6">
         <div className="h-12 w-12 flex items-center justify-center bg-white dark:bg-slate-800 rounded-lg p-2 shadow-sm mr-4">
@@ -323,16 +349,18 @@ const CompanySelection = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="max-w-4xl mx-auto"
+      className="max-w-7xl mx-auto"
     >
-      <Link
-        to="#"
-        onClick={handleBack}
-        className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 px-3 py-1 rounded-md border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-900/20 mr-auto"
-      >
-        <ArrowLeftIcon className="h-4 w-4 mr-1" />
-        <span>Back to role selection</span>
-      </Link>
+      <div className="mb-8">
+        <Link
+          to="#"
+          onClick={handleBack}
+          className="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors duration-200"
+        >
+          <ArrowLeftIcon className="w-5 h-5 mr-1" />
+          Back to role selection
+        </Link>
+      </div>
       
       <div className="flex items-center mb-6">
         <div className="h-12 w-12 flex items-center justify-center bg-white dark:bg-slate-800 rounded-lg p-2 shadow-sm mr-4">
@@ -396,16 +424,18 @@ const CompanySelection = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-4xl mx-auto"
+        className="max-w-7xl mx-auto"
       >
-        <Link
-          to="#"
-          onClick={handleBack}
-          className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 px-3 py-1 rounded-md border border-indigo-200 dark:border-indigo-800 bg-indigo-50 dark:bg-indigo-900/20 mr-auto"
-        >
-          <ArrowLeftIcon className="h-4 w-4 mr-1" />
-          <span>Back to experience selection</span>
-        </Link>
+        <div className="mb-8">
+          <Link
+            to="#"
+            onClick={handleBack}
+            className="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors duration-200"
+          >
+            <ArrowLeftIcon className="w-5 h-5 mr-1" />
+            Back to experience selection
+          </Link>
+        </div>
         
         <div className="bg-white dark:bg-slate-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 p-6">
           <div className="flex items-center justify-center mb-6">
@@ -464,17 +494,19 @@ const CompanySelection = () => {
   };
 
   return (
-    <div className="py-6 px-4 sm:px-6 lg:px-8">
-      {loading ? (
-        <LoadingScreen />
-      ) : (
-        <div>
-          {currentStep === 1 && renderCompanySelection()}
-          {currentStep === 2 && renderRoleSelection()}
-          {currentStep === 3 && renderExperienceSelection()}
-          {currentStep === 4 && renderConfirmation()}
-        </div>
-      )}
+    <div className="min-h-screen bg-gray-50 dark:bg-slate-900 py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {loading ? (
+          <LoadingScreen />
+        ) : (
+          <div>
+            {currentStep === 1 && renderCompanySelection()}
+            {currentStep === 2 && renderRoleSelection()}
+            {currentStep === 3 && renderExperienceSelection()}
+            {currentStep === 4 && renderConfirmation()}
+          </div>
+        )}
+      </div>
     </div>
   );
 };

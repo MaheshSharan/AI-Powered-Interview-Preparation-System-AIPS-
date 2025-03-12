@@ -4,6 +4,7 @@ import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import SidebarNav from './SidebarNav';
 import Overview from './sections/Overview';
 import CompanySelection from './sections/CompanySelection';
+import ResumeAnalysis from './sections/ResumeAnalysis';
 
 const Dashboard = () => {
   const { user } = useAuthStore();
@@ -27,7 +28,7 @@ const Dashboard = () => {
       case 'company':
         return <CompanySelection />;
       case 'resume':
-        return <div className="p-8"><h1 className="text-2xl font-semibold">Resume Analysis</h1><p>Coming soon...</p></div>;
+        return <ResumeAnalysis />;
       case 'technical':
         return <div className="p-8"><h1 className="text-2xl font-semibold">Technical Assessment</h1><p>Coming soon...</p></div>;
       case 'interview':

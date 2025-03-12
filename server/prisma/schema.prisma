@@ -26,4 +26,43 @@ model User {
   registrationStep    Int       @default(1)
   createdAt           DateTime  @default(now())
   updatedAt           DateTime  @updatedAt
+  resumes             Resume[]
+}
+
+model Resume {
+  id          String          @id @default(uuid())
+  userId      String
+  user        User            @relation(fields: [userId], references: [id])
+  fileName    String
+  fileType    String
+  fileSize    Int
+  companyId   String?
+  roleId      String?
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  versions    ResumeVersion[]
+  analysis    ResumeAnalysis?
+}
+
+model ResumeVersion {
+  id        String   @id @default(uuid())
+  resumeId  String
+  resume    Resume   @relation(fields: [resumeId], references: [id])
+  fileData  Bytes
+  notes     String?
+  createdAt DateTime @default(now())
+}
+
+model ResumeAnalysis {
+  id            String   @id @default(uuid())
+  resumeId      String   @unique
+  resume        Resume   @relation(fields: [resumeId], references: [id])
+  score         Int
+  strengths     String
+  weaknesses    String
+  skillsMatched String
+  skillsMissing String
+  suggestions   String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }

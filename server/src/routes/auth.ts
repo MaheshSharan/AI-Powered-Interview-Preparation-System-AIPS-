@@ -40,9 +40,7 @@ router.post('/register', async (req, res) => {
         major: null,
         workStatus: null,
         experience: null,
-        targetRole: null,
-        linkedinUrl: null,
-        githubUrl: null
+        targetRole: null
       },
     });
 
