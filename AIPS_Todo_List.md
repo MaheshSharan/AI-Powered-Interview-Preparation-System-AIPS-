@@ -125,36 +125,29 @@ graph TD
 - [x] Design role/position selection interface for each company
 - [x] Implement experience level selection (New Graduate/Fresher, Junior, Mid, Senior)
 
-## Phase 3: Resume Analysis Module
+## Phase 3: Resume Analysis
 
 ```mermaid
 graph TD
-    A[Resume Upload UI] --> B[Document Parsing]
-    B --> C[Section Identification]
-    C --> D[Skills Extraction]
-    D --> E[Dataset Creation]
-    E --> F[Model Training]
-    F --> G[Resume Analysis]
-    G --> H[Improvement Suggestions]
+    A[Resume Upload] --> B[Resume Parsing]
+    B --> C[Resume Storage]
+    C --> D[AI Analysis]
+    D --> E[Improvement Suggestions]
+    E --> F[Company-Specific Insights]
     
-    subgraph Frontend
+    subgraph Upload
     A
     end
     
-    subgraph Parser
+    subgraph Processing
     B
     C
-    D
-    end
-    
-    subgraph AI Training
-    E
-    F
     end
     
     subgraph Analysis
-    G
-    H
+    D
+    E
+    F
     end
 ```
 
@@ -187,25 +180,26 @@ graph TD
 - [x] Implement hybrid storage approach (local + database)
 - [x] Create synchronization mechanism between local and server storage
 
-### 3.4 Resume Analysis Engine
-- [x] Create basic analysis engine for resume evaluation
-- [x] Implement keyword matching against job descriptions
-- [x] Design scoring system for resume evaluation
-- [x] Create visualization for resume strengths and weaknesses
-- [x] Implement company-specific resume analysis
-- [ ] Add industry-specific analysis parameters
-- [ ] Create customizable analysis criteria
-
-### 3.5 Resume Analysis Engine
-- [x] Implement entity recognition for skills, job titles, and education
-- [x] Create keyword matching algorithm against company-specific requirements
-- [x] Design gap analysis to identify missing skills for target role
-- [x] Implement resume scoring based on company fit
+### 3.4 Resume Analysis System
+- [x] Implement initial mockup analysis system for resume evaluation
 - [x] Create visualization for resume strengths and weaknesses
 - [x] Design loading indicators for analysis process
 - [x] Implement progress tracking during analysis
-- [x] Implement hybrid analysis approach (local + server-side)
 - [x] Create mechanism to store analysis results in both local storage and database
+- [ ] Prepare TensorFlow.js integration architecture
+- [ ] Design company-specific analysis parameters
+- [ ] Create customizable analysis criteria based on roles
+
+### 3.5 AI-Powered Resume Analysis
+- [x] Replace manual rule-based analysis with mockup AI system
+- [ ] Design TensorFlow.js model architecture for resume analysis
+- [ ] Create entity recognition system for skills, experiences, and education
+- [ ] Implement contextual understanding of resume content
+- [ ] Design company-specific evaluation criteria extraction
+- [ ] Create scoring system based on company values and requirements
+- [ ] Implement gap analysis to identify missing skills for target roles
+- [ ] Design resume improvement suggestion generation
+- [ ] Create company-specific insights extraction from resume
 
 ### 3.6 Resume Improvement Module
 - [x] Design actionable feedback generation system
@@ -214,24 +208,35 @@ graph TD
 - [x] Implement before/after comparison visualization
 - [x] Design simple resume editor with improvement suggestions
 - [x] Create "Continue to Virtual Interview" button to guide users to next phase
+- [ ] Enhance feedback system to use AI-generated company-specific insights
+- [ ] Implement personalized improvement roadmap generation
 
-### 3.7 Resume Dataset Creation
-- [ ] Collect successful resumes from target companies and roles
+### 3.7 Dataset Creation for AI Training
+- [ ] Collect 50-100 successful resumes from target companies and roles
 - [ ] Create structured dataset with company-specific resume patterns
-- [ ] Design tagging system for resume components (skills, experience, education)
-- [ ] Implement annotation system for resume strengths and weaknesses
+- [ ] Collect 20-50 professional articles about each company's hiring practices
+- [ ] Extract key information about what each company values in candidates
 - [ ] Create mapping between resume elements and company requirements
 - [ ] Design dataset for different experience levels (fresher, mid-level, senior)
+- [ ] Implement data preprocessing pipeline for model training
+- [ ] Create data augmentation techniques for resume dataset
+- [ ] Design annotation system for resume strengths and weaknesses
 - [ ] Implement data anonymization for privacy protection
 
-### 3.8 Resume Analysis Model
-- [ ] Select base models for fine-tuning (transformer-based models)
-- [ ] Implement fine-tuning pipeline for resume analysis
+### 3.8 TensorFlow.js Model Development
+- [ ] Select base transformer model for fine-tuning (BERT or smaller variant)
+- [ ] Implement model architecture for resume analysis
+- [ ] Create training pipeline for resume evaluation
+- [ ] Design multi-modal training approach (articles + resumes + criteria)
+- [ ] Implement knowledge distillation from company articles
 - [ ] Create company-specific resume evaluation models
 - [ ] Design role-specific resume scoring models
 - [ ] Implement model compression for browser-based deployment
-- [ ] Create model evaluation metrics and testing framework
-- [ ] Design continuous improvement pipeline for model updates
+- [ ] Create TensorFlow.js conversion pipeline
+- [ ] Implement browser-optimized inference
+- [ ] Design model evaluation metrics and testing framework
+- [ ] Create continuous improvement pipeline based on user feedback
+- [ ] Implement model versioning and update system
 
 ## Phase 4: Interview Modules
 

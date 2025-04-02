@@ -1,0 +1,78 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: fresher
+Title: Software Engineer Resume (Fresher)
+
+KARTHIK RAMAN
+Chennai, Tamil Nadu
+karthik.raman@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/karthikraman
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate specializing in mobile and cross-platform development. Strong expertise in native and hybrid mobile applications with focus on performance optimization. Seeking to start career as a Software Engineer at TCS.
+
+TECHNICAL SKILLS
+• Mobile Development: Android (Kotlin), iOS (Swift)
+• Cross-platform: React Native, Flutter
+• Backend: Node.js, Firebase
+• UI/UX: Material Design, SwiftUI
+• Tools: Android Studio, Xcode, VS Code
+• Other: RESTful APIs, GraphQL, CI/CD
+
+EDUCATION
+Bachelor of Technology in Computer Science
+VIT University | Vellore, Tamil Nadu | 2020-2024
+• GPA: 8.8/10
+• Specialization in Mobile Computing
+• Relevant Coursework: Mobile App Development, UI/UX Design, Cross-platform Development
+
+PROJECTS
+1. Cross-platform Fitness Application
+   • Developed comprehensive fitness tracking app
+   • Technologies: Flutter, Firebase, Google Fit API
+   • Features: Workout tracking, nutrition planning, social sharing
+   • 10,000+ downloads on Play Store
+
+2. E-commerce Mobile App
+   • Built native Android and iOS shopping app
+   • Technologies: Kotlin, Swift, Node.js
+   • Features: Product search, cart management, payments
+   • Implemented offline-first architecture
+
+3. Social Media Integration SDK
+   • Created cross-platform social media SDK
+   • Technologies: React Native, GraphQL
+   • Features: Authentication, sharing, analytics
+   • Used by 20+ mobile applications
+
+INTERNSHIPS
+Mobile Developer Intern | Swiggy | Bangalore | May 2023 - Jul 2023
+• Developed features for Android and iOS apps
+• Implemented performance optimizations
+• Reduced app size by 30%
+• Collaborated with design team on UI/UX
+
+App Developer Intern | PhonePe | Chennai | Dec 2022 - Feb 2023
+• Built reusable UI components
+• Implemented payment integration features
+• Improved app launch time by 40%
+• Created automated UI tests
+
+ACHIEVEMENTS
+• Best Mobile App Award at Smart India Hackathon
+• Published 3 apps on Play Store with 50,000+ downloads
+• Winner of Google Flutter Hackathon
+• Active contributor to mobile development community
+• Featured in Mobile App Development Blog
+
+CERTIFICATIONS
+• Android Associate Developer Certification
+• iOS App Development with Swift - Apple
+• Flutter Development Bootcamp
+• React Native Professional Certification
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

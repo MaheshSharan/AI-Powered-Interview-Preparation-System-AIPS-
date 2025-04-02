@@ -1,0 +1,80 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+ANJALI SHARMA
+Mumbai, Maharashtra
+anjali.sharma@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/anjali-sharma
+
+PROFESSIONAL SUMMARY
+Recent graduate with strong foundation in data science and machine learning. Specialized in predictive modeling and data analysis. Seeking to join TCS as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, SQL
+• ML/AI: scikit-learn, TensorFlow, PyTorch
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Databases: MySQL, MongoDB, PostgreSQL
+• Tools: Jupyter, Git, Tableau
+• Other: Statistical Analysis, Data Visualization
+
+EDUCATION
+Master of Technology in Data Science
+Indian Institute of Technology | Bombay | 2023-2025
+• GPA: 8.9/10
+• Specialization in Machine Learning
+• Thesis: "Predictive Analytics for Customer Churn"
+
+Bachelor of Technology in Computer Science
+Vellore Institute of Technology | Vellore | 2019-2023
+• GPA: 8.7/10
+• Specialization in Data Science
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built ML model to predict customer churn
+   • Technologies: Python, scikit-learn, XGBoost
+   • Features: Feature engineering, model optimization
+   • Achieved 85% prediction accuracy
+
+2. Sales Analytics Dashboard
+   • Created interactive data visualization
+   • Technologies: Tableau, Python, SQL
+   • Features: Real-time analytics, trend analysis
+   • Used by 50+ business users
+
+3. Sentiment Analysis System
+   • Developed NLP-based sentiment analyzer
+   • Technologies: Python, NLTK, TensorFlow
+   • Features: Text preprocessing, model training
+   • Analyzes 10,000+ reviews daily
+
+INTERNSHIPS
+Data Science Intern | Amazon | Bangalore | Jun 2024 - Aug 2024
+• Developed recommendation system
+• Implemented A/B testing framework
+• Created automated data pipelines
+
+Data Analytics Intern | Flipkart | Mumbai | Jan 2024 - Mar 2024
+• Built customer segmentation model
+• Created sales forecasting system
+• Developed KPI dashboards
+
+ACHIEVEMENTS
+• Winner of Data Science Hackathon 2024
+• Published research paper on ML algorithms
+• Top performer in academic projects
+• Active contributor to data science community
+
+CERTIFICATIONS
+• IBM Data Science Professional Certificate
+• Google Data Analytics Professional Certificate
+• Microsoft Power BI Data Analyst Associate
+• Deep Learning Specialization - DeepLearning.AI
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Native) 

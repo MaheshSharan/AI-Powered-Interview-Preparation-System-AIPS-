@@ -1,0 +1,84 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: product_manager
+Experience: junior
+Title: Product Manager Resume (Junior)
+
+RAHUL VERMA
+Bangalore, Karnataka
+rahul.verma@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/rahul-verma
+
+PROFESSIONAL SUMMARY
+Product Manager with 2 years of experience in product strategy and development. Expertise in agile methodologies and product analytics. Seeking to join TCS as a Product Manager.
+
+TECHNICAL SKILLS
+• Product Management: Agile, Scrum, Kanban
+• Analytics: SQL, Tableau, Power BI
+• Tools: Jira, Confluence, Figma
+• Market Research: User Research, Competitor Analysis
+• Other: Product Strategy, User Experience
+
+PROFESSIONAL EXPERIENCE
+
+Product Manager | Wipro | Bangalore | Jan 2023 - Present
+• Lead product development initiatives
+• Design and implement product strategy
+• Mentor team of 3 junior product managers
+• Drive product decisions and best practices
+• Optimize product performance and user experience
+
+Associate Product Manager | Tech Mahindra | Mumbai | Mar 2022 - Dec 2022
+• Developed product roadmaps
+• Implemented agile methodologies
+• Created product specifications
+• Participated in product planning
+
+EDUCATION
+Master of Business Administration
+Indian Institute of Management | Bangalore | 2020-2022
+• GPA: 8.8/10
+• Specialization in Product Management
+• Thesis: "Product Strategy in Digital Age"
+
+Bachelor of Technology in Computer Science
+National Institute of Technology | Surathkal | 2016-2020
+• GPA: 8.7/10
+• Specialization in Software Engineering
+
+PROJECTS
+1. Enterprise Product Platform
+   • Built scalable product platform
+   • Tools: Jira, Confluence, Analytics
+   • Features: Product management, analytics
+   • Serves 100+ products
+
+2. Product Analytics System
+   • Developed analytics platform
+   • Tools: SQL, Tableau, Python
+   • Features: KPI tracking, reporting
+   • Used by 500+ stakeholders
+
+3. Agile Implementation Framework
+   • Created agile methodology
+   • Tools: Confluence, Miro
+   • Features: Sprint planning, tracking
+   • Streamlined development process
+
+ACHIEVEMENTS
+• Received "Product Excellence Award" at Wipro
+• Led successful delivery of 3 products
+• Improved user engagement by 45%
+• Mentored 5 junior product managers
+• Published 2 technical papers
+
+CERTIFICATIONS
+• Certified Product Manager - Product School
+• Agile Certified Product Manager
+• Microsoft Power BI Certification
+• Product Strategy Certification
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

@@ -1,0 +1,78 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: fresher
+Title: Software Engineer Resume (Fresher)
+
+VIKRAM SINGH
+Bangalore, Karnataka
+vikram.singh@email.com | (555) 012-3456
+LinkedIn: linkedin.com/in/vikramsingh
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with strong foundation in software engineering principles and modern development practices. Specialized in full-stack development with focus on scalable web applications. Seeking to start career as a Software Engineer at TCS.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript, C++
+• Web Technologies: React.js, Node.js, Spring Boot
+• Databases: MySQL, MongoDB, PostgreSQL
+• Cloud: AWS, Docker
+• Tools: Git, Jenkins, Maven
+• Other: Data Structures, Algorithms, Design Patterns
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Delhi | 2020-2024
+• GPA: 9.0/10
+• Major in Software Engineering
+• Relevant Coursework: Advanced Algorithms, Software Architecture, Cloud Computing, System Design
+
+PROJECTS
+1. Microservices-based E-commerce Platform
+   • Built scalable e-commerce system using microservices
+   • Technologies: Spring Boot, React, MongoDB, Docker
+   • Features: Product catalog, shopping cart, payment integration
+   • Implemented service discovery and load balancing
+
+2. Real-time Collaboration Tool
+   • Developed real-time document collaboration platform
+   • Technologies: Node.js, Socket.IO, Redis, React
+   • Features: Real-time editing, version control, user permissions
+   • Supports 100+ concurrent users
+
+3. AI-powered Code Review System
+   • Created automated code review system using ML
+   • Technologies: Python, TensorFlow, FastAPI
+   • Features: Code quality analysis, bug detection, style checking
+   • Integrated with GitHub Actions
+
+INTERNSHIPS
+Software Development Intern | Microsoft | Bangalore | May 2023 - Jul 2023
+• Developed features for Azure DevOps platform
+• Implemented automated testing framework
+• Collaborated with senior developers on architecture design
+• Reduced test execution time by 40%
+
+Software Engineering Intern | Amazon | Hyderabad | Dec 2022 - Feb 2023
+• Built internal tools for AWS service monitoring
+• Implemented RESTful APIs using Java
+• Participated in agile development process
+• Created comprehensive documentation
+
+ACHIEVEMENTS
+• Gold Medalist in ACM-ICPC Regional Programming Contest
+• First Prize in National Level Hackathon 2023
+• Published paper on microservices architecture
+• Open source contributor to popular frameworks
+• Department topper in Computer Science
+
+CERTIFICATIONS
+• AWS Certified Developer - Associate
+• Oracle Certified Professional Java SE 11 Developer
+• Microsoft Certified: Azure Fundamentals
+• Google Cloud Certified - Associate Cloud Engineer
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Basic) 

@@ -1,0 +1,238 @@
+Source: https://careers.google.com/how-we-hire/interview-tips/
+Date: 2024-03-31
+Category: hiring_practices
+Title: Google's Interview Tips and Best Practices
+
+Google's interview process requires thorough preparation and understanding of their evaluation criteria. Here's a comprehensive guide to Google's interview tips and best practices:
+
+Interview Preparation:
+1. Technical Preparation
+   - Data Structures
+   - Algorithms
+   - System Design
+   - Programming Languages
+   - Problem Solving
+
+2. Study Materials
+   - Online Courses
+   - Books
+   - Practice Problems
+   - Mock Interviews
+   - Research Papers
+
+3. Time Management
+   - Study Schedule
+   - Practice Schedule
+   - Mock Interviews
+   - Review Sessions
+   - Rest Periods
+
+4. Research
+   - Company Culture
+   - Technical Stack
+   - Recent Projects
+   - Industry Trends
+   - Interview Experiences
+
+During Interview:
+1. Communication
+   - Clear Expression
+   - Active Listening
+   - Question Clarification
+   - Thought Process
+   - Feedback Response
+
+2. Problem Solving
+   - Approach Explanation
+   - Solution Discussion
+   - Edge Cases
+   - Optimization
+   - Trade-offs
+
+3. Coding
+   - Clean Code
+   - Documentation
+   - Testing
+   - Error Handling
+   - Performance
+
+4. Technical Discussion
+   - Knowledge Display
+   - Experience Sharing
+   - Learning Attitude
+   - Innovation
+   - Best Practices
+
+Common Mistakes to Avoid:
+1. Technical
+   - Poor Code Quality
+   - Missing Edge Cases
+   - Inefficient Solutions
+   - Lack of Testing
+   - Poor Documentation
+
+2. Communication
+   - Unclear Explanation
+   - Poor Listening
+   - No Questions
+   - Defensive Attitude
+   - Lack of Feedback
+
+3. Problem Solving
+   - Rushing to Code
+   - Missing Requirements
+   - Poor Analysis
+   - No Optimization
+   - Ignoring Trade-offs
+
+4. Preparation
+   - Insufficient Practice
+   - Poor Time Management
+   - Lack of Research
+   - No Mock Interviews
+   - Poor Organization
+
+Success Strategies:
+1. Technical Skills
+   - Strong Foundation
+   - Regular Practice
+   - Code Review
+   - Project Work
+   - Learning
+
+2. Communication
+   - Clear Expression
+   - Active Listening
+   - Question Asking
+   - Feedback
+   - Collaboration
+
+3. Problem Solving
+   - Systematic Approach
+   - Analysis
+   - Solution Design
+   - Implementation
+   - Testing
+
+4. Interview Skills
+   - Time Management
+   - Stress Management
+   - Focus
+   - Adaptability
+   - Professionalism
+
+Interview Types:
+1. Phone Screen
+   - Technical Questions
+   - Problem Solving
+   - Communication
+   - Experience
+   - Fit
+
+2. Onsite
+   - Coding
+   - System Design
+   - Technical Deep Dive
+   - Googliness
+   - Team Fit
+
+3. Technical
+   - Algorithms
+   - Data Structures
+   - System Design
+   - Code Quality
+   - Problem Solving
+
+4. Behavioral
+   - Experience
+   - Projects
+   - Challenges
+   - Learning
+   - Growth
+
+Follow-up:
+1. Thank You Note
+   - Gratitude
+   - Key Points
+   - Questions
+   - Updates
+   - Next Steps
+
+2. Feedback
+   - Interview Experience
+   - Areas of Improvement
+   - Questions
+   - Suggestions
+   - Updates
+
+3. Next Steps
+   - Timeline
+   - Requirements
+   - Preparation
+   - Communication
+   - Updates
+
+4. Continuous Learning
+   - Practice
+   - Study
+   - Projects
+   - Research
+   - Feedback
+
+Best Practices:
+1. Preparation
+   - Study Plan
+   - Practice Schedule
+   - Mock Interviews
+   - Research
+   - Organization
+
+2. During Interview
+   - Communication
+   - Problem Solving
+   - Code Quality
+   - Documentation
+   - Testing
+
+3. Follow-up
+   - Thank You Note
+   - Feedback
+   - Questions
+   - Updates
+   - Next Steps
+
+4. Continuous Learning
+   - Practice
+   - Study
+   - Projects
+   - Research
+   - Feedback
+
+Success Factors:
+1. Technical Skills
+   - Strong Foundation
+   - Problem Solving
+   - System Design
+   - Code Quality
+   - Testing
+
+2. Communication
+   - Clarity
+   - Collaboration
+   - Documentation
+   - Presentation
+   - Feedback
+
+3. Problem Solving
+   - Approach
+   - Analysis
+   - Solution
+   - Optimization
+   - Trade-offs
+
+4. Cultural Fit
+   - Googliness
+   - Collaboration
+   - Innovation
+   - Learning
+   - Impact 

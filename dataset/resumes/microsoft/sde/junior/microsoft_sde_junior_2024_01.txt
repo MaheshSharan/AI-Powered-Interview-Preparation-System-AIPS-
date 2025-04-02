@@ -1,0 +1,78 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: sde
+Experience: junior
+Title: Software Development Engineer Resume (Junior)
+
+RAHUL VERMA
+Bangalore, Karnataka
+rahul.verma@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/rahul-verma
+
+PROFESSIONAL SUMMARY
+Software Development Engineer with 2 years of experience in full-stack development and cloud technologies. Expertise in building scalable applications and microservices architecture. Seeking to join Microsoft as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: React, Node.js, Express.js
+• Cloud: Azure, AWS, Docker
+• Databases: SQL, MongoDB, Redis
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Software Development Engineer | Amazon | Bangalore | Jan 2023 - Present
+• Lead development of microservices
+• Design and implement cloud solutions
+• Mentor team of 3 junior developers
+• Drive technical decisions and best practices
+• Optimize application performance
+
+Software Engineering Intern | Google | Hyderabad | Jun 2022 - Dec 2022
+• Developed web applications
+• Implemented CI/CD pipelines
+• Created automated tests
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2018-2022
+• GPA: 8.8/10
+• Specialization in Software Engineering
+• Thesis: "Cloud-Native Applications"
+
+PROJECTS
+1. Cloud-Based E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: React, Node.js, Azure
+   • Features: User management, product catalog
+   • Improved performance by 50%
+
+2. Real-time Chat Application
+   • Developed chat platform
+   • Tools: WebSocket, MongoDB, Redis
+   • Features: Real-time messaging, notifications
+   • Serves 2000+ concurrent users
+
+3. Microservices API Gateway
+   • Created API gateway
+   • Tools: Spring Cloud, Docker, Kubernetes
+   • Features: Load balancing, authentication
+   • Reduced latency by 40%
+
+ACHIEVEMENTS
+• Received "Technical Excellence Award" at Amazon
+• Led successful delivery of 3 projects
+• Improved system performance by 45%
+• Mentored 5 junior developers
+• Published 2 technical papers
+
+CERTIFICATIONS
+• Microsoft Azure Fundamentals
+• AWS Certified Developer
+• Docker Certified Associate
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

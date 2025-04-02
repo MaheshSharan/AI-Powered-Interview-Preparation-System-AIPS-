@@ -1,0 +1,85 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: junior
+Title: Data Scientist Resume (Junior)
+
+SANGEETA REDDY
+Hyderabad, Telangana
+sangeeta.reddy@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/sangeeta-reddy
+
+PROFESSIONAL SUMMARY
+Data Scientist with 2 years of experience in computer vision and deep learning. Expertise in building AI solutions and leading technical teams. Seeking to join TCS as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, C++, CUDA
+• ML/AI: PyTorch, TensorFlow, OpenCV
+• Deep Learning: CNN, RNN, Transformers
+• Cloud: AWS, Google Cloud, Azure
+• Tools: Docker, Kubernetes, Git
+• Other: Computer Vision, GPU Computing
+
+PROFESSIONAL EXPERIENCE
+
+Data Scientist | HCL Technologies | Hyderabad | Feb 2023 - Present
+• Lead computer vision model development
+• Design and implement AI solutions
+• Mentor team of 4 junior data scientists
+• Drive technical architecture decisions
+• Optimize model performance and efficiency
+
+Junior Data Scientist | Persistent Systems | Pune | Apr 2022 - Jan 2023
+• Developed computer vision models
+• Implemented deep learning pipelines
+• Created model optimization framework
+• Participated in model deployment
+
+EDUCATION
+Master of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2020-2022
+• GPA: 8.9/10
+• Specialization in AI and Computer Vision
+• Thesis: "Advanced Object Detection in Real-time"
+
+Bachelor of Technology in Computer Science
+Vellore Institute of Technology | Vellore | 2016-2020
+• GPA: 8.8/10
+• Specialization in Artificial Intelligence
+
+PROJECTS
+1. Real-time Object Detection
+   • Built computer vision system
+   • Technologies: PyTorch, OpenCV, TensorRT
+   • Features: Real-time detection, tracking
+   • Processes 30+ FPS on edge devices
+
+2. Face Recognition System
+   • Developed biometric authentication
+   • Technologies: TensorFlow, dlib
+   • Features: Face detection, recognition
+   • 99.9% accuracy on test set
+
+3. Video Analytics Platform
+   • Created video processing system
+   • Technologies: OpenCV, FFmpeg
+   • Features: Motion detection, tracking
+   • Processes 1000+ hours of video
+
+ACHIEVEMENTS
+• Received "AI Innovation Award" at HCL
+• Led successful delivery of 4 CV projects
+• Improved model accuracy by 45%
+• Mentored 6 junior data scientists
+• Published 3 technical papers
+
+CERTIFICATIONS
+• TensorFlow Developer Certificate
+• NVIDIA Deep Learning Institute
+• AWS Machine Learning Specialty
+• Computer Vision Specialization
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

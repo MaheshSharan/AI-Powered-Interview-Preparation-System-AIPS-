@@ -1,0 +1,83 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: junior
+Title: Data Scientist Resume (Junior)
+
+RAHUL VERMA
+Bangalore, Karnataka
+rahul.verma@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/rahul-verma
+
+PROFESSIONAL SUMMARY
+Data Scientist with 2 years of experience in machine learning and data analytics. Expertise in predictive modeling and big data processing. Seeking to join Microsoft as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, SQL
+• Machine Learning: Scikit-learn, TensorFlow, PyTorch
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Hive
+• Other: Git, Jupyter, Tableau
+
+PROFESSIONAL EXPERIENCE
+
+Data Scientist | Amazon | Bangalore | Jan 2023 - Present
+• Lead development of ML models
+• Design and implement data pipelines
+• Mentor team of 3 junior data scientists
+• Drive technical decisions and best practices
+• Optimize model performance
+
+Data Science Intern | Google | Hyderabad | Jun 2022 - Dec 2022
+• Developed ML models
+• Created data pipelines
+• Implemented analytics
+
+EDUCATION
+Master of Science in Data Science
+Indian Institute of Science | Bangalore | 2020-2022
+• GPA: 8.8/10
+• Specialization in Machine Learning
+• Thesis: "Deep Learning in Computer Vision"
+
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2016-2020
+• GPA: 8.7/10
+• Specialization in Data Science
+
+PROJECTS
+1. Image Recognition System
+   • Built deep learning model
+   • Tools: TensorFlow, OpenCV, Python
+   • Features: Object detection, classification
+   • Achieved 97% accuracy
+
+2. Predictive Analytics Platform
+   • Developed analytics system
+   • Tools: Scikit-learn, Pandas, NumPy
+   • Features: Time series forecasting
+   • Improved predictions by 50%
+
+3. Big Data Processing Pipeline
+   • Created data pipeline
+   • Tools: Hadoop, Spark, Hive
+   • Features: Data processing, analytics
+   • Processed 2TB+ data daily
+
+ACHIEVEMENTS
+• Received "Data Science Excellence Award" at Amazon
+• Led successful delivery of 3 projects
+• Improved model accuracy by 45%
+• Mentored 5 junior data scientists
+• Published 2 technical papers
+
+CERTIFICATIONS
+• Microsoft Azure Data Scientist
+• TensorFlow Developer Certificate
+• IBM Data Science Professional
+• Google Data Analytics Professional
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

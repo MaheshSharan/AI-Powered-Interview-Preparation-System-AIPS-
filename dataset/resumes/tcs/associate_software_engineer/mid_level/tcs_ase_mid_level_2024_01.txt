@@ -1,0 +1,83 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: mid_level
+Title: Associate Software Engineer Resume (Mid-Level)
+
+RAJESH KUMAR
+Mumbai, Maharashtra
+rajesh.kumar@email.com | (555) 789-0123
+LinkedIn: linkedin.com/in/rajeshkumar
+
+PROFESSIONAL SUMMARY
+Software Engineer with 4 years of experience in full-stack development and system architecture. Proven track record of leading technical teams and delivering enterprise-scale applications. Seeking to join TCS as an Associate Software Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript, Go
+• Frontend: React, Angular, Vue.js
+• Backend: Spring Boot, Node.js, Django
+• Databases: PostgreSQL, MongoDB, Cassandra
+• Cloud: AWS, Azure, GCP
+• Other: Microservices, Docker, Kubernetes, CI/CD
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | Wipro | Mumbai | Jan 2022 - Present
+• Lead development of enterprise microservices architecture
+• Manage team of 5 developers and oversee project delivery
+• Implement cloud-native solutions using AWS services
+• Optimize system performance and reduce costs by 35%
+• Mentor junior developers and conduct technical interviews
+
+Software Engineer | Infosys | Pune | Apr 2020 - Dec 2021
+• Developed full-stack applications using Spring Boot and React
+• Implemented CI/CD pipelines using Jenkins and Docker
+• Improved application performance by 50%
+• Led migration from monolith to microservices
+
+Junior Software Engineer | Tech Mahindra | Bangalore | Jan 2020 - Mar 2020
+• Developed RESTful APIs using Node.js
+• Implemented automated testing using Jest
+• Participated in agile development process
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Mumbai | 2016-2020
+• GPA: 8.9/10
+• Specialization in Distributed Systems
+• Relevant Coursework: System Design, Cloud Computing, Software Architecture
+
+PROJECTS
+1. Enterprise Microservices Platform
+   • Architected and developed microservices platform
+   • Technologies: Spring Boot, Kubernetes, Kafka
+   • Features: Service discovery, load balancing, monitoring
+   • Supports 100+ microservices in production
+
+2. Cloud Migration Project
+   • Led migration of legacy systems to AWS
+   • Technologies: AWS, Terraform, Docker
+   • Reduced infrastructure costs by 40%
+   • Improved system reliability to 99.99%
+
+3. Real-time Analytics Platform
+   • Built scalable analytics platform
+   • Technologies: Python, Apache Spark, Elasticsearch
+   • Features: Real-time processing, visualization, alerts
+   • Processes 10TB+ data daily
+
+ACHIEVEMENTS
+• Received "Technical Excellence Award" at Wipro
+• Led successful delivery of 5 major projects
+• Published technical articles on system design
+• Regular speaker at technology conferences
+
+CERTIFICATIONS
+• AWS Solutions Architect Professional
+• Certified Kubernetes Administrator
+• Google Cloud Professional Architect
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Professional) 

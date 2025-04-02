@@ -1,0 +1,89 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: cloud_solutions_architect
+Experience: mid_level
+Title: Cloud Solutions Architect Resume (Mid-Level)
+
+PRIYANKA SINGH
+Mumbai, Maharashtra
+priyanka.singh@email.com | (555) 890-1234
+LinkedIn: linkedin.com/in/priyanka-singh
+
+PROFESSIONAL SUMMARY
+Senior Cloud Solutions Architect with 5 years of experience in cloud architecture and infrastructure design. Expertise in Azure, AWS, and GCP solutions. Seeking to join Microsoft as a Senior Cloud Solutions Architect.
+
+TECHNICAL SKILLS
+• Cloud Platforms: Azure, AWS, GCP
+• Infrastructure: Docker, Kubernetes, Terraform
+• Networking: VPC, VPN, Load Balancing
+• Security: IAM, Encryption, Compliance
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Cloud Solutions Architect | Amazon | Mumbai | Feb 2022 - Present
+• Lead enterprise cloud architecture
+• Design and implement solutions
+• Mentor team of 7 junior architects
+• Drive technical strategy
+• Optimize cloud costs
+• Achievements:
+  - Reduced cloud costs by 60%
+  - Improved system availability by 55%
+  - Led 7 major projects to completion
+
+Cloud Solutions Architect | Google | Bangalore | Apr 2020 - Jan 2022
+• Designed cloud solutions
+• Implemented infrastructure
+• Mentored junior architects
+• Optimized performance
+
+Cloud Architecture Intern | Microsoft | Hyderabad | Jul 2019 - Mar 2020
+• Developed cloud services
+• Participated in architecture reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Delhi | 2015-2019
+• GPA: 8.9/10
+• Specialization in Cloud Computing
+• Thesis: "Cloud Security Architecture"
+
+PROJECTS
+1. Enterprise Cloud Platform
+   • Designed enterprise architecture
+   • Tools: Azure, AWS, Terraform
+   • Features: High availability, scalability
+   • Reduced costs by 65%
+
+2. Container Orchestration Platform
+   • Built container platform
+   • Tools: Kubernetes, Docker, Helm
+   • Features: Auto-scaling, monitoring
+   • Improved efficiency by 70%
+
+3. Cloud Security Framework
+   • Created security framework
+   • Tools: Azure Security Center, AWS Shield
+   • Features: Threat detection, compliance
+   • Enhanced security by 75%
+
+ACHIEVEMENTS
+• Received "Cloud Architecture Leadership Award" at Amazon
+• Led successful delivery of 8 projects
+• Improved system performance by 60%
+• Mentored 12 junior architects
+• Published 4 technical papers
+• Patented cloud security solution
+
+CERTIFICATIONS
+• Microsoft Azure Solutions Architect Expert
+• AWS Certified Solutions Architect Professional
+• Google Cloud Professional Architect
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Conversational) 

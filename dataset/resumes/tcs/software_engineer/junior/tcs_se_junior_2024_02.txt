@@ -1,0 +1,80 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: junior
+Title: Software Engineer Resume (Junior)
+
+NEHA PATEL
+Hyderabad, Telangana
+neha.patel@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/nehapatel
+
+PROFESSIONAL SUMMARY
+Software Engineer with 2 years of experience in full-stack development and cloud-native applications. Specialized in building scalable web applications using modern JavaScript frameworks and cloud technologies. Seeking to join TCS as a Software Engineer.
+
+TECHNICAL SKILLS
+• Frontend: React.js, Next.js, TypeScript
+• Backend: Node.js, Express.js, GraphQL
+• Cloud: AWS, Azure, Serverless
+• Databases: MongoDB, Redis, PostgreSQL
+• Tools: Git, Docker, Kubernetes
+• Other: CI/CD, Microservices, Web Security
+
+PROFESSIONAL EXPERIENCE
+
+Software Engineer | Wipro | Hyderabad | Mar 2022 - Present
+• Develop and maintain cloud-native web applications
+• Implement responsive UI components using React
+• Design and optimize database schemas
+• Lead frontend development team of 4 developers
+• Implement security best practices and compliance
+
+Junior Software Engineer | HCL Technologies | Chennai | Jul 2021 - Feb 2022
+• Built RESTful APIs using Node.js and Express
+• Developed responsive web applications
+• Implemented authentication and authorization
+• Created automated test suites
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Vellore Institute of Technology | Vellore | 2017-2021
+• GPA: 8.9/10
+• Specialization in Web Technologies
+• Relevant Coursework: Web Development, Cloud Computing, Security
+
+PROJECTS
+1. E-commerce Platform
+   • Built scalable e-commerce solution
+   • Technologies: React, Node.js, MongoDB
+   • Features: Product catalog, cart management, payments
+   • Handles 100,000+ daily users
+
+2. Real-time Analytics Dashboard
+   • Developed real-time data visualization platform
+   • Technologies: Next.js, GraphQL, Redis
+   • Features: Live updates, custom reports, export
+   • Processes 1M+ data points daily
+
+3. Content Management System
+   • Created headless CMS with API-first approach
+   • Technologies: Node.js, Express, PostgreSQL
+   • Features: Multi-tenant, role-based access
+   • Serves 50+ enterprise clients
+
+ACHIEVEMENTS
+• Received "Innovation Award" at Wipro
+• Led successful migration to microservices
+• Improved application performance by 50%
+• Mentored 3 junior developers
+• Active contributor to open-source projects
+
+CERTIFICATIONS
+• AWS Certified Developer - Associate
+• Microsoft Certified: Azure Developer Associate
+• Professional Full Stack Developer - Udacity
+• Certified Kubernetes Application Developer
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Telugu (Conversational) 

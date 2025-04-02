@@ -1,0 +1,79 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+ADITYA SHARMA
+Hyderabad, Telangana
+aditya.sharma@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/aditya-sharma
+
+PROFESSIONAL SUMMARY
+Recent graduate with expertise in data science and machine learning. Specialized in predictive modeling and data analytics. Seeking to join Microsoft as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, SQL
+• Machine Learning: Scikit-learn, TensorFlow, PyTorch
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Hive
+• Other: Git, Jupyter, Tableau
+
+EDUCATION
+Master of Science in Data Science
+Indian Institute of Science | Bangalore | 2022-2024
+• GPA: 8.9/10
+• Specialization in Machine Learning
+• Thesis: "Natural Language Processing"
+
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2018-2022
+• GPA: 8.8/10
+• Specialization in Data Science
+
+PROJECTS
+1. Natural Language Processing System
+   • Built NLP model
+   • Tools: TensorFlow, NLTK, Python
+   • Features: Text classification, sentiment analysis
+   • Achieved 92% accuracy
+
+2. Predictive Analytics Platform
+   • Developed analytics system
+   • Tools: Scikit-learn, Pandas, NumPy
+   • Features: Time series forecasting
+   • Improved predictions by 45%
+
+3. Big Data Processing Pipeline
+   • Created data pipeline
+   • Tools: Hadoop, Spark, Hive
+   • Features: Data processing, analytics
+   • Processed 1.5TB+ data daily
+
+INTERNSHIPS
+Data Science Intern | Amazon | Hyderabad | Jul 2024 - Sep 2024
+• Developed ML models
+• Created data pipelines
+• Implemented analytics
+
+Data Analytics Intern | Google | Bangalore | Apr 2024 - Jun 2024
+• Analyzed user data
+• Built visualization dashboards
+• Created reports
+
+ACHIEVEMENTS
+• Winner of Kaggle Competition 2024
+• Published paper on ML algorithms
+• Top performer in academic projects
+• Active in data science community
+
+CERTIFICATIONS
+• Microsoft Azure Data Scientist
+• TensorFlow Developer Certificate
+• IBM Data Science Professional
+• Google Data Analytics Professional
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Telugu (Native) 

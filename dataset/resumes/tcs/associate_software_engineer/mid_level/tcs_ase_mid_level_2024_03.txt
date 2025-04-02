@@ -1,0 +1,88 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: mid_level
+Title: Associate Software Engineer Resume (Mid-Level)
+
+ARUN KRISHNAN
+Chennai, Tamil Nadu
+arun.krishnan@email.com | (555) 901-2345
+LinkedIn: linkedin.com/in/arunkrishnan
+
+PROFESSIONAL SUMMARY
+Data Engineer with 4.5 years of experience in big data technologies and data pipeline development. Strong expertise in building scalable ETL processes and data warehousing solutions. Seeking to join TCS as an Associate Software Engineer.
+
+TECHNICAL SKILLS
+• Programming: Python, Scala, SQL
+• Big Data: Apache Spark, Hadoop, Kafka
+• Cloud: AWS EMR, Databricks, Snowflake
+• ETL Tools: Airflow, Luigi, dbt
+• Databases: Redshift, BigQuery, PostgreSQL
+• Other: Data Modeling, Data Warehousing, Analytics
+
+PROFESSIONAL EXPERIENCE
+
+Senior Data Engineer | Capgemini | Chennai | Jun 2021 - Present
+• Lead development of enterprise data pipelines
+• Design and implement data warehouse architecture
+• Optimize ETL processes reducing processing time by 60%
+• Manage team of 3 data engineers
+• Collaborate with data science team on ML pipelines
+
+Data Engineer | Accenture | Bangalore | Aug 2019 - May 2021
+• Developed ETL pipelines using Apache Spark
+• Implemented real-time data processing using Kafka
+• Created automated data quality checks
+• Reduced data processing costs by 40%
+
+Junior Data Engineer | Tech Mahindra | Hyderabad | Jan 2019 - Jul 2019
+• Built data pipelines using Python
+• Implemented data validation processes
+• Assisted in data warehouse development
+
+EDUCATION
+Master of Technology in Data Science
+Indian Institute of Technology | Madras | 2017-2019
+• GPA: 9.0/10
+• Specialization in Big Data Analytics
+• Relevant Coursework: Data Engineering, Machine Learning, Statistics
+
+Bachelor of Engineering in Computer Science
+Anna University | Chennai | 2013-2017
+• GPA: 8.6/10
+
+PROJECTS
+1. Real-time Analytics Platform
+   • Built end-to-end real-time analytics system
+   • Technologies: Spark Streaming, Kafka, Elasticsearch
+   • Features: Real-time processing, analytics, visualization
+   • Processes 5TB+ data daily
+
+2. Data Warehouse Migration
+   • Led migration from on-prem to cloud data warehouse
+   • Technologies: Snowflake, dbt, Airflow
+   • Reduced storage costs by 50%
+   • Improved query performance by 300%
+
+3. ML Feature Store
+   • Developed centralized feature store for ML models
+   • Technologies: Apache Spark, Delta Lake, MLflow
+   • Features: Feature versioning, sharing, monitoring
+   • Used by 50+ ML models in production
+
+ACHIEVEMENTS
+• Received "Data Excellence Award" at Capgemini
+• Published paper on data engineering best practices
+• Reduced data processing costs by $200K annually
+• Regular speaker at data engineering conferences
+
+CERTIFICATIONS
+• AWS Data Analytics Specialty
+• Databricks Certified Associate Developer
+• Google Cloud Professional Data Engineer
+• Snowflake SnowPro Core Certification
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Professional) 

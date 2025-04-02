@@ -1,0 +1,85 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: mid_level
+Title: Data Scientist Resume (Mid-Level)
+
+RAJESH KUMAR
+Bangalore, Karnataka
+rajesh.kumar@email.com | (555) 789-0123
+LinkedIn: linkedin.com/in/rajesh-kumar
+
+PROFESSIONAL SUMMARY
+Senior Data Scientist with 5 years of experience in machine learning and predictive analytics. Expertise in building enterprise-scale ML solutions and leading data science teams. Seeking to join TCS as a Senior Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, Scala
+• ML/AI: scikit-learn, TensorFlow, PyTorch
+• Big Data: Spark, Hadoop, Kafka
+• Cloud: AWS, Azure, GCP
+• Tools: Docker, Kubernetes, Git
+• Other: ML Ops, Data Pipeline, Model Deployment
+
+PROFESSIONAL EXPERIENCE
+
+Senior Data Scientist | Accenture | Bangalore | Jan 2021 - Present
+• Lead enterprise ML initiatives
+• Design and implement ML architecture
+• Mentor team of 8 data scientists
+• Drive technical decisions and best practices
+• Optimize system performance and scalability
+
+Data Scientist | Cognizant | Mumbai | Mar 2019 - Dec 2020
+• Developed predictive analytics models
+• Implemented distributed ML systems
+• Led model deployment initiatives
+• Mentored junior data scientists
+
+EDUCATION
+Master of Technology in Computer Science
+Indian Institute of Science | Bangalore | 2017-2019
+• GPA: 8.9/10
+• Specialization in Machine Learning
+• Thesis: "Scalable Machine Learning Systems"
+
+Bachelor of Technology in Computer Science
+National Institute of Technology | Surathkal | 2013-2017
+• GPA: 8.7/10
+• Specialization in Data Science
+
+PROJECTS
+1. Enterprise ML Platform
+   • Built scalable ML platform
+   • Technologies: Python, Spark, Kubernetes
+   • Features: Model training, deployment, monitoring
+   • Serves 100+ ML models
+
+2. Predictive Analytics System
+   • Developed real-time analytics system
+   • Technologies: TensorFlow, Kafka
+   • Features: Real-time predictions, alerts
+   • Processes 1M+ predictions daily
+
+3. Automated ML Pipeline
+   • Created end-to-end ML pipeline
+   • Technologies: Airflow, MLflow, Docker
+   • Features: Automated training, evaluation
+   • Reduced development time by 70%
+
+ACHIEVEMENTS
+• Received "Data Science Excellence Award" at Accenture
+• Led successful delivery of 5 ML projects
+• Improved model accuracy by 50%
+• Mentored 15+ junior data scientists
+• Published 3 technical papers
+
+CERTIFICATIONS
+• AWS Certified Machine Learning Specialty
+• Google Cloud Professional ML Engineer
+• Databricks Certified ML Engineer
+• Deep Learning Specialization - DeepLearning.AI
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

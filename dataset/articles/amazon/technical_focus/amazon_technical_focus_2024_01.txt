@@ -1,0 +1,209 @@
+Source: https://www.amazon.jobs/en/landing_pages/amazon-technical
+Date: 2024-03-31
+Category: technical_focus
+Title: Amazon's Technical Stack and Development Practices
+
+Amazon's technical stack and development practices are designed to support its scale, reliability, and innovation requirements. Here's a comprehensive overview:
+
+Core Technologies:
+1. Cloud Infrastructure
+   - AWS Services
+   - Distributed Systems
+   - Microservices Architecture
+   - Container Orchestration
+   - Serverless Computing
+
+2. Programming Languages
+   - Java
+   - Python
+   - JavaScript/TypeScript
+   - Go
+   - C++
+
+3. Frontend Technologies
+   - React.js
+   - Angular
+   - Vue.js
+   - Redux
+   - TypeScript
+
+4. Backend Technologies
+   - Node.js
+   - Spring Boot
+   - Django
+   - FastAPI
+   - Go
+
+Development Practices:
+1. Agile Methodology
+   - Sprint Planning
+   - Daily Standups
+   - Sprint Reviews
+   - Retrospectives
+   - Continuous Delivery
+
+2. DevOps Practices
+   - CI/CD Pipelines
+   - Infrastructure as Code
+   - Automated Testing
+   - Monitoring
+   - Logging
+
+3. Code Quality
+   - Code Reviews
+   - Static Analysis
+   - Unit Testing
+   - Integration Testing
+   - Performance Testing
+
+4. Security Practices
+   - Security Reviews
+   - Vulnerability Scanning
+   - Access Control
+   - Encryption
+   - Compliance
+
+Architecture Patterns:
+1. Microservices
+   - Service Independence
+   - API Design
+   - Service Discovery
+   - Load Balancing
+   - Fault Tolerance
+
+2. Event-Driven
+   - Message Queues
+   - Event Processing
+   - Stream Processing
+   - Real-time Analytics
+   - Event Sourcing
+
+3. Serverless
+   - Lambda Functions
+   - API Gateway
+   - Event Triggers
+   - Auto-scaling
+   - Cost Optimization
+
+4. Distributed Systems
+   - Data Replication
+   - Consistency
+   - Partitioning
+   - Load Distribution
+   - Fault Recovery
+
+Data Management:
+1. Databases
+   - Relational (RDS)
+   - NoSQL (DynamoDB)
+   - Document (MongoDB)
+   - Graph (Neptune)
+   - Time Series
+
+2. Data Processing
+   - ETL Pipelines
+   - Stream Processing
+   - Batch Processing
+   - Real-time Analytics
+   - Data Warehousing
+
+3. Caching
+   - In-Memory Cache
+   - Distributed Cache
+   - CDN
+   - Session Management
+   - Performance Optimization
+
+4. Data Security
+   - Encryption
+   - Access Control
+   - Audit Logging
+   - Data Protection
+   - Compliance
+
+Monitoring and Operations:
+1. Observability
+   - Metrics Collection
+   - Log Management
+   - Tracing
+   - Alerting
+   - Dashboarding
+
+2. Performance
+   - Load Testing
+   - Performance Monitoring
+   - Bottleneck Analysis
+   - Optimization
+   - Scaling
+
+3. Reliability
+   - High Availability
+   - Disaster Recovery
+   - Backup Systems
+   - Failover
+   - Resilience
+
+4. Maintenance
+   - System Updates
+   - Security Patches
+   - Performance Tuning
+   - Capacity Planning
+   - Documentation
+
+Development Tools:
+1. Version Control
+   - Git
+   - GitHub/GitLab
+   - Branch Management
+   - Code Review
+   - CI Integration
+
+2. Build Tools
+   - Maven
+   - Gradle
+   - npm
+   - Docker
+   - Kubernetes
+
+3. Testing Tools
+   - JUnit
+   - PyTest
+   - Jest
+   - Selenium
+   - Performance Testing
+
+4. Monitoring Tools
+   - CloudWatch
+   - Prometheus
+   - Grafana
+   - ELK Stack
+   - New Relic
+
+Best Practices:
+1. Code Standards
+   - Style Guides
+   - Documentation
+   - Code Reviews
+   - Testing
+   - Security
+
+2. Architecture
+   - Design Patterns
+   - Scalability
+   - Maintainability
+   - Security
+   - Performance
+
+3. Development
+   - Agile
+   - DevOps
+   - CI/CD
+   - Testing
+   - Monitoring
+
+4. Operations
+   - Monitoring
+   - Alerting
+   - Incident Response
+   - Capacity Planning
+   - Disaster Recovery 

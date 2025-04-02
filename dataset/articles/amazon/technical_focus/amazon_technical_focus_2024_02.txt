@@ -1,0 +1,209 @@
+Source: https://www.amazon.jobs/en/landing_pages/amazon-aws
+Date: 2024-03-31
+Category: technical_focus
+Title: Amazon's AWS and Cloud Infrastructure
+
+Amazon's cloud infrastructure and AWS services form the backbone of its technical operations. Here's a detailed look at Amazon's cloud and infrastructure focus:
+
+AWS Services:
+1. Compute Services
+   - EC2 (Elastic Compute Cloud)
+   - Lambda (Serverless)
+   - ECS/EKS (Container)
+   - Auto Scaling
+   - Batch Processing
+
+2. Storage Services
+   - S3 (Simple Storage Service)
+   - EBS (Elastic Block Store)
+   - EFS (Elastic File System)
+   - Glacier
+   - Storage Gateway
+
+3. Database Services
+   - RDS (Relational Database)
+   - DynamoDB (NoSQL)
+   - ElastiCache
+   - Neptune (Graph)
+   - DocumentDB
+
+4. Networking
+   - VPC (Virtual Private Cloud)
+   - Route 53 (DNS)
+   - CloudFront (CDN)
+   - API Gateway
+   - Direct Connect
+
+Cloud Architecture:
+1. High Availability
+   - Multi-AZ Deployment
+   - Load Balancing
+   - Auto Scaling
+   - Failover
+   - Disaster Recovery
+
+2. Security
+   - IAM (Identity Access)
+   - KMS (Key Management)
+   - WAF (Web Application Firewall)
+   - Shield
+   - Security Hub
+
+3. Monitoring
+   - CloudWatch
+   - X-Ray (Tracing)
+   - CloudTrail
+   - Config
+   - Health Dashboard
+
+4. Cost Optimization
+   - Cost Explorer
+   - Budgets
+   - Reserved Instances
+   - Spot Instances
+   - Savings Plans
+
+Infrastructure as Code:
+1. Automation
+   - CloudFormation
+   - Terraform
+   - Ansible
+   - Chef
+   - Puppet
+
+2. CI/CD
+   - CodePipeline
+   - CodeBuild
+   - CodeDeploy
+   - CodeCommit
+   - CodeArtifact
+
+3. Containerization
+   - Docker
+   - Kubernetes
+   - ECS
+   - EKS
+   - Fargate
+
+4. Serverless
+   - Lambda
+   - API Gateway
+   - Step Functions
+   - EventBridge
+   - SQS/SNS
+
+Cloud Security:
+1. Identity Management
+   - IAM Roles
+   - SSO
+   - MFA
+   - Access Control
+   - Permissions
+
+2. Network Security
+   - VPC Security
+   - NACLs
+   - Security Groups
+   - VPN
+   - Direct Connect
+
+3. Data Security
+   - Encryption
+   - KMS
+   - Secrets Manager
+   - Certificate Manager
+   - WAF
+
+4. Compliance
+   - Security Hub
+   - Config
+   - Audit Manager
+   - Artifact
+   - Compliance Reports
+
+Cloud Operations:
+1. Monitoring
+   - Metrics
+   - Logs
+   - Alerts
+   - Dashboards
+   - Reports
+
+2. Performance
+   - Load Testing
+   - Performance Tuning
+   - Auto Scaling
+   - Caching
+   - CDN
+
+3. Cost Management
+   - Budget Tracking
+   - Cost Optimization
+   - Resource Planning
+   - Usage Analysis
+   - Savings Opportunities
+
+4. Disaster Recovery
+   - Backup
+   - Recovery
+   - Failover
+   - Business Continuity
+   - Data Protection
+
+Cloud Development:
+1. Application Development
+   - Serverless Apps
+   - Container Apps
+   - Microservices
+   - API Development
+   - Web Applications
+
+2. DevOps Practices
+   - Infrastructure as Code
+   - CI/CD
+   - Monitoring
+   - Logging
+   - Automation
+
+3. Testing
+   - Load Testing
+   - Integration Testing
+   - Security Testing
+   - Performance Testing
+   - Compliance Testing
+
+4. Deployment
+   - Blue/Green
+   - Canary
+   - Rolling Updates
+   - Feature Flags
+   - A/B Testing
+
+Best Practices:
+1. Architecture
+   - Well-Architected Framework
+   - Design Patterns
+   - Scalability
+   - Security
+   - Cost Optimization
+
+2. Development
+   - Cloud-Native
+   - Serverless
+   - Microservices
+   - DevOps
+   - Automation
+
+3. Operations
+   - Monitoring
+   - Logging
+   - Alerting
+   - Incident Response
+   - Disaster Recovery
+
+4. Security
+   - Identity Management
+   - Network Security
+   - Data Protection
+   - Compliance
+   - Monitoring 

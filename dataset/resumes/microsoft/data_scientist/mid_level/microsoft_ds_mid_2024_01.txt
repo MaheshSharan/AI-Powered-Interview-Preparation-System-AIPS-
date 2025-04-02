@@ -1,0 +1,91 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: mid_level
+Title: Data Scientist Resume (Mid-Level)
+
+PRIYA SHARMA
+Bangalore, Karnataka
+priya.sharma@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/priya-sharma
+
+PROFESSIONAL SUMMARY
+Senior Data Scientist with 5 years of experience in machine learning and data analytics. Expertise in predictive modeling, deep learning, and big data processing. Seeking to join Microsoft as a Senior Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, SQL
+• Machine Learning: Scikit-learn, TensorFlow, PyTorch
+• Deep Learning: CNN, RNN, Transformers
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Hive
+• Cloud: AWS, Azure, GCP
+• Other: Git, Docker, Kubernetes
+
+PROFESSIONAL EXPERIENCE
+
+Senior Data Scientist | Amazon | Bangalore | Jan 2021 - Present
+• Lead team of 5 data scientists
+• Architect ML solutions
+• Drive technical strategy
+• Mentor junior team members
+• Optimize model performance
+• Achievements:
+  - Reduced prediction error by 60%
+  - Improved model efficiency by 45%
+  - Led 5 major projects to completion
+
+Data Scientist | Google | Hyderabad | Jun 2018 - Dec 2020
+• Developed ML models
+• Created data pipelines
+• Implemented analytics
+• Mentored interns
+
+EDUCATION
+Master of Science in Data Science
+Indian Institute of Science | Bangalore | 2016-2018
+• GPA: 8.9/10
+• Specialization in Machine Learning
+• Thesis: "Deep Learning for Computer Vision"
+
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Delhi | 2012-2016
+• GPA: 8.8/10
+• Specialization in Data Science
+
+PROJECTS
+1. Computer Vision System
+   • Built vision model
+   • Tools: TensorFlow, PyTorch, OpenCV
+   • Features: Object detection, classification
+   • Achieved 98% accuracy
+
+2. Predictive Analytics Platform
+   • Developed analytics system
+   • Tools: Scikit-learn, Pandas, NumPy
+   • Features: Time series forecasting
+   • Improved predictions by 65%
+
+3. Big Data Processing Pipeline
+   • Created data pipeline
+   • Tools: Hadoop, Spark, Hive
+   • Features: Data processing, analytics
+   • Processed 5TB+ data daily
+
+ACHIEVEMENTS
+• Received "Data Science Excellence Award" at Amazon
+• Led successful delivery of 8 projects
+• Improved model accuracy by 60%
+• Mentored 15 junior data scientists
+• Published 5 technical papers
+• Patented ML algorithm
+
+CERTIFICATIONS
+• Microsoft Azure Data Scientist
+• TensorFlow Developer Certificate
+• AWS Machine Learning Specialty
+• Google Cloud Professional Data Engineer
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

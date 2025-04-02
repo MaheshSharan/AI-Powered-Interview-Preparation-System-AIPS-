@@ -1,0 +1,84 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: product_manager
+Experience: junior
+Title: Product Manager Resume (Junior)
+
+NEHA REDDY
+Hyderabad, Telangana
+neha.reddy@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/neha-reddy
+
+PROFESSIONAL SUMMARY
+Product Manager with 2 years of experience in digital transformation and product strategy. Expertise in agile methodologies and product analytics. Seeking to join TCS as a Product Manager.
+
+TECHNICAL SKILLS
+• Product Management: Agile, Scrum, Kanban
+• Analytics: SQL, Tableau, Power BI
+• Tools: Jira, Confluence, Figma
+• Market Research: User Research, Competitor Analysis
+• Other: Product Strategy, User Experience
+
+PROFESSIONAL EXPERIENCE
+
+Product Manager | HCL Technologies | Hyderabad | Feb 2023 - Present
+• Lead digital transformation initiatives
+• Design and implement product strategy
+• Mentor team of 4 junior product managers
+• Drive product decisions and best practices
+• Optimize product performance and user experience
+
+Associate Product Manager | Persistent Systems | Pune | Apr 2022 - Jan 2023
+• Developed product roadmaps
+• Implemented agile methodologies
+• Created product specifications
+• Participated in product planning
+
+EDUCATION
+Master of Business Administration
+Indian Institute of Management | Hyderabad | 2020-2022
+• GPA: 8.9/10
+• Specialization in Product Management
+• Thesis: "Digital Transformation Strategy"
+
+Bachelor of Technology in Computer Science
+Vellore Institute of Technology | Vellore | 2016-2020
+• GPA: 8.8/10
+• Specialization in Software Engineering
+
+PROJECTS
+1. Digital Transformation Platform
+   • Built transformation platform
+   • Tools: Jira, Confluence, Analytics
+   • Features: Process automation, analytics
+   • Improved efficiency by 50%
+
+2. Product Analytics Dashboard
+   • Developed analytics platform
+   • Tools: SQL, Tableau, Python
+   • Features: KPI tracking, reporting
+   • Used by 300+ stakeholders
+
+3. Agile Implementation Framework
+   • Created agile methodology
+   • Tools: Confluence, Miro
+   • Features: Sprint planning, tracking
+   • Streamlined development process
+
+ACHIEVEMENTS
+• Received "Digital Innovation Award" at HCL
+• Led successful delivery of 4 products
+• Improved user engagement by 40%
+• Mentored 6 junior product managers
+• Published 3 technical papers
+
+CERTIFICATIONS
+• Certified Product Manager - Product School
+• Agile Certified Product Manager
+• Microsoft Power BI Certification
+• Product Strategy Certification
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

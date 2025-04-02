@@ -1,0 +1,78 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: junior
+Title: Associate Software Engineer Resume (Junior)
+
+NEHA VERMA
+Pune, Maharashtra
+neha.verma@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/nehaverma
+
+PROFESSIONAL SUMMARY
+Software Engineer with 2.5 years of experience in full-stack development and cloud technologies. Proven track record of developing and maintaining enterprise applications. Seeking to join TCS as an Associate Software Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: React.js, Node.js, Express.js
+• Cloud: AWS, Azure
+• Databases: MySQL, MongoDB, Redis
+• Tools: Git, Docker, Kubernetes
+• Other: Microservices, REST APIs, CI/CD
+
+PROFESSIONAL EXPERIENCE
+
+Software Engineer | Tech Solutions Pvt. Ltd. | Pune | Jan 2022 - Present
+• Developed and maintained microservices-based applications
+• Implemented CI/CD pipelines using Jenkins and Docker
+• Collaborated with cross-functional teams on feature development
+• Mentored junior developers and conducted code reviews
+• Reduced application deployment time by 40%
+
+Junior Software Engineer | Digital Innovations | Bangalore | Jul 2021 - Dec 2021
+• Developed full-stack web applications
+• Implemented responsive design and user interfaces
+• Worked on bug fixing and performance optimization
+• Participated in agile development practices
+
+EDUCATION
+Bachelor of Technology in Computer Science
+College of Engineering | Pune, Maharashtra | 2017-2021
+• GPA: 8.6/10
+• Specialization in Software Engineering
+• Relevant Coursework: Data Structures, Algorithms, Database Management
+
+PROJECTS
+1. Enterprise Resource Planning System
+   • Developed a cloud-based ERP system
+   • Technologies: Java, Spring Boot, React, AWS
+   • Features: Inventory management, HR management, Finance tracking
+   • Improved system efficiency by 30%
+
+2. Customer Relationship Management
+   • Built a CRM platform for small businesses
+   • Technologies: Node.js, Express, MongoDB, React
+   • Features: Customer tracking, sales pipeline, reporting
+   • Increased customer satisfaction by 25%
+
+3. E-commerce Platform
+   • Created a scalable e-commerce solution
+   • Technologies: Python, Django, Vue.js, PostgreSQL
+   • Features: Product management, order processing, payment integration
+   • Handled 1000+ concurrent users
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Tech Solutions
+• Successfully delivered 3 major projects ahead of schedule
+• Improved code quality by implementing best practices
+• Active participant in technical workshops and conferences
+
+CERTIFICATIONS
+• AWS Certified Developer - Associate
+• Oracle Certified Professional, Java SE 11 Developer
+• Docker Certified Associate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Conversational) 

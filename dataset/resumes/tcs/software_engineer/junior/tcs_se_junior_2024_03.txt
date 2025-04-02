@@ -1,0 +1,80 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: junior
+Title: Software Engineer Resume (Junior)
+
+ADITYA KUMAR
+Bangalore, Karnataka
+aditya.kumar@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/adityakumar
+
+PROFESSIONAL SUMMARY
+Software Engineer with 2 years of experience in DevOps and cloud infrastructure. Expertise in automation, containerization, and CI/CD pipelines. Strong track record of improving deployment efficiency and system reliability. Seeking to join TCS as a Software Engineer.
+
+TECHNICAL SKILLS
+• Cloud: AWS, Azure, GCP
+• DevOps: Docker, Kubernetes, Terraform
+• CI/CD: Jenkins, GitLab CI, GitHub Actions
+• Monitoring: Prometheus, Grafana, ELK Stack
+• Scripting: Python, Shell, PowerShell
+• Other: Infrastructure as Code, Security, Automation
+
+PROFESSIONAL EXPERIENCE
+
+DevOps Engineer | Mindtree | Bangalore | Apr 2022 - Present
+• Design and implement cloud infrastructure
+• Automate deployment and scaling processes
+• Monitor and optimize system performance
+• Lead DevOps initiatives for 3 projects
+• Implement security and compliance measures
+
+Junior Software Engineer | Persistent Systems | Pune | Aug 2021 - Mar 2022
+• Developed automation scripts for deployment
+• Managed cloud resources and monitoring
+• Implemented CI/CD pipelines
+• Participated in infrastructure planning
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Manipal Institute of Technology | Manipal | 2017-2021
+• GPA: 8.8/10
+• Specialization in Cloud Computing
+• Relevant Coursework: Cloud Architecture, DevOps, System Administration
+
+PROJECTS
+1. Automated Deployment Platform
+   • Built end-to-end deployment automation
+   • Technologies: Jenkins, Docker, Kubernetes
+   • Features: Zero-downtime deployment, rollback
+   • Reduced deployment time by 80%
+
+2. Infrastructure Monitoring System
+   • Developed comprehensive monitoring solution
+   • Technologies: Prometheus, Grafana, ELK
+   • Features: Real-time alerts, dashboards
+   • Monitors 100+ microservices
+
+3. Security Compliance Automation
+   • Created automated security scanning
+   • Technologies: Python, AWS Security Hub
+   • Features: Vulnerability scanning, compliance checks
+   • Improved security posture by 60%
+
+ACHIEVEMENTS
+• Received "DevOps Excellence Award" at Mindtree
+• Reduced infrastructure costs by 40%
+• Improved system uptime to 99.99%
+• Mentored 2 junior DevOps engineers
+• Published technical articles on DevOps
+
+CERTIFICATIONS
+• AWS Certified DevOps Engineer
+• Certified Kubernetes Administrator
+• Azure DevOps Engineer Expert
+• Terraform Certified Associate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

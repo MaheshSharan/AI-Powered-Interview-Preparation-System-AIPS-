@@ -1,0 +1,82 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: cloud_solutions_architect
+Experience: junior
+Title: Cloud Solutions Architect Resume (Junior)
+
+NEHA REDDY
+Hyderabad, Telangana
+neha.reddy@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/neha-reddy
+
+PROFESSIONAL SUMMARY
+Cloud Solutions Architect with 2 years of experience in cloud architecture and infrastructure design. Expertise in Azure, AWS, and GCP solutions. Seeking to join Microsoft as a Cloud Solutions Architect.
+
+TECHNICAL SKILLS
+• Cloud Platforms: Azure, AWS, GCP
+• Infrastructure: Docker, Kubernetes, Terraform
+• Networking: VPC, VPN, Load Balancing
+• Security: IAM, Encryption, Compliance
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Cloud Solutions Architect | Amazon | Hyderabad | Feb 2023 - Present
+• Lead cloud architecture design
+• Implement infrastructure solutions
+• Mentor team of 4 junior architects
+• Drive technical decisions
+• Optimize cloud costs
+• Achievements:
+  - Reduced cloud costs by 55%
+  - Improved system availability by 50%
+  - Led 4 major projects to completion
+
+Cloud Architecture Intern | Google | Bangalore | Jul 2022 - Jan 2023
+• Designed cloud solutions
+• Implemented infrastructure
+• Optimized performance
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2018-2022
+• GPA: 8.9/10
+• Specialization in Cloud Computing
+• Thesis: "Cloud Security Architecture"
+
+PROJECTS
+1. Enterprise Cloud Platform
+   • Designed enterprise architecture
+   • Tools: Azure, AWS, Terraform
+   • Features: High availability, scalability
+   • Reduced costs by 60%
+
+2. Container Orchestration Platform
+   • Built container platform
+   • Tools: Kubernetes, Docker, Helm
+   • Features: Auto-scaling, monitoring
+   • Improved efficiency by 65%
+
+3. Cloud Security Framework
+   • Created security framework
+   • Tools: Azure Security Center, AWS Shield
+   • Features: Threat detection, compliance
+   • Enhanced security by 70%
+
+ACHIEVEMENTS
+• Received "Cloud Architecture Excellence Award" at Amazon
+• Led successful delivery of 5 projects
+• Improved system performance by 55%
+• Mentored 6 junior architects
+• Published 3 technical papers
+
+CERTIFICATIONS
+• Microsoft Azure Solutions Architect
+• AWS Certified Solutions Architect
+• Google Cloud Professional Architect
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

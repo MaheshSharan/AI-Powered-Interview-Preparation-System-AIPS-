@@ -1,0 +1,80 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+RAHUL KUMAR
+Delhi, NCR
+rahul.kumar@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/rahul-kumar
+
+PROFESSIONAL SUMMARY
+Recent graduate with expertise in big data analytics and machine learning. Specialized in deep learning and computer vision applications. Seeking to join TCS as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, Java
+• ML/AI: TensorFlow, PyTorch, OpenCV
+• Big Data: Spark, Hadoop, Kafka
+• Cloud: AWS, Google Cloud, Azure
+• Tools: Docker, Kubernetes, Git
+• Other: Computer Vision, Deep Learning
+
+EDUCATION
+Master of Technology in Computer Science
+Indian Institute of Technology | Delhi | 2023-2025
+• GPA: 8.8/10
+• Specialization in AI and ML
+• Thesis: "Deep Learning for Object Detection"
+
+Bachelor of Technology in Computer Science
+Delhi Technological University | Delhi | 2019-2023
+• GPA: 8.6/10
+• Specialization in Artificial Intelligence
+
+PROJECTS
+1. Real-time Object Detection System
+   • Built computer vision system
+   • Technologies: PyTorch, OpenCV, TensorRT
+   • Features: Real-time detection, tracking
+   • Processes 30+ FPS on edge devices
+
+2. Big Data Analytics Platform
+   • Developed data processing pipeline
+   • Technologies: Spark, Kafka, Elasticsearch
+   • Features: Stream processing, analytics
+   • Handles 1TB+ daily data
+
+3. Image Classification Model
+   • Created CNN-based classifier
+   • Technologies: TensorFlow, Keras
+   • Features: Transfer learning, optimization
+   • 95% accuracy on test set
+
+INTERNSHIPS
+AI Research Intern | Microsoft | Bangalore | Jul 2024 - Sep 2024
+• Developed computer vision models
+• Implemented model optimization
+• Created automated training pipeline
+
+Data Science Intern | IBM | Delhi | Apr 2024 - Jun 2024
+• Built predictive analytics models
+• Implemented ML pipelines
+• Developed monitoring system
+
+ACHIEVEMENTS
+• Winner of Computer Vision Challenge 2024
+• Published paper on deep learning
+• Top 10 in Kaggle competition
+• Active in AI research community
+
+CERTIFICATIONS
+• TensorFlow Developer Certificate
+• AWS Machine Learning Specialty
+• Google Cloud Professional ML Engineer
+• Deep Learning Specialization - DeepLearning.AI
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Punjabi (Native) 

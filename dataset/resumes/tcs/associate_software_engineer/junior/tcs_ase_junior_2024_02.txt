@@ -1,0 +1,78 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: junior
+Title: Associate Software Engineer Resume (Junior)
+
+ARJUN REDDY
+Hyderabad, Telangana
+arjun.reddy@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/arjunreddy
+
+PROFESSIONAL SUMMARY
+Software Engineer with 2 years of experience specializing in backend development and database management. Strong expertise in building scalable APIs and optimizing database performance. Seeking to join TCS as an Associate Software Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, Go
+• Backend: Spring Boot, Django, FastAPI
+• Databases: PostgreSQL, MongoDB, Cassandra
+• Tools: Git, Docker, Jenkins
+• Cloud: AWS, GCP
+• Other: RESTful APIs, Microservices, Message Queues
+
+PROFESSIONAL EXPERIENCE
+
+Backend Engineer | Mindtree | Hyderabad | Feb 2022 - Present
+• Designed and developed RESTful APIs using Spring Boot
+• Optimized database queries reducing response time by 50%
+• Implemented caching solutions using Redis
+• Developed microservices architecture for new features
+• Handled database migrations and schema updates
+
+Junior Backend Developer | Persistent Systems | Pune | Jan 2021 - Jan 2022
+• Developed backend services using Python and Django
+• Implemented data validation and error handling
+• Created automated test suites for API endpoints
+• Participated in code reviews and documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+BITS Pilani | Hyderabad Campus | 2016-2020
+• GPA: 8.4/10
+• Specialization in Database Management
+• Relevant Coursework: Advanced Databases, System Design, API Development
+
+PROJECTS
+1. High-Performance API Gateway
+   • Developed a scalable API gateway
+   • Technologies: Go, Redis, PostgreSQL
+   • Features: Rate limiting, caching, load balancing
+   • Handled 10,000+ requests per second
+
+2. Database Migration Tool
+   • Built an automated database migration system
+   • Technologies: Python, PostgreSQL, MongoDB
+   • Features: Schema migration, data validation, rollback
+   • Reduced migration time by 60%
+
+3. Message Queue System
+   • Implemented a distributed message queue
+   • Technologies: Java, RabbitMQ, Redis
+   • Features: Async processing, retry mechanism, monitoring
+   • Processed 1M+ messages per day
+
+ACHIEVEMENTS
+• Received "Rising Star Award" at Mindtree
+• Optimized critical API reducing latency by 70%
+• Led successful database migration project
+• Regular speaker at backend development meetups
+
+CERTIFICATIONS
+• MongoDB Certified Developer Associate
+• AWS Certified Solutions Architect
+• Spring Framework Certified Professional
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Professional) 

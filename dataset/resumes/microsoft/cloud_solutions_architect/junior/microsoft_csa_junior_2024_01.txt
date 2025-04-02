@@ -1,0 +1,82 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: cloud_solutions_architect
+Experience: junior
+Title: Cloud Solutions Architect Resume (Junior)
+
+RAHUL VERMA
+Bangalore, Karnataka
+rahul.verma@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/rahul-verma
+
+PROFESSIONAL SUMMARY
+Cloud Solutions Architect with 2 years of experience in cloud architecture and infrastructure design. Expertise in Azure, AWS, and GCP solutions. Seeking to join Microsoft as a Cloud Solutions Architect.
+
+TECHNICAL SKILLS
+• Cloud Platforms: Azure, AWS, GCP
+• Infrastructure: Docker, Kubernetes, Terraform
+• Networking: VPC, VPN, Load Balancing
+• Security: IAM, Encryption, Compliance
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Cloud Solutions Architect | Amazon | Bangalore | Jan 2023 - Present
+• Lead cloud architecture design
+• Implement infrastructure solutions
+• Mentor team of 3 junior architects
+• Drive technical decisions
+• Optimize cloud costs
+• Achievements:
+  - Reduced cloud costs by 50%
+  - Improved system availability by 45%
+  - Led 3 major projects to completion
+
+Cloud Architecture Intern | Google | Hyderabad | Jun 2022 - Dec 2022
+• Designed cloud solutions
+• Implemented infrastructure
+• Optimized performance
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2018-2022
+• GPA: 8.8/10
+• Specialization in Cloud Computing
+• Thesis: "Cloud-Native Architecture"
+
+PROJECTS
+1. Enterprise Cloud Platform
+   • Designed enterprise architecture
+   • Tools: Azure, AWS, Terraform
+   • Features: High availability, scalability
+   • Reduced costs by 55%
+
+2. Container Orchestration Platform
+   • Built container platform
+   • Tools: Kubernetes, Docker, Helm
+   • Features: Auto-scaling, monitoring
+   • Improved efficiency by 60%
+
+3. Cloud Security Framework
+   • Created security framework
+   • Tools: Azure Security Center, AWS Shield
+   • Features: Threat detection, compliance
+   • Enhanced security by 65%
+
+ACHIEVEMENTS
+• Received "Cloud Architecture Excellence Award" at Amazon
+• Led successful delivery of 4 projects
+• Improved system performance by 50%
+• Mentored 5 junior architects
+• Published 2 technical papers
+
+CERTIFICATIONS
+• Microsoft Azure Solutions Architect
+• AWS Certified Solutions Architect
+• Google Cloud Professional Architect
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

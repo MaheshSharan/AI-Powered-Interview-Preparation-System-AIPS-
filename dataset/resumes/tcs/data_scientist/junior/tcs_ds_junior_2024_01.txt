@@ -1,0 +1,85 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: junior
+Title: Data Scientist Resume (Junior)
+
+AMIT PATEL
+Bangalore, Karnataka
+amit.patel@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/amit-patel
+
+PROFESSIONAL SUMMARY
+Data Scientist with 2 years of experience in machine learning and predictive analytics. Expertise in building scalable ML solutions and leading data science initiatives. Seeking to join TCS as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, SQL
+• ML/AI: scikit-learn, TensorFlow, PyTorch
+• Big Data: Spark, Hadoop, Kafka
+• Cloud: AWS, Azure, GCP
+• Tools: Docker, Kubernetes, Git
+• Other: ML Ops, Data Pipeline, Model Deployment
+
+PROFESSIONAL EXPERIENCE
+
+Data Scientist | Wipro | Bangalore | Jan 2023 - Present
+• Lead ML model development and deployment
+• Design and implement data pipelines
+• Mentor team of 3 junior data scientists
+• Drive technical decisions and best practices
+• Optimize model performance and scalability
+
+Junior Data Scientist | Tech Mahindra | Mumbai | Mar 2022 - Dec 2022
+• Developed predictive analytics models
+• Implemented ML pipelines
+• Created automated testing framework
+• Participated in model deployment
+
+EDUCATION
+Master of Technology in Computer Science
+Indian Institute of Science | Bangalore | 2020-2022
+• GPA: 8.8/10
+• Specialization in Machine Learning
+• Thesis: "Scalable Machine Learning Systems"
+
+Bachelor of Technology in Computer Science
+National Institute of Technology | Surathkal | 2016-2020
+• GPA: 8.7/10
+• Specialization in Data Science
+
+PROJECTS
+1. Predictive Maintenance System
+   • Built ML-based maintenance predictor
+   • Technologies: Python, scikit-learn, TensorFlow
+   • Features: Real-time monitoring, alerts
+   • Reduced downtime by 40%
+
+2. Customer Segmentation Platform
+   • Developed clustering-based segmentation
+   • Technologies: Spark, scikit-learn
+   • Features: Automated clustering, visualization
+   • Segments 1M+ customers
+
+3. Fraud Detection System
+   • Created anomaly detection system
+   • Technologies: PyTorch, TensorFlow
+   • Features: Real-time detection, scoring
+   • Detects 95% of fraudulent transactions
+
+ACHIEVEMENTS
+• Received "Data Science Excellence Award" at Wipro
+• Led successful delivery of 3 ML projects
+• Improved model accuracy by 35%
+• Mentored 5 junior data scientists
+• Published 2 technical papers
+
+CERTIFICATIONS
+• AWS Certified Machine Learning Specialty
+• Google Cloud Professional ML Engineer
+• Databricks Certified ML Engineer
+• Deep Learning Specialization - DeepLearning.AI
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

@@ -1,0 +1,80 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+PRIYA RAJAN
+Chennai, Tamil Nadu
+priya.rajan@email.com | (555) 345-6789
+LinkedIn: linkedin.com/in/priya-rajan
+
+PROFESSIONAL SUMMARY
+Recent graduate with expertise in natural language processing and machine learning. Specialized in building scalable AI solutions and data pipelines. Seeking to join TCS as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, Scala
+• ML/AI: Transformers, BERT, GPT
+• NLP: NLTK, spaCy, Hugging Face
+• Cloud: AWS, Google Cloud, Azure
+• Tools: MLflow, DVC, Git
+• Other: NLP, Machine Learning Ops
+
+EDUCATION
+Master of Technology in Computer Science
+Anna University | Chennai | 2023-2025
+• GPA: 8.7/10
+• Specialization in NLP and ML
+• Thesis: "Advanced Language Models for Text Classification"
+
+Bachelor of Technology in Computer Science
+PSG College of Technology | Coimbatore | 2019-2023
+• GPA: 8.5/10
+• Specialization in Artificial Intelligence
+
+PROJECTS
+1. Multilingual Text Classification
+   • Built NLP model for multiple languages
+   • Technologies: Transformers, PyTorch
+   • Features: Zero-shot learning, transfer learning
+   • Supports 10+ languages
+
+2. Automated Data Pipeline
+   • Created MLOps pipeline
+   • Technologies: MLflow, DVC, Airflow
+   • Features: Version control, experiment tracking
+   • Reduced development time by 40%
+
+3. Sentiment Analysis API
+   • Developed RESTful API service
+   • Technologies: FastAPI, Transformers
+   • Features: Real-time analysis, batch processing
+   • Handles 1000+ requests per second
+
+INTERNSHIPS
+NLP Research Intern | Google | Bangalore | Aug 2024 - Oct 2024
+• Developed language models
+• Implemented model optimization
+• Created evaluation framework
+
+Data Science Intern | Amazon | Chennai | May 2024 - Jul 2024
+• Built recommendation system
+• Implemented A/B testing
+• Developed monitoring system
+
+ACHIEVEMENTS
+• Winner of NLP Challenge 2024
+• Published paper on language models
+• Top 5 in Kaggle competition
+• Active in NLP community
+
+CERTIFICATIONS
+• Google Cloud Professional ML Engineer
+• AWS Machine Learning Specialty
+• Deep Learning Specialization - DeepLearning.AI
+• Natural Language Processing Specialization
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Malayalam (Native) 

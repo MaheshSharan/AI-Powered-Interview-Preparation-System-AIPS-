@@ -1,0 +1,75 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: fresher
+Title: Associate Software Engineer Resume (Fresher)
+
+AMIT PATEL
+Chennai, Tamil Nadu
+amit.patel@email.com | (555) 345-6789
+LinkedIn: linkedin.com/in/amitpatel
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in full-stack development and cloud technologies. Strong problem-solving skills and passion for creating efficient, scalable solutions. Seeking to start career as an Associate Software Engineer at TCS.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: HTML5, CSS3, Vue.js
+• Cloud: AWS, Azure
+• Databases: MySQL, MongoDB, Redis
+• Tools: Git, VS Code, Jenkins
+• Other: Microservices, REST APIs, CI/CD
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Anna University | Chennai, Tamil Nadu | 2020-2024
+• GPA: 8.7/10
+• Specialization in Cloud Computing
+• Relevant Coursework: Cloud Architecture, Distributed Systems, Software Testing, DevOps
+
+PROJECTS
+1. Cloud-based E-Learning Platform
+   • Developed a scalable e-learning platform
+   • Technologies: AWS, React, Node.js, MongoDB
+   • Features: Video streaming, quiz system, progress tracking
+   • Implemented auto-scaling and load balancing
+
+2. Inventory Management System
+   • Built a cloud-native inventory management system
+   • Technologies: Spring Boot, Vue.js, PostgreSQL
+   • Features: Real-time stock updates, order management, analytics
+   • Deployed on Azure
+
+3. Social Media Analytics Tool
+   • Created a social media analytics dashboard
+   • Technologies: Python, Flask, D3.js
+   • Features: Data collection, sentiment analysis, visualization
+   • Integrated with multiple social media APIs
+
+INTERNSHIPS
+Cloud Development Intern | HCL Technologies | Chennai | Aug 2023 - Oct 2023
+• Developed cloud-native applications
+• Implemented CI/CD pipelines
+• Learned cloud architecture best practices
+
+Software Development Intern | Cognizant | Chennai | May 2023 - Jul 2023
+• Worked on microservices development
+• Implemented automated testing
+• Learned agile methodologies
+
+ACHIEVEMENTS
+• First Class with Distinction in B.Tech
+• Winner of Cloud Computing Hackathon
+• Active participant in cloud computing workshops
+• Member of College Cloud Computing Club
+• Completed multiple cloud certifications
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate
+• Azure Fundamentals
+• Google Cloud Platform Fundamentals
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

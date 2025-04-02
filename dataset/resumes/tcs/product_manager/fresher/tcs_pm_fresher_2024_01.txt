@@ -1,0 +1,79 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: product_manager
+Experience: fresher
+Title: Product Manager Resume (Fresher)
+
+MEERA PATEL
+Mumbai, Maharashtra
+meera.patel@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/meera-patel
+
+PROFESSIONAL SUMMARY
+Recent graduate with strong foundation in product management and business analytics. Specialized in user experience and product strategy. Seeking to join TCS as a Product Manager.
+
+TECHNICAL SKILLS
+• Product Management: Agile, Scrum, Kanban
+• Analytics: SQL, Tableau, Google Analytics
+• Tools: Jira, Confluence, Figma
+• Market Research: User Research, Competitor Analysis
+• Other: Product Strategy, User Experience
+
+EDUCATION
+Master of Business Administration
+Indian Institute of Management | Ahmedabad | 2023-2025
+• GPA: 8.9/10
+• Specialization in Product Management
+• Thesis: "Product Strategy in Digital Transformation"
+
+Bachelor of Technology in Computer Science
+Vellore Institute of Technology | Vellore | 2019-2023
+• GPA: 8.7/10
+• Specialization in Software Engineering
+
+PROJECTS
+1. E-commerce App Redesign
+   • Led product redesign initiative
+   • Tools: Figma, Jira, Analytics
+   • Features: User research, wireframing
+   • Improved user engagement by 40%
+
+2. Market Analysis Platform
+   • Built market research tool
+   • Tools: SQL, Tableau, Python
+   • Features: Competitor tracking, analytics
+   • Used by 100+ stakeholders
+
+3. Product Strategy Framework
+   • Created product planning system
+   • Tools: Confluence, Miro
+   • Features: Roadmapping, prioritization
+   • Streamlined product development
+
+INTERNSHIPS
+Product Management Intern | Amazon | Bangalore | Jun 2024 - Aug 2024
+• Developed product roadmap
+• Conducted user research
+• Created product specifications
+
+Business Analyst Intern | Flipkart | Mumbai | Jan 2024 - Mar 2024
+• Analyzed market trends
+• Created business reports
+• Developed product metrics
+
+ACHIEVEMENTS
+• Winner of Product Strategy Case Competition 2024
+• Published article on product management
+• Top performer in academic projects
+• Active in product management community
+
+CERTIFICATIONS
+• Certified Product Manager - Product School
+• Agile Certified Product Manager
+• Google Analytics Certification
+• Product Strategy Certification
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Gujarati (Native) 

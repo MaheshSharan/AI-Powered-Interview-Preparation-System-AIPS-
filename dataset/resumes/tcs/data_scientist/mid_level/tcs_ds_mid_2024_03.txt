@@ -1,0 +1,85 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: mid_level
+Title: Data Scientist Resume (Mid-Level)
+
+ARUN KRISHNAN
+Chennai, Tamil Nadu
+arun.krishnan@email.com | (555) 901-2345
+LinkedIn: linkedin.com/in/arun-krishnan
+
+PROFESSIONAL SUMMARY
+Senior Data Scientist with 5 years of experience in natural language processing and machine learning. Expertise in building scalable NLP solutions and leading technical teams. Seeking to join TCS as a Senior Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, Scala
+• ML/AI: Transformers, BERT, GPT
+• NLP: NLTK, spaCy, Hugging Face
+• Cloud: AWS, Google Cloud, Azure
+• Tools: MLflow, DVC, Git
+• Other: NLP, Machine Learning Ops
+
+PROFESSIONAL EXPERIENCE
+
+Senior Data Scientist | Zoho | Chennai | Mar 2021 - Present
+• Lead NLP initiatives
+• Design and implement ML architecture
+• Mentor team of 7 data scientists
+• Drive technical decisions and best practices
+• Optimize model performance and efficiency
+
+Data Scientist | Freshworks | Bangalore | Jun 2019 - Feb 2021
+• Developed NLP models
+• Implemented ML pipelines
+• Led model deployment initiatives
+• Mentored junior data scientists
+
+EDUCATION
+Master of Technology in Computer Science
+Anna University | Chennai | 2017-2019
+• GPA: 8.9/10
+• Specialization in NLP and ML
+• Thesis: "Advanced Language Models for Text Classification"
+
+Bachelor of Technology in Computer Science
+PSG College of Technology | Coimbatore | 2013-2017
+• GPA: 8.8/10
+• Specialization in Artificial Intelligence
+
+PROJECTS
+1. Multilingual NLP Platform
+   • Built enterprise NLP platform
+   • Technologies: Transformers, PyTorch
+   • Features: Zero-shot learning, transfer learning
+   • Supports 10+ languages
+
+2. Sentiment Analysis System
+   • Developed sentiment analyzer
+   • Technologies: BERT, FastAPI
+   • Features: Real-time analysis, batch processing
+   • Handles 1000+ requests per second
+
+3. Question Answering System
+   • Created QA system
+   • Technologies: GPT, Transformers
+   • Features: Context understanding, answer generation
+   • 85% accuracy on test set
+
+ACHIEVEMENTS
+• Received "NLP Excellence Award" at Zoho
+• Led successful delivery of 5 NLP projects
+• Improved model accuracy by 40%
+• Mentored 10+ junior data scientists
+• Published 3 technical papers
+
+CERTIFICATIONS
+• Google Cloud Professional ML Engineer
+• AWS Machine Learning Specialty
+• Deep Learning Specialization - DeepLearning.AI
+• Natural Language Processing Specialization
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Malayalam (Native) 

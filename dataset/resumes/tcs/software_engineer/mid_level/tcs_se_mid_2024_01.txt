@@ -1,0 +1,85 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: mid_level
+Title: Software Engineer Resume (Mid-Level)
+
+RAHUL VERMA
+Mumbai, Maharashtra
+rahul.verma@email.com | (555) 678-9012
+LinkedIn: linkedin.com/in/rahulverma
+
+PROFESSIONAL SUMMARY
+Senior Software Engineer with 5 years of experience in enterprise software development and architecture. Expertise in designing scalable systems and leading technical teams. Strong track record of delivering complex projects and mentoring junior developers. Seeking to join TCS as a Senior Software Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, Scala
+• Frameworks: Spring Boot, Apache Spark, Akka
+• Databases: Oracle, Cassandra, Redis
+• Cloud: AWS, Azure, GCP
+• Tools: Docker, Kubernetes, Terraform
+• Other: Microservices, Event-driven Architecture, Big Data
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | Accenture | Mumbai | Jan 2021 - Present
+• Lead technical architecture for enterprise applications
+• Design and implement microservices architecture
+• Mentor team of 8 developers
+• Drive technical decisions and best practices
+• Optimize system performance and scalability
+
+Software Engineer | Cognizant | Bangalore | Mar 2019 - Dec 2020
+• Developed high-performance backend services
+• Implemented distributed systems architecture
+• Led migration to cloud-native platform
+• Mentored junior developers
+
+EDUCATION
+Master of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2017-2019
+• GPA: 8.9/10
+• Specialization in Distributed Systems
+• Thesis: "Scalable Event Processing in Microservices"
+
+Bachelor of Technology in Computer Science
+National Institute of Technology | Surathkal | 2013-2017
+• GPA: 8.7/10
+• Specialization in Software Engineering
+
+PROJECTS
+1. Real-time Analytics Platform
+   • Architected and implemented big data platform
+   • Technologies: Apache Spark, Kafka, Cassandra
+   • Features: Real-time processing, analytics
+   • Processes 1TB+ daily data
+
+2. Microservices Migration
+   • Led migration of legacy system to microservices
+   • Technologies: Spring Cloud, Docker, Kubernetes
+   • Features: Service discovery, load balancing
+   • Improved scalability by 500%
+
+3. Event-driven Architecture
+   • Designed event processing system
+   • Technologies: Apache Kafka, Akka
+   • Features: Event sourcing, CQRS
+   • Handles 1M+ events per second
+
+ACHIEVEMENTS
+• Received "Technical Excellence Award" at Accenture
+• Led successful delivery of 5 major projects
+• Reduced system latency by 70%
+• Mentored 15+ junior developers
+• Published 3 technical papers
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect Professional
+• Google Cloud Professional Architect
+• Apache Spark Certified Developer
+• Certified Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Native) 

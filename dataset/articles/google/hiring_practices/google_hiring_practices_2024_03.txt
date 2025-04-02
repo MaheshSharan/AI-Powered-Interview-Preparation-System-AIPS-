@@ -1,0 +1,244 @@
+Source: https://careers.google.com/how-we-hire/technical-interview/
+Date: 2024-03-31
+Category: hiring_practices
+Title: Google's Technical Interview Guide
+
+Google's technical interviews are designed to evaluate candidates' technical skills, problem-solving abilities, and coding proficiency. Here's a detailed guide to Google's technical interview process:
+
+Interview Structure:
+1. Phone Screen
+   - 45-60 minutes
+   - Coding Questions
+   - Problem Solving
+   - Technical Discussion
+   - Communication Skills
+
+2. Onsite Interviews
+   - 4-5 interviews
+   - 45-60 minutes each
+   - Coding
+   - System Design
+   - Technical Deep Dive
+   - Googliness
+
+3. Hiring Committee
+   - Interview Feedback
+   - Candidate Review
+   - Decision Making
+   - Offer Discussion
+   - Team Matching
+
+Technical Topics:
+1. Data Structures
+   - Arrays
+   - Linked Lists
+   - Trees
+   - Graphs
+   - Hash Tables
+   - Stacks/Queues
+   - Heaps
+   - Tries
+
+2. Algorithms
+   - Sorting
+   - Searching
+   - Dynamic Programming
+   - Greedy
+   - Backtracking
+   - Graph Algorithms
+   - String Algorithms
+   - Math Problems
+
+3. System Design
+   - Scalability
+   - Performance
+   - Security
+   - Reliability
+   - Monitoring
+   - Architecture
+   - Data Flow
+   - API Design
+
+4. Programming
+   - Clean Code
+   - Design Patterns
+   - Testing
+   - Error Handling
+   - Performance
+   - Documentation
+   - Best Practices
+   - Language Features
+
+Problem Solving:
+1. Approach
+   - Requirements Analysis
+   - Edge Cases
+   - Constraints
+   - Assumptions
+   - Clarifications
+
+2. Solution Design
+   - Algorithm Selection
+   - Data Structure Choice
+   - Complexity Analysis
+   - Space-Time Trade-offs
+   - Optimization
+
+3. Implementation
+   - Code Structure
+   - Error Handling
+   - Testing
+   - Documentation
+   - Performance
+
+4. Review
+   - Code Quality
+   - Edge Cases
+   - Optimization
+   - Testing
+   - Documentation
+
+Coding Standards:
+1. Code Quality
+   - Readability
+   - Maintainability
+   - Efficiency
+   - Error Handling
+   - Documentation
+
+2. Best Practices
+   - Naming Conventions
+   - Code Organization
+   - Comments
+   - Testing
+   - Error Handling
+
+3. Performance
+   - Time Complexity
+   - Space Complexity
+   - Optimization
+   - Scalability
+   - Resource Usage
+
+4. Testing
+   - Unit Tests
+   - Edge Cases
+   - Error Cases
+   - Performance Tests
+   - Integration Tests
+
+System Design:
+1. Requirements
+   - Functional
+   - Non-functional
+   - Scalability
+   - Performance
+   - Security
+
+2. Architecture
+   - Components
+   - Interfaces
+   - Data Flow
+   - Scalability
+   - Reliability
+
+3. Implementation
+   - Technology Stack
+   - Data Storage
+   - Caching
+   - Load Balancing
+   - Monitoring
+
+4. Optimization
+   - Performance
+   - Scalability
+   - Cost
+   - Maintenance
+   - Updates
+
+Technical Discussion:
+1. Knowledge
+   - Technical Concepts
+   - Best Practices
+   - Industry Trends
+   - Tools
+   - Frameworks
+
+2. Experience
+   - Projects
+   - Challenges
+   - Solutions
+   - Learning
+   - Growth
+
+3. Problem Solving
+   - Approach
+   - Analysis
+   - Solution
+   - Optimization
+   - Trade-offs
+
+4. Learning
+   - New Technologies
+   - Best Practices
+   - Industry Trends
+   - Tools
+   - Frameworks
+
+Interview Tips:
+1. Preparation
+   - Study Materials
+   - Practice Problems
+   - Mock Interviews
+   - Time Management
+   - Research
+
+2. During Interview
+   - Communication
+   - Problem Solving
+   - Code Quality
+   - Documentation
+   - Testing
+
+3. Problem Solving
+   - Approach
+   - Analysis
+   - Solution
+   - Optimization
+   - Trade-offs
+
+4. Technical Discussion
+   - Knowledge
+   - Experience
+   - Learning
+   - Innovation
+   - Best Practices
+
+Success Factors:
+1. Technical Skills
+   - Strong Foundation
+   - Problem Solving
+   - System Design
+   - Code Quality
+   - Testing
+
+2. Communication
+   - Clarity
+   - Collaboration
+   - Documentation
+   - Presentation
+   - Feedback
+
+3. Problem Solving
+   - Approach
+   - Analysis
+   - Solution
+   - Optimization
+   - Trade-offs
+
+4. Cultural Fit
+   - Googliness
+   - Collaboration
+   - Innovation
+   - Learning
+   - Impact 

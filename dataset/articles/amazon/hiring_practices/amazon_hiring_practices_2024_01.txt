@@ -1,0 +1,83 @@
+Source: https://www.amazon.jobs/en/landing_pages/in-for-interview
+Date: 2024-03-31
+Category: hiring_practices
+Title: Amazon's Technical Interview Process and Requirements
+
+Amazon's technical interview process is designed to evaluate candidates based on their technical skills, problem-solving abilities, and alignment with Amazon's leadership principles. The process typically consists of multiple rounds:
+
+Technical Assessment:
+The first step in Amazon's technical interview process is usually an online assessment or coding test. Candidates are evaluated on their ability to write clean, efficient code and solve algorithmic problems. The assessment focuses on:
+- Data structures and algorithms
+- System design principles
+- Code quality and best practices
+- Problem-solving approach
+
+Onsite Interviews:
+Successful candidates proceed to onsite interviews, which include:
+1. Technical Deep Dive
+   - System design discussions
+   - Architecture decisions
+   - Scalability considerations
+   - Performance optimization
+
+2. Coding Interviews
+   - Algorithmic problem solving
+   - Code review exercises
+   - Technical discussions
+   - Edge case handling
+
+3. Behavioral Interviews
+   - Leadership principles alignment
+   - Past experience discussion
+   - Problem-solving scenarios
+   - Team collaboration examples
+
+Key Technical Requirements:
+- Strong programming skills in one or more languages (Java, Python, C++, etc.)
+- Understanding of data structures and algorithms
+- Experience with distributed systems
+- Knowledge of cloud services (AWS preferred)
+- System design and architecture experience
+- Problem-solving and analytical skills
+
+Selection Criteria:
+Amazon evaluates candidates based on:
+1. Technical Excellence
+   - Coding ability
+   - System design skills
+   - Technical knowledge
+   - Problem-solving approach
+
+2. Leadership Principles
+   - Customer obsession
+   - Ownership
+   - Invent and simplify
+   - Are right, a lot
+   - Learn and be curious
+   - Hire and develop the best
+   - Insist on the highest standards
+   - Think big
+   - Bias for action
+   - Frugality
+   - Earn trust
+   - Dive deep
+   - Have backbone; disagree and commit
+   - Deliver results
+
+3. Cultural Fit
+   - Team collaboration
+   - Communication skills
+   - Adaptability
+   - Innovation mindset
+
+Tips for Success:
+1. Prepare thoroughly for technical interviews
+2. Review Amazon's leadership principles
+3. Practice system design problems
+4. Be ready to discuss past experiences
+5. Show enthusiasm for learning and growth
+6. Demonstrate customer-centric thinking
+7. Highlight problem-solving abilities
+8. Showcase ownership and initiative
+
+This article provides an overview of Amazon's technical interview process and requirements. Candidates should focus on both technical excellence and alignment with Amazon's leadership principles to increase their chances of success. 

@@ -1,0 +1,84 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: mid_level
+Title: Associate Software Engineer Resume (Mid-Level)
+
+PRIYANKA SINGH
+Bangalore, Karnataka
+priyanka.singh@email.com | (555) 890-1234
+LinkedIn: linkedin.com/in/priyankasingh
+
+PROFESSIONAL SUMMARY
+DevOps Engineer with 3.5 years of experience in cloud infrastructure and automation. Strong expertise in implementing CI/CD pipelines and managing cloud resources. Seeking to join TCS as an Associate Software Engineer.
+
+TECHNICAL SKILLS
+• Cloud Platforms: AWS, Azure, GCP
+• Infrastructure as Code: Terraform, CloudFormation
+• Containerization: Docker, Kubernetes
+• CI/CD: Jenkins, GitLab CI, GitHub Actions
+• Monitoring: Prometheus, Grafana, ELK Stack
+• Scripting: Python, Bash, PowerShell
+
+PROFESSIONAL EXPERIENCE
+
+DevOps Engineer | HCL Technologies | Bangalore | Mar 2021 - Present
+• Lead cloud infrastructure management for enterprise clients
+• Implement and maintain CI/CD pipelines for 20+ projects
+• Automate deployment processes reducing deployment time by 70%
+• Manage Kubernetes clusters across multiple environments
+• Monitor and optimize cloud costs saving $100K annually
+
+Cloud Engineer | Cognizant | Chennai | Jun 2020 - Feb 2021
+• Developed infrastructure as code using Terraform
+• Implemented automated scaling solutions
+• Managed AWS and Azure cloud resources
+• Created monitoring and alerting systems
+
+Junior DevOps Engineer | LTIMindtree | Bangalore | Jan 2020 - May 2020
+• Assisted in CI/CD pipeline implementation
+• Managed Docker containers and images
+• Participated in on-call support rotation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+National Institute of Technology | Trichy, Tamil Nadu | 2016-2020
+• GPA: 8.5/10
+• Specialization in Cloud Computing
+• Relevant Coursework: DevOps, Cloud Architecture, System Administration
+
+PROJECTS
+1. Multi-Cloud Infrastructure Platform
+   • Developed cloud-agnostic infrastructure platform
+   • Technologies: Terraform, AWS, Azure, GCP
+   • Features: Auto-scaling, load balancing, disaster recovery
+   • Reduced infrastructure costs by 45%
+
+2. Automated Deployment System
+   • Built automated deployment pipeline
+   • Technologies: Jenkins, Docker, Kubernetes
+   • Features: Zero-downtime deployment, rollback capability
+   • Reduced deployment time from hours to minutes
+
+3. Monitoring and Alerting Platform
+   • Implemented comprehensive monitoring solution
+   • Technologies: Prometheus, Grafana, ELK Stack
+   • Features: Custom dashboards, automated alerts
+   • Improved system reliability by 30%
+
+ACHIEVEMENTS
+• Received "DevOps Excellence Award" at HCL
+• Automated 100+ deployment processes
+• Reduced system downtime by 80%
+• Regular speaker at DevOps meetups
+
+CERTIFICATIONS
+• AWS DevOps Engineer Professional
+• Azure DevOps Engineer Expert
+• Certified Kubernetes Administrator
+• HashiCorp Certified Terraform Associate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

@@ -1,0 +1,209 @@
+Source: https://www.amazon.jobs/en/landing_pages/amazon-ai-ml
+Date: 2024-03-31
+Category: technical_focus
+Title: Amazon's AI and Machine Learning Focus
+
+Amazon's AI and machine learning initiatives drive innovation across its products and services. Here's a comprehensive look at Amazon's AI/ML technical focus:
+
+AI/ML Services:
+1. Core Services
+   - SageMaker
+   - Rekognition
+   - Comprehend
+   - Polly
+   - Lex
+
+2. Infrastructure
+   - Deep Learning AMIs
+   - Elastic Inference
+   - Deep Learning Containers
+   - SageMaker Studio
+   - Ground Truth
+
+3. Development Tools
+   - TensorFlow
+   - PyTorch
+   - MXNet
+   - Gluon
+   - AutoGluon
+
+4. Deployment
+   - SageMaker Endpoints
+   - Lambda
+   - ECS
+   - Batch Transform
+   - Real-time Inference
+
+Machine Learning:
+1. Model Development
+   - Data Preparation
+   - Feature Engineering
+   - Model Training
+   - Hyperparameter Tuning
+   - Model Evaluation
+
+2. Deep Learning
+   - Neural Networks
+   - CNN
+   - RNN
+   - Transformer
+   - BERT
+
+3. Natural Language Processing
+   - Text Classification
+   - Sentiment Analysis
+   - Named Entity Recognition
+   - Machine Translation
+   - Question Answering
+
+4. Computer Vision
+   - Image Classification
+   - Object Detection
+   - Face Recognition
+   - Video Analysis
+   - Scene Understanding
+
+AI Applications:
+1. Personalization
+   - Recommendation Systems
+   - User Profiling
+   - Content Filtering
+   - Search Ranking
+   - Customer Segmentation
+
+2. Automation
+   - Process Automation
+   - Workflow Optimization
+   - Resource Allocation
+   - Predictive Maintenance
+   - Quality Control
+
+3. Analytics
+   - Predictive Analytics
+   - Time Series Analysis
+   - Anomaly Detection
+   - Pattern Recognition
+   - Trend Analysis
+
+4. Customer Experience
+   - Chatbots
+   - Voice Assistants
+   - Personalization
+   - Smart Search
+   - Content Generation
+
+Data Processing:
+1. Data Pipeline
+   - Data Collection
+   - Data Cleaning
+   - Feature Extraction
+   - Data Validation
+   - Data Versioning
+
+2. Big Data
+   - Distributed Processing
+   - Stream Processing
+   - Batch Processing
+   - Real-time Analytics
+   - Data Warehousing
+
+3. Data Quality
+   - Data Validation
+   - Quality Metrics
+   - Monitoring
+   - Cleaning
+   - Enrichment
+
+4. Data Security
+   - Privacy Protection
+   - Access Control
+   - Encryption
+   - Compliance
+   - Audit Logging
+
+Model Operations:
+1. Deployment
+   - Model Serving
+   - API Management
+   - Load Balancing
+   - Auto-scaling
+   - Monitoring
+
+2. Monitoring
+   - Performance Metrics
+   - Model Drift
+   - Data Quality
+   - System Health
+   - Cost Tracking
+
+3. Maintenance
+   - Model Updates
+   - Retraining
+   - Version Control
+   - A/B Testing
+   - Performance Optimization
+
+4. Governance
+   - Model Registry
+   - Access Control
+   - Audit Logging
+   - Compliance
+   - Documentation
+
+Best Practices:
+1. Development
+   - Clean Code
+   - Testing
+   - Documentation
+   - Version Control
+   - Code Review
+
+2. Operations
+   - Monitoring
+   - Logging
+   - Alerting
+   - Incident Response
+   - Disaster Recovery
+
+3. Security
+   - Access Control
+   - Data Protection
+   - Model Security
+   - Compliance
+   - Audit Logging
+
+4. Performance
+   - Optimization
+   - Scaling
+   - Caching
+   - Load Testing
+   - Resource Management
+
+Innovation Focus:
+1. Research
+   - New Algorithms
+   - Model Architecture
+   - Training Methods
+   - Optimization
+   - Applications
+
+2. Experimentation
+   - A/B Testing
+   - Feature Flags
+   - Prototyping
+   - Validation
+   - Iteration
+
+3. Collaboration
+   - Team Work
+   - Knowledge Sharing
+   - Code Review
+   - Documentation
+   - Mentoring
+
+4. Learning
+   - Training
+   - Workshops
+   - Conferences
+   - Research Papers
+   - Best Practices 

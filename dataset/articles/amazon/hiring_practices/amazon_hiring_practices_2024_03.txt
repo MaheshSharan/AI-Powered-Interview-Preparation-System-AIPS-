@@ -1,0 +1,130 @@
+Source: https://www.amazon.jobs/en/landing_pages/amazon-technical-interview
+Date: 2024-03-31
+Category: hiring_practices
+Title: Amazon's Technical Interview Process: A Detailed Guide
+
+Amazon's technical interview process is designed to evaluate candidates' technical skills, problem-solving abilities, and alignment with Amazon's leadership principles. Here's a detailed breakdown of what to expect:
+
+Technical Assessment Phase:
+1. Online Assessment
+   - Coding problems
+   - System design questions
+   - Technical scenarios
+   - Time management
+   - Code quality evaluation
+
+2. Technical Phone Screen
+   - Basic technical questions
+   - Problem-solving discussion
+   - System design basics
+   - Code review
+   - Technical experience
+
+Onsite Interview Structure:
+1. Technical Deep Dive (2-3 rounds)
+   - System architecture
+   - Design patterns
+   - Scalability
+   - Performance
+   - Security
+
+2. Coding Interviews (2-3 rounds)
+   - Algorithm problems
+   - Data structures
+   - Code optimization
+   - Edge cases
+   - Testing approach
+
+3. System Design (1-2 rounds)
+   - Architecture patterns
+   - Scalability
+   - Performance
+   - Security
+   - Cost optimization
+
+4. Behavioral Interviews (1-2 rounds)
+   - Leadership principles
+   - Past experiences
+   - Problem-solving
+   - Team collaboration
+   - Innovation examples
+
+Technical Focus Areas:
+1. Programming Skills
+   - Clean code principles
+   - Design patterns
+   - Testing practices
+   - Code optimization
+   - Best practices
+
+2. System Design
+   - Architecture patterns
+   - Scalability
+   - Performance
+   - Security
+   - Cost optimization
+
+3. Problem Solving
+   - Algorithm efficiency
+   - Data structure selection
+   - Edge case handling
+   - Optimization techniques
+   - Testing strategies
+
+4. Technical Knowledge
+   - Cloud services
+   - Distributed systems
+   - Database design
+   - Security principles
+   - Performance optimization
+
+Evaluation Criteria:
+1. Technical Skills
+   - Coding ability
+   - System design
+   - Problem solving
+   - Technical depth
+   - Best practices
+
+2. Problem-Solving Approach
+   - Analytical thinking
+   - Solution design
+   - Implementation
+   - Testing
+   - Optimization
+
+3. Communication
+   - Technical discussion
+   - Problem explanation
+   - Solution presentation
+   - Question handling
+   - Team collaboration
+
+4. Cultural Fit
+   - Leadership principles
+   - Innovation mindset
+   - Customer focus
+   - Ownership
+   - Learning attitude
+
+Preparation Tips:
+1. Technical Preparation
+   - Practice coding problems
+   - Study system design
+   - Review algorithms
+   - Understand cloud services
+   - Learn best practices
+
+2. Interview Preparation
+   - Research Amazon
+   - Study leadership principles
+   - Prepare examples
+   - Practice explaining
+   - Review past projects
+
+3. General Tips
+   - Get good rest
+   - Arrive early
+   - Be confident
+   - Ask questions
+   - Show enthusiasm 

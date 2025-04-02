@@ -1,0 +1,79 @@
+Source: TCS Careers
+Date: 2024-04-03
+Category: product_manager
+Experience: fresher
+Title: Product Manager Resume (Fresher)
+
+ADITYA SHARMA
+Delhi, NCR
+aditya.sharma@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/aditya-sharma
+
+PROFESSIONAL SUMMARY
+Recent graduate with expertise in product management and digital transformation. Specialized in agile methodologies and product analytics. Seeking to join TCS as a Product Manager.
+
+TECHNICAL SKILLS
+• Product Management: Agile, Scrum, Kanban
+• Analytics: SQL, Tableau, Power BI
+• Tools: Jira, Confluence, Figma
+• Market Research: User Research, Competitor Analysis
+• Other: Product Strategy, User Experience
+
+EDUCATION
+Master of Business Administration
+Indian Institute of Management | Bangalore | 2023-2025
+• GPA: 8.8/10
+• Specialization in Product Management
+• Thesis: "Digital Product Strategy in Enterprise"
+
+Bachelor of Technology in Computer Science
+Delhi Technological University | Delhi | 2019-2023
+• GPA: 8.6/10
+• Specialization in Software Engineering
+
+PROJECTS
+1. Digital Transformation Platform
+   • Led digital transformation initiative
+   • Tools: Figma, Jira, Analytics
+   • Features: Process automation, analytics
+   • Improved efficiency by 50%
+
+2. Product Analytics Dashboard
+   • Built analytics platform
+   • Tools: SQL, Tableau, Python
+   • Features: KPI tracking, reporting
+   • Used by 200+ stakeholders
+
+3. Agile Implementation Framework
+   • Created agile methodology
+   • Tools: Confluence, Miro
+   • Features: Sprint planning, tracking
+   • Streamlined development process
+
+INTERNSHIPS
+Product Management Intern | Microsoft | Bangalore | Jul 2024 - Sep 2024
+• Developed product roadmap
+• Conducted market research
+• Created product specifications
+
+Business Analyst Intern | IBM | Delhi | Apr 2024 - Jun 2024
+• Analyzed market trends
+• Created business reports
+• Developed product metrics
+
+ACHIEVEMENTS
+• Winner of Digital Transformation Case Competition 2024
+• Published article on product management
+• Top performer in academic projects
+• Active in product management community
+
+CERTIFICATIONS
+• Certified Product Manager - Product School
+• Agile Certified Product Manager
+• Microsoft Power BI Certification
+• Product Strategy Certification
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Punjabi (Native) 

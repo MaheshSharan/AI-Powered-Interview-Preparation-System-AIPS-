@@ -1,0 +1,85 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: mid_level
+Title: Software Engineer Resume (Mid-Level)
+
+PRIYANKA SINGH
+Delhi, NCR
+priyanka.singh@email.com | (555) 789-0123
+LinkedIn: linkedin.com/in/priyankasingh
+
+PROFESSIONAL SUMMARY
+Senior Software Engineer with 5 years of experience in AI/ML and data engineering. Expertise in building scalable machine learning pipelines and data processing systems. Strong track record of implementing AI solutions and leading technical teams. Seeking to join TCS as a Senior Software Engineer.
+
+TECHNICAL SKILLS
+• ML/AI: TensorFlow, PyTorch, scikit-learn
+• Big Data: Spark, Hadoop, Kafka
+• Cloud: AWS SageMaker, Azure ML
+• Programming: Python, Scala, Java
+• Databases: MongoDB, Cassandra, Redis
+• Other: ML Ops, Data Pipeline, Model Deployment
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | IBM | Delhi | Feb 2021 - Present
+• Lead AI/ML initiatives and model development
+• Design and implement ML pipelines
+• Mentor team of 6 data scientists
+• Drive technical architecture decisions
+• Optimize model performance and scalability
+
+Software Engineer | Intel | Bangalore | Apr 2019 - Jan 2021
+• Developed computer vision models
+• Implemented distributed ML systems
+• Led model deployment initiatives
+• Mentored junior data scientists
+
+EDUCATION
+Master of Technology in Computer Science
+Indian Institute of Technology | Delhi | 2017-2019
+• GPA: 9.0/10
+• Specialization in Machine Learning
+• Thesis: "Distributed Deep Learning for Computer Vision"
+
+Bachelor of Technology in Computer Science
+Delhi Technological University | Delhi | 2013-2017
+• GPA: 8.8/10
+• Specialization in Artificial Intelligence
+
+PROJECTS
+1. Computer Vision Platform
+   • Architected and implemented CV platform
+   • Technologies: PyTorch, TensorFlow, OpenCV
+   • Features: Object detection, tracking, recognition
+   • Processes 100K+ images daily
+
+2. ML Pipeline Automation
+   • Built automated ML pipeline
+   • Technologies: Airflow, MLflow, Docker
+   • Features: Model training, evaluation, deployment
+   • Reduced development time by 60%
+
+3. Real-time Analytics System
+   • Designed real-time analytics platform
+   • Technologies: Spark, Kafka, Cassandra
+   • Features: Stream processing, analytics
+   • Handles 1M+ events per second
+
+ACHIEVEMENTS
+• Received "AI Innovation Award" at IBM
+• Led successful delivery of 4 ML projects
+• Improved model accuracy by 40%
+• Mentored 12+ junior data scientists
+• Published 4 research papers
+
+CERTIFICATIONS
+• TensorFlow Developer Certificate
+• AWS Machine Learning Specialty
+• Google Cloud Professional ML Engineer
+• Databricks Certified ML Engineer
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Punjabi (Native) 

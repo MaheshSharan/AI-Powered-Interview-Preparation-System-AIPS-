@@ -1,0 +1,74 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: cloud_solutions_architect
+Experience: fresher
+Title: Cloud Solutions Architect Resume (Fresher)
+
+PRIYA SHARMA
+Hyderabad, Telangana
+priya.sharma@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/priya-sharma
+
+PROFESSIONAL SUMMARY
+Recent graduate with expertise in cloud architecture and infrastructure design. Specialized in Azure, AWS, and GCP solutions. Seeking to join Microsoft as a Cloud Solutions Architect.
+
+TECHNICAL SKILLS
+• Cloud Platforms: Azure, AWS, GCP
+• Infrastructure: Docker, Kubernetes, Terraform
+• Networking: VPC, VPN, Load Balancing
+• Security: IAM, Encryption, Compliance
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2020-2024
+• GPA: 8.9/10
+• Specialization in Cloud Computing
+• Thesis: "Cloud Security Architecture"
+
+PROJECTS
+1. Multi-Cloud Infrastructure
+   • Designed cloud architecture
+   • Tools: Azure, AWS, Terraform
+   • Features: High availability, scalability
+   • Reduced costs by 45%
+
+2. Container Orchestration Platform
+   • Built container platform
+   • Tools: Kubernetes, Docker, Helm
+   • Features: Auto-scaling, monitoring
+   • Improved efficiency by 50%
+
+3. Cloud Security Framework
+   • Created security framework
+   • Tools: Azure Security Center, AWS Shield
+   • Features: Threat detection, compliance
+   • Enhanced security by 55%
+
+INTERNSHIPS
+Cloud Architecture Intern | Amazon | Hyderabad | Jul 2024 - Sep 2024
+• Designed cloud solutions
+• Implemented infrastructure
+• Optimized performance
+
+Cloud Engineering Intern | Google | Bangalore | Apr 2024 - Jun 2024
+• Developed cloud services
+• Created automation scripts
+• Implemented security
+
+ACHIEVEMENTS
+• Winner of Microsoft Azure Challenge 2024
+• Published article on cloud architecture
+• Top performer in academic projects
+• Active in cloud community
+
+CERTIFICATIONS
+• Microsoft Azure Fundamentals
+• AWS Certified Solutions Architect
+• Google Cloud Professional Architect
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Telugu (Native) 

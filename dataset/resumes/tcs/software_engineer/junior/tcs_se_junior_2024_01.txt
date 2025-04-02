@@ -1,0 +1,79 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: junior
+Title: Software Engineer Resume (Junior)
+
+ROHIT MEHTA
+Pune, Maharashtra
+rohit.mehta@email.com | (555) 345-6789
+LinkedIn: linkedin.com/in/rohitmehta
+
+PROFESSIONAL SUMMARY
+Software Engineer with 2 years of experience in enterprise application development. Expertise in Java backend development and microservices architecture. Strong track record of delivering high-performance solutions. Seeking to join TCS as a Software Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, Go
+• Frameworks: Spring Boot, Hibernate, JUnit
+• Databases: Oracle, PostgreSQL, MongoDB
+• Cloud: AWS, Docker, Kubernetes
+• Tools: Git, Jenkins, Maven, Gradle
+• Other: Microservices, REST APIs, Message Queues
+
+PROFESSIONAL EXPERIENCE
+
+Software Engineer | Infosys | Pune | Jan 2022 - Present
+• Develop and maintain enterprise-scale Java applications
+• Design and implement RESTful microservices
+• Lead team of 3 developers for critical projects
+• Optimize application performance improving response time by 40%
+• Implement CI/CD pipelines using Jenkins and Docker
+
+Junior Software Engineer | Tech Mahindra | Mumbai | Feb 2021 - Dec 2021
+• Developed backend services using Spring Boot
+• Implemented database optimization techniques
+• Created automated test suites
+• Participated in code reviews and documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+College of Engineering Pune | Pune | 2017-2021
+• GPA: 8.7/10
+• Specialization in Enterprise Software
+• Relevant Coursework: Distributed Systems, Software Engineering, Database Management
+
+PROJECTS
+1. Banking Transaction System
+   • Built high-performance transaction processing system
+   • Technologies: Java, Spring Boot, Oracle
+   • Features: Real-time processing, fraud detection
+   • Handles 1M+ transactions daily
+
+2. Microservices Migration
+   • Led migration from monolith to microservices
+   • Technologies: Spring Cloud, Docker, Kubernetes
+   • Improved system scalability by 300%
+   • Reduced deployment time by 70%
+
+3. API Gateway Implementation
+   • Developed centralized API gateway
+   • Technologies: Spring Cloud Gateway, Redis
+   • Features: Rate limiting, authentication, logging
+   • Processes 5000+ requests per second
+
+ACHIEVEMENTS
+• Received "Star Performer Award" at Infosys
+• Led successful delivery of 3 major projects
+• Reduced production incidents by 60%
+• Mentored 4 junior developers
+
+CERTIFICATIONS
+• Oracle Certified Professional Java SE 11 Developer
+• AWS Certified Solutions Architect Associate
+• Spring Professional Certification
+• Kubernetes Application Developer (CKAD)
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Native) 

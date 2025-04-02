@@ -1,0 +1,74 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: sde
+Experience: fresher
+Title: Software Development Engineer Resume (Fresher)
+
+ADITYA SHARMA
+Bangalore, Karnataka
+aditya.sharma@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/aditya-sharma
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in full-stack development and cloud technologies. Specialized in building scalable applications and microservices architecture. Seeking to join Microsoft as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: React, Node.js, Express.js
+• Cloud: Azure, AWS, Docker
+• Databases: SQL, MongoDB, Redis
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2020-2024
+• GPA: 8.8/10
+• Specialization in Software Engineering
+• Thesis: "Microservices Architecture in Cloud"
+
+PROJECTS
+1. Cloud-Based E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: React, Node.js, Azure
+   • Features: User management, product catalog
+   • Improved performance by 40%
+
+2. Real-time Chat Application
+   • Developed chat platform
+   • Tools: WebSocket, MongoDB, Redis
+   • Features: Real-time messaging, notifications
+   • Serves 1000+ concurrent users
+
+3. Microservices API Gateway
+   • Created API gateway
+   • Tools: Spring Cloud, Docker, Kubernetes
+   • Features: Load balancing, authentication
+   • Reduced latency by 30%
+
+INTERNSHIPS
+Software Development Intern | Amazon | Bangalore | Jun 2024 - Aug 2024
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+
+Software Engineering Intern | Google | Hyderabad | Mar 2024 - May 2024
+• Built web applications
+• Optimized performance
+• Implemented security features
+
+ACHIEVEMENTS
+• Winner of Microsoft Imagine Cup 2024
+• Published technical article on cloud architecture
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• Microsoft Azure Fundamentals
+• AWS Certified Developer
+• Docker Certified Associate
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

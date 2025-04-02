@@ -1,0 +1,73 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: fresher
+Title: Associate Software Engineer Resume (Fresher)
+
+PRIYA SHARMA
+Bangalore, Karnataka
+priya.sharma@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/priyasharma
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with strong foundation in software development and data structures. Passionate about building scalable applications and solving complex problems. Seeking to start career as an Associate Software Engineer at TCS.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, C++, Python
+• Web Technologies: HTML5, CSS3, Angular
+• Databases: PostgreSQL, Redis
+• Tools: Git, IntelliJ IDEA, Docker
+• Other: Data Structures, Algorithms, Object-Oriented Programming
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad, Telangana | 2020-2024
+• GPA: 8.8/10
+• Specialization in Software Systems
+• Relevant Coursework: Advanced Data Structures, System Design, Computer Networks, Operating Systems
+
+PROJECTS
+1. Real-time Chat Application
+   • Developed a real-time chat platform using WebSocket
+   • Technologies: Java, Spring Boot, WebSocket, MongoDB
+   • Features: User authentication, real-time messaging, file sharing
+   • Deployed on AWS
+
+2. Task Management System
+   • Built a collaborative task management tool
+   • Technologies: Angular, Node.js, PostgreSQL
+   • Implemented CRUD operations and real-time updates
+   • Added drag-and-drop functionality
+
+3. Data Visualization Dashboard
+   • Created an interactive data visualization platform
+   • Technologies: Python, D3.js, Flask
+   • Features: Multiple chart types, data filtering, export functionality
+
+INTERNSHIPS
+Software Development Intern | Infosys | Bangalore | Jul 2023 - Sep 2023
+• Developed microservices using Spring Boot
+• Implemented RESTful APIs
+• Participated in agile development practices
+
+Technical Intern | Wipro | Hyderabad | Apr 2023 - Jun 2023
+• Worked on frontend development
+• Implemented responsive design
+• Learned enterprise development practices
+
+ACHIEVEMENTS
+• All India Rank 1000 in JEE Advanced
+• Winner of College Hackathon 2023
+• Active participant in competitive programming
+• Member of College Technical Society
+• Completed certifications in Java and Cloud Computing
+
+CERTIFICATIONS
+• Oracle Certified Associate, Java SE 11 Programmer
+• Microsoft Azure Fundamentals
+• IBM Cloud Computing Fundamentals
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Telugu (Conversational) 

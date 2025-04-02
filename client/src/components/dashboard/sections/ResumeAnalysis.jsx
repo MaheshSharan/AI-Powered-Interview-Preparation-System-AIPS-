@@ -12,7 +12,14 @@ import {
   ChartBarIcon,
   ClockIcon,
   TrashIcon,
-  DocumentDuplicateIcon
+  DocumentDuplicateIcon,
+  LightBulbIcon,
+  CodeBracketIcon,
+  UserGroupIcon,
+  ClipboardDocumentCheckIcon,
+  InformationCircleIcon,
+  ArrowUpTrayIcon,
+  ArrowRightIcon
 } from '@heroicons/react/24/outline';
 import { useAuthStore } from '../../../store/authStore';
 import useCompanyStore from '../../../store/companyStore';
@@ -535,293 +542,378 @@ const ResumeAnalysis = () => {
   );
   
   // Render results step
-  const renderResultsStep = () => (
-    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      className="max-w-4xl mx-auto"
-    >
-      <Link
-        to="#"
-        onClick={resetProcess}
-        className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 pl-0"
-      >
-        <ArrowLeftIcon className="h-4 w-4 mr-1" />
-        <span>Upload a different resume</span>
-      </Link>
-      
-      <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Analysis Results</h2>
-          <div className="flex space-x-4">
-            <button
-              onClick={() => setShowVersions(true)}
-              className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-            >
-              <DocumentArrowUpIcon className="w-5 h-5 mr-2" />
-              Upload New Version
-            </button>
-            <button
-              onClick={goToManageResumes}
-              className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
-            >
-              <DocumentDuplicateIcon className="w-5 h-5 mr-2" />
-              Manage Resumes
-            </button>
-          </div>
+  const renderResultsStep = () => {
+    // Add null check to prevent errors
+    if (!analysisResults || !analysisResults.skillsMatch) {
+      return (
+        <div className="text-center py-10">
+          <p className="text-gray-500 dark:text-gray-400">
+            No analysis results available. Please analyze your resume first.
+          </p>
+          <button
+            onClick={() => setCurrentStep('upload')}
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Upload Resume
+          </button>
         </div>
+      );
+    }
+    
+    return (
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="max-w-4xl mx-auto"
+      >
+        <Link
+          to="#"
+          onClick={resetProcess}
+          className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 pl-0"
+        >
+          <ArrowLeftIcon className="h-4 w-4 mr-1" />
+          <span>Upload a different resume</span>
+        </Link>
         
-        <div className="flex flex-col md:flex-row gap-6">
-          <div className="w-full md:w-1/3">
-            <div className="bg-gray-50 dark:bg-slate-700 rounded-lg p-4 text-center">
-              <div className="relative inline-block">
-                <svg className="w-24 h-24">
-                  <circle
-                    className="text-gray-200 dark:text-slate-600"
-                    strokeWidth="5"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="45"
-                    cx="50"
-                    cy="50"
-                  />
-                  <circle
-                    className={`${
-                      analysisResults.score >= 80
-                        ? 'text-green-500'
-                        : analysisResults.score >= 60
-                        ? 'text-yellow-500'
-                        : 'text-red-500'
-                    }`}
-                    strokeWidth="5"
-                    strokeDasharray={`${analysisResults.score * 2.83}, 283`}
-                    strokeLinecap="round"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="45"
-                    cx="50"
-                    cy="50"
-                  />
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                    {analysisResults.score}
-                  </span>
-                </div>
-              </div>
-              <h3 className="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
-                Match Score
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                for {selectedRole} at {selectedCompany}
-              </p>
+        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Analysis Results</h2>
+            <div className="flex space-x-4">
+              <button
+                onClick={() => setShowVersions(true)}
+                className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
+              >
+                <DocumentArrowUpIcon className="w-5 h-5 mr-2" />
+                Upload New Version
+              </button>
+              <button
+                onClick={goToManageResumes}
+                className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
+              >
+                <DocumentDuplicateIcon className="w-5 h-5 mr-2" />
+                Manage Resumes
+              </button>
             </div>
           </div>
           
-          <div className="w-full md:w-2/3">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
-                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-1" />
-                  Strengths
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="w-full md:w-1/3">
+              <div className="bg-gray-50 dark:bg-slate-700 rounded-lg p-4 text-center">
+                <div className="relative inline-block">
+                  <svg className="w-24 h-24">
+                    <circle
+                      className="text-gray-200 dark:text-slate-600"
+                      strokeWidth="5"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="45"
+                      cx="50"
+                      cy="50"
+                    />
+                    <circle
+                      className={`${
+                        analysisResults?.score >= 80
+                          ? 'text-green-500'
+                          : analysisResults?.score >= 60
+                          ? 'text-yellow-500'
+                          : 'text-red-500'
+                      }`}
+                      strokeWidth="5"
+                      strokeDasharray={`${analysisResults?.score * 2.83}, 283`}
+                      strokeLinecap="round"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="45"
+                      cx="50"
+                      cy="50"
+                    />
+                  </svg>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-gray-900 dark:text-white">
+                      {analysisResults?.score}
+                    </span>
+                  </div>
+                </div>
+                <h3 className="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
+                  Match Score
                 </h3>
-                <ul className="space-y-2">
-                  {analysisResults.strengths.map((strength, index) => (
-                    <li
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  for {selectedRole} at {selectedCompany}
+                </p>
+              </div>
+            </div>
+            
+            <div className="w-full md:w-2/3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
+                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-1" />
+                    Strengths
+                  </h3>
+                  <ul className="space-y-2">
+                    {analysisResults?.strengths.map((strength, index) => (
+                      <li
+                        key={index}
+                        className="text-sm text-gray-700 dark:text-gray-300 bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-900/30 rounded-lg p-2"
+                      >
+                        {strength}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
+                    <XCircleIcon className="h-5 w-5 text-red-500 mr-1" />
+                    Areas to Improve
+                  </h3>
+                  <ul className="space-y-2">
+                    {analysisResults?.weaknesses.map((weakness, index) => (
+                      <li
+                        key={index}
+                        className="text-sm text-gray-700 dark:text-gray-300 bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-900/30 rounded-lg p-2"
+                      >
+                        {weakness}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <motion.div
+            variants={itemVariants}
+            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Skills Match
+            </h3>
+            
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Matched Skills
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {analysisResults?.skillsMatch?.matched?.map((skill, index) => (
+                    <span
                       key={index}
-                      className="text-sm text-gray-700 dark:text-gray-300 bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-900/30 rounded-lg p-2"
+                      className="px-2 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full"
                     >
-                      {strength}
-                    </li>
+                      {skill}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
               
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
-                  <XCircleIcon className="h-5 w-5 text-red-500 mr-1" />
-                  Areas to Improve
-                </h3>
-                <ul className="space-y-2">
-                  {analysisResults.weaknesses.map((weakness, index) => (
-                    <li
+                <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Missing Skills
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {analysisResults?.skillsMatch?.missing?.map((skill, index) => (
+                    <span
                       key={index}
-                      className="text-sm text-gray-700 dark:text-gray-300 bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-900/30 rounded-lg p-2"
+                      className="px-2 py-1 text-xs font-medium bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 rounded-full"
                     >
-                      {weakness}
-                    </li>
+                      {skill}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             </div>
+          </motion.div>
+          
+          <motion.div
+            variants={itemVariants}
+            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Suggestions for Improvement
+            </h3>
+            
+            <ul className="space-y-2">
+              {analysisResults?.suggestions.map((suggestion, index) => (
+                <li
+                  key={index}
+                  className="flex items-start text-sm text-gray-700 dark:text-gray-300"
+                >
+                  <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 mt-0.5 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-800 dark:text-indigo-300 rounded-full text-xs font-bold">
+                    {index + 1}
+                  </span>
+                  {suggestion}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
+        
+        {/* Company Insights Section */}
+        {analysisResults?.companyInsights && Object.keys(analysisResults.companyInsights).length > 0 && (
+          <motion.div
+            variants={itemVariants}
+            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+              <LightBulbIcon className="h-5 w-5 text-yellow-500 mr-2" />
+              {selectedCompany} Interview Insights
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {analysisResults.companyInsights.technicalFocus && (
+                <div>
+                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Technical Focus
+                  </h4>
+                  <ul className="space-y-1">
+                    {analysisResults.companyInsights.technicalFocus.map((item, index) => (
+                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+                        <CodeBracketIcon className="h-4 w-4 text-indigo-500 mr-2" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              
+              {analysisResults.companyInsights.culturalValues && (
+                <div>
+                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Cultural Values
+                  </h4>
+                  <ul className="space-y-1">
+                    {analysisResults.companyInsights.culturalValues.map((item, index) => (
+                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+                        <UserGroupIcon className="h-4 w-4 text-indigo-500 mr-2" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              
+              {analysisResults.companyInsights.interviewFocus && (
+                <div>
+                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Interview Focus
+                  </h4>
+                  <ul className="space-y-1">
+                    {analysisResults.companyInsights.interviewFocus.map((item, index) => (
+                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+                        <ClipboardDocumentCheckIcon className="h-4 w-4 text-indigo-500 mr-2" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              
+              {analysisResults.companyInsights.resumePreferences && (
+                <div>
+                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Resume Preferences
+                  </h4>
+                  <ul className="space-y-1">
+                    {analysisResults.companyInsights.resumePreferences.map((item, index) => (
+                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
+                        <DocumentTextIcon className="h-4 w-4 text-indigo-500 mr-2" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+            
+            <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-100 dark:border-yellow-900/30 rounded-lg">
+              <p className="text-sm text-gray-700 dark:text-gray-300 flex items-start">
+                <InformationCircleIcon className="h-5 w-5 text-yellow-500 mr-2 flex-shrink-0" />
+                These insights are based on research of {selectedCompany}'s hiring practices and can help you prepare for your interview. Focus on these areas to maximize your chances of success.
+              </p>
+            </div>
+          </motion.div>
+        )}
+        
+        {showVersions && (
+          <motion.div
+            variants={itemVariants}
+            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6"
+          >
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Upload New Version
+            </h3>
+            
+            <div className="space-y-4">
+              <div>
+                <label htmlFor="versionNote" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  Version Notes
+                </label>
+                <textarea
+                  id="versionNote"
+                  value={versionNote}
+                  onChange={(e) => setVersionNote(e.target.value)}
+                  className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  rows="3"
+                  placeholder="What changes did you make to this version? (optional)"
+                ></textarea>
+              </div>
+              
+              <div className="flex items-center justify-end space-x-3">
+                <button
+                  type="button"
+                  onClick={uploadNewVersion}
+                  className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
+                >
+                  Upload New Version
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowVersions(false)}
+                  className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+        
+        <div className="flex justify-between">
+          <button
+            type="button"
+            onClick={deleteCurrentResume}
+            className="inline-flex items-center px-4 py-2 border border-red-300 dark:border-red-700 text-red-700 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors duration-200"
+          >
+            <TrashIcon className="h-4 w-4 mr-1" />
+            Delete Resume
+          </button>
+          
+          <div className="space-x-3">
+            <button
+              type="button"
+              onClick={() => setShowVersions(true)}
+              className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
+            >
+              <ArrowUpTrayIcon className="h-4 w-4 mr-1" />
+              Upload New Version
+            </button>
+            
+            <Link
+              to="/dashboard/interview"
+              className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
+            >
+              Continue to Interview
+              <ArrowRightIcon className="h-4 w-4 ml-1" />
+            </Link>
           </div>
         </div>
-      </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <motion.div
-          variants={itemVariants}
-          className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6"
-        >
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            Skills Match
-          </h3>
-          
-          <div className="space-y-4">
-            <div>
-              <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Matched Skills
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {analysisResults.skillsMatch.matched.map((skill, index) => (
-                  <span
-                    key={index}
-                    className="px-2 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Missing Skills
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {analysisResults.skillsMatch.missing.map((skill, index) => (
-                  <span
-                    key={index}
-                    className="px-2 py-1 text-xs font-medium bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 rounded-full"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </motion.div>
-        
-        <motion.div
-          variants={itemVariants}
-          className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6"
-        >
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            Suggestions for Improvement
-          </h3>
-          
-          <ul className="space-y-2">
-            {analysisResults.suggestions.map((suggestion, index) => (
-              <li
-                key={index}
-                className="flex items-start text-sm text-gray-700 dark:text-gray-300"
-              >
-                <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 mt-0.5 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-800 dark:text-indigo-300 rounded-full text-xs font-bold">
-                  {index + 1}
-                </span>
-                {suggestion}
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-      </div>
-      
-      {showVersions && (
-        <motion.div
-          variants={itemVariants}
-          className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6"
-        >
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-            Upload New Version
-          </h3>
-          
-          <div className="space-y-4">
-            <div>
-              <label htmlFor="versionNote" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                Version Notes
-              </label>
-              <input
-                type="text"
-                id="versionNote"
-                value={versionNote}
-                onChange={(e) => setVersionNote(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-800"
-                placeholder="What changes did you make?"
-              />
-            </div>
-            
-            <div
-              className={`border-2 border-dashed rounded-lg p-6 ${
-                dragActive
-                  ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/20'
-                  : 'border-gray-300 dark:border-gray-700'
-              } transition-colors duration-200 text-center`}
-              onDragEnter={handleDrag}
-              onDragLeave={handleDrag}
-              onDragOver={handleDrag}
-              onDrop={handleDrop}
-              onClick={onButtonClick}
-            >
-              <input
-                ref={fileInputRef}
-                type="file"
-                className="hidden"
-                accept=".pdf,.docx"
-                onChange={handleFileChange}
-              />
-              <DocumentArrowUpIcon className="h-10 w-10 mx-auto text-indigo-500 dark:text-indigo-400" />
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                Drag and drop your updated resume, or{' '}
-                <span className="text-indigo-600 dark:text-indigo-400 font-medium">
-                  click to browse
-                </span>
-              </p>
-              <p className="mt-1 text-xs text-gray-500 dark:text-gray-500">
-                PDF or DOCX, max 5MB
-              </p>
-            </div>
-            
-            <div className="flex space-x-2">
-              <button
-                type="button"
-                onClick={uploadNewVersion}
-                className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-              >
-                Save New Version
-              </button>
-              <button
-                type="button"
-                onClick={() => setShowVersions(false)}
-                className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
-              >
-                Cancel
-              </button>
-            </div>
-          </div>
-        </motion.div>
-      )}
-      
-      <div className="flex justify-between">
-        <button
-          type="button"
-          onClick={deleteCurrentResume}
-          className="inline-flex items-center px-4 py-2 border border-red-300 dark:border-red-700 text-red-700 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors duration-200"
-        >
-          <TrashIcon className="h-4 w-4 mr-1" />
-          Delete Resume
-        </button>
-        
-        <button
-          type="button"
-          onClick={continueToNextModule}
-          className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-        >
-          Continue to Interview Preparation
-        </button>
-      </div>
-    </motion.div>
-  );
+      </motion.div>
+    );
+  };
   
   // Render manage resumes step
   const renderManageResumes = () => (
@@ -945,14 +1037,14 @@ const ResumeAnalysis = () => {
                         <label htmlFor="versionNote" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                           Version Notes
                         </label>
-                        <input
-                          type="text"
+                        <textarea
                           id="versionNote"
                           value={versionNote}
                           onChange={(e) => setVersionNote(e.target.value)}
-                          className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-800"
-                          placeholder="What changes did you make?"
-                        />
+                          className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                          rows="3"
+                          placeholder="What changes did you make to this version? (optional)"
+                        ></textarea>
                       </div>
                       <div className="flex space-x-2">
                         <button

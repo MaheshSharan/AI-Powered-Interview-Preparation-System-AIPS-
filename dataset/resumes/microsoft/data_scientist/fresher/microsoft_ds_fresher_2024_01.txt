@@ -1,0 +1,79 @@
+Source: Microsoft Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+MEERA PATEL
+Bangalore, Karnataka
+meera.patel@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/meera-patel
+
+PROFESSIONAL SUMMARY
+Recent graduate with expertise in data science and machine learning. Specialized in predictive modeling and data analytics. Seeking to join Microsoft as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming: Python, R, SQL
+• Machine Learning: Scikit-learn, TensorFlow, PyTorch
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Hive
+• Other: Git, Jupyter, Tableau
+
+EDUCATION
+Master of Science in Data Science
+Indian Institute of Science | Bangalore | 2022-2024
+• GPA: 8.8/10
+• Specialization in Machine Learning
+• Thesis: "Deep Learning in Computer Vision"
+
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2018-2022
+• GPA: 8.7/10
+• Specialization in Data Science
+
+PROJECTS
+1. Image Recognition System
+   • Built deep learning model
+   • Tools: TensorFlow, OpenCV, Python
+   • Features: Object detection, classification
+   • Achieved 95% accuracy
+
+2. Predictive Analytics Platform
+   • Developed analytics system
+   • Tools: Scikit-learn, Pandas, NumPy
+   • Features: Time series forecasting
+   • Improved predictions by 40%
+
+3. Big Data Processing Pipeline
+   • Created data pipeline
+   • Tools: Hadoop, Spark, Hive
+   • Features: Data processing, analytics
+   • Processed 1TB+ data daily
+
+INTERNSHIPS
+Data Science Intern | Amazon | Bangalore | Jun 2024 - Aug 2024
+• Developed ML models
+• Created data pipelines
+• Implemented analytics
+
+Data Analytics Intern | Google | Hyderabad | Mar 2024 - May 2024
+• Analyzed user data
+• Built visualization dashboards
+• Created reports
+
+ACHIEVEMENTS
+• Winner of Kaggle Competition 2024
+• Published paper on ML algorithms
+• Top performer in academic projects
+• Active in data science community
+
+CERTIFICATIONS
+• Microsoft Azure Data Scientist
+• TensorFlow Developer Certificate
+• IBM Data Science Professional
+• Google Data Analytics Professional
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Gujarati (Native) 

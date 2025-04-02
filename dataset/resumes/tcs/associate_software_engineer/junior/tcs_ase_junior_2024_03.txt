@@ -1,0 +1,78 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: junior
+Title: Associate Software Engineer Resume (Junior)
+
+SNEHA GUPTA
+Bangalore, Karnataka
+sneha.gupta@email.com | (555) 678-9012
+LinkedIn: linkedin.com/in/snehagupta
+
+PROFESSIONAL SUMMARY
+Frontend Engineer with 1.5 years of experience specializing in modern web development and UI/UX implementation. Strong expertise in React ecosystem and responsive design. Seeking to join TCS as an Associate Software Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: JavaScript, TypeScript, HTML5, CSS3
+• Frontend: React.js, Next.js, Redux, Material-UI
+• Testing: Jest, React Testing Library, Cypress
+• Tools: Git, Webpack, Babel, npm
+• Design: Figma, Adobe XD
+• Other: REST APIs, GraphQL, Performance Optimization
+
+PROFESSIONAL EXPERIENCE
+
+Frontend Developer | Accenture | Bangalore | Aug 2022 - Present
+• Developed responsive web applications using React and TypeScript
+• Implemented state management using Redux and Context API
+• Created reusable component library reducing development time by 40%
+• Optimized application performance improving load time by 60%
+• Collaborated with UI/UX team on design implementation
+
+Junior Web Developer | LTIMindtree | Bangalore | Mar 2022 - Jul 2022
+• Built responsive user interfaces using React
+• Implemented pixel-perfect designs from Figma
+• Fixed cross-browser compatibility issues
+• Participated in agile development process
+
+EDUCATION
+Bachelor of Technology in Information Technology
+National Institute of Technology | Surathkal, Karnataka | 2018-2022
+• GPA: 8.7/10
+• Specialization in Web Technologies
+• Relevant Coursework: Web Development, UI/UX Design, JavaScript
+
+PROJECTS
+1. E-commerce Frontend
+   • Developed modern e-commerce interface
+   • Technologies: Next.js, Redux Toolkit, Tailwind CSS
+   • Features: Product catalog, cart management, checkout
+   • Achieved 95+ Lighthouse performance score
+
+2. Component Library
+   • Created custom React component library
+   • Technologies: React, TypeScript, Storybook
+   • Features: 50+ reusable components, theme customization
+   • Reduced development time by 50%
+
+3. Analytics Dashboard
+   • Built responsive analytics dashboard
+   • Technologies: React, D3.js, Material-UI
+   • Features: Interactive charts, real-time updates, filters
+   • Used by 1000+ daily active users
+
+ACHIEVEMENTS
+• Received "Best Frontend Developer" award at Accenture
+• Reduced application bundle size by 45%
+• Contributed to open-source React components
+• Regular speaker at React meetups
+
+CERTIFICATIONS
+• Meta Frontend Developer Professional Certificate
+• AWS Certified Cloud Practitioner
+• Google UX Design Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

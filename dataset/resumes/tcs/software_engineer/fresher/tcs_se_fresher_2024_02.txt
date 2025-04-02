@@ -1,0 +1,78 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: software_engineer
+Experience: fresher
+Title: Software Engineer Resume (Fresher)
+
+ANANYA SHARMA
+Mumbai, Maharashtra
+ananya.sharma@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/ananyasharma
+
+PROFESSIONAL SUMMARY
+Recent Computer Engineering graduate specializing in AI/ML and data engineering. Strong foundation in machine learning algorithms and data processing pipelines. Seeking to start career as a Software Engineer at TCS focusing on AI/ML applications.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, Java
+• ML/AI: TensorFlow, PyTorch, scikit-learn
+• Big Data: Spark, Hadoop, Kafka
+• Cloud: AWS SageMaker, Azure ML
+• Databases: PostgreSQL, MongoDB
+• Other: Data Analysis, Statistical Modeling
+
+EDUCATION
+Bachelor of Technology in Computer Engineering
+BITS Pilani | Goa Campus | 2020-2024
+• GPA: 8.9/10
+• Specialization in Artificial Intelligence
+• Relevant Coursework: Machine Learning, Deep Learning, NLP, Computer Vision
+
+PROJECTS
+1. Predictive Maintenance System
+   • Developed ML model for equipment failure prediction
+   • Technologies: Python, TensorFlow, FastAPI
+   • Features: Real-time monitoring, anomaly detection
+   • Achieved 95% accuracy in failure prediction
+
+2. Natural Language Processing Pipeline
+   • Built sentiment analysis system for customer feedback
+   • Technologies: BERT, PyTorch, Flask
+   • Features: Multi-language support, entity recognition
+   • Processes 10,000+ reviews daily
+
+3. Computer Vision Application
+   • Created object detection system for retail
+   • Technologies: YOLOv5, OpenCV, TensorFlow
+   • Features: Real-time detection, tracking, counting
+   • Deployed on edge devices
+
+INTERNSHIPS
+ML Engineer Intern | Intel | Bangalore | Jun 2023 - Aug 2023
+• Developed computer vision models for quality control
+• Implemented model optimization techniques
+• Reduced model inference time by 50%
+• Collaborated with hardware team on edge deployment
+
+Data Science Intern | IBM | Pune | Dec 2022 - Feb 2023
+• Built predictive models for customer churn
+• Implemented data preprocessing pipelines
+• Improved model accuracy by 25%
+• Created interactive dashboards
+
+ACHIEVEMENTS
+• Winner of National AI Challenge 2023
+• Published research paper on deep learning optimization
+• Top 5 in Intel AI Global Challenge
+• Best Project Award in college technical fest
+• Active contributor to open-source ML projects
+
+CERTIFICATIONS
+• Deep Learning Specialization - Coursera
+• TensorFlow Developer Certificate
+• AWS Machine Learning Specialty
+• Microsoft Azure AI Fundamentals
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Professional) 

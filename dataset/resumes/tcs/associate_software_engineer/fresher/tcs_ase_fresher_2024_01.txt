@@ -1,0 +1,71 @@
+Source: TCS Careers
+Date: 2024-03-31
+Category: associate_software_engineer
+Experience: fresher
+Title: Associate Software Engineer Resume (Fresher)
+
+RAHUL KUMAR
+Mumbai, Maharashtra
+rahul.kumar@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/rahulkumar
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with strong academic background and hands-on project experience. Passionate about software development with expertise in Java and web technologies. Seeking to start career as an Associate Software Engineer at TCS.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: HTML5, CSS3, React.js
+• Databases: MySQL, MongoDB
+• Tools: Git, VS Code, Eclipse
+• Other: REST APIs, Agile Methodologies
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Vellore Institute of Technology | Vellore, Tamil Nadu | 2020-2024
+• GPA: 8.5/10
+• Specialization in Software Engineering
+• Relevant Coursework: Data Structures, Algorithms, Database Management, Web Development
+
+PROJECTS
+1. E-Commerce Website
+   • Developed a full-stack e-commerce platform
+   • Technologies: React.js, Node.js, MongoDB
+   • Implemented user authentication and product management
+   • Deployed on Heroku
+
+2. Student Management System
+   • Built a web-based student management system
+   • Technologies: Java, Spring Boot, MySQL
+   • Features: Student registration, attendance tracking, grade management
+
+3. Weather Application
+   • Created a weather application using OpenWeather API
+   • Technologies: JavaScript, HTML5, CSS3
+   • Implemented real-time weather updates and location-based search
+
+INTERNSHIPS
+Software Development Intern | Tech Solutions Pvt. Ltd. | Mumbai | Jun 2023 - Aug 2023
+• Developed and maintained web applications
+• Collaborated with senior developers on feature implementation
+• Participated in code reviews and team meetings
+
+Technical Intern | Digital Innovations | Bangalore | Jan 2023 - Mar 2023
+• Assisted in frontend development
+• Worked on bug fixing and testing
+• Learned agile development practices
+
+ACHIEVEMENTS
+• First Class with Distinction in B.Tech
+• Winner of College Technical Project Competition
+• Active participant in coding competitions
+• Member of College Technical Club
+• Completed online certifications in Java and Web Development
+
+CERTIFICATIONS
+• Oracle Certified Associate, Java SE 8 Programmer
+• AWS Certified Cloud Practitioner
+• Google IT Support Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native) 

@@ -1,0 +1,104 @@
+Source: https://www.amazon.jobs/en/landing_pages/amazon-interview-tips
+Date: 2024-03-31
+Category: hiring_practices
+Title: Amazon's Interview Tips and Best Practices
+
+Amazon's interview process is known for its thorough evaluation of candidates' technical skills and cultural fit. Here's a comprehensive guide to help candidates prepare effectively:
+
+Pre-Interview Preparation:
+1. Technical Skills
+   - Review core computer science concepts
+   - Practice coding problems
+   - Study system design principles
+   - Understand cloud services
+   - Prepare for technical deep dives
+
+2. Leadership Principles
+   - Understand each principle thoroughly
+   - Prepare examples for each principle
+   - Think about past experiences
+   - Consider customer impact
+   - Reflect on innovation examples
+
+3. Company Research
+   - Study Amazon's business model
+   - Understand AWS services
+   - Research recent innovations
+   - Know about company culture
+   - Review leadership principles
+
+Interview Process Overview:
+1. Initial Screening
+   - Resume review
+   - Technical assessment
+   - Phone screening
+   - Basic technical questions
+   - Cultural fit assessment
+
+2. Technical Interviews
+   - Coding exercises
+   - System design discussions
+   - Architecture reviews
+   - Problem-solving scenarios
+   - Technical deep dives
+
+3. Behavioral Interviews
+   - Leadership principle examples
+   - Past experience discussion
+   - Team collaboration
+   - Problem-solving approach
+   - Innovation examples
+
+Common Interview Questions:
+1. Technical Questions
+   - System design problems
+   - Algorithm optimization
+   - Code review exercises
+   - Architecture decisions
+   - Performance optimization
+
+2. Behavioral Questions
+   - Customer obsession examples
+   - Innovation stories
+   - Problem-solving scenarios
+   - Team leadership
+   - Technical decisions
+
+3. System Design Questions
+   - Scalability considerations
+   - Architecture patterns
+   - Performance optimization
+   - Security considerations
+   - Cost optimization
+
+Success Factors:
+1. Technical Excellence
+   - Strong coding skills
+   - System design knowledge
+   - Problem-solving ability
+   - Technical depth
+   - Innovation mindset
+
+2. Cultural Alignment
+   - Customer focus
+   - Ownership mentality
+   - Innovation drive
+   - Team collaboration
+   - Learning attitude
+
+3. Communication Skills
+   - Clear explanations
+   - Active listening
+   - Thought process sharing
+   - Question handling
+   - Technical discussions
+
+Tips for Success:
+1. Be prepared with examples
+2. Think out loud
+3. Ask clarifying questions
+4. Consider edge cases
+5. Focus on customer impact
+6. Show enthusiasm
+7. Demonstrate ownership
+8. Highlight innovation 
