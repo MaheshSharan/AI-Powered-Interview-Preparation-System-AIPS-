@@ -1,0 +1,89 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: sde
+Experience: mid_level
+Title: Software Development Engineer Resume (Mid-Level)
+
+PRIYANKA SINGH
+Mumbai, Maharashtra
+priyanka.singh@email.com | (555) 890-1234
+LinkedIn: linkedin.com/in/priyanka-singh
+
+PROFESSIONAL SUMMARY
+Senior Software Development Engineer with 5 years of experience in full-stack development and cloud technologies. Expertise in building scalable applications and microservices architecture. Seeking to join Google as a Senior Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: React, Node.js, Express.js
+• Cloud: GCP, AWS, Docker
+• Databases: SQL, MongoDB, Redis
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Development Engineer | Amazon | Mumbai | Feb 2022 - Present
+• Lead development of enterprise microservices
+• Design and implement cloud solutions
+• Mentor team of 7 junior developers
+• Drive technical decisions and best practices
+• Optimize application performance
+• Achievements:
+  - Reduced system latency by 55%
+  - Improved code quality by 50%
+  - Led 7 major projects to completion
+
+Software Development Engineer | Microsoft | Bangalore | Apr 2020 - Jan 2022
+• Developed web applications
+• Implemented CI/CD pipelines
+• Created automated tests
+• Mentored junior developers
+
+Software Engineering Intern | Google | Hyderabad | Jul 2019 - Mar 2020
+• Developed microservices
+• Participated in code reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Delhi | 2015-2019
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Distributed Systems in Cloud"
+
+PROJECTS
+1. Enterprise Cloud Platform
+   • Built scalable enterprise platform
+   • Tools: React, Node.js, GCP
+   • Features: User management, analytics
+   • Improved performance by 55%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: WebSocket, MongoDB, Redis
+   • Features: Real-time processing, reporting
+   • Serves 4500+ concurrent users
+
+3. Microservices Architecture
+   • Created service architecture
+   • Tools: Spring Cloud, Docker, Kubernetes
+   • Features: Load balancing, security
+   • Reduced latency by 45%
+
+ACHIEVEMENTS
+• Received "Technical Leadership Award" at Amazon
+• Led successful delivery of 7 projects
+• Improved system performance by 50%
+• Mentored 12 junior developers
+• Published 4 technical papers
+• Patented cloud solution
+
+CERTIFICATIONS
+• Google Cloud Professional Developer
+• AWS Certified Developer
+• Docker Certified Associate
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Conversational) 

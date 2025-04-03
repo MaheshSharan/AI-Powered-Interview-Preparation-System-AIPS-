@@ -1,0 +1,80 @@
+Source: Flipkart Careers
+Date: 2024-04-03
+Category: sde
+Experience: junior
+Title: Software Development Engineer Resume (Junior)
+
+VIKRAM IYER
+Chennai, Tamil Nadu
+vikram.iyer@email.com | (555) 678-9012
+LinkedIn: linkedin.com/in/vikram-iyer
+
+PROFESSIONAL SUMMARY
+Software Development Engineer with 2 years of experience in building scalable applications and distributed systems. Expertise in microservices architecture and cloud technologies. Seeking to join Flipkart as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Software Development Engineer | Flipkart | Chennai | Mar 2023 - Present
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+• Optimized performance
+• Achievements:
+  - Improved system performance by 35%
+  - Enhanced scalability by 30%
+  - Led 4 major projects to completion
+
+Software Development Intern | Flipkart | Chennai | Aug 2022 - Feb 2023
+• Built backend services
+• Implemented caching
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2018-2022
+• GPA: 8.7/10
+• Specialization in Software Engineering
+• Thesis: "Distributed Systems Design"
+
+PROJECTS
+1. E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Product catalog, order management
+   • Improved scalability by 35%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 900K+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 25%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Flipkart
+• Published technical article on microservices
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

@@ -1,0 +1,75 @@
+Source: Amazon Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+ARJUN MENON
+Chennai, Tamil Nadu
+arjun.menon@email.com | (555) 345-6789
+LinkedIn: linkedin.com/in/arjun-menon
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in data science and machine learning. Specialized in predictive modeling, statistical analysis, and data visualization. Seeking to join Amazon as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2020-2024
+• GPA: 8.7/10
+• Specialization in Data Science
+• Thesis: "Machine Learning in Time Series Analysis"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 90% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 35%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 30%
+
+INTERNSHIPS
+Data Science Intern | Amazon | Chennai | Aug 2024 - Oct 2024
+• Developed ML models
+• Implemented data pipelines
+• Created visualizations
+
+Data Analytics Intern | Microsoft | Hyderabad | May 2024 - Jul 2024
+• Built analytics dashboards
+• Optimized queries
+• Implemented ETL processes
+
+ACHIEVEMENTS
+• Winner of Amazon Data Science Challenge 2024
+• Published research paper on ML
+• Top performer in academic projects
+• Active in data science community
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

@@ -1,0 +1,90 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: ai_ml_engineer
+Experience: mid_level
+Title: AI/ML Engineer Resume (Mid-Level)
+
+RAJESH KUMAR
+Bangalore, Karnataka
+rajesh.kumar@email.com | (555) 789-0123
+LinkedIn: linkedin.com/in/rajesh-kumar
+
+PROFESSIONAL SUMMARY
+Senior AI/ML Engineer with 5 years of experience in machine learning and artificial intelligence. Expertise in deep learning, computer vision, and natural language processing. Seeking to join Google as a Senior AI/ML Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, Java
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Deep Learning: CNN, RNN, Transformers
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Cloud: GCP, AWS, Docker
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior AI/ML Engineer | Amazon | Bangalore | Jan 2022 - Present
+• Lead enterprise AI/ML initiatives
+• Design and implement solutions
+• Mentor team of 8 junior engineers
+• Drive technical strategy
+• Optimize model performance
+• Achievements:
+  - Improved model accuracy by 65%
+  - Reduced training time by 60%
+  - Led 8 major projects to completion
+
+AI/ML Engineer | Microsoft | Hyderabad | Mar 2020 - Dec 2021
+• Developed ML models
+• Implemented deep learning solutions
+• Mentored junior engineers
+• Optimized performance
+
+AI Engineering Intern | Google | Bangalore | Jun 2019 - Feb 2020
+• Developed AI services
+• Participated in model reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2015-2019
+• GPA: 8.8/10
+• Specialization in AI/ML
+• Thesis: "Deep Learning in Computer Vision"
+
+PROJECTS
+1. Computer Vision System
+   • Built enterprise vision system
+   • Tools: TensorFlow, OpenCV, Python
+   • Features: Object detection, classification
+   • Achieved 99% accuracy
+
+2. Natural Language Processing
+   • Developed text analysis platform
+   • Tools: BERT, PyTorch, NLTK
+   • Features: Sentiment analysis, summarization
+   • Processed 5M+ documents
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Scikit-learn, Pandas, NumPy
+   • Features: Collaborative filtering
+   • Improved accuracy by 70%
+
+ACHIEVEMENTS
+• Received "AI Leadership Award" at Amazon
+• Led successful delivery of 10 projects
+• Improved model performance by 65%
+• Mentored 15 junior engineers
+• Published 5 technical papers
+• Patented AI solution
+
+CERTIFICATIONS
+• Google Cloud AI/ML Professional
+• TensorFlow Developer Certificate
+• AWS Machine Learning Specialty
+• Deep Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

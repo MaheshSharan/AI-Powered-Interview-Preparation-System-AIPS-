@@ -1,0 +1,225 @@
+{
+  "company": "Google",
+  "role": "Full Stack Engineer",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Python", "Java", "JavaScript/TypeScript", "Go", "C++"],
+      "preferred": ["Kotlin", "Rust"],
+      "nice_to_have": ["Swift", "Scala"],
+      "semantic_equivalents": {
+        "Python": ["Python3", "Py", "Python Programming"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"],
+        "Go": ["Golang", "Go Programming"],
+        "C++": ["Cpp", "C Plus Plus"]
+      }
+    },
+    "frameworks": {
+      "required": ["React.js", "Node.js", "Express.js", "Angular", "Next.js"],
+      "preferred": ["Vue.js", "Django"],
+      "nice_to_have": ["Flask", "FastAPI"],
+      "semantic_equivalents": {
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Node.js": ["Node", "NodeJS"],
+        "Express.js": ["Express", "Node.js Framework"],
+        "Angular": ["AngularJS", "Angular Framework"],
+        "Next.js": ["Next", "React Framework"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Google Cloud Platform", "Docker", "Kubernetes", "Terraform"],
+      "preferred": ["Jenkins", "Ansible"],
+      "nice_to_have": ["Prometheus", "Grafana"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Google Cloud Platform": ["GCP", "Google Cloud"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Kubernetes": ["K8s", "Container Orchestration"],
+        "Terraform": ["Infrastructure as Code", "IaC"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Web Platform", "Cloud Platform", "Mobile Platform", "Serverless"],
+      "preferred": ["Microservices", "Edge Computing"],
+      "nice_to_have": ["iOS", "Android"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Web Platform": ["Web Development", "Web Technologies"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "Mobile Platform": ["Mobile Development", "Mobile Technologies"],
+        "Serverless": ["Serverless Computing", "FaaS"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "PostgreSQL", "MongoDB", "Cloud SQL", "Cloud Spanner"],
+      "preferred": ["Redis", "Cloud Datastore"],
+      "nice_to_have": ["BigQuery", "Cloud Firestore"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "Cloud SQL": ["Managed SQL", "Cloud Database"],
+        "Cloud Spanner": ["Distributed Database", "Global Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Learning Ability", "Innovation", "Technical Leadership"],
+    "preferred": ["Adaptability", "Project Management"],
+    "nice_to_have": ["Customer Focus", "Business Acumen"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Learning Ability": [
+        "Quick Learning",
+        "Continuous Learning",
+        "Self-learning",
+        "Adaptability"
+      ],
+      "Innovation": [
+        "Creative Thinking",
+        "Problem Innovation",
+        "Technical Innovation",
+        "Solution Innovation"
+      ],
+      "Technical Leadership": [
+        "Technical Direction",
+        "Architecture Leadership",
+        "Team Leadership",
+        "Technical Mentoring"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Data Structures",
+        "Algorithms",
+        "Full Stack Development",
+        "Cloud Computing",
+        "Database Design",
+        "System Architecture",
+        "API Development"
+      ],
+      "preferred": [
+        "Microservices",
+        "DevOps Practices",
+        "Security Implementation"
+      ],
+      "nice_to_have": [
+        "Machine Learning",
+        "Distributed Systems"
+      ],
+      "semantic_equivalents": {
+        "Data Structures": [
+          "Data Organization",
+          "Data Management",
+          "Data Types",
+          "Data Structures Implementation"
+        ],
+        "Algorithms": [
+          "Algorithm Design",
+          "Algorithm Analysis",
+          "Computational Thinking",
+          "Algorithm Optimization"
+        ],
+        "Full Stack Development": [
+          "Frontend Development",
+          "Backend Development",
+          "Full Stack Architecture",
+          "Web Applications"
+        ],
+        "Cloud Computing": [
+          "Cloud Services",
+          "Cloud Architecture",
+          "Cloud Deployment",
+          "Cloud Management"
+        ],
+        "Database Design": [
+          "Database Architecture",
+          "Database Optimization",
+          "Database Management",
+          "Data Modeling"
+        ],
+        "System Architecture": [
+          "Architecture Design",
+          "System Design",
+          "Technical Architecture",
+          "Solution Architecture"
+        ],
+        "API Development": [
+          "API Design",
+          "API Integration",
+          "REST APIs",
+          "GraphQL"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": ["Google Cloud Professional Developer"],
+    "preferred": [
+      "Google Cloud Professional Architect",
+      "Kubernetes Administrator"
+    ],
+    "nice_to_have": [
+      "Google Cloud Professional DevOps Engineer",
+      "Google Cloud Professional Security Engineer"
+    ]
+  },
+  "responsibilities": [
+    "Design and develop full stack applications",
+    "Build and maintain cloud-native solutions",
+    "Implement security best practices",
+    "Optimize application performance",
+    "Mentor junior developers",
+    "Lead technical initiatives",
+    "Collaborate with cross-functional teams",
+    "Participate in code reviews",
+    "Contribute to technical documentation",
+    "Drive technical decisions",
+    "Architect complex systems",
+    "Lead technical projects",
+    "Define technical standards",
+    "Evaluate new technologies",
+    "Support production systems",
+    "Debug and fix issues"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Coding",
+    "System Design",
+    "Technical Discussion",
+    "Full Stack Development",
+    "Cloud Computing",
+    "Database Design",
+    "System Architecture",
+    "API Design",
+    "Google Values and Culture",
+    "Innovation and Creativity",
+    "Technical Leadership",
+    "Project Management"
+  ]
+} 

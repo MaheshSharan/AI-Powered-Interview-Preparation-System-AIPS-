@@ -1,0 +1,141 @@
+{
+  "company": "Microsoft",
+  "role": "Software Development Engineer",
+  "experience_level": "Junior",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["C#", "Java", "Python", "JavaScript/TypeScript"],
+      "preferred": ["C++", "Go"],
+      "nice_to_have": ["Rust", "Swift"],
+      "semantic_equivalents": {
+        "C#": ["C#.NET", ".NET", "C Sharp"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"]
+      }
+    },
+    "frameworks": {
+      "required": [".NET Core", "React.js"],
+      "preferred": ["Angular", "Spring Boot"],
+      "nice_to_have": ["Django", "Flask"],
+      "semantic_equivalents": {
+        ".NET Core": ["ASP.NET Core", "DotNet Core"],
+        "React.js": ["React", "ReactJS", "React Native"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Visual Studio", "Azure DevOps"],
+      "preferred": ["Docker", "Kubernetes"],
+      "nice_to_have": ["Jenkins", "Terraform"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Visual Studio": ["VS", "Visual Studio Code", "IDE"]
+      }
+    },
+    "platforms": {
+      "required": ["Windows", "Azure"],
+      "preferred": ["Linux", "AWS"],
+      "nice_to_have": ["Google Cloud", "macOS"],
+      "semantic_equivalents": {
+        "Windows": ["Windows OS", "Windows Platform"],
+        "Azure": ["Microsoft Azure", "Azure Cloud"]
+      }
+    },
+    "databases": {
+      "required": ["SQL Server", "MongoDB"],
+      "preferred": ["Redis", "PostgreSQL"],
+      "nice_to_have": ["Cosmos DB", "Elasticsearch"],
+      "semantic_equivalents": {
+        "SQL Server": ["MSSQL", "Microsoft SQL Server"],
+        "MongoDB": ["Mongo", "NoSQL Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Leadership"],
+    "preferred": ["Innovation", "Adaptability"],
+    "nice_to_have": ["Customer Focus", "Mentoring"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 2,
+    "key_areas": {
+      "required": [
+        "Full Stack Development",
+        "System Design",
+        "API Development"
+      ],
+      "preferred": [
+        "Cloud Computing",
+        "Microservices Architecture"
+      ],
+      "nice_to_have": [
+        "Performance Optimization",
+        "Security Implementation"
+      ],
+      "semantic_equivalents": {
+        "Full Stack Development": [
+          "Web Development",
+          "End-to-end Development",
+          "Full Stack Web Development",
+          "Full Stack Engineering"
+        ],
+        "System Design": [
+          "Architecture Design",
+          "Software Architecture",
+          "System Architecture",
+          "Technical Design"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": ["Azure Developer Associate"],
+    "preferred": ["Azure Solutions Architect"],
+    "nice_to_have": [
+      "AWS Certified Developer",
+      "Docker Certified Associate",
+      "Kubernetes Administrator"
+    ]
+  },
+  "responsibilities": [
+    "Design and develop scalable applications",
+    "Build and maintain cloud-native solutions",
+    "Implement security best practices",
+    "Optimize application performance",
+    "Mentor junior developers",
+    "Collaborate with cross-functional teams",
+    "Participate in code reviews",
+    "Contribute to technical documentation"
+  ],
+  "interview_focus": [
+    "System Design",
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Technical Discussion",
+    "Coding",
+    "System Architecture"
+  ]
+} 

@@ -1,0 +1,208 @@
+{
+  "company": "TCS",
+  "role": "Product Manager",
+  "experience_level": "Junior",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["SQL", "Python", "Java"],
+      "preferred": ["JavaScript", "R"],
+      "nice_to_have": ["Scala", "Go"],
+      "semantic_equivalents": {
+        "SQL": ["Structured Query Language", "Database Query"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "JavaScript": ["JS", "Web Development"],
+        "R": ["R Programming", "R Language"]
+      }
+    },
+    "frameworks": {
+      "required": ["Agile", "Scrum", "Kanban"],
+      "preferred": ["SAFe", "Lean"],
+      "nice_to_have": ["Six Sigma", "Design Thinking"],
+      "semantic_equivalents": {
+        "Agile": ["Agile Methodology", "Agile Development"],
+        "Scrum": ["Scrum Framework", "Scrum Methodology"],
+        "Kanban": ["Kanban Board", "Kanban System"]
+      }
+    },
+    "tools": {
+      "required": ["JIRA", "Confluence", "Microsoft Office", "Product Management Tools"],
+      "preferred": ["Trello", "Asana", "Aha!"],
+      "nice_to_have": ["ProductPlan", "Figma"],
+      "semantic_equivalents": {
+        "JIRA": ["Issue Tracking", "Project Management Tool"],
+        "Confluence": ["Documentation", "Knowledge Management"],
+        "Microsoft Office": ["MS Office", "Office Suite"],
+        "Product Management Tools": ["PM Tools", "Product Tools"]
+      }
+    },
+    "platforms": {
+      "required": ["Web Platform", "Mobile Platform", "Cloud Platform"],
+      "preferred": ["Enterprise Platform", "SaaS"],
+      "nice_to_have": ["IoT Platform", "AI Platform"],
+      "semantic_equivalents": {
+        "Web Platform": ["Web Applications", "Web Services"],
+        "Mobile Platform": ["Mobile Applications", "Mobile Services"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "PostgreSQL", "MongoDB"],
+      "preferred": ["Redis", "Cassandra"],
+      "nice_to_have": ["Neo4j", "Elasticsearch"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL Database", "Relational Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"],
+        "MongoDB": ["Document Store", "NoSQL"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Communication", "Problem Solving", "Analytical Thinking", "Team Collaboration", "Leadership"],
+    "preferred": ["Innovation", "Stakeholder Management"],
+    "nice_to_have": ["Strategic Thinking", "Business Acumen"],
+    "semantic_equivalents": {
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist"
+      ],
+      "Analytical Thinking": [
+        "Data Analysis",
+        "Statistical Analysis",
+        "Logical Thinking",
+        "Research Analysis"
+      ],
+      "Leadership": [
+        "Team Leadership",
+        "Project Leadership",
+        "Influence",
+        "Decision Making"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 2,
+    "key_areas": {
+      "required": [
+        "Product Management",
+        "Market Research",
+        "User Research",
+        "Product Strategy",
+        "Product Development"
+      ],
+      "preferred": [
+        "Product Marketing",
+        "Product Analytics",
+        "Product Design"
+      ],
+      "nice_to_have": [
+        "Product Launch",
+        "Product Lifecycle Management"
+      ],
+      "semantic_equivalents": {
+        "Product Management": [
+          "Product Lifecycle",
+          "Product Development",
+          "Product Strategy",
+          "Product Planning",
+          "Product Execution"
+        ],
+        "Market Research": [
+          "Market Analysis",
+          "Competitive Analysis",
+          "Market Trends",
+          "Market Validation",
+          "Market Strategy"
+        ],
+        "User Research": [
+          "User Analysis",
+          "User Needs",
+          "User Experience",
+          "User Feedback",
+          "User Testing"
+        ],
+        "Product Strategy": [
+          "Strategy Planning",
+          "Product Vision",
+          "Product Roadmap",
+          "Product Goals",
+          "Product Metrics"
+        ],
+        "Product Development": [
+          "Development Process",
+          "Feature Development",
+          "Product Testing",
+          "Quality Assurance",
+          "Release Management"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science, Business Administration, or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [
+      "Certified Scrum Product Owner (CSPO)"
+    ],
+    "preferred": [
+      "Product Management Fundamentals",
+      "Agile Certified Practitioner (PMI-ACP)"
+    ],
+    "nice_to_have": [
+      "Professional Scrum Product Owner (PSPO)",
+      "Product School Certification"
+    ]
+  },
+  "responsibilities": [
+    "Define product vision and strategy",
+    "Conduct market research",
+    "Gather user requirements",
+    "Create product roadmaps",
+    "Write product specifications",
+    "Collaborate with development teams",
+    "Track product metrics",
+    "Manage product backlog",
+    "Participate in sprint planning",
+    "Support product launches",
+    "Lead product development initiatives",
+    "Drive product improvements",
+    "Manage stakeholder relationships",
+    "Guide product decisions",
+    "Monitor product performance",
+    "Coordinate with cross-functional teams",
+    "Implement product features",
+    "Analyze product data",
+    "Present product updates",
+    "Support product marketing"
+  ],
+  "interview_focus": [
+    "Product Management",
+    "Market Research",
+    "User Research",
+    "Problem Solving",
+    "Analytical Thinking",
+    "Communication Skills",
+    "Technical Understanding",
+    "TCS Values and Culture",
+    "Product Strategy",
+    "Team Collaboration",
+    "Leadership Experience",
+    "Product Development",
+    "Stakeholder Management",
+    "Product Analytics"
+  ]
+} 

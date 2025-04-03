@@ -1,0 +1,74 @@
+Source: Infosys Careers
+Date: 2024-04-03
+Category: sde
+Experience: fresher
+Title: Software Development Engineer Resume (Fresher)
+
+PRIYA SHARMA
+Hyderabad, Telangana
+priya.sharma@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/priya-sharma
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in software development and cloud technologies. Specialized in building scalable applications and microservices architecture. Seeking to join Infosys as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2020-2024
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Cloud-Native Applications"
+
+PROJECTS
+1. E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Product catalog, order management
+   • Improved scalability by 45%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1.2M+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 35%
+
+INTERNSHIPS
+Software Development Intern | Infosys | Hyderabad | Jul 2024 - Sep 2024
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+
+Software Development Intern | Wipro | Bangalore | Apr 2024 - Jun 2024
+• Built backend services
+• Implemented caching
+• Created technical documentation
+
+ACHIEVEMENTS
+• Winner of Infosys Hackathon 2024
+• Published technical article on microservices
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

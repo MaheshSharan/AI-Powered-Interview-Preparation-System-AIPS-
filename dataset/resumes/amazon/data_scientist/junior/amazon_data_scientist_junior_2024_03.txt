@@ -1,0 +1,83 @@
+Source: Amazon Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: junior
+Title: Data Scientist Resume (Junior)
+
+ARJUN MENON
+Chennai, Tamil Nadu
+arjun.menon@email.com | (555) 678-9012
+LinkedIn: linkedin.com/in/arjun-menon
+
+PROFESSIONAL SUMMARY
+Data Scientist with 2 years of experience in machine learning and data analytics. Expertise in predictive modeling, statistical analysis, and data visualization. Seeking to join Amazon as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Data Scientist | Amazon | Chennai | Mar 2023 - Present
+• Lead development of ML models
+• Design and implement solutions
+• Mentor team of 3 junior analysts
+• Drive technical decisions and best practices
+• Optimize model performance
+• Achievements:
+  - Improved model accuracy by 40%
+  - Enhanced prediction accuracy by 35%
+  - Led 3 major projects to completion
+
+Data Analytics Intern | Microsoft | Hyderabad | Aug 2022 - Feb 2023
+• Developed analytics dashboards
+• Implemented ETL processes
+• Created visualizations
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2018-2022
+• GPA: 8.7/10
+• Specialization in Data Science
+• Thesis: "Machine Learning in Time Series Analysis"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 93% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 45%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 40%
+
+ACHIEVEMENTS
+• Received "Data Science Excellence Award" at Amazon
+• Led successful delivery of 3 projects
+• Improved model performance by 40%
+• Mentored 5 junior analysts
+• Published 2 technical papers
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

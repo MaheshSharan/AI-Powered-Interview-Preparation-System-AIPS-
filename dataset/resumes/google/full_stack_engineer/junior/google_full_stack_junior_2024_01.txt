@@ -1,0 +1,82 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: full_stack_engineer
+Experience: junior
+Title: Full Stack Engineer Resume (Junior)
+
+RAHUL VERMA
+Bangalore, Karnataka
+rahul.verma@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/rahul-verma
+
+PROFESSIONAL SUMMARY
+Full Stack Engineer with 2 years of experience in web development and frontend technologies. Expertise in building scalable applications and modern UI/UX design. Seeking to join Google as a Full Stack Engineer.
+
+TECHNICAL SKILLS
+• Frontend: React, Angular, Vue.js
+• Backend: Node.js, Python, Java
+• Databases: MongoDB, PostgreSQL, Redis
+• Cloud: GCP, AWS, Docker
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Full Stack Engineer | Amazon | Bangalore | Jan 2023 - Present
+• Lead development of web applications
+• Design and implement solutions
+• Mentor team of 3 junior developers
+• Drive technical decisions and best practices
+• Optimize application performance
+• Achievements:
+  - Improved application performance by 45%
+  - Enhanced user experience by 40%
+  - Led 3 major projects to completion
+
+Frontend Development Intern | Microsoft | Hyderabad | Jun 2022 - Dec 2022
+• Developed user interfaces
+• Implemented responsive design
+• Created automated tests
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2018-2022
+• GPA: 8.8/10
+• Specialization in Software Engineering
+• Thesis: "Modern Web Development Architecture"
+
+PROJECTS
+1. E-commerce Platform
+   • Built full-stack e-commerce platform
+   • Tools: React, Node.js, MongoDB
+   • Features: User management, product catalog
+   • Improved performance by 50%
+
+2. Real-time Chat Application
+   • Developed chat platform
+   • Tools: WebSocket, Redis, Express.js
+   • Features: Real-time messaging, notifications
+   • Serves 2000+ concurrent users
+
+3. Task Management System
+   • Created task management app
+   • Tools: Angular, Python, PostgreSQL
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 40%
+
+ACHIEVEMENTS
+• Received "Technical Excellence Award" at Amazon
+• Led successful delivery of 4 projects
+• Improved application performance by 45%
+• Mentored 5 junior developers
+• Published 2 technical papers
+
+CERTIFICATIONS
+• Google Cloud Professional Developer
+• AWS Certified Developer
+• Docker Certified Associate
+• React Developer Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

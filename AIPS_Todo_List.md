@@ -212,9 +212,9 @@ graph TD
 - [ ] Implement personalized improvement roadmap generation
 
 ### 3.7 Dataset Creation for AI Training
-- [ ] Collect 50-100 successful resumes from target companies and roles
+- [ ] Collect 5-10 successful resumes from target companies and roles
 - [ ] Create structured dataset with company-specific resume patterns
-- [ ] Collect 20-50 professional articles about each company's hiring practices
+- [ ] Collect 3-5 professional articles about each company's hiring practices
 - [ ] Extract key information about what each company values in candidates
 - [ ] Create mapping between resume elements and company requirements
 - [ ] Design dataset for different experience levels (fresher, mid-level, senior)

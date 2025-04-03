@@ -1,0 +1,181 @@
+{
+  "company": "Microsoft",
+  "role": "Data Scientist",
+  "experience_level": "Fresher",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Python", "R", "SQL"],
+      "preferred": ["Java", "Scala"],
+      "nice_to_have": ["Julia", "MATLAB"],
+      "semantic_equivalents": {
+        "Python": ["Python3", "Py", "Python Programming"],
+        "R": ["R Programming", "R Language"],
+        "SQL": ["Structured Query Language", "Database Query"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Scala": ["Scala Programming", "Scala Language"]
+      }
+    },
+    "frameworks": {
+      "required": ["TensorFlow", "PyTorch", "scikit-learn"],
+      "preferred": ["Keras", "XGBoost"],
+      "nice_to_have": ["LightGBM", "CatBoost"],
+      "semantic_equivalents": {
+        "TensorFlow": ["TF", "Google TensorFlow"],
+        "PyTorch": ["PyTorch Framework", "Facebook PyTorch"],
+        "scikit-learn": ["sklearn", "Machine Learning Library"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Azure ML", "Jupyter Notebook"],
+      "preferred": ["Docker", "Kubernetes"],
+      "nice_to_have": ["Airflow", "MLflow"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Azure ML": ["Azure Machine Learning", "Cloud ML"],
+        "Jupyter Notebook": ["Jupyter", "Interactive Notebook"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Azure", "Cloud Platform"],
+      "preferred": ["Azure ML Studio", "Azure Databricks"],
+      "nice_to_have": ["Azure Synapse", "Azure Data Lake"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Azure": ["Microsoft Azure", "Azure Cloud"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"]
+      }
+    },
+    "databases": {
+      "required": ["SQL Server", "Azure SQL", "Cosmos DB"],
+      "preferred": ["PostgreSQL", "MongoDB"],
+      "nice_to_have": ["Redis", "Elasticsearch"],
+      "semantic_equivalents": {
+        "SQL Server": ["Microsoft SQL", "MSSQL"],
+        "Azure SQL": ["Managed SQL", "Cloud Database"],
+        "Cosmos DB": ["NoSQL Database", "Document Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Analytical Thinking"],
+    "preferred": ["Research Mindset", "Innovation"],
+    "nice_to_have": ["Project Management", "Leadership"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Analytical Thinking": [
+        "Data Analysis",
+        "Statistical Analysis",
+        "Logical Thinking",
+        "Research Analysis"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 0,
+    "key_areas": {
+      "required": [
+        "Machine Learning Fundamentals",
+        "Deep Learning Basics",
+        "Statistical Analysis",
+        "Data Processing"
+      ],
+      "preferred": [
+        "Natural Language Processing",
+        "Computer Vision"
+      ],
+      "nice_to_have": [
+        "Reinforcement Learning",
+        "Distributed Systems"
+      ],
+      "semantic_equivalents": {
+        "Machine Learning Fundamentals": [
+          "ML Basics",
+          "Machine Learning Concepts",
+          "ML Algorithms",
+          "Supervised Learning",
+          "Unsupervised Learning"
+        ],
+        "Deep Learning Basics": [
+          "Neural Networks",
+          "Deep Learning Models",
+          "CNN",
+          "RNN",
+          "Transformers"
+        ],
+        "Statistical Analysis": [
+          "Statistics",
+          "Data Analysis",
+          "Statistical Methods",
+          "Hypothesis Testing"
+        ],
+        "Data Processing": [
+          "Data Cleaning",
+          "Data Preprocessing",
+          "Feature Engineering",
+          "Data Transformation"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science, Mathematics, Statistics, or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [],
+    "preferred": [
+      "Azure AI Fundamentals",
+      "Azure Data Scientist Associate"
+    ],
+    "nice_to_have": [
+      "Azure Machine Learning Engineer Associate",
+      "Azure Data Engineer Associate"
+    ]
+  },
+  "responsibilities": [
+    "Develop and implement machine learning models",
+    "Research new ML techniques",
+    "Optimize model performance",
+    "Write technical documentation",
+    "Collaborate with research teams",
+    "Participate in code reviews",
+    "Learn new technologies",
+    "Follow Microsoft's development practices",
+    "Contribute to technical documentation",
+    "Support production systems",
+    "Debug and fix issues",
+    "Participate in team meetings",
+    "Learn and apply best practices",
+    "Contribute to team projects",
+    "Support data analysis tasks",
+    "Assist in model deployment"
+  ],
+  "interview_focus": [
+    "Machine Learning Fundamentals",
+    "Deep Learning Concepts",
+    "Statistical Analysis",
+    "Problem Solving",
+    "Coding",
+    "System Design Basics",
+    "Technical Discussion",
+    "Microsoft Technologies",
+    "Research Experience",
+    "Innovation and Creativity"
+  ]
+} 

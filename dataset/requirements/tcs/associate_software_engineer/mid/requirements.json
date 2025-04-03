@@ -1,0 +1,247 @@
+{
+  "company": "TCS",
+  "role": "Associate Software Engineer",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "JavaScript/TypeScript", "C++"],
+      "preferred": ["Ruby", "Go"],
+      "nice_to_have": ["Kotlin", "Rust"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"],
+        "C++": ["Cpp", "C Plus Plus"],
+        "Ruby": ["Ruby on Rails", "Ruby Programming"],
+        "Go": ["Golang", "Go Programming"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js", "Node.js", "Express.js"],
+      "preferred": ["Django", "Vue.js"],
+      "nice_to_have": ["Angular", "Flask"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Java Framework"],
+        "React.js": ["React", "Frontend Framework"],
+        "Node.js": ["Node", "Backend Framework"],
+        "Express.js": ["Express", "Web Framework"],
+        "Django": ["Python Framework", "Web Framework"],
+        "Vue.js": ["Vue", "Frontend Framework"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Docker", "Jenkins", "Kubernetes"],
+      "preferred": ["Terraform", "Prometheus"],
+      "nice_to_have": ["Grafana", "ELK Stack"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Jenkins": ["CI/CD", "Automation Server"],
+        "Kubernetes": ["K8s", "Container Orchestration"],
+        "Terraform": ["Infrastructure as Code", "Cloud Infrastructure"],
+        "Prometheus": ["Monitoring", "Metrics Collection"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Web Platform", "Cloud Platform", "Mobile Platform"],
+      "preferred": ["Serverless", "Microservices"],
+      "nice_to_have": ["iOS", "Android"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Web Platform": ["Web Applications", "Web Services"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "Mobile Platform": ["Mobile Applications", "Mobile Services"],
+        "Serverless": ["Serverless Computing", "FaaS"],
+        "Microservices": ["Microservices Architecture", "Distributed Systems"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB", "PostgreSQL", "Redis"],
+      "preferred": ["Elasticsearch", "Cassandra"],
+      "nice_to_have": ["Neo4j", "TimescaleDB"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL Database", "Relational Database"],
+        "MongoDB": ["Document Store", "NoSQL"],
+        "PostgreSQL": ["Postgres", "Relational Database"],
+        "Redis": ["In-Memory Database", "Cache Database"],
+        "Elasticsearch": ["Search Engine", "Analytics Database"],
+        "Cassandra": ["Distributed Database", "NoSQL"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Learning Ability", "Technical Leadership"],
+    "preferred": ["Innovation", "Mentoring"],
+    "nice_to_have": ["Leadership", "Customer Focus"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Learning Ability": [
+        "Quick Learning",
+        "Adaptability",
+        "Continuous Learning",
+        "Knowledge Acquisition"
+      ],
+      "Technical Leadership": [
+        "Technical Direction",
+        "Architecture Leadership",
+        "Team Leadership",
+        "Technical Mentoring"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Data Structures",
+        "Algorithms",
+        "Basic Programming",
+        "Web Development",
+        "Database Design",
+        "System Design",
+        "Cloud Computing"
+      ],
+      "preferred": [
+        "API Development",
+        "Microservices",
+        "DevOps Practices"
+      ],
+      "nice_to_have": [
+        "Security Implementation",
+        "Performance Optimization"
+      ],
+      "semantic_equivalents": {
+        "Data Structures": [
+          "Data Organization",
+          "Data Management",
+          "Data Types",
+          "Data Models"
+        ],
+        "Algorithms": [
+          "Algorithm Design",
+          "Algorithm Analysis",
+          "Problem Solving",
+          "Computational Thinking"
+        ],
+        "Basic Programming": [
+          "Programming Fundamentals",
+          "Code Writing",
+          "Code Organization",
+          "Programming Logic"
+        ],
+        "Web Development": [
+          "Web Applications",
+          "Web Services",
+          "Frontend Development",
+          "Backend Development"
+        ],
+        "Database Design": [
+          "Database Schema",
+          "Data Modeling",
+          "Database Architecture",
+          "Data Storage"
+        ],
+        "System Design": [
+          "Architecture Design",
+          "System Architecture",
+          "Technical Architecture",
+          "Solution Architecture"
+        ],
+        "Cloud Computing": [
+          "Cloud Services",
+          "Cloud Architecture",
+          "Cloud Deployment",
+          "Cloud Management"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [
+      "Cloud Computing Fundamentals",
+      "Docker Certified Associate"
+    ],
+    "preferred": [
+      "Kubernetes Administrator",
+      "AWS Solutions Architect Associate"
+    ],
+    "nice_to_have": [
+      "Azure Developer Associate",
+      "Google Cloud Professional Developer"
+    ]
+  },
+  "responsibilities": [
+    "Develop and maintain applications",
+    "Write clean and efficient code",
+    "Participate in code reviews",
+    "Collaborate with team members",
+    "Learn and apply new technologies",
+    "Follow TCS development practices",
+    "Contribute to technical documentation",
+    "Debug and fix issues",
+    "Participate in team meetings",
+    "Support production systems",
+    "Implement new features",
+    "Optimize application performance",
+    "Write unit tests",
+    "Deploy applications",
+    "Monitor system health",
+    "Follow coding standards",
+    "Document code changes",
+    "Assist in problem resolution",
+    "Learn best practices",
+    "Contribute to team projects",
+    "Lead technical initiatives",
+    "Mentor junior developers",
+    "Drive technical decisions",
+    "Architect solutions",
+    "Optimize system performance",
+    "Implement security measures",
+    "Lead code reviews",
+    "Guide technical discussions",
+    "Drive innovation",
+    "Manage technical debt"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Coding",
+    "System Design",
+    "Technical Discussion",
+    "Web Development",
+    "Database Design",
+    "Cloud Computing",
+    "TCS Values and Culture",
+    "Team Collaboration",
+    "Learning Ability",
+    "Communication Skills",
+    "Technical Leadership",
+    "Architecture Design",
+    "Performance Optimization",
+    "Security Implementation",
+    "DevOps Practices",
+    "Innovation",
+    "Mentoring",
+    "Project Management"
+  ]
+} 

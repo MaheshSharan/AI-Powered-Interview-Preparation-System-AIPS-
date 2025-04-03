@@ -1,0 +1,89 @@
+Source: Amazon Careers
+Date: 2024-04-03
+Category: sde
+Experience: mid_level
+Title: Software Development Engineer Resume (Mid-Level)
+
+PRIYANKA SINGH
+Mumbai, Maharashtra
+priyanka.singh@email.com | (555) 890-1234
+LinkedIn: linkedin.com/in/priyanka-singh
+
+PROFESSIONAL SUMMARY
+Senior Software Development Engineer with 5 years of experience in building scalable applications and distributed systems. Expertise in cloud technologies and microservices architecture. Seeking to join Amazon as a Senior Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Development Engineer | Amazon | Mumbai | Feb 2022 - Present
+• Lead enterprise microservices initiatives
+• Design and implement solutions
+• Mentor team of 7 junior developers
+• Drive technical strategy
+• Optimize application performance
+• Achievements:
+  - Improved system performance by 60%
+  - Enhanced scalability by 55%
+  - Led 7 major projects to completion
+
+Software Development Engineer | Microsoft | Bangalore | Apr 2020 - Jan 2022
+• Developed microservices
+• Implemented distributed systems
+• Mentored junior engineers
+• Optimized performance
+
+Software Engineering Intern | Google | Hyderabad | Jul 2019 - Mar 2020
+• Developed backend services
+• Participated in code reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Delhi | 2015-2019
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Cloud-Native Applications"
+
+PROJECTS
+1. Microservices Platform
+   • Built enterprise microservices platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Service discovery, load balancing
+   • Improved scalability by 65%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 4.5M+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 45%
+
+ACHIEVEMENTS
+• Received "Technical Leadership Award" at Amazon
+• Led successful delivery of 8 projects
+• Improved system performance by 60%
+• Mentored 12 junior developers
+• Published 4 technical papers
+• Patented distributed system solution
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Marathi (Conversational) 

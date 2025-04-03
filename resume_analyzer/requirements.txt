@@ -1,0 +1,24 @@
+# Document Processing
+pdf2image>=1.16.3
+pytesseract>=0.3.10
+python-docx>=0.8.11
+PyPDF2>=3.0.0
+pdfplumber>=0.10.2
+
+# Text Processing
+nltk>=3.8.1
+spacy>=3.7.2
+regex>=2023.10.3
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning
+scikit-learn>=1.2.0
+torch>=2.0.0
+transformers>=4.30.0
+
+# Utilities
+tqdm>=4.65.0
+python-magic>=0.4.27 

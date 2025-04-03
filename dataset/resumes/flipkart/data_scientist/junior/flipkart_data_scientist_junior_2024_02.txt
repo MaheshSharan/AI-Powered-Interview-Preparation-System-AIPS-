@@ -1,0 +1,81 @@
+Source: Flipkart Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: junior
+Title: Data Scientist Resume (Junior)
+
+SHWETA PATEL
+Hyderabad, Telangana
+shweta.patel@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/shweta-patel
+
+PROFESSIONAL SUMMARY
+Data Scientist with 2 years of experience in machine learning and data analytics. Expertise in predictive modeling and statistical analysis. Seeking to join Flipkart as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Data Scientist | Flipkart | Hyderabad | Feb 2023 - Present
+• Developed ML models
+• Implemented data pipelines
+• Created automated tests
+• Optimized performance
+• Achievements:
+  - Improved model accuracy by 50%
+  - Enhanced prediction accuracy by 45%
+  - Led 6 major projects to completion
+
+Data Science Intern | Flipkart | Hyderabad | Jul 2022 - Jan 2023
+• Built analytics solutions
+• Participated in model reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2018-2022
+• GPA: 8.9/10
+• Specialization in Data Science
+• Thesis: "Deep Learning in E-commerce"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 96% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 70%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 60%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Flipkart
+• Published technical article on ML
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

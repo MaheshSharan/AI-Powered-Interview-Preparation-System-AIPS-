@@ -1,0 +1,81 @@
+Source: Flipkart Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: junior
+Title: Data Scientist Resume (Junior)
+
+AMIT KUMAR
+Bangalore, Karnataka
+amit.kumar@email.com | (555) 345-6789
+LinkedIn: linkedin.com/in/amit-kumar
+
+PROFESSIONAL SUMMARY
+Data Scientist with 2 years of experience in machine learning and data analytics. Expertise in predictive modeling and statistical analysis. Seeking to join Flipkart as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Data Scientist | Flipkart | Bangalore | Jan 2023 - Present
+• Developed ML models
+• Implemented data pipelines
+• Created automated tests
+• Optimized performance
+• Achievements:
+  - Improved model accuracy by 45%
+  - Enhanced prediction accuracy by 40%
+  - Led 5 major projects to completion
+
+Data Science Intern | Flipkart | Bangalore | Jun 2022 - Dec 2022
+• Built analytics solutions
+• Participated in model reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2018-2022
+• GPA: 8.8/10
+• Specialization in Data Science
+• Thesis: "Machine Learning in E-commerce"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 95% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 65%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 55%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Flipkart
+• Published technical article on ML
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

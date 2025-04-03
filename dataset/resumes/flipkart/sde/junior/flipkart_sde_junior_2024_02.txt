@@ -1,0 +1,80 @@
+Source: Flipkart Careers
+Date: 2024-04-03
+Category: sde
+Experience: junior
+Title: Software Development Engineer Resume (Junior)
+
+ANJALI PATEL
+Hyderabad, Telangana
+anjali.patel@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/anjali-patel
+
+PROFESSIONAL SUMMARY
+Software Development Engineer with 2 years of experience in building scalable applications and distributed systems. Expertise in microservices architecture and cloud technologies. Seeking to join Flipkart as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Software Development Engineer | Flipkart | Hyderabad | Feb 2023 - Present
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+• Optimized performance
+• Achievements:
+  - Improved system performance by 45%
+  - Enhanced scalability by 40%
+  - Led 6 major projects to completion
+
+Software Development Intern | Flipkart | Hyderabad | Jul 2022 - Jan 2023
+• Built backend services
+• Implemented caching
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2018-2022
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Cloud-Native Applications"
+
+PROJECTS
+1. E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Product catalog, order management
+   • Improved scalability by 45%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1.2M+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 35%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Flipkart
+• Published technical article on microservices
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

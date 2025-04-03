@@ -1,0 +1,159 @@
+{
+  "company": "Flipkart",
+  "role": "Software Development Engineer",
+  "experience_level": "Fresher",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "JavaScript/TypeScript"],
+      "preferred": ["C++", "Ruby"],
+      "nice_to_have": ["Go", "Kotlin"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js", "Node.js"],
+      "preferred": ["Express.js", "Django"],
+      "nice_to_have": ["Vue.js", "Angular"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Spring"],
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Node.js": ["Node", "NodeJS"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Docker", "Jenkins"],
+      "preferred": ["Terraform", "Kubernetes"],
+      "nice_to_have": ["Prometheus", "Grafana"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Jenkins": ["CI/CD", "Continuous Integration"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Web Platform", "Cloud Platform"],
+      "preferred": ["Mobile Platform", "Serverless"],
+      "nice_to_have": ["iOS", "Android"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Web Platform": ["Web Development", "Web Technologies"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB", "PostgreSQL"],
+      "preferred": ["Redis", "Elasticsearch"],
+      "nice_to_have": ["Cassandra", "Neo4j"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Learning Ability"],
+    "preferred": ["Innovation", "Adaptability"],
+    "nice_to_have": ["Leadership", "Customer Focus"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Learning Ability": [
+        "Quick Learner",
+        "Self Learning",
+        "Continuous Learning",
+        "Adaptability"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 0,
+    "key_areas": {
+      "required": [
+        "Data Structures",
+        "Algorithms",
+        "Basic Programming",
+        "Web Development"
+      ],
+      "preferred": [
+        "Cloud Computing",
+        "Database Design"
+      ],
+      "nice_to_have": [
+        "API Development",
+        "System Design"
+      ],
+      "semantic_equivalents": {
+        "Data Structures": [
+          "DS",
+          "Data Organization",
+          "Data Management"
+        ],
+        "Algorithms": [
+          "Algorithm Design",
+          "Algorithm Analysis",
+          "Algorithm Implementation"
+        ],
+        "Basic Programming": [
+          "Programming Fundamentals",
+          "Core Programming",
+          "Software Development Basics"
+        ],
+        "Web Development": [
+          "Web Programming",
+          "Web Applications",
+          "Web Technologies"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [],
+    "preferred": ["Cloud Computing Fundamentals"],
+    "nice_to_have": [
+      "Docker Certified Associate",
+      "Kubernetes Administrator"
+    ]
+  },
+  "responsibilities": [
+    "Develop and maintain applications",
+    "Write clean and efficient code",
+    "Participate in code reviews",
+    "Collaborate with team members",
+    "Support production systems",
+    "Debug and fix issues",
+    "Write unit tests",
+    "Document code and APIs",
+    "Learn new technologies",
+    "Contribute to team discussions"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Coding",
+    "System Design Basics",
+    "Flipkart Values and Culture"
+  ]
+} 

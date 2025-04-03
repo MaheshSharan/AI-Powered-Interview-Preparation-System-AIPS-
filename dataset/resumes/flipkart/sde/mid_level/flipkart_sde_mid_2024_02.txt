@@ -1,0 +1,87 @@
+Source: Flipkart Careers
+Date: 2024-04-03
+Category: sde
+Experience: mid_level
+Title: Software Development Engineer Resume (Mid-Level)
+
+MEERA SHARMA
+Hyderabad, Telangana
+meera.sharma@email.com | (555) 890-1234
+LinkedIn: linkedin.com/in/meera-sharma
+
+PROFESSIONAL SUMMARY
+Senior Software Development Engineer with 5 years of experience in building scalable applications and distributed systems. Expertise in microservices architecture and cloud technologies. Seeking to join Flipkart as a Senior Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Development Engineer | Flipkart | Hyderabad | Feb 2021 - Present
+• Lead enterprise initiatives
+• Design and implement solutions
+• Mentor team of 7 junior engineers
+• Drive technical strategy
+• Optimize performance
+• Achievements:
+  - Improved system performance by 60%
+  - Enhanced scalability by 55%
+  - Led 10 major projects to completion
+
+Software Development Engineer | Flipkart | Hyderabad | Feb 2019 - Jan 2021
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+• Optimized performance
+
+Software Development Intern | Flipkart | Hyderabad | Jul 2018 - Jan 2019
+• Built backend services
+• Implemented caching
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2014-2018
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Cloud-Native Applications"
+
+PROJECTS
+1. E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Product catalog, order management
+   • Improved scalability by 60%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1.8M+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 50%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Flipkart
+• Published technical article on microservices
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

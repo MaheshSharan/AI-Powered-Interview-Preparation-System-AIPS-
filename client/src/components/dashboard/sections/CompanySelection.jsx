@@ -23,7 +23,7 @@ const companies = [
     fullName: 'Tata Consultancy Services',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg',
     description: 'Global leader in IT services, consulting, and business solutions with a large presence in India and worldwide.',
-    roles: ['ASE', 'SE', 'Systems Engineer', 'Digital Specialist', 'Business Analyst']
+    roles: ['Associate Software Engineer', 'Product Manager', 'SDE']
   },
   {
     id: 'infosys',
@@ -31,7 +31,7 @@ const companies = [
     fullName: 'Infosys Limited',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/512px-Infosys_logo.svg.png',
     description: 'Global leader in next-generation digital services and consulting, helping clients navigate their digital transformation.',
-    roles: ['Systems Engineer', 'SDE', 'Power Programmer', 'Digital Specialist', 'Business Analyst']
+    roles: ['Power Programmer', 'SDE']
   },
   {
     id: 'microsoft',
@@ -39,7 +39,7 @@ const companies = [
     fullName: 'Microsoft Corporation',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png',
     description: 'Technology company developing and supporting software, services, devices, and solutions that deliver new opportunities.',
-    roles: ['SDE', 'Software Engineer', 'Program Manager', 'Data Scientist', 'Cloud Solutions Architect']
+    roles: ['SDE', 'Data Scientist', 'Cloud Solutions Architect']
   },
   {
     id: 'google',
@@ -47,7 +47,7 @@ const companies = [
     fullName: 'Google LLC',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/archive/c/c1/20200429221626%21Google_%22G%22_logo.svg',
     description: 'Technology company specializing in Internet-related services and products, including online advertising technologies, search engine, cloud computing, and software.',
-    roles: ['Software Engineer', 'SWE', 'Research Engineer', 'Product Manager', 'UX Designer']
+    roles: ['SDE', 'AI/ML Engineer', 'Full Stack Engineer']
   },
   {
     id: 'flipkart',
@@ -55,7 +55,7 @@ const companies = [
     fullName: 'Flipkart Internet Private Limited',
     logo: 'https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png',
     description: 'Indian e-commerce company headquartered in Bangalore, Karnataka, India. The company initially focused on online book sales before expanding into other product categories.',
-    roles: ['SDE', 'Software Engineer', 'Product Manager', 'Data Scientist', 'Business Analyst']
+    roles: ['SDE', 'Data Scientist']
   },
   {
     id: 'amazon',
@@ -63,7 +63,7 @@ const companies = [
     fullName: 'Amazon.com, Inc.',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/archive/d/de/20171005153411%21Amazon_icon.png',
     description: 'Multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.',
-    roles: ['SDE', 'Software Development Engineer', 'Solutions Architect', 'Product Manager', 'Data Scientist']
+    roles: ['SDE', 'Data Scientist']
   }
 ];
 

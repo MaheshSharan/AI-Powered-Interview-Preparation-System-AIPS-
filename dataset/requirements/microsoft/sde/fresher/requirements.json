@@ -1,0 +1,155 @@
+{
+  "company": "Microsoft",
+  "role": "Software Development Engineer",
+  "experience_level": "Fresher",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["C#", "Java", "Python"],
+      "preferred": ["JavaScript/TypeScript"],
+      "nice_to_have": ["C++", "Go"],
+      "semantic_equivalents": {
+        "C#": ["C#.NET", ".NET", "C Sharp"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"]
+      }
+    },
+    "frameworks": {
+      "required": [".NET Core"],
+      "preferred": ["React.js", "Angular"],
+      "nice_to_have": ["Spring Boot", "Django"],
+      "semantic_equivalents": {
+        ".NET Core": ["ASP.NET Core", "DotNet Core"],
+        "React.js": ["React", "ReactJS", "React Native"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Visual Studio"],
+      "preferred": ["VS Code", "Azure DevOps"],
+      "nice_to_have": ["Docker", "Jenkins"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Visual Studio": ["VS", "Visual Studio Code", "IDE"]
+      }
+    },
+    "platforms": {
+      "required": ["Windows"],
+      "preferred": ["Azure", "Linux"],
+      "nice_to_have": ["AWS", "Google Cloud"],
+      "semantic_equivalents": {
+        "Windows": ["Windows OS", "Windows Platform"],
+        "Azure": ["Microsoft Azure", "Azure Cloud"]
+      }
+    },
+    "databases": {
+      "required": ["SQL Server"],
+      "preferred": ["MongoDB"],
+      "nice_to_have": ["Redis", "PostgreSQL"],
+      "semantic_equivalents": {
+        "SQL Server": ["MSSQL", "Microsoft SQL Server"],
+        "MongoDB": ["Mongo", "NoSQL Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration"],
+    "preferred": ["Learning Ability", "Adaptability"],
+    "nice_to_have": ["Innovation", "Customer Focus"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 0,
+    "key_areas": {
+      "required": [
+        "Basic Programming",
+        "Data Structures",
+        "Algorithms"
+      ],
+      "preferred": [
+        "Web Development",
+        "Object-Oriented Programming"
+      ],
+      "nice_to_have": [
+        "Cloud Computing",
+        "System Design"
+      ],
+      "semantic_equivalents": {
+        "Basic Programming": [
+          "Programming Fundamentals",
+          "Core Programming",
+          "Software Development Basics"
+        ],
+        "Data Structures": [
+          "Data Organization",
+          "Data Management",
+          "Data Handling"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [],
+    "preferred": ["Azure Fundamentals"],
+    "nice_to_have": [
+      "AWS Certified Cloud Practitioner",
+      "Docker Certified Associate"
+    ]
+  },
+  "responsibilities": [
+    "Develop and maintain applications",
+    "Write clean, efficient code",
+    "Participate in code reviews",
+    "Collaborate with team members",
+    "Learn and apply new technologies",
+    "Debug and fix issues",
+    "Document code and processes"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Coding",
+    "Technical Discussion",
+    "System Design Basics"
+  ],
+  "role_specific_contexts": {
+    "data_scientist": {
+      "technical_requirements": {
+        "programming_languages": {
+          "required": ["Python", "R"],
+          "preferred": ["SQL"],
+          "nice_to_have": ["Java", "Scala"]
+        }
+      }
+    },
+    "frontend_developer": {
+      "technical_requirements": {
+        "programming_languages": {
+          "required": ["JavaScript/TypeScript"],
+          "preferred": ["HTML", "CSS"],
+          "nice_to_have": ["Python", "Java"]
+        }
+      }
+    }
+  }
+} 

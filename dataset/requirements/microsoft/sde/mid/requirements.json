@@ -1,0 +1,165 @@
+{
+  "company": "Microsoft",
+  "role": "Software Development Engineer",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["C#", "Java", "Python", "JavaScript/TypeScript", "C++"],
+      "preferred": ["Go", "Rust"],
+      "nice_to_have": ["Swift", "Kotlin"],
+      "semantic_equivalents": {
+        "C#": ["C#.NET", ".NET", "C Sharp"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"],
+        "C++": ["Cpp", "C Plus Plus"]
+      }
+    },
+    "frameworks": {
+      "required": [".NET Core", "React.js", "Spring Boot"],
+      "preferred": ["Angular", "Django"],
+      "nice_to_have": ["Flask", "Express.js"],
+      "semantic_equivalents": {
+        ".NET Core": ["ASP.NET Core", "DotNet Core"],
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Spring Boot": ["Spring Framework", "Spring"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Visual Studio", "Azure DevOps", "Docker", "Kubernetes"],
+      "preferred": ["Jenkins", "Terraform"],
+      "nice_to_have": ["Prometheus", "Grafana"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Visual Studio": ["VS", "Visual Studio Code", "IDE"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Kubernetes": ["K8s", "Container Orchestration"]
+      }
+    },
+    "platforms": {
+      "required": ["Windows", "Azure", "Linux"],
+      "preferred": ["AWS", "Google Cloud"],
+      "nice_to_have": ["macOS", "iOS"],
+      "semantic_equivalents": {
+        "Windows": ["Windows OS", "Windows Platform"],
+        "Azure": ["Microsoft Azure", "Azure Cloud"],
+        "Linux": ["Unix", "Linux OS"]
+      }
+    },
+    "databases": {
+      "required": ["SQL Server", "MongoDB", "Redis"],
+      "preferred": ["PostgreSQL", "Cosmos DB"],
+      "nice_to_have": ["Elasticsearch", "Cassandra"],
+      "semantic_equivalents": {
+        "SQL Server": ["MSSQL", "Microsoft SQL Server"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "Redis": ["Redis Cache", "Redis Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Leadership", "Mentoring"],
+    "preferred": ["Innovation", "Strategic Thinking"],
+    "nice_to_have": ["Customer Focus", "Project Management"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Leadership": [
+        "Team Leadership",
+        "Technical Leadership",
+        "Project Leadership",
+        "Team Management"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Full Stack Development",
+        "System Design",
+        "API Development",
+        "Cloud Architecture"
+      ],
+      "preferred": [
+        "Microservices Architecture",
+        "Distributed Systems"
+      ],
+      "nice_to_have": [
+        "Performance Optimization",
+        "Security Implementation",
+        "DevOps Practices"
+      ],
+      "semantic_equivalents": {
+        "Full Stack Development": [
+          "Web Development",
+          "End-to-end Development",
+          "Full Stack Web Development",
+          "Full Stack Engineering"
+        ],
+        "System Design": [
+          "Architecture Design",
+          "Software Architecture",
+          "System Architecture",
+          "Technical Design"
+        ],
+        "Cloud Architecture": [
+          "Cloud Infrastructure",
+          "Cloud Solutions",
+          "Cloud Design"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": ["Azure Developer Associate", "Azure Solutions Architect"],
+    "preferred": ["Azure DevOps Engineer"],
+    "nice_to_have": [
+      "AWS Certified Solutions Architect",
+      "Docker Certified Associate",
+      "Kubernetes Administrator",
+      "Security Certifications"
+    ]
+  },
+  "responsibilities": [
+    "Design and develop scalable applications",
+    "Build and maintain cloud-native solutions",
+    "Implement security best practices",
+    "Optimize application performance",
+    "Mentor junior developers",
+    "Lead technical initiatives",
+    "Collaborate with cross-functional teams",
+    "Participate in code reviews",
+    "Contribute to technical documentation",
+    "Drive technical decisions"
+  ],
+  "interview_focus": [
+    "System Design",
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Technical Discussion",
+    "Coding",
+    "System Architecture",
+    "Cloud Architecture",
+    "Leadership Experience"
+  ]
+} 

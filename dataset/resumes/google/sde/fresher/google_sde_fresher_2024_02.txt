@@ -1,0 +1,74 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: sde
+Experience: fresher
+Title: Software Development Engineer Resume (Fresher)
+
+PRIYA RAJAN
+Hyderabad, Telangana
+priya.rajan@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/priya-rajan
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in full-stack development and cloud technologies. Specialized in building scalable applications and microservices architecture. Seeking to join Google as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: React, Node.js, Express.js
+• Cloud: GCP, AWS, Docker
+• Databases: SQL, MongoDB, Redis
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2020-2024
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Cloud-Native Applications"
+
+PROJECTS
+1. Cloud-Based E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: React, Node.js, GCP
+   • Features: User management, product catalog
+   • Improved performance by 45%
+
+2. Real-time Chat Application
+   • Developed chat platform
+   • Tools: WebSocket, MongoDB, Redis
+   • Features: Real-time messaging, notifications
+   • Serves 1200+ concurrent users
+
+3. Microservices API Gateway
+   • Created API gateway
+   • Tools: Spring Cloud, Docker, Kubernetes
+   • Features: Load balancing, authentication
+   • Reduced latency by 35%
+
+INTERNSHIPS
+Software Development Intern | Amazon | Hyderabad | Jul 2024 - Sep 2024
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+
+Software Engineering Intern | Microsoft | Bangalore | Apr 2024 - Jun 2024
+• Built web applications
+• Optimized performance
+• Implemented security features
+
+ACHIEVEMENTS
+• Winner of Google Code Jam 2024
+• Published technical article on cloud architecture
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• Google Cloud Professional Developer
+• AWS Certified Developer
+• Docker Certified Associate
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

@@ -1,0 +1,74 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: full_stack_engineer
+Experience: fresher
+Title: Full Stack Engineer Resume (Fresher)
+
+ADITYA SHARMA
+Bangalore, Karnataka
+aditya.sharma@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/aditya-sharma
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in full-stack development and frontend technologies. Specialized in building scalable web applications and modern UI/UX design. Seeking to join Google as a Full Stack Engineer.
+
+TECHNICAL SKILLS
+• Frontend: React, Angular, Vue.js
+• Backend: Node.js, Python, Java
+• Databases: MongoDB, PostgreSQL, Redis
+• Cloud: GCP, AWS, Docker
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2020-2024
+• GPA: 8.8/10
+• Specialization in Software Engineering
+• Thesis: "Modern Web Development Architecture"
+
+PROJECTS
+1. E-commerce Platform
+   • Built full-stack e-commerce platform
+   • Tools: React, Node.js, MongoDB
+   • Features: User management, product catalog
+   • Improved performance by 40%
+
+2. Real-time Chat Application
+   • Developed chat platform
+   • Tools: WebSocket, Redis, Express.js
+   • Features: Real-time messaging, notifications
+   • Serves 1000+ concurrent users
+
+3. Task Management System
+   • Created task management app
+   • Tools: Angular, Python, PostgreSQL
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 30%
+
+INTERNSHIPS
+Full Stack Development Intern | Amazon | Bangalore | Jun 2024 - Aug 2024
+• Developed web applications
+• Implemented CI/CD pipelines
+• Created automated tests
+
+Frontend Development Intern | Microsoft | Hyderabad | Mar 2024 - May 2024
+• Built user interfaces
+• Optimized performance
+• Implemented responsive design
+
+ACHIEVEMENTS
+• Winner of Google Web Development Challenge 2024
+• Published technical article on web architecture
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• Google Cloud Professional Developer
+• AWS Certified Developer
+• Docker Certified Associate
+• React Developer Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

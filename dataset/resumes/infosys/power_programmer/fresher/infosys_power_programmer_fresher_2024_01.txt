@@ -1,0 +1,74 @@
+Source: Infosys Careers
+Date: 2024-04-03
+Category: power_programmer
+Experience: fresher
+Title: Power Programmer Resume (Fresher)
+
+NEHA AGARWAL
+Bangalore, Karnataka
+neha.agarwal@email.com | (555) 012-3456
+LinkedIn: linkedin.com/in/neha-agarwal
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in advanced programming and software development. Specialized in building high-performance applications and optimizing system performance. Seeking to join Infosys as a Power Programmer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++, Go
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2020-2024
+• GPA: 8.8/10
+• Specialization in Software Engineering
+• Thesis: "High-Performance Computing"
+
+PROJECTS
+1. High-Performance Web Server
+   • Built scalable web server
+   • Tools: Go, Docker, Kubernetes
+   • Features: Load balancing, caching
+   • Handled 100K+ concurrent connections
+
+2. Real-time Analytics Engine
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1M+ events per second
+
+3. Distributed Task Scheduler
+   • Created task scheduler
+   • Tools: Java, Spring Boot, Redis
+   • Features: Task distribution, monitoring
+   • Reduced task completion time by 40%
+
+INTERNSHIPS
+Power Programmer Intern | Infosys | Bangalore | Jun 2024 - Aug 2024
+• Developed high-performance applications
+• Implemented optimization techniques
+• Created automated tests
+
+Software Development Intern | TCS | Hyderabad | Mar 2024 - May 2024
+• Built scalable services
+• Implemented caching
+• Created technical documentation
+
+ACHIEVEMENTS
+• Winner of Infosys Power Programmer Challenge 2024
+• Published technical article on performance optimization
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

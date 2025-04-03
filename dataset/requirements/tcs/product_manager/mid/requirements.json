@@ -1,0 +1,259 @@
+{
+  "company": "TCS",
+  "role": "Product Manager",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["SQL", "Python", "Java", "JavaScript"],
+      "preferred": ["R", "Scala"],
+      "nice_to_have": ["Go", "TypeScript"],
+      "semantic_equivalents": {
+        "SQL": ["Structured Query Language", "Database Query"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "JavaScript": ["JS", "Web Development"],
+        "R": ["R Programming", "R Language"],
+        "Scala": ["Scala Programming", "Scala Language"]
+      }
+    },
+    "frameworks": {
+      "required": ["Agile", "Scrum", "Kanban", "SAFe"],
+      "preferred": ["Lean", "Design Thinking"],
+      "nice_to_have": ["Six Sigma", "DevOps"],
+      "semantic_equivalents": {
+        "Agile": ["Agile Methodology", "Agile Development"],
+        "Scrum": ["Scrum Framework", "Scrum Methodology"],
+        "Kanban": ["Kanban Board", "Kanban System"],
+        "SAFe": ["Scaled Agile Framework", "Enterprise Agile"]
+      }
+    },
+    "tools": {
+      "required": ["JIRA", "Confluence", "Microsoft Office", "Product Management Tools", "Analytics Tools"],
+      "preferred": ["Trello", "Asana", "Aha!", "ProductPlan"],
+      "nice_to_have": ["Figma", "Adobe XD", "Tableau"],
+      "semantic_equivalents": {
+        "JIRA": ["Issue Tracking", "Project Management Tool"],
+        "Confluence": ["Documentation", "Knowledge Management"],
+        "Microsoft Office": ["MS Office", "Office Suite"],
+        "Product Management Tools": ["PM Tools", "Product Tools"],
+        "Analytics Tools": ["Data Analytics", "Business Intelligence"]
+      }
+    },
+    "platforms": {
+      "required": ["Web Platform", "Mobile Platform", "Cloud Platform", "Enterprise Platform"],
+      "preferred": ["SaaS", "IoT Platform"],
+      "nice_to_have": ["AI Platform", "Blockchain Platform"],
+      "semantic_equivalents": {
+        "Web Platform": ["Web Applications", "Web Services"],
+        "Mobile Platform": ["Mobile Applications", "Mobile Services"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "Enterprise Platform": ["Enterprise Software", "Business Platform"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "PostgreSQL", "MongoDB", "Redis"],
+      "preferred": ["Cassandra", "Neo4j"],
+      "nice_to_have": ["Elasticsearch", "TimescaleDB"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL Database", "Relational Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"],
+        "MongoDB": ["Document Store", "NoSQL"],
+        "Redis": ["In-Memory Database", "Cache Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Communication", "Problem Solving", "Analytical Thinking", "Team Collaboration", "Leadership", "Strategic Thinking"],
+    "preferred": ["Innovation", "Stakeholder Management", "Business Acumen"],
+    "nice_to_have": ["Change Management", "Risk Management"],
+    "semantic_equivalents": {
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist"
+      ],
+      "Analytical Thinking": [
+        "Data Analysis",
+        "Statistical Analysis",
+        "Logical Thinking",
+        "Research Analysis"
+      ],
+      "Leadership": [
+        "Team Leadership",
+        "Project Leadership",
+        "Influence",
+        "Decision Making",
+        "Vision Setting"
+      ],
+      "Strategic Thinking": [
+        "Strategic Planning",
+        "Business Strategy",
+        "Long-term Planning",
+        "Strategic Analysis"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Product Management",
+        "Market Research",
+        "User Research",
+        "Product Strategy",
+        "Product Development",
+        "Product Launch",
+        "Product Lifecycle Management"
+      ],
+      "preferred": [
+        "Product Marketing",
+        "Product Analytics",
+        "Product Design",
+        "Product Innovation"
+      ],
+      "nice_to_have": [
+        "Product Portfolio Management",
+        "Product Vision Development"
+      ],
+      "semantic_equivalents": {
+        "Product Management": [
+          "Product Lifecycle",
+          "Product Development",
+          "Product Strategy",
+          "Product Planning",
+          "Product Execution",
+          "Product Leadership"
+        ],
+        "Market Research": [
+          "Market Analysis",
+          "Competitive Analysis",
+          "Market Trends",
+          "Market Validation",
+          "Market Strategy",
+          "Market Intelligence"
+        ],
+        "User Research": [
+          "User Analysis",
+          "User Needs",
+          "User Experience",
+          "User Feedback",
+          "User Testing",
+          "User Journey"
+        ],
+        "Product Strategy": [
+          "Strategy Planning",
+          "Product Vision",
+          "Product Roadmap",
+          "Product Goals",
+          "Product Metrics",
+          "Strategic Planning"
+        ],
+        "Product Development": [
+          "Development Process",
+          "Feature Development",
+          "Product Testing",
+          "Quality Assurance",
+          "Release Management",
+          "Technical Leadership"
+        ],
+        "Product Launch": [
+          "Launch Strategy",
+          "Go-to-Market",
+          "Product Release",
+          "Launch Planning",
+          "Launch Execution"
+        ],
+        "Product Lifecycle Management": [
+          "Lifecycle Planning",
+          "Product Evolution",
+          "Product Retirement",
+          "Version Management",
+          "Portfolio Management"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science, Business Administration, or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [
+      "Certified Scrum Product Owner (CSPO)",
+      "Professional Scrum Product Owner (PSPO)"
+    ],
+    "preferred": [
+      "Agile Certified Practitioner (PMI-ACP)",
+      "Product School Certification"
+    ],
+    "nice_to_have": [
+      "Pragmatic Institute Certification",
+      "Digital Product Management"
+    ]
+  },
+  "responsibilities": [
+    "Define product vision and strategy",
+    "Conduct market research",
+    "Gather user requirements",
+    "Create product roadmaps",
+    "Write product specifications",
+    "Collaborate with development teams",
+    "Track product metrics",
+    "Manage product backlog",
+    "Participate in sprint planning",
+    "Support product launches",
+    "Lead product development initiatives",
+    "Drive product improvements",
+    "Manage stakeholder relationships",
+    "Guide product decisions",
+    "Monitor product performance",
+    "Coordinate with cross-functional teams",
+    "Implement product features",
+    "Analyze product data",
+    "Present product updates",
+    "Support product marketing",
+    "Lead product strategy",
+    "Drive product innovation",
+    "Manage product portfolio",
+    "Define product vision",
+    "Lead product teams",
+    "Drive business growth",
+    "Manage product lifecycle",
+    "Optimize product performance",
+    "Develop go-to-market strategies",
+    "Lead product launches"
+  ],
+  "interview_focus": [
+    "Product Management",
+    "Market Research",
+    "User Research",
+    "Problem Solving",
+    "Analytical Thinking",
+    "Communication Skills",
+    "Technical Understanding",
+    "TCS Values and Culture",
+    "Product Strategy",
+    "Team Collaboration",
+    "Leadership Experience",
+    "Product Development",
+    "Stakeholder Management",
+    "Product Analytics",
+    "Strategic Planning",
+    "Business Acumen",
+    "Innovation",
+    "Product Vision",
+    "Portfolio Management",
+    "Go-to-Market Strategy"
+  ]
+} 

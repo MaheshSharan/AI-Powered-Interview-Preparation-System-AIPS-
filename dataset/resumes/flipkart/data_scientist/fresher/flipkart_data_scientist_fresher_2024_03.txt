@@ -1,0 +1,75 @@
+Source: Flipkart Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+PRIYA IYER
+Chennai, Tamil Nadu
+priya.iyer@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/priya-iyer
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in machine learning and data analytics. Specialized in predictive modeling and statistical analysis. Seeking to join Flipkart as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2020-2024
+• GPA: 8.7/10
+• Specialization in Data Science
+• Thesis: "Predictive Analytics in E-commerce"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 94% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 60%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 50%
+
+INTERNSHIPS
+Data Science Intern | Flipkart | Chennai | Aug 2024 - Oct 2024
+• Developed ML models
+• Implemented data pipelines
+• Created automated tests
+
+Data Analytics Intern | Amazon | Hyderabad | May 2024 - Jul 2024
+• Built analytics solutions
+• Participated in model reviews
+• Created technical documentation
+
+ACHIEVEMENTS
+• Winner of Flipkart Data Science Challenge 2024
+• Published technical article on ML
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

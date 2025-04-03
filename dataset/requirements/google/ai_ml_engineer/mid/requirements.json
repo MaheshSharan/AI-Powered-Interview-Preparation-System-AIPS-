@@ -1,0 +1,229 @@
+{
+  "company": "Google",
+  "role": "AI/ML Engineer",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Python", "C++", "Java", "R"],
+      "preferred": ["Scala", "Julia"],
+      "nice_to_have": ["MATLAB", "Go"],
+      "semantic_equivalents": {
+        "Python": ["Python3", "Py", "Python Programming"],
+        "C++": ["Cpp", "C Plus Plus"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "R": ["R Programming", "R Language"],
+        "Scala": ["Scala Programming", "Scala Language"]
+      }
+    },
+    "frameworks": {
+      "required": ["TensorFlow", "PyTorch", "scikit-learn", "Keras"],
+      "preferred": ["XGBoost", "LightGBM"],
+      "nice_to_have": ["CatBoost", "FastAI"],
+      "semantic_equivalents": {
+        "TensorFlow": ["TF", "Google TensorFlow"],
+        "PyTorch": ["PyTorch Framework", "Facebook PyTorch"],
+        "scikit-learn": ["sklearn", "scikit", "Machine Learning Library"],
+        "Keras": ["Deep Learning Framework", "Neural Network API"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Google Cloud Platform", "Jupyter Notebook", "Docker", "Kubernetes"],
+      "preferred": ["MLflow", "Airflow"],
+      "nice_to_have": ["Weights & Biases", "DVC"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Google Cloud Platform": ["GCP", "Google Cloud"],
+        "Jupyter Notebook": ["Jupyter", "IPython Notebook"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Kubernetes": ["K8s", "Container Orchestration"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Google Cloud Platform", "Cloud Platform", "TensorFlow Extended", "Vertex AI"],
+      "preferred": ["Databricks", "Snowflake"],
+      "nice_to_have": ["Hadoop", "Spark"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Google Cloud Platform": ["GCP", "Google Cloud"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "TensorFlow Extended": ["TFX", "ML Pipeline Platform"],
+        "Vertex AI": ["AI Platform", "ML Platform"]
+      }
+    },
+    "databases": {
+      "required": ["BigQuery", "Cloud SQL", "Cloud Storage", "Cloud Spanner"],
+      "preferred": ["PostgreSQL", "MongoDB"],
+      "nice_to_have": ["Cloud Datastore", "Cloud Firestore"],
+      "semantic_equivalents": {
+        "BigQuery": ["Google BigQuery", "Data Warehouse"],
+        "Cloud SQL": ["Managed SQL", "Cloud Database"],
+        "Cloud Storage": ["GCS", "Google Cloud Storage"],
+        "Cloud Spanner": ["Distributed Database", "Global Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Analytical Thinking", "Research Mindset", "Technical Leadership"],
+    "preferred": ["Innovation", "Project Management"],
+    "nice_to_have": ["Business Acumen", "Client Management"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Analytical Thinking": [
+        "Data Analysis",
+        "Statistical Analysis",
+        "Pattern Recognition",
+        "Logical Thinking"
+      ],
+      "Research Mindset": [
+        "Research Skills",
+        "Scientific Method",
+        "Experimental Design",
+        "Literature Review"
+      ],
+      "Technical Leadership": [
+        "Technical Direction",
+        "Architecture Leadership",
+        "Team Leadership",
+        "Technical Mentoring"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Machine Learning Fundamentals",
+        "Deep Learning",
+        "Statistical Analysis",
+        "Data Processing",
+        "Model Development",
+        "ML System Architecture",
+        "Model Deployment"
+      ],
+      "preferred": [
+        "Natural Language Processing",
+        "Computer Vision",
+        "Distributed Systems",
+        "MLOps"
+      ],
+      "nice_to_have": [
+        "Reinforcement Learning",
+        "Generative AI",
+        "Edge Computing"
+      ],
+      "semantic_equivalents": {
+        "Machine Learning Fundamentals": [
+          "ML Basics",
+          "ML Algorithms",
+          "ML Concepts",
+          "ML Theory"
+        ],
+        "Deep Learning": [
+          "Neural Networks",
+          "Deep Learning Models",
+          "DL Frameworks",
+          "DL Concepts"
+        ],
+        "Statistical Analysis": [
+          "Statistics",
+          "Data Analysis",
+          "Statistical Methods",
+          "Statistical Modeling"
+        ],
+        "Data Processing": [
+          "Data Cleaning",
+          "Data Preprocessing",
+          "Data Transformation",
+          "ETL"
+        ],
+        "Model Development": [
+          "Model Building",
+          "Model Training",
+          "Model Evaluation",
+          "Model Optimization"
+        ],
+        "ML System Architecture": [
+          "ML Infrastructure",
+          "ML Pipeline Design",
+          "System Design",
+          "Architecture Design"
+        ],
+        "Model Deployment": [
+          "MLOps",
+          "Model Serving",
+          "Production Deployment",
+          "Model Monitoring"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science, Mathematics, Statistics, or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [
+      "Google Cloud Professional ML Engineer",
+      "TensorFlow Developer Certificate"
+    ],
+    "preferred": [
+      "Google Cloud Professional Data Engineer",
+      "Deep Learning Specialization"
+    ],
+    "nice_to_have": [
+      "Google Cloud Professional Architect",
+      "MLOps Engineer"
+    ]
+  },
+  "responsibilities": [
+    "Design and implement machine learning models",
+    "Research and experiment with new ML techniques",
+    "Optimize model performance and efficiency",
+    "Write technical documentation and research papers",
+    "Collaborate with research and engineering teams",
+    "Lead technical initiatives and projects",
+    "Mentor junior ML engineers",
+    "Architect ML systems and pipelines",
+    "Drive technical decisions",
+    "Contribute to technical documentation",
+    "Support production ML systems",
+    "Debug and fix ML model issues",
+    "Lead ML model deployment",
+    "Define ML best practices",
+    "Evaluate new ML technologies",
+    "Participate in code reviews"
+  ],
+  "interview_focus": [
+    "Machine Learning Fundamentals",
+    "Deep Learning Concepts",
+    "Statistical Analysis",
+    "Problem Solving",
+    "Coding",
+    "System Design",
+    "Technical Discussion",
+    "Google-specific Technologies",
+    "Research Experience",
+    "Innovation and Creativity",
+    "Model Development",
+    "Data Processing",
+    "ML System Architecture",
+    "Technical Leadership",
+    "Project Management"
+  ]
+} 

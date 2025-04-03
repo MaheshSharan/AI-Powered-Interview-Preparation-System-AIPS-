@@ -1,0 +1,238 @@
+Source: https://www.infosys.com/careers/apply.html
+Date: 2024-03-31
+Category: hiring_practices
+Title: Infosys's Technical Interview Process and Requirements
+
+Infosys's technical interview process is designed to evaluate candidates based on their technical expertise, problem-solving abilities, and alignment with Infosys's values. Here's a comprehensive overview of Infosys's hiring process:
+
+Interview Process:
+1. Initial Screening
+   - Online Application
+   - Resume Review
+   - Technical Assessment
+   - Recruiter Contact
+   - Phone Interview
+
+2. Technical Phone Screen
+   - Coding Questions
+   - System Design
+   - Problem Solving
+   - Technical Discussion
+   - Communication Skills
+
+3. Onsite Interviews
+   - Coding Interviews
+   - System Design
+   - Technical Deep Dive
+   - Problem Solving
+   - Cultural Fit Assessment
+
+4. Hiring Committee
+   - Interview Feedback
+   - Candidate Review
+   - Decision Making
+   - Offer Discussion
+   - Team Matching
+
+Technical Requirements:
+1. Programming Skills
+   - Data Structures
+   - Algorithms
+   - System Design
+   - Code Quality
+   - Testing
+
+2. Problem Solving
+   - Analytical Thinking
+   - Optimization
+   - Scalability
+   - Edge Cases
+   - Trade-offs
+
+3. System Design
+   - Architecture
+   - Scalability
+   - Performance
+   - Security
+   - Reliability
+
+4. Technical Knowledge
+   - Computer Science
+   - Software Engineering
+   - Cloud Computing
+   - Machine Learning
+   - Web Technologies
+
+Interview Focus:
+1. Coding
+   - Clean Code
+   - Efficiency
+   - Readability
+   - Testing
+   - Documentation
+
+2. Problem Solving
+   - Approach
+   - Communication
+   - Optimization
+   - Edge Cases
+   - Trade-offs
+
+3. System Design
+   - Architecture
+   - Scalability
+   - Performance
+   - Security
+   - Reliability
+
+4. Technical Discussion
+   - Knowledge
+   - Experience
+   - Learning
+   - Innovation
+   - Best Practices
+
+Evaluation Criteria:
+1. Technical Skills
+   - Coding Ability
+   - Problem Solving
+   - System Design
+   - Technical Knowledge
+   - Learning Ability
+
+2. Communication
+   - Clarity
+   - Collaboration
+   - Documentation
+   - Presentation
+   - Feedback
+
+3. Problem Solving
+   - Approach
+   - Analysis
+   - Solution
+   - Optimization
+   - Trade-offs
+
+4. Cultural Fit
+   - Values Alignment
+   - Collaboration
+   - Innovation
+   - Learning
+   - Impact
+
+Best Practices:
+1. Preparation
+   - Study Materials
+   - Practice Problems
+   - Mock Interviews
+   - Time Management
+   - Research
+
+2. Interview
+   - Communication
+   - Problem Solving
+   - Code Quality
+   - Documentation
+   - Testing
+
+3. Follow-up
+   - Thank You Note
+   - Feedback
+   - Questions
+   - Updates
+   - Next Steps
+
+4. Continuous Learning
+   - Practice
+   - Study
+   - Projects
+   - Research
+   - Feedback
+
+Common Topics:
+1. Data Structures
+   - Arrays
+   - Linked Lists
+   - Trees
+   - Graphs
+   - Hash Tables
+
+2. Algorithms
+   - Sorting
+   - Searching
+   - Dynamic Programming
+   - Greedy
+   - Backtracking
+
+3. System Design
+   - Scalability
+   - Performance
+   - Security
+   - Reliability
+   - Monitoring
+
+4. Technical Knowledge
+   - Computer Science
+   - Software Engineering
+   - Cloud Computing
+   - Machine Learning
+   - Web Technologies
+
+Interview Tips:
+1. Preparation
+   - Study Materials
+   - Practice Problems
+   - Mock Interviews
+   - Time Management
+   - Research
+
+2. During Interview
+   - Communication
+   - Problem Solving
+   - Code Quality
+   - Documentation
+   - Testing
+
+3. Problem Solving
+   - Approach
+   - Analysis
+   - Solution
+   - Optimization
+   - Trade-offs
+
+4. Technical Discussion
+   - Knowledge
+   - Experience
+   - Learning
+   - Innovation
+   - Best Practices
+
+Success Factors:
+1. Technical Skills
+   - Strong Foundation
+   - Problem Solving
+   - System Design
+   - Code Quality
+   - Testing
+
+2. Communication
+   - Clarity
+   - Collaboration
+   - Documentation
+   - Presentation
+   - Feedback
+
+3. Problem Solving
+   - Approach
+   - Analysis
+   - Solution
+   - Optimization
+   - Trade-offs
+
+4. Cultural Fit
+   - Values Alignment
+   - Collaboration
+   - Innovation
+   - Learning
+   - Impact 

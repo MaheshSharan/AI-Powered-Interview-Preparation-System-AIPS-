@@ -1,0 +1,173 @@
+{
+  "company": "TCS",
+  "role": "Product Manager",
+  "experience_level": "Fresher",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["SQL", "Python"],
+      "preferred": ["Java", "JavaScript"],
+      "nice_to_have": ["R", "Scala"],
+      "semantic_equivalents": {
+        "SQL": ["Structured Query Language", "Database Query"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "JavaScript": ["JS", "Web Development"]
+      }
+    },
+    "frameworks": {
+      "required": ["Agile", "Scrum"],
+      "preferred": ["Kanban", "SAFe"],
+      "nice_to_have": ["Lean", "Six Sigma"],
+      "semantic_equivalents": {
+        "Agile": ["Agile Methodology", "Agile Development"],
+        "Scrum": ["Scrum Framework", "Scrum Methodology"]
+      }
+    },
+    "tools": {
+      "required": ["JIRA", "Confluence", "Microsoft Office"],
+      "preferred": ["Trello", "Asana"],
+      "nice_to_have": ["Aha!", "ProductPlan"],
+      "semantic_equivalents": {
+        "JIRA": ["Issue Tracking", "Project Management Tool"],
+        "Confluence": ["Documentation", "Knowledge Management"],
+        "Microsoft Office": ["MS Office", "Office Suite"]
+      }
+    },
+    "platforms": {
+      "required": ["Web Platform", "Mobile Platform"],
+      "preferred": ["Cloud Platform", "Enterprise Platform"],
+      "nice_to_have": ["IoT Platform", "AI Platform"],
+      "semantic_equivalents": {
+        "Web Platform": ["Web Applications", "Web Services"],
+        "Mobile Platform": ["Mobile Applications", "Mobile Services"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "PostgreSQL"],
+      "preferred": ["MongoDB", "Redis"],
+      "nice_to_have": ["Cassandra", "Neo4j"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL Database", "Relational Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Communication", "Problem Solving", "Analytical Thinking", "Team Collaboration"],
+    "preferred": ["Leadership", "Innovation"],
+    "nice_to_have": ["Strategic Thinking", "Business Acumen"],
+    "semantic_equivalents": {
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist"
+      ],
+      "Analytical Thinking": [
+        "Data Analysis",
+        "Statistical Analysis",
+        "Logical Thinking",
+        "Research Analysis"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 0,
+    "key_areas": {
+      "required": [
+        "Product Management Basics",
+        "Market Research",
+        "User Research",
+        "Product Strategy"
+      ],
+      "preferred": [
+        "Product Development",
+        "Product Marketing"
+      ],
+      "nice_to_have": [
+        "Product Analytics",
+        "Product Design"
+      ],
+      "semantic_equivalents": {
+        "Product Management Basics": [
+          "Product Lifecycle",
+          "Product Development",
+          "Product Strategy",
+          "Product Planning"
+        ],
+        "Market Research": [
+          "Market Analysis",
+          "Competitive Analysis",
+          "Market Trends",
+          "Market Validation"
+        ],
+        "User Research": [
+          "User Analysis",
+          "User Needs",
+          "User Experience",
+          "User Feedback"
+        ],
+        "Product Strategy": [
+          "Strategy Planning",
+          "Product Vision",
+          "Product Roadmap",
+          "Product Goals"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science, Business Administration, or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [],
+    "preferred": [
+      "Certified Scrum Product Owner (CSPO)",
+      "Product Management Fundamentals"
+    ],
+    "nice_to_have": [
+      "Agile Certified Practitioner (PMI-ACP)",
+      "Professional Scrum Product Owner (PSPO)"
+    ]
+  },
+  "responsibilities": [
+    "Assist in product strategy development",
+    "Support market research activities",
+    "Help with user research and analysis",
+    "Contribute to product documentation",
+    "Participate in product planning",
+    "Support product development teams",
+    "Learn product management tools",
+    "Follow TCS development practices",
+    "Contribute to team meetings",
+    "Support product launches",
+    "Assist in product testing",
+    "Help with product analytics",
+    "Support product marketing",
+    "Learn and apply best practices",
+    "Contribute to team projects"
+  ],
+  "interview_focus": [
+    "Product Management Basics",
+    "Market Research",
+    "User Research",
+    "Problem Solving",
+    "Analytical Thinking",
+    "Communication Skills",
+    "Technical Understanding",
+    "TCS Values and Culture",
+    "Product Strategy",
+    "Team Collaboration"
+  ]
+} 

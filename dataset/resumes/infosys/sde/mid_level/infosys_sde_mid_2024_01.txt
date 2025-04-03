@@ -1,0 +1,87 @@
+Source: Infosys Careers
+Date: 2024-04-03
+Category: sde
+Experience: mid_level
+Title: Software Development Engineer Resume (Mid-Level)
+
+ARUN KUMAR
+Bangalore, Karnataka
+arun.kumar@email.com | (555) 678-9012
+LinkedIn: linkedin.com/in/arun-kumar
+
+PROFESSIONAL SUMMARY
+Senior Software Development Engineer with 5 years of experience in building scalable applications and distributed systems. Expertise in microservices architecture and cloud technologies. Seeking to join Infosys as a Senior Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Development Engineer | Infosys | Bangalore | Jan 2021 - Present
+• Lead enterprise initiatives
+• Design and implement solutions
+• Mentor team of 8 junior engineers
+• Drive technical strategy
+• Optimize performance
+• Achievements:
+  - Improved system performance by 65%
+  - Enhanced scalability by 60%
+  - Led 12 major projects to completion
+
+Software Development Engineer | Infosys | Bangalore | Jan 2019 - Dec 2020
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+• Optimized performance
+
+Software Development Intern | Infosys | Bangalore | Jun 2018 - Dec 2018
+• Built backend services
+• Implemented caching
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2014-2018
+• GPA: 8.8/10
+• Specialization in Software Engineering
+• Thesis: "Microservices Architecture"
+
+PROJECTS
+1. E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Product catalog, order management
+   • Improved scalability by 65%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 2M+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 55%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Infosys
+• Published technical article on microservices
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

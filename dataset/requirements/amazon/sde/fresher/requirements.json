@@ -1,0 +1,163 @@
+{
+  "company": "Amazon",
+  "role": "Software Development Engineer",
+  "experience_level": "Fresher",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "JavaScript/TypeScript"],
+      "preferred": ["C++", "Ruby"],
+      "nice_to_have": ["Go", "Kotlin"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js", "Node.js"],
+      "preferred": ["Express.js", "Django"],
+      "nice_to_have": ["Vue.js", "Angular"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Spring"],
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Node.js": ["Node", "NodeJS"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "AWS", "Docker"],
+      "preferred": ["Jenkins", "Terraform"],
+      "nice_to_have": ["Kubernetes", "Prometheus"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "AWS": ["Amazon Web Services", "Cloud Computing"],
+        "Docker": ["Containerization", "Docker Engine"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "AWS", "Web Platform"],
+      "preferred": ["Cloud Platform", "Mobile Platform"],
+      "nice_to_have": ["iOS", "Android"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "AWS": ["Amazon Web Services", "Cloud Platform"],
+        "Web Platform": ["Web Development", "Web Technologies"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB", "DynamoDB"],
+      "preferred": ["PostgreSQL", "Redis"],
+      "nice_to_have": ["ElastiCache", "RDS"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "DynamoDB": ["NoSQL", "Document Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Customer Focus"],
+    "preferred": ["Learning Ability", "Adaptability"],
+    "nice_to_have": ["Innovation", "Leadership"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Customer Focus": [
+        "Customer Service",
+        "User Experience",
+        "Customer Satisfaction",
+        "User-centric Development"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 0,
+    "key_areas": {
+      "required": [
+        "Data Structures",
+        "Algorithms",
+        "Basic Programming",
+        "Web Development"
+      ],
+      "preferred": [
+        "Cloud Computing",
+        "Database Design"
+      ],
+      "nice_to_have": [
+        "API Development",
+        "System Design"
+      ],
+      "semantic_equivalents": {
+        "Data Structures": [
+          "Data Organization",
+          "Data Management",
+          "Data Types"
+        ],
+        "Algorithms": [
+          "Algorithm Design",
+          "Algorithm Analysis",
+          "Computational Thinking"
+        ],
+        "Basic Programming": [
+          "Programming Fundamentals",
+          "Coding",
+          "Software Development"
+        ],
+        "Web Development": [
+          "Web Applications",
+          "Frontend Development",
+          "Backend Development"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [],
+    "preferred": ["AWS Cloud Practitioner"],
+    "nice_to_have": [
+      "AWS Solutions Architect Associate",
+      "AWS Developer Associate"
+    ]
+  },
+  "responsibilities": [
+    "Develop and maintain applications",
+    "Write clean, efficient code",
+    "Participate in code reviews",
+    "Collaborate with team members",
+    "Learn and apply new technologies",
+    "Follow Amazon's development practices",
+    "Contribute to technical documentation",
+    "Debug and fix issues",
+    "Participate in team meetings",
+    "Support production systems"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Coding",
+    "System Design Basics",
+    "Technical Discussion",
+    "Amazon Leadership Principles",
+    "Web Development",
+    "Database Design",
+    "Cloud Computing Basics"
+  ]
+} 

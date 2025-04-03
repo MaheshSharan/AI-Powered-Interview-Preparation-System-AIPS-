@@ -1,0 +1,74 @@
+Source: Amazon Careers
+Date: 2024-04-03
+Category: sde
+Experience: fresher
+Title: Software Development Engineer Resume (Fresher)
+
+ARJUN MENON
+Chennai, Tamil Nadu
+arjun.menon@email.com | (555) 345-6789
+LinkedIn: linkedin.com/in/arjun-menon
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in software development and cloud technologies. Specialized in building scalable applications and distributed systems. Seeking to join Amazon as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2020-2024
+• GPA: 8.7/10
+• Specialization in Software Engineering
+• Thesis: "Distributed Systems Design"
+
+PROJECTS
+1. Microservices Platform
+   • Built scalable microservices platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Service discovery, load balancing
+   • Improved scalability by 35%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 900K+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 25%
+
+INTERNSHIPS
+Software Development Intern | Amazon | Chennai | Aug 2024 - Oct 2024
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+
+Software Engineering Intern | Microsoft | Hyderabad | May 2024 - Jul 2024
+• Built backend services
+• Optimized performance
+• Implemented caching
+
+ACHIEVEMENTS
+• Winner of Amazon Coding Challenge 2024
+• Published technical article on microservices
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

@@ -1,0 +1,82 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: sde
+Experience: junior
+Title: Software Development Engineer Resume (Junior)
+
+NEHA REDDY
+Hyderabad, Telangana
+neha.reddy@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/neha-reddy
+
+PROFESSIONAL SUMMARY
+Software Development Engineer with 2 years of experience in full-stack development and cloud technologies. Expertise in building scalable applications and microservices architecture. Seeking to join Google as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, JavaScript
+• Web Technologies: React, Node.js, Express.js
+• Cloud: GCP, AWS, Docker
+• Databases: SQL, MongoDB, Redis
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Software Development Engineer | Amazon | Hyderabad | Feb 2023 - Present
+• Lead development of microservices
+• Design and implement cloud solutions
+• Mentor team of 4 junior developers
+• Drive technical decisions and best practices
+• Optimize application performance
+• Achievements:
+  - Reduced system latency by 50%
+  - Improved code quality by 45%
+  - Led 4 major projects to completion
+
+Software Engineering Intern | Microsoft | Bangalore | Jul 2022 - Jan 2023
+• Developed web applications
+• Implemented CI/CD pipelines
+• Created automated tests
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2018-2022
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Distributed Systems in Cloud"
+
+PROJECTS
+1. Cloud-Based E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: React, Node.js, GCP
+   • Features: User management, product catalog
+   • Improved performance by 55%
+
+2. Real-time Chat Application
+   • Developed chat platform
+   • Tools: WebSocket, MongoDB, Redis
+   • Features: Real-time messaging, notifications
+   • Serves 2500+ concurrent users
+
+3. Microservices API Gateway
+   • Created API gateway
+   • Tools: Spring Cloud, Docker, Kubernetes
+   • Features: Load balancing, authentication
+   • Reduced latency by 45%
+
+ACHIEVEMENTS
+• Received "Technical Excellence Award" at Amazon
+• Led successful delivery of 5 projects
+• Improved system performance by 50%
+• Mentored 6 junior developers
+• Published 3 technical papers
+
+CERTIFICATIONS
+• Google Cloud Professional Developer
+• AWS Certified Developer
+• Docker Certified Associate
+• Kubernetes Administrator
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

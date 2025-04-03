@@ -1,0 +1,83 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: ai_ml_engineer
+Experience: junior
+Title: AI/ML Engineer Resume (Junior)
+
+RAHUL VERMA
+Bangalore, Karnataka
+rahul.verma@email.com | (555) 456-7890
+LinkedIn: linkedin.com/in/rahul-verma
+
+PROFESSIONAL SUMMARY
+AI/ML Engineer with 2 years of experience in machine learning and artificial intelligence. Expertise in deep learning, computer vision, and natural language processing. Seeking to join Google as an AI/ML Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, Java
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Deep Learning: CNN, RNN, Transformers
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Cloud: GCP, AWS, Docker
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+AI/ML Engineer | Amazon | Bangalore | Jan 2023 - Present
+• Lead development of ML models
+• Design and implement AI solutions
+• Mentor team of 3 junior engineers
+• Drive technical decisions and best practices
+• Optimize model performance
+• Achievements:
+  - Improved model accuracy by 45%
+  - Reduced training time by 40%
+  - Led 3 major projects to completion
+
+AI Engineering Intern | Microsoft | Hyderabad | Jun 2022 - Dec 2022
+• Developed ML models
+• Implemented deep learning solutions
+• Created data pipelines
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2018-2022
+• GPA: 8.8/10
+• Specialization in AI/ML
+• Thesis: "Deep Learning in Computer Vision"
+
+PROJECTS
+1. Computer Vision System
+   • Built image recognition system
+   • Tools: TensorFlow, OpenCV, Python
+   • Features: Object detection, classification
+   • Achieved 97% accuracy
+
+2. Natural Language Processing
+   • Developed text analysis platform
+   • Tools: BERT, PyTorch, NLTK
+   • Features: Sentiment analysis, summarization
+   • Processed 2M+ documents
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Scikit-learn, Pandas, NumPy
+   • Features: Collaborative filtering
+   • Improved accuracy by 50%
+
+ACHIEVEMENTS
+• Received "AI Innovation Award" at Amazon
+• Led successful delivery of 4 projects
+• Improved model performance by 45%
+• Mentored 5 junior engineers
+• Published 2 technical papers
+
+CERTIFICATIONS
+• Google Cloud AI/ML Professional
+• TensorFlow Developer Certificate
+• AWS Machine Learning Specialty
+• Deep Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

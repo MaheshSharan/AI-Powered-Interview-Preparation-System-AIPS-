@@ -1,0 +1,74 @@
+Source: Infosys Careers
+Date: 2024-04-03
+Category: power_programmer
+Experience: fresher
+Title: Power Programmer Resume (Fresher)
+
+ADITYA RAO
+Hyderabad, Telangana
+aditya.rao@email.com | (555) 123-4567
+LinkedIn: linkedin.com/in/aditya-rao
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in advanced programming and software development. Specialized in building high-performance applications and optimizing system performance. Seeking to join Infosys as a Power Programmer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++, Go
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2020-2024
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Distributed Systems Optimization"
+
+PROJECTS
+1. High-Performance Web Server
+   • Built scalable web server
+   • Tools: Go, Docker, Kubernetes
+   • Features: Load balancing, caching
+   • Handled 120K+ concurrent connections
+
+2. Real-time Analytics Engine
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1.2M+ events per second
+
+3. Distributed Task Scheduler
+   • Created task scheduler
+   • Tools: Java, Spring Boot, Redis
+   • Features: Task distribution, monitoring
+   • Reduced task completion time by 45%
+
+INTERNSHIPS
+Power Programmer Intern | Infosys | Hyderabad | Jul 2024 - Sep 2024
+• Developed high-performance applications
+• Implemented optimization techniques
+• Created automated tests
+
+Software Development Intern | Wipro | Bangalore | Apr 2024 - Jun 2024
+• Built scalable services
+• Implemented caching
+• Created technical documentation
+
+ACHIEVEMENTS
+• Winner of Infosys Power Programmer Challenge 2024
+• Published technical article on performance optimization
+• Top performer in academic projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

@@ -1,0 +1,75 @@
+Source: Google Careers
+Date: 2024-04-03
+Category: ai_ml_engineer
+Experience: fresher
+Title: AI/ML Engineer Resume (Fresher)
+
+PRIYA RAJAN
+Hyderabad, Telangana
+priya.rajan@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/priya-rajan
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in machine learning and artificial intelligence. Specialized in deep learning, computer vision, and natural language processing. Seeking to join Google as an AI/ML Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, Java
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Deep Learning: CNN, RNN, Transformers
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Cloud: GCP, AWS, Docker
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2020-2024
+• GPA: 8.9/10
+• Specialization in AI/ML
+• Thesis: "Natural Language Processing with Transformers"
+
+PROJECTS
+1. Computer Vision System
+   • Built image recognition system
+   • Tools: TensorFlow, OpenCV, Python
+   • Features: Object detection, classification
+   • Achieved 96% accuracy
+
+2. Natural Language Processing
+   • Developed text analysis platform
+   • Tools: BERT, PyTorch, NLTK
+   • Features: Sentiment analysis, summarization
+   • Processed 1.2M+ documents
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Scikit-learn, Pandas, NumPy
+   • Features: Collaborative filtering
+   • Improved accuracy by 45%
+
+INTERNSHIPS
+AI/ML Intern | Amazon | Hyderabad | Jul 2024 - Sep 2024
+• Developed ML models
+• Implemented deep learning solutions
+• Created data pipelines
+
+AI Engineering Intern | Microsoft | Bangalore | Apr 2024 - Jun 2024
+• Built AI applications
+• Optimized model performance
+• Implemented ML algorithms
+
+ACHIEVEMENTS
+• Winner of Google AI Challenge 2024
+• Published research paper on ML
+• Top performer in academic projects
+• Active in AI community
+
+CERTIFICATIONS
+• Google Cloud AI/ML Professional
+• TensorFlow Developer Certificate
+• AWS Machine Learning Specialty
+• Deep Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

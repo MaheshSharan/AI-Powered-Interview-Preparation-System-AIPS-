@@ -1,0 +1,87 @@
+Source: Infosys Careers
+Date: 2024-04-03
+Category: power_programmer
+Experience: mid_level
+Title: Power Programmer Resume (Mid-Level)
+
+PRIYA SHARMA
+Hyderabad, Telangana
+priya.sharma@email.com | (555) 789-0123
+LinkedIn: linkedin.com/in/priya-sharma
+
+PROFESSIONAL SUMMARY
+Senior Power Programmer with 5 years of experience in building high-performance applications and optimizing system performance. Expertise in advanced programming and distributed systems. Seeking to join Infosys as a Senior Power Programmer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++, Go
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Power Programmer | Infosys | Hyderabad | Feb 2021 - Present
+• Lead enterprise initiatives
+• Design and implement solutions
+• Mentor team of 7 junior programmers
+• Drive technical strategy
+• Optimize performance
+• Achievements:
+  - Improved system performance by 60%
+  - Enhanced scalability by 55%
+  - Led 10 major projects to completion
+
+Power Programmer | Infosys | Hyderabad | Feb 2019 - Jan 2021
+• Developed high-performance applications
+• Implemented optimization techniques
+• Created automated tests
+• Optimized performance
+
+Power Programmer Intern | Infosys | Hyderabad | Jul 2018 - Jan 2019
+• Built scalable services
+• Implemented caching
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2014-2018
+• GPA: 8.9/10
+• Specialization in Software Engineering
+• Thesis: "Distributed Systems Optimization"
+
+PROJECTS
+1. High-Performance Web Server
+   • Built scalable web server
+   • Tools: Go, Docker, Kubernetes
+   • Features: Load balancing, caching
+   • Handled 180K+ concurrent connections
+
+2. Real-time Analytics Engine
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1.8M+ events per second
+
+3. Distributed Task Scheduler
+   • Created task scheduler
+   • Tools: Java, Spring Boot, Redis
+   • Features: Task distribution, monitoring
+   • Reduced task completion time by 50%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Infosys
+• Published technical article on performance optimization
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

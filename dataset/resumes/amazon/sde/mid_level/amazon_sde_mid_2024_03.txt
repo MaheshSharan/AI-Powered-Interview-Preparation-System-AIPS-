@@ -1,0 +1,89 @@
+Source: Amazon Careers
+Date: 2024-04-03
+Category: sde
+Experience: mid_level
+Title: Software Development Engineer Resume (Mid-Level)
+
+ARUN KRISHNAN
+Chennai, Tamil Nadu
+arun.krishnan@email.com | (555) 901-2345
+LinkedIn: linkedin.com/in/arun-krishnan
+
+PROFESSIONAL SUMMARY
+Senior Software Development Engineer with 5 years of experience in building scalable applications and distributed systems. Expertise in cloud technologies and microservices architecture. Seeking to join Amazon as a Senior Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Development Engineer | Amazon | Chennai | Mar 2022 - Present
+• Lead enterprise microservices initiatives
+• Design and implement solutions
+• Mentor team of 6 junior developers
+• Drive technical strategy
+• Optimize application performance
+• Achievements:
+  - Improved system performance by 55%
+  - Enhanced scalability by 50%
+  - Led 6 major projects to completion
+
+Software Development Engineer | Microsoft | Bangalore | May 2020 - Feb 2022
+• Developed microservices
+• Implemented distributed systems
+• Mentored junior engineers
+• Optimized performance
+
+Software Engineering Intern | Google | Hyderabad | Aug 2019 - Apr 2020
+• Developed backend services
+• Participated in code reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2015-2019
+• GPA: 8.7/10
+• Specialization in Software Engineering
+• Thesis: "Distributed Systems Design"
+
+PROJECTS
+1. Microservices Platform
+   • Built enterprise microservices platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Service discovery, load balancing
+   • Improved scalability by 60%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 4M+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 40%
+
+ACHIEVEMENTS
+• Received "Technical Leadership Award" at Amazon
+• Led successful delivery of 7 projects
+• Improved system performance by 55%
+• Mentored 10 junior developers
+• Published 3 technical papers
+• Patented distributed system solution
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

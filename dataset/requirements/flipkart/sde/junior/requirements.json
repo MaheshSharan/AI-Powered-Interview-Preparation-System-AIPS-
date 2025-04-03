@@ -1,0 +1,179 @@
+{
+  "company": "Flipkart",
+  "role": "Software Development Engineer",
+  "experience_level": "Junior",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "JavaScript/TypeScript", "C++"],
+      "preferred": ["Ruby", "Go"],
+      "nice_to_have": ["Kotlin", "Swift"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"],
+        "C++": ["Cpp", "C Plus Plus"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js", "Node.js", "Express.js"],
+      "preferred": ["Django", "Flask"],
+      "nice_to_have": ["Vue.js", "Angular"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Spring"],
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Node.js": ["Node", "NodeJS"],
+        "Express.js": ["Express", "Node.js Framework"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Docker", "Jenkins", "Terraform"],
+      "preferred": ["Kubernetes", "Prometheus"],
+      "nice_to_have": ["Grafana", "Istio"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Jenkins": ["CI/CD", "Continuous Integration"],
+        "Terraform": ["Infrastructure as Code", "IaC"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Web Platform", "Cloud Platform", "Serverless"],
+      "preferred": ["Mobile Platform", "IoT"],
+      "nice_to_have": ["iOS", "Android"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Web Platform": ["Web Development", "Web Technologies"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "Serverless": ["Serverless Architecture", "FaaS"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB", "PostgreSQL", "Redis"],
+      "preferred": ["Elasticsearch", "Cassandra"],
+      "nice_to_have": ["Neo4j", "GraphQL"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"],
+        "Redis": ["In-memory Database", "Cache"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Innovation", "Learning Ability"],
+    "preferred": ["Leadership", "Mentoring"],
+    "nice_to_have": ["Project Management", "Strategic Thinking"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Innovation": [
+        "Creative Thinking",
+        "Innovative Solutions",
+        "Out-of-the-box Thinking",
+        "Design Thinking"
+      ],
+      "Learning Ability": [
+        "Quick Learner",
+        "Self Learning",
+        "Continuous Learning",
+        "Adaptability"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 2,
+    "key_areas": {
+      "required": [
+        "Full Stack Development",
+        "System Design",
+        "API Development",
+        "Cloud Computing",
+        "Database Design"
+      ],
+      "preferred": [
+        "Microservices",
+        "DevOps Practices"
+      ],
+      "nice_to_have": [
+        "Machine Learning",
+        "Security Implementation"
+      ],
+      "semantic_equivalents": {
+        "Full Stack Development": [
+          "Web Development",
+          "End-to-end Development",
+          "Full Stack Web Development",
+          "Full Stack Engineering"
+        ],
+        "System Design": [
+          "Architecture Design",
+          "Software Architecture",
+          "System Architecture",
+          "Technical Design"
+        ],
+        "Cloud Computing": [
+          "Cloud Development",
+          "Cloud Services",
+          "Cloud Infrastructure"
+        ],
+        "Database Design": [
+          "Database Architecture",
+          "Data Modeling",
+          "Database Optimization"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": ["Cloud Computing Fundamentals"],
+    "preferred": ["Docker Certified Associate", "Kubernetes Administrator"],
+    "nice_to_have": [
+      "AWS Solutions Architect Associate",
+      "Azure Developer Associate",
+      "Google Cloud Associate"
+    ]
+  },
+  "responsibilities": [
+    "Design and develop scalable applications",
+    "Build and maintain cloud-native solutions",
+    "Implement security best practices",
+    "Optimize application performance",
+    "Mentor junior developers",
+    "Lead technical initiatives",
+    "Collaborate with cross-functional teams",
+    "Participate in code reviews",
+    "Contribute to technical documentation",
+    "Drive technical decisions"
+  ],
+  "interview_focus": [
+    "System Design",
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Technical Discussion",
+    "Coding",
+    "System Architecture",
+    "Cloud Architecture",
+    "Leadership Experience",
+    "Flipkart Values and Culture",
+    "Innovation and Creativity"
+  ]
+} 

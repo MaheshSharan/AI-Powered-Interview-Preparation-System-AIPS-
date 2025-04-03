@@ -1,0 +1,87 @@
+Source: Infosys Careers
+Date: 2024-04-03
+Category: power_programmer
+Experience: mid_level
+Title: Power Programmer Resume (Mid-Level)
+
+ARUN MENON
+Chennai, Tamil Nadu
+arun.menon@email.com | (555) 901-2345
+LinkedIn: linkedin.com/in/arun-menon
+
+PROFESSIONAL SUMMARY
+Senior Power Programmer with 5 years of experience in building high-performance applications and optimizing system performance. Expertise in advanced programming and distributed systems. Seeking to join Infosys as a Senior Power Programmer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++, Go
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Power Programmer | Infosys | Chennai | Mar 2021 - Present
+• Lead enterprise initiatives
+• Design and implement solutions
+• Mentor team of 6 junior programmers
+• Drive technical strategy
+• Optimize performance
+• Achievements:
+  - Improved system performance by 55%
+  - Enhanced scalability by 50%
+  - Led 8 major projects to completion
+
+Power Programmer | Infosys | Chennai | Mar 2019 - Feb 2021
+• Developed high-performance applications
+• Implemented optimization techniques
+• Created automated tests
+• Optimized performance
+
+Power Programmer Intern | Infosys | Chennai | Aug 2018 - Feb 2019
+• Built scalable services
+• Implemented caching
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2014-2018
+• GPA: 8.7/10
+• Specialization in Software Engineering
+• Thesis: "System Performance Optimization"
+
+PROJECTS
+1. High-Performance Web Server
+   • Built scalable web server
+   • Tools: Go, Docker, Kubernetes
+   • Features: Load balancing, caching
+   • Handled 150K+ concurrent connections
+
+2. Real-time Analytics Engine
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1.5M+ events per second
+
+3. Distributed Task Scheduler
+   • Created task scheduler
+   • Tools: Java, Spring Boot, Redis
+   • Features: Task distribution, monitoring
+   • Reduced task completion time by 45%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Infosys
+• Published technical article on performance optimization
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

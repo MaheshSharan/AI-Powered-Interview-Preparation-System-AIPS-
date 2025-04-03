@@ -1,0 +1,75 @@
+Source: Amazon Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: fresher
+Title: Data Scientist Resume (Fresher)
+
+PRIYA RAJAN
+Hyderabad, Telangana
+priya.rajan@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/priya-rajan
+
+PROFESSIONAL SUMMARY
+Recent Computer Science graduate with expertise in data science and machine learning. Specialized in predictive modeling, statistical analysis, and data visualization. Seeking to join Amazon as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2020-2024
+• GPA: 8.9/10
+• Specialization in Data Science
+• Thesis: "Deep Learning in Predictive Analytics"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 94% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 45%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 40%
+
+INTERNSHIPS
+Data Science Intern | Amazon | Hyderabad | Jul 2024 - Sep 2024
+• Developed ML models
+• Implemented data pipelines
+• Created visualizations
+
+Data Analytics Intern | Microsoft | Bangalore | Apr 2024 - Jun 2024
+• Built analytics dashboards
+• Optimized queries
+• Implemented ETL processes
+
+ACHIEVEMENTS
+• Winner of Amazon Data Science Challenge 2024
+• Published research paper on ML
+• Top performer in academic projects
+• Active in data science community
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

@@ -1,0 +1,249 @@
+{
+  "company": "Microsoft",
+  "role": "Data Scientist",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Python", "R", "SQL", "Java", "Scala"],
+      "preferred": ["C++", "Julia"],
+      "nice_to_have": ["MATLAB", "Go"],
+      "semantic_equivalents": {
+        "Python": ["Python3", "Py", "Python Programming"],
+        "R": ["R Programming", "R Language"],
+        "SQL": ["Structured Query Language", "Database Query"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Scala": ["Scala Programming", "Scala Language"]
+      }
+    },
+    "frameworks": {
+      "required": ["TensorFlow", "PyTorch", "scikit-learn", "Keras", "XGBoost"],
+      "preferred": ["LightGBM", "CatBoost"],
+      "nice_to_have": ["FastAI", "Hugging Face"],
+      "semantic_equivalents": {
+        "TensorFlow": ["TF", "Google TensorFlow"],
+        "PyTorch": ["PyTorch Framework", "Facebook PyTorch"],
+        "scikit-learn": ["sklearn", "Machine Learning Library"],
+        "Keras": ["Deep Learning Framework", "Neural Network Library"],
+        "XGBoost": ["Gradient Boosting", "Ensemble Learning"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Azure ML", "Jupyter Notebook", "Docker", "Kubernetes"],
+      "preferred": ["Airflow", "MLflow"],
+      "nice_to_have": ["Kubeflow", "Ray"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Azure ML": ["Azure Machine Learning", "Cloud ML"],
+        "Jupyter Notebook": ["Jupyter", "Interactive Notebook"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Kubernetes": ["K8s", "Container Orchestration"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Azure", "Cloud Platform", "Azure ML Studio", "Azure Databricks"],
+      "preferred": ["Azure Synapse", "Azure Data Lake"],
+      "nice_to_have": ["Azure HDInsight", "Azure Stream Analytics"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Azure": ["Microsoft Azure", "Azure Cloud"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "Azure ML Studio": ["ML Studio", "Machine Learning Studio"],
+        "Azure Databricks": ["Databricks", "Big Data Platform"]
+      }
+    },
+    "databases": {
+      "required": ["SQL Server", "Azure SQL", "Cosmos DB", "PostgreSQL", "MongoDB"],
+      "preferred": ["Redis", "Elasticsearch"],
+      "nice_to_have": ["Neo4j", "Cassandra"],
+      "semantic_equivalents": {
+        "SQL Server": ["Microsoft SQL", "MSSQL"],
+        "Azure SQL": ["Managed SQL", "Cloud Database"],
+        "Cosmos DB": ["NoSQL Database", "Document Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"],
+        "MongoDB": ["Document Store", "NoSQL"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Analytical Thinking", "Research Mindset", "Technical Leadership"],
+    "preferred": ["Innovation", "Project Management", "Mentoring"],
+    "nice_to_have": ["Leadership", "Client Management", "Business Acumen"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Analytical Thinking": [
+        "Data Analysis",
+        "Statistical Analysis",
+        "Logical Thinking",
+        "Research Analysis"
+      ],
+      "Research Mindset": [
+        "Research Skills",
+        "Scientific Method",
+        "Research Methodology",
+        "Experimental Design"
+      ],
+      "Technical Leadership": [
+        "Technical Direction",
+        "Architecture Leadership",
+        "Team Leadership",
+        "Technical Mentoring"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Machine Learning Fundamentals",
+        "Deep Learning",
+        "Statistical Analysis",
+        "Data Processing",
+        "Model Deployment",
+        "Big Data Processing",
+        "Distributed Systems"
+      ],
+      "preferred": [
+        "Natural Language Processing",
+        "Computer Vision",
+        "Time Series Analysis",
+        "Reinforcement Learning"
+      ],
+      "nice_to_have": [
+        "Edge Computing",
+        "IoT Systems",
+        "Quantum Computing"
+      ],
+      "semantic_equivalents": {
+        "Machine Learning Fundamentals": [
+          "ML Basics",
+          "Machine Learning Concepts",
+          "ML Algorithms",
+          "Supervised Learning",
+          "Unsupervised Learning"
+        ],
+        "Deep Learning": [
+          "Neural Networks",
+          "Deep Learning Models",
+          "CNN",
+          "RNN",
+          "Transformers",
+          "Attention Mechanisms",
+          "Advanced Architectures"
+        ],
+        "Statistical Analysis": [
+          "Statistics",
+          "Data Analysis",
+          "Statistical Methods",
+          "Hypothesis Testing",
+          "Regression Analysis",
+          "Advanced Statistics"
+        ],
+        "Data Processing": [
+          "Data Cleaning",
+          "Data Preprocessing",
+          "Feature Engineering",
+          "Data Transformation",
+          "ETL",
+          "Data Pipeline"
+        ],
+        "Model Deployment": [
+          "Model Serving",
+          "Model Monitoring",
+          "Model Optimization",
+          "Production Deployment",
+          "MLOps"
+        ],
+        "Big Data Processing": [
+          "Large Scale Data",
+          "Distributed Computing",
+          "Data Pipeline",
+          "Stream Processing"
+        ],
+        "Distributed Systems": [
+          "Distributed Computing",
+          "System Architecture",
+          "Scalability",
+          "High Availability"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science, Mathematics, Statistics, or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [
+      "Azure Data Scientist Associate",
+      "Azure Machine Learning Engineer Associate"
+    ],
+    "preferred": [
+      "Azure Data Engineer Associate",
+      "Azure AI Engineer Associate"
+    ],
+    "nice_to_have": [
+      "Azure Solutions Architect Expert",
+      "Azure DevOps Engineer Expert"
+    ]
+  },
+  "responsibilities": [
+    "Design and implement machine learning models",
+    "Research and innovate ML techniques",
+    "Optimize model performance",
+    "Write technical documentation",
+    "Lead research initiatives",
+    "Mentor junior data scientists",
+    "Drive technical decisions",
+    "Follow Microsoft's development practices",
+    "Contribute to technical documentation",
+    "Support production systems",
+    "Debug and fix issues",
+    "Lead team meetings",
+    "Define best practices",
+    "Lead team projects",
+    "Drive data analysis initiatives",
+    "Architect ML solutions",
+    "Deploy models to production",
+    "Monitor model performance",
+    "Optimize model efficiency",
+    "Collaborate with stakeholders",
+    "Present findings to leadership",
+    "Define technical standards",
+    "Evaluate new technologies",
+    "Lead technical initiatives",
+    "Drive innovation"
+  ],
+  "interview_focus": [
+    "Machine Learning Fundamentals",
+    "Deep Learning Concepts",
+    "Statistical Analysis",
+    "Problem Solving",
+    "Coding",
+    "System Design",
+    "Technical Discussion",
+    "Microsoft Technologies",
+    "Research Experience",
+    "Innovation and Creativity",
+    "Model Deployment",
+    "Production Experience",
+    "Technical Leadership",
+    "Project Management",
+    "Architecture Design"
+  ]
+} 

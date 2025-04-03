@@ -1,0 +1,221 @@
+{
+  "company": "Amazon",
+  "role": "Data Scientist",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Python", "R", "SQL", "Java", "Scala"],
+      "preferred": ["Julia", "C++"],
+      "nice_to_have": ["MATLAB", "Go"],
+      "semantic_equivalents": {
+        "Python": ["Python3", "Py", "Python Programming"],
+        "R": ["R Programming", "R Language"],
+        "SQL": ["Structured Query Language", "Database Query"],
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Scala": ["Scala Programming", "Scala Language"]
+      }
+    },
+    "frameworks": {
+      "required": ["TensorFlow", "PyTorch", "scikit-learn", "XGBoost", "Keras"],
+      "preferred": ["LightGBM", "CatBoost"],
+      "nice_to_have": ["FastAI", "Hugging Face"],
+      "semantic_equivalents": {
+        "TensorFlow": ["TF", "Deep Learning Framework"],
+        "PyTorch": ["PyTorch Framework", "Deep Learning"],
+        "scikit-learn": ["sklearn", "Machine Learning Library"],
+        "XGBoost": ["Gradient Boosting", "ML Framework"],
+        "Keras": ["Deep Learning", "Neural Networks"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "AWS", "Jupyter Notebook", "Docker", "Kubernetes"],
+      "preferred": ["Airflow", "MLflow"],
+      "nice_to_have": ["Kubeflow", "Ray"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "AWS": ["Amazon Web Services", "Cloud Computing"],
+        "Jupyter Notebook": ["Jupyter", "Interactive Notebook"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Kubernetes": ["K8s", "Container Orchestration"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "AWS", "Cloud Platform", "Big Data Platform", "ML Platform"],
+      "preferred": ["Google Cloud", "Azure"],
+      "nice_to_have": ["Databricks", "Snowflake"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "AWS": ["Amazon Web Services", "Cloud Platform"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "Big Data Platform": ["Data Processing", "Data Analytics"],
+        "ML Platform": ["Machine Learning Infrastructure", "MLOps"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "PostgreSQL", "MongoDB", "Redshift", "Elasticsearch"],
+      "preferred": ["Redis", "Cassandra"],
+      "nice_to_have": ["Neo4j", "DynamoDB"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "Redshift": ["Data Warehouse", "Analytics Database"],
+        "Elasticsearch": ["Search Engine", "Analytics Engine"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Analytical Thinking", "Business Acumen", "Leadership"],
+    "preferred": ["Data Visualization", "Project Management", "Client Management"],
+    "nice_to_have": ["Strategic Thinking", "Innovation"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Analytical Thinking": [
+        "Data Analysis",
+        "Statistical Analysis",
+        "Quantitative Analysis",
+        "Logical Thinking"
+      ],
+      "Business Acumen": [
+        "Business Understanding",
+        "Market Knowledge",
+        "Industry Knowledge",
+        "Business Strategy"
+      ],
+      "Leadership": [
+        "Team Leadership",
+        "Technical Leadership",
+        "Project Leadership",
+        "Mentoring"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Data Analysis",
+        "Statistical Modeling",
+        "Machine Learning",
+        "Data Visualization",
+        "Big Data Processing",
+        "Deep Learning"
+      ],
+      "preferred": [
+        "Natural Language Processing",
+        "Computer Vision",
+        "Distributed Systems"
+      ],
+      "nice_to_have": [
+        "Reinforcement Learning",
+        "Generative AI",
+        "Edge Computing"
+      ],
+      "semantic_equivalents": {
+        "Data Analysis": [
+          "Data Processing",
+          "Data Mining",
+          "Data Exploration",
+          "Data Cleaning",
+          "Data Pipeline"
+        ],
+        "Statistical Modeling": [
+          "Statistical Analysis",
+          "Statistical Methods",
+          "Statistical Techniques",
+          "Statistical Inference",
+          "Advanced Statistics"
+        ],
+        "Machine Learning": [
+          "ML Algorithms",
+          "ML Models",
+          "ML Pipeline",
+          "Model Training",
+          "Model Deployment"
+        ],
+        "Data Visualization": [
+          "Data Presentation",
+          "Visual Analytics",
+          "Data Storytelling",
+          "Dashboard Creation",
+          "Interactive Visualization"
+        ],
+        "Big Data Processing": [
+          "Large Scale Data",
+          "Distributed Computing",
+          "Data Pipeline",
+          "Data Processing",
+          "Stream Processing"
+        ],
+        "Deep Learning": [
+          "Neural Networks",
+          "Deep Learning Models",
+          "Deep Learning Frameworks",
+          "Model Architecture",
+          "Transfer Learning"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science, Statistics, Mathematics, or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": ["AWS Machine Learning Specialty", "Google Data Analytics Professional"],
+    "preferred": ["IBM Data Science Professional", "TensorFlow Developer Certificate"],
+    "nice_to_have": [
+      "AWS Solutions Architect Associate",
+      "Google Cloud Professional ML Engineer"
+    ]
+  },
+  "responsibilities": [
+    "Design and implement advanced machine learning models",
+    "Develop scalable data processing pipelines",
+    "Create interactive data visualizations and dashboards",
+    "Write technical documentation and best practices",
+    "Lead cross-functional teams",
+    "Mentor junior data scientists",
+    "Drive technical decisions",
+    "Follow Amazon's development practices",
+    "Contribute to technical documentation",
+    "Support production systems",
+    "Optimize model performance",
+    "Implement best practices",
+    "Architect ML solutions",
+    "Lead technical projects"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Machine Learning Fundamentals",
+    "Statistical Analysis",
+    "Problem Solving",
+    "Coding",
+    "System Design",
+    "Technical Discussion",
+    "Amazon Leadership Principles",
+    "Data Analysis",
+    "Data Visualization",
+    "Big Data Processing",
+    "Model Optimization",
+    "Deep Learning",
+    "Distributed Systems",
+    "Technical Leadership"
+  ]
+} 

@@ -1,0 +1,136 @@
+{
+  "company": "Google",
+  "role": "Software Development Engineer",
+  "experience_level": "Fresher",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "C++"],
+      "preferred": ["JavaScript/TypeScript", "Go"],
+      "nice_to_have": ["Kotlin", "Rust"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "C++": ["Cpp", "C Plus Plus"],
+        "Go": ["Golang", "Go Programming"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js"],
+      "preferred": ["Angular", "Django"],
+      "nice_to_have": ["Flask", "Express.js"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Spring"],
+        "React.js": ["React", "ReactJS", "React Native"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Google Cloud Platform"],
+      "preferred": ["Docker", "Kubernetes"],
+      "nice_to_have": ["Jenkins", "Terraform"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Google Cloud Platform": ["GCP", "Google Cloud"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Google Cloud Platform"],
+      "preferred": ["Android", "iOS"],
+      "nice_to_have": ["AWS", "Azure"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Google Cloud Platform": ["GCP", "Google Cloud"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB"],
+      "preferred": ["PostgreSQL", "Redis"],
+      "nice_to_have": ["BigQuery", "Firebase"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration"],
+    "preferred": ["Learning Ability", "Adaptability"],
+    "nice_to_have": ["Innovation", "Customer Focus"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 0,
+    "key_areas": {
+      "required": [
+        "Data Structures",
+        "Algorithms",
+        "Basic Programming"
+      ],
+      "preferred": [
+        "Web Development",
+        "Object-Oriented Programming"
+      ],
+      "nice_to_have": [
+        "Cloud Computing",
+        "System Design"
+      ],
+      "semantic_equivalents": {
+        "Data Structures": [
+          "Data Organization",
+          "Data Management",
+          "Data Handling"
+        ],
+        "Algorithms": [
+          "Algorithm Design",
+          "Algorithm Analysis",
+          "Computational Thinking"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [],
+    "preferred": ["Google Cloud Fundamentals"],
+    "nice_to_have": [
+      "Google Cloud Associate Engineer",
+      "Docker Certified Associate"
+    ]
+  },
+  "responsibilities": [
+    "Develop and maintain applications",
+    "Write clean, efficient code",
+    "Participate in code reviews",
+    "Collaborate with team members",
+    "Learn and apply new technologies",
+    "Debug and fix issues",
+    "Document code and processes"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Coding",
+    "Technical Discussion",
+    "System Design Basics"
+  ]
+} 

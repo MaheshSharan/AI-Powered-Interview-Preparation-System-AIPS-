@@ -1,0 +1,83 @@
+Source: Amazon Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: junior
+Title: Data Scientist Resume (Junior)
+
+NEHA REDDY
+Hyderabad, Telangana
+neha.reddy@email.com | (555) 567-8901
+LinkedIn: linkedin.com/in/neha-reddy
+
+PROFESSIONAL SUMMARY
+Data Scientist with 2 years of experience in machine learning and data analytics. Expertise in predictive modeling, statistical analysis, and data visualization. Seeking to join Amazon as a Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Data Scientist | Amazon | Hyderabad | Feb 2023 - Present
+• Lead development of ML models
+• Design and implement solutions
+• Mentor team of 4 junior analysts
+• Drive technical decisions and best practices
+• Optimize model performance
+• Achievements:
+  - Improved model accuracy by 50%
+  - Enhanced prediction accuracy by 45%
+  - Led 4 major projects to completion
+
+Data Analytics Intern | Microsoft | Bangalore | Jul 2022 - Jan 2023
+• Developed analytics dashboards
+• Implemented ETL processes
+• Created visualizations
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Hyderabad | 2018-2022
+• GPA: 8.9/10
+• Specialization in Data Science
+• Thesis: "Deep Learning in Predictive Analytics"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 96% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 55%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 50%
+
+ACHIEVEMENTS
+• Received "Data Science Excellence Award" at Amazon
+• Led successful delivery of 5 projects
+• Improved model performance by 50%
+• Mentored 6 junior analysts
+• Published 3 technical papers
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Telugu (Native)
+• Hindi (Conversational) 

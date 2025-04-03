@@ -1,0 +1,88 @@
+Source: Flipkart Careers
+Date: 2024-04-03
+Category: data_scientist
+Experience: mid_level
+Title: Data Scientist Resume (Mid-Level)
+
+ARUN IYER
+Chennai, Tamil Nadu
+arun.iyer@email.com | (555) 890-1234
+LinkedIn: linkedin.com/in/arun-iyer
+
+PROFESSIONAL SUMMARY
+Senior Data Scientist with 5 years of experience in machine learning and data analytics. Expertise in predictive modeling and statistical analysis. Seeking to join Flipkart as a Senior Data Scientist.
+
+TECHNICAL SKILLS
+• Programming Languages: Python, R, SQL
+• ML/DL Frameworks: TensorFlow, PyTorch, Scikit-learn
+• Data Analysis: Pandas, NumPy, Matplotlib
+• Big Data: Hadoop, Spark, Kafka
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Senior Data Scientist | Flipkart | Chennai | Mar 2021 - Present
+• Lead enterprise initiatives
+• Design and implement solutions
+• Mentor team of 6 junior analysts
+• Drive technical strategy
+• Optimize performance
+• Achievements:
+  - Improved model accuracy by 55%
+  - Enhanced prediction accuracy by 50%
+  - Led 8 major projects to completion
+
+Data Scientist | Flipkart | Chennai | Mar 2019 - Feb 2021
+• Developed ML models
+• Implemented data pipelines
+• Created automated tests
+• Optimized performance
+
+Data Science Intern | Flipkart | Chennai | Aug 2018 - Feb 2019
+• Built analytics solutions
+• Participated in model reviews
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Madras | 2014-2018
+• GPA: 8.7/10
+• Specialization in Data Science
+• Thesis: "Predictive Analytics in E-commerce"
+
+PROJECTS
+1. Customer Churn Prediction
+   • Built churn prediction model
+   • Tools: Python, Scikit-learn, Pandas
+   • Features: Feature engineering, model selection
+   • Achieved 96% accuracy
+
+2. Sales Forecasting System
+   • Developed forecasting platform
+   • Tools: Prophet, ARIMA, Python
+   • Features: Time series analysis, visualization
+   • Improved accuracy by 65%
+
+3. Recommendation Engine
+   • Created recommendation system
+   • Tools: Collaborative filtering, Python
+   • Features: User behavior analysis
+   • Enhanced recommendations by 60%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Flipkart
+• Published technical article on ML
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Data Analytics
+• TensorFlow Developer Certificate
+• Python for Data Science
+• Machine Learning Specialization
+
+LANGUAGES
+• English (Professional)
+• Tamil (Native)
+• Hindi (Conversational) 

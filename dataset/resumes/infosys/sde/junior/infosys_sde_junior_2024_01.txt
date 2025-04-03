@@ -1,0 +1,80 @@
+Source: Infosys Careers
+Date: 2024-04-03
+Category: sde
+Experience: junior
+Title: Software Development Engineer Resume (Junior)
+
+AMIT VERMA
+Bangalore, Karnataka
+amit.verma@email.com | (555) 345-6789
+LinkedIn: linkedin.com/in/amit-verma
+
+PROFESSIONAL SUMMARY
+Software Development Engineer with 2 years of experience in building scalable applications and distributed systems. Expertise in microservices architecture and cloud technologies. Seeking to join Infosys as a Software Development Engineer.
+
+TECHNICAL SKILLS
+• Programming Languages: Java, Python, C++
+• Web Technologies: Spring Boot, Django, Flask
+• Databases: MySQL, MongoDB, Redis
+• Cloud: AWS, Docker, Kubernetes
+• Other: Git, CI/CD, Agile
+
+PROFESSIONAL EXPERIENCE
+
+Software Development Engineer | Infosys | Bangalore | Jan 2023 - Present
+• Developed microservices
+• Implemented CI/CD pipelines
+• Created automated tests
+• Optimized performance
+• Achievements:
+  - Improved system performance by 40%
+  - Enhanced scalability by 35%
+  - Led 5 major projects to completion
+
+Software Development Intern | Infosys | Bangalore | Jun 2022 - Dec 2022
+• Built backend services
+• Implemented caching
+• Created technical documentation
+
+EDUCATION
+Bachelor of Technology in Computer Science
+Indian Institute of Technology | Bombay | 2018-2022
+• GPA: 8.8/10
+• Specialization in Software Engineering
+• Thesis: "Microservices Architecture"
+
+PROJECTS
+1. E-commerce Platform
+   • Built scalable e-commerce platform
+   • Tools: Spring Boot, Docker, Kubernetes
+   • Features: Product catalog, order management
+   • Improved scalability by 40%
+
+2. Real-time Analytics System
+   • Developed analytics platform
+   • Tools: Apache Kafka, Spark, Python
+   • Features: Data processing, visualization
+   • Processed 1M+ events per second
+
+3. Task Management System
+   • Created task management app
+   • Tools: Django, PostgreSQL, Redis
+   • Features: Task tracking, analytics
+   • Reduced task completion time by 30%
+
+ACHIEVEMENTS
+• Received "Best Performance Award" at Infosys
+• Published technical article on microservices
+• Top performer in team projects
+• Active in open source community
+
+CERTIFICATIONS
+• AWS Certified Developer
+• Docker Certified Associate
+• Spring Professional Certification
+• Python Professional Certificate
+
+LANGUAGES
+• English (Professional)
+• Hindi (Native)
+• Kannada (Conversational) 

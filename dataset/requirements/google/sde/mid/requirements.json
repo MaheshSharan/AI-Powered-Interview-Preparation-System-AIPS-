@@ -1,0 +1,179 @@
+{
+  "company": "Google",
+  "role": "Software Development Engineer",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "C++", "Go", "JavaScript/TypeScript"],
+      "preferred": ["Kotlin", "Rust"],
+      "nice_to_have": ["Swift", "Dart"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "C++": ["Cpp", "C Plus Plus"],
+        "Go": ["Golang", "Go Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js", "Angular", "Flutter"],
+      "preferred": ["Django", "Express.js"],
+      "nice_to_have": ["Vue.js", "TensorFlow"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Spring"],
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Flutter": ["Flutter Development", "Cross-platform Development"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Google Cloud Platform", "Docker", "Kubernetes"],
+      "preferred": ["Jenkins", "Terraform", "Prometheus"],
+      "nice_to_have": ["Grafana", "Istio"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Google Cloud Platform": ["GCP", "Google Cloud"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Kubernetes": ["K8s", "Container Orchestration"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Google Cloud Platform", "Android", "Chrome OS"],
+      "preferred": ["iOS", "Cloud Platform"],
+      "nice_to_have": ["AWS", "Azure"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Google Cloud Platform": ["GCP", "Google Cloud"],
+        "Android": ["Android Development", "Android OS"],
+        "Chrome OS": ["Chrome Development", "Chrome Platform"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB", "BigQuery", "Cloud Spanner"],
+      "preferred": ["PostgreSQL", "Redis", "Firebase"],
+      "nice_to_have": ["Cloud SQL", "Cloud Datastore"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "BigQuery": ["Data Warehouse", "Analytics Database"],
+        "Cloud Spanner": ["Distributed Database", "Global Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Innovation", "Leadership"],
+    "preferred": ["Strategic Thinking", "Mentoring"],
+    "nice_to_have": ["Customer Focus", "Project Management"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Innovation": [
+        "Creative Thinking",
+        "Innovative Solutions",
+        "Out-of-the-box Thinking",
+        "Design Thinking"
+      ],
+      "Leadership": [
+        "Team Leadership",
+        "Technical Leadership",
+        "Project Leadership",
+        "Team Management"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Full Stack Development",
+        "System Design",
+        "API Development",
+        "Cloud Computing",
+        "Mobile Development"
+      ],
+      "preferred": [
+        "Machine Learning",
+        "Distributed Systems"
+      ],
+      "nice_to_have": [
+        "Performance Optimization",
+        "Security Implementation",
+        "DevOps Practices"
+      ],
+      "semantic_equivalents": {
+        "Full Stack Development": [
+          "Web Development",
+          "End-to-end Development",
+          "Full Stack Web Development",
+          "Full Stack Engineering"
+        ],
+        "System Design": [
+          "Architecture Design",
+          "Software Architecture",
+          "System Architecture",
+          "Technical Design"
+        ],
+        "Cloud Computing": [
+          "Cloud Development",
+          "Cloud Services",
+          "Cloud Infrastructure"
+        ],
+        "Mobile Development": [
+          "Mobile App Development",
+          "Cross-platform Development",
+          "Mobile Engineering"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": ["Google Cloud Professional Developer"],
+    "preferred": ["Google Cloud Professional Architect"],
+    "nice_to_have": [
+      "Google Cloud Professional DevOps Engineer",
+      "Docker Certified Associate",
+      "Kubernetes Administrator"
+    ]
+  },
+  "responsibilities": [
+    "Design and develop scalable applications",
+    "Build and maintain cloud-native solutions",
+    "Implement security best practices",
+    "Optimize application performance",
+    "Mentor junior developers",
+    "Lead technical initiatives",
+    "Collaborate with cross-functional teams",
+    "Participate in code reviews",
+    "Contribute to technical documentation",
+    "Drive technical decisions"
+  ],
+  "interview_focus": [
+    "System Design",
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Technical Discussion",
+    "Coding",
+    "System Architecture",
+    "Cloud Architecture",
+    "Leadership Experience",
+    "Google-specific Technologies"
+  ]
+} 

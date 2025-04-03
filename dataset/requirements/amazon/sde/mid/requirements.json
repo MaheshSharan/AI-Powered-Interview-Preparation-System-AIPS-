@@ -1,0 +1,200 @@
+{
+  "company": "Amazon",
+  "role": "Software Development Engineer",
+  "experience_level": "Mid",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "JavaScript/TypeScript", "C++", "Go"],
+      "preferred": ["Ruby", "Kotlin"],
+      "nice_to_have": ["Swift", "Rust"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"],
+        "C++": ["Cpp", "C Plus Plus"],
+        "Go": ["Golang", "Go Programming"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js", "Node.js", "Express.js", "Django"],
+      "preferred": ["Flask", "FastAPI"],
+      "nice_to_have": ["Vue.js", "Angular"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Spring"],
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Node.js": ["Node", "NodeJS"],
+        "Express.js": ["Express", "Node.js Framework"],
+        "Django": ["Python Web Framework", "Django Framework"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "AWS", "Docker", "Jenkins", "Terraform"],
+      "preferred": ["Kubernetes", "Prometheus"],
+      "nice_to_have": ["Grafana", "Istio"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "AWS": ["Amazon Web Services", "Cloud Computing"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Jenkins": ["CI/CD", "Continuous Integration"],
+        "Terraform": ["Infrastructure as Code", "IaC"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "AWS", "Web Platform", "Cloud Platform", "Serverless"],
+      "preferred": ["Mobile Platform", "IoT"],
+      "nice_to_have": ["iOS", "Android"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "AWS": ["Amazon Web Services", "Cloud Platform"],
+        "Web Platform": ["Web Development", "Web Technologies"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"],
+        "Serverless": ["Serverless Architecture", "FaaS"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB", "DynamoDB", "Redis", "PostgreSQL"],
+      "preferred": ["ElastiCache", "RDS"],
+      "nice_to_have": ["Redshift", "Aurora"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "DynamoDB": ["NoSQL", "Document Database"],
+        "Redis": ["In-memory Database", "Cache"],
+        "PostgreSQL": ["Postgres", "Relational Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Customer Focus", "Innovation", "Leadership"],
+    "preferred": ["Mentoring", "Strategic Thinking"],
+    "nice_to_have": ["Project Management", "Business Acumen"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Customer Focus": [
+        "Customer Service",
+        "User Experience",
+        "Customer Satisfaction",
+        "User-centric Development"
+      ],
+      "Innovation": [
+        "Creative Thinking",
+        "Innovative Solutions",
+        "Out-of-the-box Thinking",
+        "Design Thinking"
+      ],
+      "Leadership": [
+        "Team Leadership",
+        "Technical Leadership",
+        "Project Leadership",
+        "Team Management"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 5,
+    "key_areas": {
+      "required": [
+        "Full Stack Development",
+        "System Design",
+        "API Development",
+        "Cloud Computing",
+        "Database Design",
+        "Microservices Architecture"
+      ],
+      "preferred": [
+        "DevOps Practices",
+        "Security Implementation"
+      ],
+      "nice_to_have": [
+        "Machine Learning",
+        "Distributed Systems"
+      ],
+      "semantic_equivalents": {
+        "Full Stack Development": [
+          "Web Development",
+          "End-to-end Development",
+          "Full Stack Web Development",
+          "Full Stack Engineering"
+        ],
+        "System Design": [
+          "Architecture Design",
+          "Software Architecture",
+          "System Architecture",
+          "Technical Design"
+        ],
+        "Cloud Computing": [
+          "Cloud Development",
+          "Cloud Services",
+          "Cloud Infrastructure"
+        ],
+        "Database Design": [
+          "Database Architecture",
+          "Data Modeling",
+          "Database Optimization"
+        ],
+        "Microservices Architecture": [
+          "Distributed Systems",
+          "Service-oriented Architecture",
+          "Microservices Design"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": ["AWS Solutions Architect Associate"],
+    "preferred": ["AWS Developer Associate", "AWS DevOps Engineer"],
+    "nice_to_have": [
+      "AWS Solutions Architect Professional",
+      "AWS Advanced Networking",
+      "Docker Certified Associate",
+      "Kubernetes Administrator"
+    ]
+  },
+  "responsibilities": [
+    "Design and develop scalable applications",
+    "Build and maintain cloud-native solutions",
+    "Implement security best practices",
+    "Optimize application performance",
+    "Mentor junior developers",
+    "Lead technical initiatives",
+    "Collaborate with cross-functional teams",
+    "Participate in code reviews",
+    "Contribute to technical documentation",
+    "Drive technical decisions",
+    "Architect complex systems",
+    "Lead technical projects"
+  ],
+  "interview_focus": [
+    "System Design",
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Technical Discussion",
+    "Coding",
+    "System Architecture",
+    "Cloud Architecture",
+    "Leadership Experience",
+    "Amazon Leadership Principles",
+    "Distributed Systems",
+    "Microservices Design"
+  ]
+} 

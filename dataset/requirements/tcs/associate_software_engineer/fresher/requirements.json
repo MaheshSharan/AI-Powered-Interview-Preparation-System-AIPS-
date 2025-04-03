@@ -1,0 +1,163 @@
+{
+  "company": "TCS",
+  "role": "Associate Software Engineer",
+  "experience_level": "Fresher",
+  "technical_requirements": {
+    "programming_languages": {
+      "required": ["Java", "Python", "JavaScript/TypeScript"],
+      "preferred": ["C++", "Ruby"],
+      "nice_to_have": ["Go", "Kotlin"],
+      "semantic_equivalents": {
+        "Java": ["Java EE", "J2EE", "Core Java"],
+        "Python": ["Python3", "Py", "Python Programming"],
+        "JavaScript/TypeScript": ["JS", "TS", "TypeScript", "JavaScript"]
+      }
+    },
+    "frameworks": {
+      "required": ["Spring Boot", "React.js", "Node.js"],
+      "preferred": ["Express.js", "Django"],
+      "nice_to_have": ["Vue.js", "Angular"],
+      "semantic_equivalents": {
+        "Spring Boot": ["Spring Framework", "Spring"],
+        "React.js": ["React", "ReactJS", "React Native"],
+        "Node.js": ["Node", "NodeJS"]
+      }
+    },
+    "tools": {
+      "required": ["Git", "Docker", "Jenkins"],
+      "preferred": ["Terraform", "Kubernetes"],
+      "nice_to_have": ["Prometheus", "Grafana"],
+      "semantic_equivalents": {
+        "Git": ["GitHub", "GitLab", "Version Control"],
+        "Docker": ["Containerization", "Docker Engine"],
+        "Jenkins": ["CI/CD", "Continuous Integration"]
+      }
+    },
+    "platforms": {
+      "required": ["Linux", "Web Platform", "Cloud Platform"],
+      "preferred": ["Mobile Platform", "Serverless"],
+      "nice_to_have": ["iOS", "Android"],
+      "semantic_equivalents": {
+        "Linux": ["Unix", "Linux OS"],
+        "Web Platform": ["Web Development", "Web Technologies"],
+        "Cloud Platform": ["Cloud Computing", "Cloud Services"]
+      }
+    },
+    "databases": {
+      "required": ["MySQL", "MongoDB", "PostgreSQL"],
+      "preferred": ["Redis", "Elasticsearch"],
+      "nice_to_have": ["Cassandra", "Neo4j"],
+      "semantic_equivalents": {
+        "MySQL": ["SQL", "Relational Database"],
+        "MongoDB": ["Mongo", "NoSQL Database"],
+        "PostgreSQL": ["Postgres", "Relational Database"]
+      }
+    }
+  },
+  "soft_skills": {
+    "required": ["Problem Solving", "Communication", "Team Collaboration", "Learning Ability"],
+    "preferred": ["Innovation", "Adaptability"],
+    "nice_to_have": ["Leadership", "Customer Focus"],
+    "semantic_equivalents": {
+      "Problem Solving": [
+        "Troubleshooting",
+        "Analytical Thinking",
+        "Critical Thinking",
+        "Debugging",
+        "Root Cause Analysis",
+        "Solutionist",
+        "Technical Problem Solving"
+      ],
+      "Communication": [
+        "Verbal Communication",
+        "Written Communication",
+        "Technical Communication",
+        "Presentation Skills",
+        "Interpersonal Skills"
+      ],
+      "Learning Ability": [
+        "Quick Learning",
+        "Continuous Learning",
+        "Self-learning",
+        "Adaptability"
+      ]
+    }
+  },
+  "experience_requirements": {
+    "years": 0,
+    "key_areas": {
+      "required": [
+        "Data Structures",
+        "Algorithms",
+        "Basic Programming",
+        "Web Development"
+      ],
+      "preferred": [
+        "Cloud Computing",
+        "Database Design"
+      ],
+      "nice_to_have": [
+        "API Development",
+        "System Design"
+      ],
+      "semantic_equivalents": {
+        "Data Structures": [
+          "Data Organization",
+          "Data Management",
+          "Data Types"
+        ],
+        "Algorithms": [
+          "Algorithm Design",
+          "Algorithm Analysis",
+          "Computational Thinking"
+        ],
+        "Basic Programming": [
+          "Programming Fundamentals",
+          "Coding",
+          "Software Development"
+        ],
+        "Web Development": [
+          "Web Applications",
+          "Frontend Development",
+          "Backend Development"
+        ]
+      }
+    }
+  },
+  "education_requirements": {
+    "degree": "Bachelor's",
+    "specialization": "Computer Science or related field",
+    "minimum_gpa": 3.5
+  },
+  "certifications": {
+    "required": [],
+    "preferred": ["Cloud Computing Fundamentals"],
+    "nice_to_have": [
+      "Docker Certified Associate",
+      "Kubernetes Administrator"
+    ]
+  },
+  "responsibilities": [
+    "Develop and maintain applications",
+    "Write clean, efficient code",
+    "Participate in code reviews",
+    "Collaborate with team members",
+    "Learn and apply new technologies",
+    "Follow TCS development practices",
+    "Contribute to technical documentation",
+    "Debug and fix issues",
+    "Participate in team meetings",
+    "Support production systems"
+  ],
+  "interview_focus": [
+    "Data Structures and Algorithms",
+    "Problem Solving",
+    "Coding",
+    "System Design Basics",
+    "Technical Discussion",
+    "Web Development",
+    "Database Design",
+    "Cloud Computing Basics",
+    "TCS Values and Culture"
+  ]
+} 
