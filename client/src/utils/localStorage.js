@@ -14,7 +14,11 @@ const encrypt = (data) => {
   try {
     // For demonstration - in production use a proper encryption library
     const stringData = JSON.stringify(data);
-    return btoa(stringData); // Base64 encoding as simple obfuscation
+    // Fix for Unicode characters - encode to UTF-8 first
+    const encodedData = encodeURIComponent(stringData).replace(/%([0-9A-F]{2})/g, (_, p1) => {
+      return String.fromCharCode('0x' + p1);
+    });
+    return btoa(encodedData); // Base64 encoding as simple obfuscation
   } catch (error) {
     console.error('Encryption error:', error);
     return null;
@@ -28,7 +32,11 @@ const decrypt = (encryptedData) => {
   try {
     // For demonstration - in production use a proper decryption library
     const decodedData = atob(encryptedData); // Base64 decoding
-    return JSON.parse(decodedData);
+    // Decode UTF-8 characters
+    const decodedStr = decodeURIComponent(decodedData.split('').map(c => {
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+    return JSON.parse(decodedStr);
   } catch (error) {
     console.error('Decryption error:', error);
     return null;

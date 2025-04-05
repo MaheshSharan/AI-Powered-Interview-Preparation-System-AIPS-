@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { 
   ArrowLeftIcon,
   DocumentTextIcon,
@@ -19,17 +19,22 @@ import {
   ClipboardDocumentCheckIcon,
   InformationCircleIcon,
   ArrowUpTrayIcon,
-  ArrowRightIcon
+  ArrowRightIcon,
+  ExclamationCircleIcon,
+  SparklesIcon,
+  StarIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon
 } from '@heroicons/react/24/outline';
 import { useAuthStore } from '../../../store/authStore';
 import useCompanyStore from '../../../store/companyStore';
 import useProgressStore from '../../../store/progressStore';
 import useResumeStore from '../../../store/resumeStore';
-import { parseResume, analyzeResumeForCompany, handleParsingError } from '../../../utils/resumeParser';
+import { parseResume, analyzeResumeForCompany, handleParsingError, testGeminiConnection } from '../../../utils/resumeParser';
 import LoadingScreen from '../../common/LoadingScreen';
+import { CountUp } from 'use-count-up';
 
 const ResumeAnalysis = () => {
-  const { user } = useAuthStore();
   const { selectedCompany, selectedRole, experienceLevel } = useCompanyStore();
   const { updateProgress } = useProgressStore();
   const { 
@@ -56,9 +61,62 @@ const ResumeAnalysis = () => {
   const [parsedResume, setParsedResume] = useState(null);
   const [showVersions, setShowVersions] = useState(false);
   const [versionNote, setVersionNote] = useState('');
+  const [activeTab, setActiveTab] = useState('scores');
+  const [currentCriticalIndex, setCurrentCriticalIndex] = useState(0);
+  const [currentRecommendationIndex, setCurrentRecommendationIndex] = useState(0);
   
   const fileInputRef = useRef(null);
+  const navigate = useNavigate();
   
+  // Helper function to format address
+  const formatAddress = (address) => {
+    if (!address) return '';
+    
+    // Split address into parts
+    const parts = address.split(',').map(part => part.trim());
+    
+    // If it's a short address, return as is
+    if (parts.length <= 2) return address;
+    
+    // For longer addresses, format more concisely
+    const cityStateZip = parts.slice(-2).join(', ');
+    const streetAddress = parts.slice(0, -2).join(', ');
+    
+    return (
+      <div>
+        <div className="text-gray-900 dark:text-white">{streetAddress}</div>
+        <div className="text-gray-600 dark:text-gray-400 text-sm">{cityStateZip}</div>
+      </div>
+    );
+  };
+  
+  // Helper function to render score bar
+  const renderScoreBar = (score) => {
+    const getColor = (score) => {
+      if (score >= 80) return 'bg-green-500';
+      if (score >= 60) return 'bg-yellow-500';
+      return 'bg-red-500';
+    };
+    
+    return (
+      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+        <div
+          className={`h-full ${getColor(score)} transition-all duration-500 ease-out`}
+          style={{ width: `${score}%` }}
+        />
+      </div>
+    );
+  };
+  
+  useEffect(() => {
+    const testAPI = async () => {
+      const result = await testGeminiConnection();
+      console.log('[Resume Analysis] API Test Result:', result);
+    };
+    
+    testAPI();
+  }, []);
+
   // Simulate loading data
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -123,41 +181,60 @@ const ResumeAnalysis = () => {
   };
   
   // Process the file
-  const handleFile = (selectedFile) => {
+  const handleFile = async (selectedFile) => {
     // Reset states
     setError(null);
     
-    // Check file type
-    const validTypes = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-    console.log('[Resume Upload] File type:', selectedFile.type);
+    if (!selectedFile) return;
     
-    if (!validTypes.includes(selectedFile.type)) {
-      setError('Please upload a PDF or DOCX file');
-      return;
+    try {
+      if (selectedFile.type !== 'application/pdf' && 
+          selectedFile.type !== 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' &&
+          selectedFile.type !== 'text/plain') {
+        throw new Error('Unsupported file format. Please upload a PDF, DOCX, or TXT file.');
+      }
+      
+      // Check file size (max 5MB)
+      const fileSize = selectedFile.size / 1024 / 1024; // Convert to MB
+      if (fileSize > 5) {
+        throw new Error('File size exceeds 5MB limit.');
+      }
+      
+      console.log('[Resume Upload] File type:', selectedFile.type);
+      console.log('[Resume Upload] File size:', fileSize.toFixed(2), 'MB');
+      console.log('[Resume Upload] File accepted:', selectedFile.name);
+      
+      // Set file state
+      setFile(selectedFile);
+      
+      // Create file preview for PDF files
+      if (selectedFile.type === 'application/pdf') {
+        const fileURL = URL.createObjectURL(selectedFile);
+        setFilePreview(fileURL);
+      } else {
+        setFilePreview(null);
+      }
+      
+      // Parse the resume text
+      const parsed = await parseResume(selectedFile);
+      setParsedResume(parsed);
+      
+      // Save resume to store
+      if (selectedCompany && selectedRole) {
+        const resumeId = await addResume(
+          selectedFile, 
+          selectedCompany, 
+          selectedRole
+        );
+        setCurrentResume(resumeId);
+      }
+      
+      // Move to preview step
+      setCurrentStep('preview');
+    } catch (error) {
+      console.error('[Resume Upload] Error:', error);
+      setError(handleParsingError(error));
     }
-    
-    // Check file size (max 5MB)
-    console.log('[Resume Upload] File size:', (selectedFile.size / 1024 / 1024).toFixed(2), 'MB');
-    if (selectedFile.size > 5 * 1024 * 1024) {
-      setError('File size exceeds 5MB limit');
-      return;
-    }
-    
-    // Set file and create preview
-    setFile(selectedFile);
-    console.log('[Resume Upload] File accepted:', selectedFile.name);
-    
-    // Create file preview
-    if (selectedFile.type === 'application/pdf') {
-      const fileURL = URL.createObjectURL(selectedFile);
-      setFilePreview(fileURL);
-    } else {
-      // For DOCX, we'll just show the file name and icon
-      setFilePreview(null);
-    }
-    
-    // Move to preview step
-    setCurrentStep('preview');
   };
   
   // Trigger file input click
@@ -167,51 +244,96 @@ const ResumeAnalysis = () => {
   
   // Start analysis process
   const startAnalysis = async () => {
-    setCurrentStep('analysis');
-    setAnalysisProgress(0);
-    console.log('[Resume Analysis] Starting analysis process');
-    
     try {
-      // Parse the resume
-      let progress = 10;
-      setAnalysisProgress(progress);
-      console.log('[Resume Analysis] Beginning resume parsing');
+      setCurrentStep('analysis');
+      setAnalysisProgress(0);
       
-      const parsed = await parseResume(file);
-      setParsedResume(parsed);
-      console.log('[Resume Analysis] Resume parsed successfully:', parsed);
+      // Simulate progress
+      const progressInterval = setInterval(() => {
+        setAnalysisProgress(prev => {
+          if (prev >= 90) {
+            clearInterval(progressInterval);
+            return prev;
+          }
+          return prev + 10;
+        });
+      }, 800);
       
-      progress = 40;
-      setAnalysisProgress(progress);
+      console.log('[Resume Analysis] Starting analysis for company:', selectedCompany, 'role:', selectedRole);
       
-      // Analyze for the selected company and role
-      console.log(`[Resume Analysis] Analyzing for ${selectedCompany} ${selectedRole}`);
-      const results = analyzeResumeForCompany(parsed, selectedCompany, selectedRole);
-      console.log('[Resume Analysis] Analysis results:', results);
+      // Debug the parsedResume object
+      console.log('[Resume Analysis] parsedResume:', parsedResume);
       
-      progress = 70;
-      setAnalysisProgress(progress);
+      // Check if parsedResume has the expected structure
+      if (!parsedResume || !parsedResume.text) {
+        console.log('[Resume Analysis] Invalid parsedResume. Getting current resume from store...');
+        // Try to get the resume text from the store
+        const currentResume = getCurrentResume();
+        if (currentResume && currentResume.rawText) {
+          console.log('[Resume Analysis] Found resume text in store, using that instead');
+          // Create a valid parsedResume object with the text property
+          const validParsedResume = {
+            text: currentResume.rawText,
+            raw: currentResume.rawText
+          };
+          // Update the state
+          setParsedResume(validParsedResume);
+          // Analyze the resume with the valid object
+          const results = await analyzeResumeForCompany(validParsedResume, selectedCompany, selectedRole, experienceLevel);
+          
+          // Clear the interval
+          clearInterval(progressInterval);
+          setAnalysisProgress(100);
+          
+          // Save results in state
+          setAnalysisResults(results);
+          
+          // Save to resume store to persist results
+          if (currentResumeId) {
+            console.log('[Resume Analysis] Saving results to resume store');
+            await saveAnalysisResults(currentResumeId, results);
+          }
+          
+          // Mark progress
+          updateProgress('resumeAnalysis', true);
+          
+          // Move to results
+          setTimeout(() => {
+            setCurrentStep('results');
+          }, 1000);
+          
+          return; // Exit early since we've handled everything
+        } else {
+          throw new Error('No valid resume text found. Please upload your resume again.');
+        }
+      }
       
-      // Save the resume and analysis results
-      console.log('[Resume Analysis] Saving resume and analysis results');
-      const resumeId = await addResume(file, selectedCompany, selectedRole);
-      saveAnalysisResults(resumeId, results);
+      // Analyze the resume
+      const results = await analyzeResumeForCompany(parsedResume, selectedCompany, selectedRole, experienceLevel);
       
-      progress = 100;
-      setAnalysisProgress(progress);
+      // Clear the interval
+      clearInterval(progressInterval);
+      setAnalysisProgress(100);
       
-      // Set results and update progress
+      // Save results in state
       setAnalysisResults(results);
-      updateProgress('resumeAnalysis', true);
-      console.log('[Resume Analysis] Process completed successfully');
       
-      // Move to results step
+      // Save to resume store to persist results
+      if (currentResumeId) {
+        console.log('[Resume Analysis] Saving results to resume store');
+        await saveAnalysisResults(currentResumeId, results);
+      }
+      
+      // Mark progress
+      updateProgress('resumeAnalysis', true);
+      
+      // Move to results
       setTimeout(() => {
         setCurrentStep('results');
       }, 1000);
     } catch (error) {
-      console.error('[Resume Analysis] Error during analysis:', error);
-      setError(handleParsingError(error));
+      console.error('[Resume Analysis] Error analyzing resume:', error);
+      setError('Failed to analyze resume: ' + error.message);
       setCurrentStep('preview');
     }
   };
@@ -227,9 +349,9 @@ const ResumeAnalysis = () => {
   };
   
   // Continue to next module
-  const continueToNextModule = () => {
-    // Navigate to the interview module
-    window.location.href = '/dashboard/interview';
+  const continueToInterview = () => {
+    updateProgress('resume_analyzed');
+    navigate('/dashboard/interview');
   };
   
   // Upload a new version
@@ -335,7 +457,7 @@ const ResumeAnalysis = () => {
           ref={fileInputRef}
           type="file"
           className="hidden"
-          accept=".pdf,.docx"
+          accept=".pdf,.docx,.txt"
           onChange={handleFileChange}
         />
         
@@ -345,7 +467,7 @@ const ResumeAnalysis = () => {
             Drag and drop your resume here
           </h3>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-            Supported formats: PDF, DOCX (Max size: 5MB)
+            Supported formats: PDF, DOCX, TXT (Max size: 5MB)
           </p>
           <button
             type="button"
@@ -412,7 +534,7 @@ const ResumeAnalysis = () => {
       <Link
         to="#"
         onClick={resetProcess}
-        className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 pl-0"
+        className="inline-flex items-center text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 mb-6 pl-0 transition-colors"
       >
         <ArrowLeftIcon className="h-4 w-4 mr-1" />
         <span>Back to upload</span>
@@ -447,7 +569,7 @@ const ResumeAnalysis = () => {
         ) : (
           <div className="w-full h-96 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center bg-gray-50 dark:bg-slate-700">
             <p className="text-gray-500 dark:text-gray-400">
-              Preview not available for DOCX files
+              Preview not available for DOCX or TXT files
             </p>
           </div>
         )}
@@ -543,8 +665,8 @@ const ResumeAnalysis = () => {
   
   // Render results step
   const renderResultsStep = () => {
-    // Add null check to prevent errors
-    if (!analysisResults || !analysisResults.skillsMatch) {
+    // Check if results exist and have the proper structure
+    if (!analysisResults || !analysisResults.scores) {
       return (
         <div className="text-center py-10">
           <p className="text-gray-500 dark:text-gray-400">
@@ -561,518 +683,1010 @@ const ResumeAnalysis = () => {
     }
     
     return (
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="max-w-4xl mx-auto"
-      >
-        <Link
-          to="#"
-          onClick={resetProcess}
-          className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 pl-0"
-        >
-          <ArrowLeftIcon className="h-4 w-4 mr-1" />
-          <span>Upload a different resume</span>
-        </Link>
-        
-        <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Analysis Results</h2>
+      <div className="min-h-screen bg-gray-50 dark:bg-slate-900 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Top Actions Bar */}
+          <div className="mb-6 flex justify-between items-center">
+            <Link
+              to="#"
+              onClick={resetProcess}
+              className="inline-flex items-center text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
+            >
+              <ArrowLeftIcon className="h-4 w-4 mr-1" />
+              <span>Upload a different resume</span>
+            </Link>
+            
             <div className="flex space-x-4">
               <button
-                onClick={() => setShowVersions(true)}
-                className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-              >
-                <DocumentArrowUpIcon className="w-5 h-5 mr-2" />
-                Upload New Version
-              </button>
-              <button
                 onClick={goToManageResumes}
-                className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
+                className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
               >
                 <DocumentDuplicateIcon className="w-5 h-5 mr-2" />
                 Manage Resumes
               </button>
+              
+              <button
+                onClick={continueToInterview}
+                className="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+              >
+                Continue to Interview
+                <ChevronRightIcon className="w-5 h-5 ml-2" />
+              </button>
             </div>
           </div>
           
-          <div className="flex flex-col md:flex-row gap-6">
-            <div className="w-full md:w-1/3">
-              <div className="bg-gray-50 dark:bg-slate-700 rounded-lg p-4 text-center">
-                <div className="relative inline-block">
-                  <svg className="w-24 h-24">
-                    <circle
-                      className="text-gray-200 dark:text-slate-600"
-                      strokeWidth="5"
-                      stroke="currentColor"
-                      fill="transparent"
-                      r="45"
-                      cx="50"
-                      cy="50"
-                    />
-                    <circle
-                      className={`${
-                        analysisResults?.score >= 80
-                          ? 'text-green-500'
-                          : analysisResults?.score >= 60
-                          ? 'text-yellow-500'
-                          : 'text-red-500'
-                      }`}
-                      strokeWidth="5"
-                      strokeDasharray={`${analysisResults?.score * 2.83}, 283`}
-                      strokeLinecap="round"
-                      stroke="currentColor"
-                      fill="transparent"
-                      r="45"
-                      cx="50"
-                      cy="50"
-                    />
-                  </svg>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                      {analysisResults?.score}
-                    </span>
+          {/* Page Header */}
+          <div className="mb-8">
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+              Resume Analysis Results
+            </h1>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              Review your resume's match with {selectedCompany} {selectedRole} position and get personalized improvement suggestions.
+            </p>
+          </div>
+          
+          {/* Tab Navigation */}
+          <div className="mb-6 flex space-x-1 bg-white dark:bg-slate-800 p-1 rounded-xl shadow-sm">
+            <button
+              onClick={() => setActiveTab('scores')}
+              className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-medium transition-all duration-200 ${
+                activeTab === 'scores'
+                ? 'bg-indigo-600 text-white shadow-md'
+                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700/50'
+              }`}
+            >
+              Match Scores
+            </button>
+            <button
+              onClick={() => setActiveTab('improvements')}
+              className={`flex-1 py-2.5 px-4 rounded-lg text-sm font-medium transition-all duration-200 ${
+                activeTab === 'improvements'
+                ? 'bg-indigo-600 text-white shadow-md'
+                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700/50'
+              }`}
+            >
+              Improvement Plan
+            </button>
+          </div>
+          
+          {/* Content Grid */}
+          <div className="grid grid-cols-12 gap-6">
+            {/* Left Panel - Personal Info & Details */}
+            <div className="col-span-4 space-y-6">
+              {/* Personal Info Card */}
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden">
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                    Personal Information
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Full Name</h4>
+                      <p className="text-base text-gray-900 dark:text-white">{analysisResults.personal_info.name}</p>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Email</h4>
+                      <p className="text-base text-gray-900 dark:text-white">{analysisResults.personal_info.contact.email}</p>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Phone</h4>
+                      <p className="text-base text-gray-900 dark:text-white">{analysisResults.personal_info.contact.phone}</p>
+                    </div>
+                    
+                    {analysisResults.personal_info.contact.location && (
+                      <div>
+                        <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Address</h4>
+                        <p className="text-base text-gray-900 dark:text-white">{formatAddress(analysisResults.personal_info.contact.location)}</p>
+                      </div>
+                    )}
                   </div>
                 </div>
-                <h3 className="mt-2 text-lg font-semibold text-gray-900 dark:text-white">
-                  Match Score
-                </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  for {selectedRole} at {selectedCompany}
-                </p>
               </div>
-            </div>
-            
-            <div className="w-full md:w-2/3">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
-                    <CheckCircleIcon className="h-5 w-5 text-green-500 mr-1" />
-                    Strengths
+
+              {/* Education Card */}
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden mb-6">
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                    Education
                   </h3>
-                  <ul className="space-y-2">
-                    {analysisResults?.strengths.map((strength, index) => (
-                      <li
-                        key={index}
-                        className="text-sm text-gray-700 dark:text-gray-300 bg-green-50 dark:bg-green-900/20 border border-green-100 dark:border-green-900/30 rounded-lg p-2"
-                      >
-                        {strength}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center">
-                    <XCircleIcon className="h-5 w-5 text-red-500 mr-1" />
-                    Areas to Improve
-                  </h3>
-                  <ul className="space-y-2">
-                    {analysisResults?.weaknesses.map((weakness, index) => (
-                      <li
-                        key={index}
-                        className="text-sm text-gray-700 dark:text-gray-300 bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-900/30 rounded-lg p-2"
-                      >
-                        {weakness}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <motion.div
-            variants={itemVariants}
-            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              Skills Match
-            </h3>
-            
-            <div className="space-y-4">
-              <div>
-                <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Matched Skills
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {analysisResults?.skillsMatch?.matched?.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="px-2 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full"
-                    >
-                      {skill}
-                    </span>
+                  {/* Education content */}
+                  {analysisResults.education && analysisResults.education.map((edu, index) => (
+                    <div key={index} className="mb-4 last:mb-0">
+                      <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+                        <div className="flex justify-between items-start mb-2">
+                          <div>
+                            <h4 className="font-semibold text-gray-900 dark:text-white">{edu.degree}</h4>
+                            <p className="text-gray-600 dark:text-gray-300">{edu.institution}</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-sm text-gray-500 dark:text-gray-400">{edu.year}</p>
+                            {edu.gpa && (
+                              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                                GPA: <span className="font-medium">{edu.gpa}</span>
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                        
+                        {edu.highlights && edu.highlights.length > 0 && (
+                          <div className="mt-3 border-t border-gray-100 dark:border-gray-700 pt-3">
+                            <p className="text-sm font-medium text-gray-900 dark:text-white mb-2">Highlights</p>
+                            <ul className="list-disc list-inside space-y-1">
+                              {edu.highlights.map((item, i) => (
+                                <li key={i} className="text-sm text-gray-600 dark:text-gray-300">{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
-              
-              <div>
-                <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Missing Skills
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {analysisResults?.skillsMatch?.missing?.map((skill, index) => (
-                    <span
-                      key={index}
-                      className="px-2 py-1 text-xs font-medium bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 rounded-full"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+
+              {/* Position Applied For */}
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 overflow-hidden">
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                    Position Details
+                  </h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Applying For</h4>
+                      <p className="text-base text-gray-900 dark:text-white">
+                        <span className="font-medium">{selectedRole}</span> at {selectedCompany}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-1">Experience Level</h4>
+                      <p className="text-base text-gray-900 dark:text-white">{experienceLevel}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </motion.div>
-          
-          <motion.div
-            variants={itemVariants}
-            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              Suggestions for Improvement
-            </h3>
             
-            <ul className="space-y-2">
-              {analysisResults?.suggestions.map((suggestion, index) => (
-                <li
-                  key={index}
-                  className="flex items-start text-sm text-gray-700 dark:text-gray-300"
-                >
-                  <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 mt-0.5 bg-indigo-100 dark:bg-indigo-900/40 text-indigo-800 dark:text-indigo-300 rounded-full text-xs font-bold">
-                    {index + 1}
-                  </span>
-                  {suggestion}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </div>
-        
-        {/* Company Insights Section */}
-        {analysisResults?.companyInsights && Object.keys(analysisResults.companyInsights).length > 0 && (
-          <motion.div
-            variants={itemVariants}
-            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-              <LightBulbIcon className="h-5 w-5 text-yellow-500 mr-2" />
-              {selectedCompany} Interview Insights
-            </h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {analysisResults.companyInsights.technicalFocus && (
-                <div>
-                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Technical Focus
-                  </h4>
-                  <ul className="space-y-1">
-                    {analysisResults.companyInsights.technicalFocus.map((item, index) => (
-                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-                        <CodeBracketIcon className="h-4 w-4 text-indigo-500 mr-2" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              
-              {analysisResults.companyInsights.culturalValues && (
-                <div>
-                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Cultural Values
-                  </h4>
-                  <ul className="space-y-1">
-                    {analysisResults.companyInsights.culturalValues.map((item, index) => (
-                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-                        <UserGroupIcon className="h-4 w-4 text-indigo-500 mr-2" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              
-              {analysisResults.companyInsights.interviewFocus && (
-                <div>
-                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Interview Focus
-                  </h4>
-                  <ul className="space-y-1">
-                    {analysisResults.companyInsights.interviewFocus.map((item, index) => (
-                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-                        <ClipboardDocumentCheckIcon className="h-4 w-4 text-indigo-500 mr-2" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              
-              {analysisResults.companyInsights.resumePreferences && (
-                <div>
-                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Resume Preferences
-                  </h4>
-                  <ul className="space-y-1">
-                    {analysisResults.companyInsights.resumePreferences.map((item, index) => (
-                      <li key={index} className="text-sm text-gray-600 dark:text-gray-400 flex items-center">
-                        <DocumentTextIcon className="h-4 w-4 text-indigo-500 mr-2" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-            
-            <div className="mt-4 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-100 dark:border-yellow-900/30 rounded-lg">
-              <p className="text-sm text-gray-700 dark:text-gray-300 flex items-start">
-                <InformationCircleIcon className="h-5 w-5 text-yellow-500 mr-2 flex-shrink-0" />
-                These insights are based on research of {selectedCompany}'s hiring practices and can help you prepare for your interview. Focus on these areas to maximize your chances of success.
-              </p>
-            </div>
-          </motion.div>
-        )}
-        
-        {showVersions && (
-          <motion.div
-            variants={itemVariants}
-            className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 mb-6"
-          >
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              Upload New Version
-            </h3>
-            
-            <div className="space-y-4">
-              <div>
-                <label htmlFor="versionNote" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                  Version Notes
-                </label>
-                <textarea
-                  id="versionNote"
-                  value={versionNote}
-                  onChange={(e) => setVersionNote(e.target.value)}
-                  className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                  rows="3"
-                  placeholder="What changes did you make to this version? (optional)"
-                ></textarea>
-              </div>
-              
-              <div className="flex items-center justify-end space-x-3">
-                <button
-                  type="button"
-                  onClick={uploadNewVersion}
-                  className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-                >
-                  Upload New Version
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowVersions(false)}
-                  className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
-                >
-                  Cancel
-                </button>
+            {/* Vertical Separator */}
+            <div className="col-span-1 relative">
+              <div className="absolute inset-0 flex justify-center">
+                <div className="w-px h-full bg-gray-200 dark:bg-gray-700"></div>
               </div>
             </div>
-          </motion.div>
-        )}
-        
-        <div className="flex justify-between">
-          <button
-            type="button"
-            onClick={deleteCurrentResume}
-            className="inline-flex items-center px-4 py-2 border border-red-300 dark:border-red-700 text-red-700 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors duration-200"
-          >
-            <TrashIcon className="h-4 w-4 mr-1" />
-            Delete Resume
-          </button>
-          
-          <div className="space-x-3">
-            <button
-              type="button"
-              onClick={() => setShowVersions(true)}
-              className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
-            >
-              <ArrowUpTrayIcon className="h-4 w-4 mr-1" />
-              Upload New Version
-            </button>
             
-            <Link
-              to="/dashboard/interview"
-              className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-            >
-              Continue to Interview
-              <ArrowRightIcon className="h-4 w-4 ml-1" />
-            </Link>
+            {/* Right Panel - Analysis Results */}
+            <div className="col-span-7 space-y-6">
+              {activeTab === 'scores' ? (
+                <div className="space-y-6">
+                  {/* Overall Score */}
+                  <div className="mb-8">
+                    <div className="flex justify-center mb-6">
+                      <div className="relative">
+                        <svg className="w-40 h-40">
+                          <circle
+                            className="text-gray-200 dark:text-gray-700"
+                            strokeWidth="8"
+                            stroke="currentColor"
+                            fill="transparent"
+                            r="70"
+                            cx="80"
+                            cy="80"
+                          />
+                          <motion.circle
+                            className={`${
+                              analysisResults.scores.overall_score.score >= 80 ? 'text-green-500' : 
+                              analysisResults.scores.overall_score.score >= 60 ? 'text-yellow-500' : 
+                              'text-red-500'
+                            }`}
+                            strokeWidth="8"
+                            strokeDasharray={70 * 2 * Math.PI}
+                            initial={{ strokeDashoffset: 70 * 2 * Math.PI }}
+                            animate={{ 
+                              strokeDashoffset: 70 * 2 * Math.PI * (1 - analysisResults.scores.overall_score.score / 100)
+                            }}
+                            transition={{ duration: 1.5, ease: "easeOut" }}
+                            strokeLinecap="round"
+                            stroke="currentColor"
+                            fill="transparent"
+                            r="70"
+                            cx="80"
+                            cy="80"
+                          />
+                        </svg>
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                          <div className="text-4xl font-bold text-gray-900 dark:text-white">
+                            <CountUp 
+                              isCounting
+                              start={0}
+                              end={analysisResults.scores.overall_score.score}
+                              duration={1.5}
+                              formatter={value => `${Math.round(value)}%`}
+                            />
+                          </div>
+                          <div className="text-sm text-gray-500 dark:text-gray-400">Overall Match</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="text-sm text-gray-600 dark:text-gray-400 text-center px-4">
+                      {analysisResults.scores.overall_score.summary}
+                    </div>
+                  </div>
+                  
+                  {/* Individual Scores */}
+                  <div className="mt-8 space-y-6">
+                    <div className="relative">
+                      <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                        <div className="w-full border-t border-gray-100 dark:border-gray-700"></div>
+                      </div>
+                      <div className="relative flex justify-center">
+                        <span className="px-3 bg-white dark:bg-slate-800 text-sm text-gray-500 dark:text-gray-400">
+                          Detailed Scores
+                        </span>
+                      </div>
+                    </div>
+                    
+                    {/* Technical Match */}
+                    <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <h4 className="text-base font-medium text-gray-900 dark:text-white">Technical Match</h4>
+                        <span className={`px-2.5 py-0.5 rounded-full text-sm font-medium ${
+                          analysisResults.scores.technical_match.score >= 80 ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300' : 
+                          analysisResults.scores.technical_match.score >= 60 ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300' : 
+                          'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-300'
+                        }`}>
+                          <CountUp 
+                            isCounting
+                            start={0}
+                            end={Math.round(analysisResults.scores.technical_match.score)}
+                            duration={2}
+                            formatter={value => `${value}%`}
+                          />
+                        </span>
+                      </div>
+                      <div className="mb-2">
+                        {renderScoreBar(analysisResults.scores.technical_match.score)}
+                      </div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {analysisResults.scores.technical_match.reasoning}
+                      </p>
+                    </div>
+                    
+                    {/* Experience Match */}
+                    <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <h4 className="text-base font-medium text-gray-900 dark:text-white">Experience Match</h4>
+                        <span className={`px-2.5 py-0.5 rounded-full text-sm font-medium ${
+                          analysisResults.scores.experience_match.score >= 80 ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300' : 
+                          analysisResults.scores.experience_match.score >= 60 ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300' : 
+                          'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-300'
+                        }`}>
+                          <CountUp 
+                            isCounting
+                            start={0}
+                            end={Math.round(analysisResults.scores.experience_match.score)}
+                            duration={2}
+                            formatter={value => `${value}%`}
+                            delay={0.3}
+                          />
+                        </span>
+                      </div>
+                      <div className="mb-2">
+                        {renderScoreBar(analysisResults.scores.experience_match.score)}
+                      </div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {analysisResults.scores.experience_match.reasoning}
+                      </p>
+                    </div>
+                    
+                    {/* Education Match */}
+                    <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <h4 className="text-base font-medium text-gray-900 dark:text-white">Education Match</h4>
+                        <span className={`px-2.5 py-0.5 rounded-full text-sm font-medium ${
+                          analysisResults.scores.education_match.score >= 80 ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300' : 
+                          analysisResults.scores.education_match.score >= 60 ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300' : 
+                          'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-300'
+                        }`}>
+                          <CountUp 
+                            isCounting
+                            start={0}
+                            end={Math.round(analysisResults.scores.education_match.score)}
+                            duration={2}
+                            formatter={value => `${value}%`}
+                            delay={0.6}
+                          />
+                        </span>
+                      </div>
+                      <div className="mb-2">
+                        {renderScoreBar(analysisResults.scores.education_match.score)}
+                      </div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {analysisResults.scores.education_match.reasoning}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-6">
+                  {/* Critical Areas Carousel */}
+                  <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden">
+                    <div className="p-6">
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                        Critical Areas to Address
+                      </h3>
+                      <div className="relative">
+                        <div className="overflow-hidden">
+                          <motion.div
+                            animate={{ x: -currentCriticalIndex * 100 + '%' }}
+                            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                            className="flex"
+                          >
+                            {analysisResults.improvements.critical.map((item, index) => (
+                              <div key={index} className="w-full flex-shrink-0 pr-4">
+                                <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4">
+                                  <div className="flex items-start">
+                                    <ExclamationCircleIcon className="h-6 w-6 text-red-500 mt-0.5 mr-3 flex-shrink-0" />
+                                    <div>
+                                      <h4 className="text-base font-medium text-red-800 dark:text-red-300 mb-2">{item.area}</h4>
+                                      <p className="text-sm text-red-700 dark:text-red-200">{item.suggestion}</p>
+                                      {item.impact && (
+                                        <div className="mt-3 flex items-center text-sm text-red-600 dark:text-red-300">
+                                          <SparklesIcon className="h-4 w-4 mr-1.5" />
+                                          <span className="font-medium">Impact:</span>
+                                          <span className="ml-1.5">{item.impact}</span>
+                                        </div>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </motion.div>
+                        </div>
+                        <div className="flex justify-between items-center mt-4">
+                          <button
+                            onClick={() => setCurrentCriticalIndex(Math.max(0, currentCriticalIndex - 1))}
+                            disabled={currentCriticalIndex === 0}
+                            className={`p-2 rounded-full ${
+                              currentCriticalIndex === 0
+                              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                            }`}
+                          >
+                            <ChevronLeftIcon className="w-5 h-5" />
+                          </button>
+                          <span className="text-sm text-gray-500 dark:text-gray-400">
+                            {currentCriticalIndex + 1} of {analysisResults.improvements.critical.length}
+                          </span>
+                          <button
+                            onClick={() => setCurrentCriticalIndex(Math.min(analysisResults.improvements.critical.length - 1, currentCriticalIndex + 1))}
+                            disabled={currentCriticalIndex === analysisResults.improvements.critical.length - 1}
+                            className={`p-2 rounded-full ${
+                              currentCriticalIndex === analysisResults.improvements.critical.length - 1
+                              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                            }`}
+                          >
+                            <ChevronRightIcon className="w-5 h-5" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Recommendations Carousel */}
+                  <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden">
+                    <div className="p-6">
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                        Recommendations for Improvement
+                      </h3>
+                      <div className="relative">
+                        <div className="overflow-hidden">
+                          <motion.div
+                            animate={{ x: -currentRecommendationIndex * 100 + '%' }}
+                            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                            className="flex"
+                          >
+                            {analysisResults.improvements.recommended.map((item, index) => (
+                              <div key={index} className="w-full flex-shrink-0 pr-4">
+                                <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4">
+                                  <div className="flex items-start">
+                                    <LightBulbIcon className="h-6 w-6 text-yellow-500 mt-0.5 mr-3 flex-shrink-0" />
+                                    <div>
+                                      <h4 className="text-base font-medium text-yellow-800 dark:text-yellow-300 mb-2">{item.area}</h4>
+                                      <p className="text-sm text-yellow-700 dark:text-yellow-200">{item.suggestion}</p>
+                                      {item.benefit && (
+                                        <div className="mt-3 flex items-center text-sm text-yellow-600 dark:text-yellow-300">
+                                          <StarIcon className="h-4 w-4 mr-1.5" />
+                                          <span className="font-medium">Benefit:</span>
+                                          <span className="ml-1.5">{item.benefit}</span>
+                                        </div>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </motion.div>
+                        </div>
+                        <div className="flex justify-between items-center mt-4">
+                          <button
+                            onClick={() => setCurrentRecommendationIndex(Math.max(0, currentRecommendationIndex - 1))}
+                            disabled={currentRecommendationIndex === 0}
+                            className={`p-2 rounded-full ${
+                              currentRecommendationIndex === 0
+                              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                            }`}
+                          >
+                            <ChevronLeftIcon className="w-5 h-5" />
+                          </button>
+                          <span className="text-sm text-gray-500 dark:text-gray-400">
+                            {currentRecommendationIndex + 1} of {analysisResults.improvements.recommended.length}
+                          </span>
+                          <button
+                            onClick={() => setCurrentRecommendationIndex(Math.min(analysisResults.improvements.recommended.length - 1, currentRecommendationIndex + 1))}
+                            disabled={currentRecommendationIndex === analysisResults.improvements.recommended.length - 1}
+                            className={`p-2 rounded-full ${
+                              currentRecommendationIndex === analysisResults.improvements.recommended.length - 1
+                              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                            }`}
+                          >
+                            <ChevronRightIcon className="w-5 h-5" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     );
   };
   
   // Render manage resumes step
-  const renderManageResumes = () => (
-    <motion.div
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      className="max-w-4xl mx-auto"
-    >
-      <Link
-        to="#"
-        onClick={() => setCurrentStep(analysisResults ? 'results' : 'upload')}
-        className="inline-flex items-center text-indigo-600 dark:text-indigo-400 mb-6 hover:text-indigo-800 dark:hover:text-indigo-300 pl-0"
-      >
-        <ArrowLeftIcon className="h-4 w-4 mr-1" />
-        <span>Back</span>
-      </Link>
+  const [uploadTimestamps, setUploadTimestamps] = useState({});
+  const [confirmDelete, setConfirmDelete] = useState(null);
+  
+  useEffect(() => {
+    // Debug the date issue
+    console.log("All resumes:", resumes);
+    
+    // Create a map of formatted dates
+    const timestamps = {};
+    resumes.forEach(resume => {
+      console.log(`Resume ${resume.id} upload date:`, resume.uploadDate);
       
-      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Manage Resumes</h2>
+      let formattedDate = 'Unknown date';
+      try {
+        if (resume.uploadDate) {
+          const date = new Date(resume.uploadDate);
+          if (!isNaN(date.getTime())) {
+            formattedDate = `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+          }
+        }
+      } catch (err) {
+        console.error("Date formatting error:", err);
+      }
       
-      {resumes.length === 0 ? (
-        <motion.div
-          variants={itemVariants}
-          className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 text-center"
-        >
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            You haven't uploaded any resumes yet.
-          </p>
-          <button
-            type="button"
-            onClick={() => setCurrentStep('upload')}
-            className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-          >
-            <DocumentArrowUpIcon className="w-5 h-5 mr-2" />
-            Upload Resume
-          </button>
-        </motion.div>
-      ) : (
-        <div className="space-y-6">
-          {resumes.map((resume) => (
-            <motion.div
-              key={resume.id}
-              variants={itemVariants}
-              className={`bg-white dark:bg-slate-800 rounded-xl shadow-sm border ${
-                resume.id === currentResumeId
-                  ? 'border-indigo-300 dark:border-indigo-700'
-                  : 'border-gray-100 dark:border-slate-700'
-              } p-6`}
+      timestamps[resume.id] = formattedDate;
+    });
+    
+    setUploadTimestamps(timestamps);
+  }, [resumes]);
+  
+  const renderManageResumes = () => {
+    return (
+      <div className="min-h-screen bg-gray-50 dark:bg-slate-900 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Top Actions Bar */}
+          <div className="mb-6 flex justify-between items-center">
+            <Link
+              to="#"
+              onClick={() => setCurrentStep(analysisResults ? 'results' : 'upload')}
+              className="inline-flex items-center text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
             >
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center space-x-4">
-                  <DocumentTextIcon className="h-8 w-8 text-indigo-500 dark:text-indigo-400" />
-                  <div>
-                    <h3 className="text-sm font-medium text-gray-900 dark:text-white">
-                      {resume.filename}
-                    </h3>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">
-                      Uploaded on {new Date(resume.uploadDate).toLocaleDateString()}
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <button
-                    onClick={() => selectResume(resume.id)}
-                    className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-                  >
-                    View Analysis
-                  </button>
-                  <button
-                    onClick={() => deleteResume(resume.id)}
-                    className="inline-flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
-                    title="Delete Resume"
-                  >
-                    <TrashIcon className="w-5 h-5" />
-                  </button>
-                </div>
-              </div>
-              
-              {resume.versions.length > 1 && (
-                <div className="mt-4">
-                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Version History
-                  </h4>
-                  <div className="space-y-2 max-h-40 overflow-y-auto">
-                    {resume.versions.map((version, index) => (
-                      <div
-                        key={version.id}
-                        className="flex items-center justify-between text-sm p-2 rounded-lg bg-gray-50 dark:bg-slate-700"
-                      >
-                        <div className="flex items-center">
-                          <ClockIcon className="h-4 w-4 text-gray-500 dark:text-gray-400 mr-2" />
-                          <span className="text-gray-700 dark:text-gray-300">
-                            Version {index + 1} • {new Date(version.createdAt).toLocaleDateString()}
-                          </span>
-                        </div>
-                        {version.notes && (
-                          <span className="text-gray-500 dark:text-gray-400 truncate max-w-xs">
-                            {version.notes}
-                          </span>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-              
-              {resume.id === currentResumeId && (
-                <div className="mt-4 pt-4 border-t border-gray-100 dark:border-slate-700">
-                  {!showVersions ? (
-                    <button
-                      type="button"
-                      onClick={() => setShowVersions(true)}
-                      className="text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300"
-                    >
-                      Upload New Version
-                    </button>
-                  ) : (
-                    <div className="space-y-3">
+              <ArrowLeftIcon className="h-4 w-4 mr-1" />
+              <span>Back</span>
+            </Link>
+          </div>
+
+          {/* Page Header */}
+          <div className="mb-8">
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+              Manage Resumes
+            </h1>
+          </div>
+          
+          {resumes.length === 0 ? (
+            <motion.div
+              variants={itemVariants}
+              className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 p-6 text-center"
+            >
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                You haven't uploaded any resumes yet.
+              </p>
+              <button
+                type="button"
+                onClick={() => setCurrentStep('upload')}
+                className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
+              >
+                <DocumentArrowUpIcon className="w-5 h-5 mr-2" />
+                Upload Resume
+              </button>
+            </motion.div>
+          ) : (
+            <div className="space-y-6">
+              {resumes.map((resume) => (
+                <motion.div
+                  key={resume.id}
+                  variants={itemVariants}
+                  className={`bg-white dark:bg-slate-800 rounded-xl shadow-sm border ${
+                    resume.id === currentResumeId
+                      ? 'border-indigo-300 dark:border-indigo-700'
+                      : 'border-gray-100 dark:border-slate-700'
+                  } p-6`}
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center space-x-4">
+                      <DocumentTextIcon className="h-8 w-8 text-indigo-500 dark:text-indigo-400" />
                       <div>
-                        <label htmlFor="versionNote" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                          Version Notes
-                        </label>
-                        <textarea
-                          id="versionNote"
-                          value={versionNote}
-                          onChange={(e) => setVersionNote(e.target.value)}
-                          className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                          rows="3"
-                          placeholder="What changes did you make to this version? (optional)"
-                        ></textarea>
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 truncate">
+                          {resume.fileName}
+                        </h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                          Uploaded on {uploadTimestamps[resume.id] || 'Unknown date'}
+                        </p>
                       </div>
-                      <div className="flex space-x-2">
-                        <button
-                          type="button"
-                          onClick={uploadNewVersion}
-                          className="px-3 py-1.5 bg-indigo-600 text-white text-sm rounded-md hover:bg-indigo-700 transition-colors duration-200"
-                        >
-                          Save New Version
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setShowVersions(false)}
-                          className="px-3 py-1.5 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-md hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors duration-200"
-                        >
-                          Cancel
-                        </button>
+                    </div>
+                    
+                    <div className="flex items-center space-x-3">
+                      <button
+                        onClick={() => selectResume(resume.id)}
+                        className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white text-sm rounded-lg hover:bg-indigo-700 transition-colors duration-200"
+                      >
+                        View Analysis
+                      </button>
+                      <button
+                        onClick={() => deleteResume(resume.id)}
+                        className="inline-flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
+                        title="Delete Resume"
+                      >
+                        <TrashIcon className="w-5 h-5" />
+                      </button>
+                    </div>
+                  </div>
+                  
+                  {resume.versions.length > 1 && (
+                    <div className="mt-4">
+                      <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                        Version History
+                      </h4>
+                      <div className="space-y-2 max-h-40 overflow-y-auto">
+                        {resume.versions.map((version, index) => (
+                          <div
+                            key={version.id}
+                            className="flex items-center justify-between text-sm p-2 rounded-lg bg-gray-50 dark:bg-slate-700"
+                          >
+                            <div className="flex items-center">
+                              <ClockIcon className="h-4 w-4 text-gray-500 dark:text-gray-400 mr-2" />
+                              <span className="text-gray-700 dark:text-gray-300">
+                                Version {index + 1} • {version.createdAt && !isNaN(new Date(version.createdAt).getTime())
+                                  ? new Date(version.createdAt).toLocaleDateString() + ' ' + new Date(version.createdAt).toLocaleTimeString()
+                                  : 'Unknown date'}
+                              </span>
+                            </div>
+                            {version.notes && (
+                              <span className="text-gray-500 dark:text-gray-400 truncate max-w-xs">
+                                {version.notes}
+                              </span>
+                            )}
+                          </div>
+                        ))}
                       </div>
                     </div>
                   )}
-                </div>
-              )}
-            </motion.div>
-          ))}
+                  
+                  {resume.id === currentResumeId && (
+                    <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+                      {!showVersions ? (
+                        <button
+                          type="button"
+                          onClick={() => setShowVersions(true)}
+                          className="text-sm text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300"
+                        >
+                          Upload New Version
+                        </button>
+                      ) : (
+                        <div className="space-y-3">
+                          <div>
+                            <label htmlFor="versionNote" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                              Version Notes
+                            </label>
+                            <textarea
+                              id="versionNote"
+                              value={versionNote}
+                              onChange={(e) => setVersionNote(e.target.value)}
+                              className="w-full rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-slate-800 text-gray-900 dark:text-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                              rows="3"
+                              placeholder="What changes did you make to this version? (optional)"
+                            ></textarea>
+                          </div>
+                          <div className="flex space-x-2">
+                            <button
+                              type="button"
+                              onClick={uploadNewVersion}
+                              className="px-3 py-1.5 bg-indigo-600 text-white text-sm rounded-md hover:bg-indigo-700 transition-colors"
+                            >
+                              Save New Version
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => setShowVersions(false)}
+                              className="px-3 py-1.5 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-md hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors"
+                            >
+                              Cancel
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          )}
         </div>
-      )}
-    </motion.div>
-  );
+      </div>
+    );
+  };
 
+  // Resume Analysis Results Component
+  const ResumeAnalysisResults = ({ results }) => {
+    if (!results) return null;
+    
+    return (
+      <div className="grid grid-cols-12 gap-4 p-4">
+        {/* Left side - Personal Info & Details */}
+        <div className="col-span-8 space-y-6">
+          {/* Personal Info */}
+          <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Personal Information</h3>
+            <table className="w-full border-collapse">
+              <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+                <tr>
+                  <td className="py-3 w-1/4 font-medium text-gray-700 dark:text-gray-300">Name:</td>
+                  <td className="py-3 text-gray-900 dark:text-white">{results.personal_info.name}</td>
+                </tr>
+                {results.personal_info.contact && <>
+                  <tr>
+                    <td className="py-3 w-1/4 font-medium text-gray-700 dark:text-gray-300">Email:</td>
+                    <td className="py-3 text-gray-900 dark:text-white">{results.personal_info.contact.email}</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 w-1/4 font-medium text-gray-700 dark:text-gray-300">Phone:</td>
+                    <td className="py-3 text-gray-900 dark:text-white">{results.personal_info.contact.phone}</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 w-1/4 font-medium text-gray-700 dark:text-gray-300">Location:</td>
+                    <td className="py-3 text-gray-900 dark:text-white">
+                      {formatAddress(results.personal_info.contact.location)}
+                    </td>
+                  </tr>
+                </>}
+              </tbody>
+            </table>
+          </div>
+          
+          {/* Education */}
+          <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Education</h3>
+            
+            {results.education && results.education.map((edu, index) => (
+              <div key={index} className="mb-6 last:mb-0">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 dark:text-white">{edu.degree}</h4>
+                      <p className="text-gray-600 dark:text-gray-300">{edu.institution}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-sm text-gray-500 dark:text-gray-400">{edu.year}</p>
+                      {edu.gpa && (
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                          GPA: <span className="font-medium">{edu.gpa}</span>
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                  
+                  {edu.highlights && edu.highlights.length > 0 && (
+                    <div className="mt-3 border-t border-gray-100 dark:border-gray-700 pt-3">
+                      <p className="text-sm font-medium text-gray-900 dark:text-white mb-2">Highlights</p>
+                      <ul className="list-disc list-inside space-y-1">
+                        {edu.highlights.map((item, i) => (
+                          <li key={i} className="text-sm text-gray-600 dark:text-gray-300">{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Experience */}
+          {results.experience && results.experience.length > 0 && (
+            <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Experience</h3>
+              
+              {results.experience.map((exp, index) => (
+                <div key={index} className="mb-4 border-b border-gray-100 dark:border-gray-700 pb-4 last:border-0 last:pb-0">
+                  <div className="flex justify-between">
+                    <div>
+                      <h4 className="font-semibold">{exp.title}</h4>
+                      <p className="text-gray-600 dark:text-gray-300">{exp.company}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-sm text-gray-500 dark:text-gray-400">{exp.duration}</p>
+                    </div>
+                  </div>
+                  
+                  {exp.responsibilities && exp.responsibilities.length > 0 && (
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-600 dark:text-gray-300 font-medium">Responsibilities:</p>
+                      <ul className="list-disc list-inside pl-2 text-sm text-gray-600 dark:text-gray-300">
+                        {exp.responsibilities.map((item, i) => (
+                          <li key={i}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  
+                  {exp.achievements && exp.achievements.length > 0 && (
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-600 dark:text-gray-300 font-medium">Achievements:</p>
+                      <ul className="list-disc list-inside pl-2 text-sm text-gray-600 dark:text-gray-300">
+                        {exp.achievements.map((item, i) => (
+                          <li key={i}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+          
+          {/* Skills */}
+          <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Skills</h3>
+            
+            {/* Technical Skills */}
+            <div className="mb-4">
+              <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Technical Skills</h4>
+              <div className="flex flex-wrap gap-2">
+                {results.skills.technical && results.skills.technical.map((skill, index) => (
+                  <span key={index} className="px-3 py-1 bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-300 rounded-full text-sm">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Soft Skills */}
+            {results.skills.soft && results.skills.soft.length > 0 && (
+              <div className="mb-4">
+                <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Soft Skills</h4>
+                <div className="flex flex-wrap gap-2">
+                  {results.skills.soft.map((skill, index) => (
+                    <span key={index} className="px-3 py-1 bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-300 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+            
+            {/* Missing Skills */}
+            {results.skills.missing_critical && results.skills.missing_critical.length > 0 && (
+              <div>
+                <h4 className="font-medium text-gray-700 dark:text-gray-300 mb-2">Missing Critical Skills</h4>
+                <div className="flex flex-wrap gap-2">
+                  {results.skills.missing_critical.map((skill, index) => (
+                    <span key={index} className="px-3 py-1 bg-red-100 dark:bg-red-900/20 text-red-800 dark:text-red-300 rounded-full text-sm">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        
+        {/* Right side - Scores & Improvements */}
+        <div className="col-span-4 space-y-6">
+          {/* Match Scores */}
+          <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+              Match Scores
+            </h3>
+            
+            {/* Overall Match */}
+            <div className="mb-4">
+              <div className="flex justify-between items-center mb-1">
+                <span className="text-base font-medium text-gray-700 dark:text-gray-300">
+                  Overall Match
+                </span>
+                <span className="text-base font-medium text-gray-900 dark:text-white">
+                  <CountUp 
+                    isCounting
+                    start={0}
+                    end={Math.round(results.scores.overall * 100)}
+                    duration={2}
+                    formatter={value => `${value}%`}
+                  />
+                </span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: `${Math.round(results.scores.overall * 100)}%` }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                  className="bg-indigo-600 h-3 rounded-full"
+                ></motion.div>
+              </div>
+            </div>
+            
+            {/* Skills Match */}
+            <div className="mb-4">
+              <div className="flex justify-between items-center mb-1">
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Skills Match
+                </span>
+                <span className="text-sm font-medium text-gray-900 dark:text-white">
+                  <CountUp 
+                    isCounting
+                    start={0}
+                    end={Math.round(results.scores.skills * 100)}
+                    duration={2}
+                    formatter={value => `${value}%`}
+                    delay={0.3}
+                  />
+                </span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: `${Math.round(results.scores.skills * 100)}%` }}
+                  transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
+                  className="bg-blue-600 h-2.5 rounded-full"
+                ></motion.div>
+              </div>
+            </div>
+            
+            {/* Experience Match */}
+            <div className="mb-4">
+              <div className="flex justify-between items-center mb-1">
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Experience Match
+                </span>
+                <span className="text-sm font-medium text-gray-900 dark:text-white">
+                  <CountUp 
+                    isCounting
+                    start={0}
+                    end={Math.round(results.scores.experience * 100)}
+                    duration={2}
+                    formatter={value => `${value}%`}
+                    delay={0.6}
+                  />
+                </span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: `${Math.round(results.scores.experience * 100)}%` }}
+                  transition={{ duration: 1.5, ease: "easeOut", delay: 0.6 }}
+                  className="bg-green-600 h-2.5 rounded-full"
+                ></motion.div>
+              </div>
+            </div>
+            
+            {/* Education Match */}
+            <div>
+              <div className="flex justify-between items-center mb-1">
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                  Education Match
+                </span>
+                <span className="text-sm font-medium text-gray-900 dark:text-white">
+                  <CountUp 
+                    isCounting
+                    start={0}
+                    end={Math.round(results.scores.education * 100)}
+                    duration={2}
+                    formatter={value => `${value}%`}
+                    delay={0.9}
+                  />
+                </span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: `${Math.round(results.scores.education * 100)}%` }}
+                  transition={{ duration: 1.5, ease: "easeOut", delay: 0.9 }}
+                  className="bg-purple-600 h-2.5 rounded-full"
+                ></motion.div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Improvements */}
+          <div className="bg-white dark:bg-slate-800 rounded-lg shadow p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+              Improvement Plan
+            </h3>
+            
+            {/* Critical Improvements */}
+            {results.improvements.critical && results.improvements.critical.length > 0 && (
+              <div className="mb-6">
+                <h4 className="font-medium text-red-600 dark:text-red-400 mb-3">
+                  Critical Areas
+                </h4>
+                <div className="space-y-3">
+                  {results.improvements.critical.map((item, index) => (
+                    <div key={index} className="p-4 border border-red-100 dark:border-red-700 rounded-lg bg-red-50 dark:bg-red-900/20">
+                      <div className="flex items-start">
+                        <ExclamationCircleIcon className="h-5 w-5 text-red-400 mr-3" />
+                        <div>
+                          <h5 className="text-sm font-medium text-red-800 dark:text-red-300">{item.area}</h5>
+                          <p className="mt-1 text-sm text-gray-700 dark:text-gray-300">{item.suggestion}</p>
+                          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+                            <span className="font-medium">Impact:</span> {item.impact}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            
+            {/* Recommended Improvements */}
+            {results.improvements.recommended && results.improvements.recommended.length > 0 && (
+              <div>
+                <h4 className="font-medium text-yellow-600 dark:text-yellow-400 mb-3">
+                  Recommendations
+                </h4>
+                <div className="space-y-3">
+                  {results.improvements.recommended.map((item, index) => (
+                    <div key={index} className="p-4 border border-yellow-100 dark:border-yellow-700 rounded-lg bg-yellow-50 dark:bg-yellow-900/20">
+                      <div className="flex items-start">
+                        <LightBulbIcon className="h-5 w-5 text-yellow-400 mr-3" />
+                        <div>
+                          <h5 className="text-sm font-medium text-yellow-800 dark:text-yellow-300">{item.area}</h5>
+                          <p className="mt-1 text-sm text-gray-700 dark:text-gray-300">{item.suggestion}</p>
+                          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+                            <span className="font-medium">Benefit:</span> {item.benefit}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  };
+  
   return (
     <div className="py-6 px-4 sm:px-6 lg:px-8">
       {loading ? (
