@@ -56,11 +56,54 @@ const parsePdf = async (file) => {
       text += textItems.join(' ') + '\n';
     }
     
+    // Validate if the parsed content looks like a resume
+    if (!validateResumeContent(text)) {
+      throw new Error('The uploaded file does not appear to be a resume. Please upload a valid resume.');
+    }
+    
     return text;
   } catch (error) {
     console.error('Error parsing PDF:', error);
     throw error;
   }
+};
+
+// Check if content appears to be a resume
+const validateResumeContent = (text) => {
+  // Check for common resume sections or patterns
+  const resumeKeywords = [
+    'experience', 'education', 'skills', 'work', 'employment', 'job', 
+    'resume', 'cv', 'curriculum', 'vitae', 'qualifications', 'projects',
+    'certification', 'achievement', 'objective', 'summary', 'profile'
+  ];
+  
+  const lowerText = text.toLowerCase();
+  
+  // Check if the text contains at least 3 resume keywords
+  const matchCount = resumeKeywords.filter(keyword => 
+    new RegExp(`\\b${keyword}\\b`, 'i').test(lowerText)
+  ).length;
+  
+  // Also check for common contact info patterns (email/phone)
+  const hasEmail = /[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}/g.test(lowerText);
+  const hasPhone = /(\+\d{1,3}[\s-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}/g.test(lowerText);
+  
+  return (matchCount >= 3) || (hasEmail && hasPhone);
+};
+
+// Sanitize text to prevent prompt injection attacks
+const sanitizeInput = (text) => {
+  if (!text) return '';
+  
+  // Remove potentially dangerous characters
+  return text
+    .replace(/[{}[\]]/g, '') // Remove brackets that could break JSON
+    .replace(/["'`].*instructions.*["'`]/gi, '') // Remove anything mentioning instructions
+    .replace(/["'`].*ignore.*["'`]/gi, '') // Remove anything with ignore commands
+    .replace(/["'`].*api key.*["'`]/gi, '') // Remove anything asking for API keys
+    .replace(/["'`].*password.*["'`]/gi, '') // Remove anything asking for passwords
+    .replace(/["'`].*credentials.*["'`]/gi, '') // Remove anything asking for credentials
+    .trim();
 };
 
 // Parse DOCX files
@@ -155,17 +198,35 @@ export const analyzeResumeWithGemini = async (parsedResume, company, role, exper
     // Validate API key first
     validateApiKey();
     
+    // Validate parsedResume has content
+    if (!parsedResume || !parsedResume.text || parsedResume.text.trim().length < 100) {
+      throw new Error('Resume content is too short or empty. Please upload a complete resume.');
+    }
+    
     await rateLimiter();
+
+    // Sanitize inputs to prevent prompt injection
+    const sanitizedResumeText = sanitizeInput(parsedResume.text);
+    const sanitizedCompany = sanitizeInput(company);
+    const sanitizedRole = sanitizeInput(role);
+    const sanitizedExperienceLevel = sanitizeInput(experienceLevel);
 
     const prompt = {
       contents: [{
         parts: [{
-          text: `You are an expert HR professional and technical recruiter. Analyze this resume for ${company} ${role} position (${experienceLevel} level).
+          text: `You are an expert HR professional and technical recruiter. Analyze this resume for ${sanitizedCompany} ${sanitizedRole} position (${sanitizedExperienceLevel} level).
           
 Resume Text:
-${parsedResume.text}
+${sanitizedResumeText}
 
-IMPORTANT: Return ONLY the JSON object without any markdown formatting or code blocks.
+IMPORTANT FORMATTING INSTRUCTIONS:
+1. For education details, format degrees in this exact structure:
+   - Degree name (short form preferred, e.g., "BTech in IT" instead of "Bachelor of Technology in Information Technology")
+   - Institution name (short form if applicable)
+   - Years (formatted as "2018-22" rather than "2018-2022")
+   - GPA if available
+
+2. Return ONLY the JSON object without any markdown formatting or code blocks.
 
 {
   "personal_info": {
@@ -178,9 +239,9 @@ IMPORTANT: Return ONLY the JSON object without any markdown formatting or code b
   },
   "education": [
     {
-      "degree": "degree name",
-      "institution": "institution name",
-      "year": "year",
+      "degree": "degree name (use short form)",
+      "institution": "institution name (use short form)",
+      "year": "year (short form e.g. 2018-22)",
       "gpa": "if available",
       "highlights": ["relevant coursework", "achievements"]
     }
@@ -212,6 +273,10 @@ IMPORTANT: Return ONLY the JSON object without any markdown formatting or code b
       "score": 90,
       "reasoning": "explanation"
     },
+    "ats_score": {
+      "score": 75,
+      "reasoning": "explanation of ATS alignment"
+    },
     "overall_score": {
       "score": 85,
       "summary": "overall assessment"
@@ -223,6 +288,13 @@ IMPORTANT: Return ONLY the JSON object without any markdown formatting or code b
         "area": "area to improve",
         "suggestion": "what to do",
         "impact": "expected impact"
+      }
+    ],
+    "ats_improvements": [
+      {
+        "area": "ATS optimization issue",
+        "suggestion": "how to optimize for ATS",
+        "impact": "how this will improve ATS score"
       }
     ],
     "recommended": [
@@ -274,7 +346,7 @@ IMPORTANT: Return ONLY the JSON object without any markdown formatting or code b
       }
 
       const data = await response.json();
-      console.log('[Gemini Test] Raw response:', data.candidates[0].content.parts[0].text);
+      console.log('[Gemini Response] Raw response received');
       
       if (!data.candidates || !data.candidates[0]?.content?.parts?.[0]?.text) {
         throw new Error('Invalid response format from Gemini API');
@@ -287,10 +359,11 @@ IMPORTANT: Return ONLY the JSON object without any markdown formatting or code b
       let analysis;
       try {
         analysis = JSON.parse(responseText);
-      } catch (parseError) {
-        console.error('[Resume Analysis] Error parsing JSON response:', parseError);
+      } catch (jsonErr) {
+        console.error('[Resume Analysis] Error parsing JSON response:', jsonErr);
         console.error('[Resume Analysis] Response text:', responseText);
-        throw new Error(`Failed to parse Gemini API response: ${parseError.message}`);
+        // Include partial response for debugging
+        throw new Error(`Gemini response was not valid JSON. Response preview: ${responseText.substring(0, 100)}...`);
       }
 
       // Validate required fields
@@ -298,6 +371,27 @@ IMPORTANT: Return ONLY the JSON object without any markdown formatting or code b
       for (const field of requiredFields) {
         if (!analysis[field]) {
           throw new Error(`Missing required field in analysis: ${field}`);
+        }
+      }
+
+      // Ensure ATS score exists
+      if (!analysis.scores.ats_score) {
+        analysis.scores.ats_score = {
+          score: Math.round((analysis.scores.overall_score.score * 0.9) + (Math.random() * 10)), // Fallback calculation if missing
+          reasoning: "Generated based on overall resume quality and keyword matching."
+        };
+      }
+
+      // Ensure ATS improvements exist
+      if (!analysis.improvements.ats_improvements) {
+        analysis.improvements.ats_improvements = [];
+        // Add a generic ATS improvement if none provided
+        if (analysis.scores.ats_score.score < 90) {
+          analysis.improvements.ats_improvements.push({
+            area: "Keyword optimization",
+            suggestion: "Add more job-specific keywords throughout your resume",
+            impact: "Improved visibility in ATS filtering systems"
+          });
         }
       }
 

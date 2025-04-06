@@ -64,6 +64,7 @@ const ResumeAnalysis = () => {
   const [activeTab, setActiveTab] = useState('scores');
   const [currentCriticalIndex, setCurrentCriticalIndex] = useState(0);
   const [currentRecommendationIndex, setCurrentRecommendationIndex] = useState(0);
+  const [activeImprovementTab, setActiveImprovementTab] = useState('critical');
   
   const fileInputRef = useRef(null);
   const navigate = useNavigate();
@@ -904,7 +905,9 @@ const ResumeAnalysis = () => {
                               formatter={value => `${Math.round(value)}%`}
                             />
                           </div>
-                          <div className="text-sm text-gray-500 dark:text-gray-400">Overall Match</div>
+                          <div className="text-sm text-gray-500 dark:text-gray-400">
+                            Overall Match
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1004,6 +1007,34 @@ const ResumeAnalysis = () => {
                       </div>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
                         {analysisResults.scores.education_match.reasoning}
+                      </p>
+                    </div>
+                    
+                    {/* ATS Score */}
+                    <div className="rounded-lg border border-gray-200 dark:border-gray-700 p-4">
+                      <div className="flex justify-between items-center mb-2">
+                        <h4 className="text-base font-medium text-gray-900 dark:text-white">ATS Optimization</h4>
+                        <span className={`px-2.5 py-0.5 rounded-full text-sm font-medium ${
+                          !analysisResults.scores.ats_score ? 'bg-gray-500' :
+                          analysisResults.scores.ats_score.score >= 80 ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300' : 
+                          analysisResults.scores.ats_score.score >= 60 ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300' : 
+                          'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-300'
+                        }`}>
+                          <CountUp 
+                            isCounting
+                            start={0}
+                            end={analysisResults.scores.ats_score ? Math.round(analysisResults.scores.ats_score.score) : 0}
+                            duration={2}
+                            formatter={value => `${value}%`}
+                            delay={0.9}
+                          />
+                        </span>
+                      </div>
+                      <div className="mb-2">
+                        {renderScoreBar(analysisResults.scores.ats_score ? analysisResults.scores.ats_score.score : 0)}
+                      </div>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        {analysisResults.scores.ats_score ? analysisResults.scores.ats_score.reasoning : "ATS score not available"}
                       </p>
                     </div>
                   </div>
@@ -1131,6 +1162,72 @@ const ResumeAnalysis = () => {
                             disabled={currentRecommendationIndex === analysisResults.improvements.recommended.length - 1}
                             className={`p-2 rounded-full ${
                               currentRecommendationIndex === analysisResults.improvements.recommended.length - 1
+                              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                            }`}
+                          >
+                            <ChevronRightIcon className="w-5 h-5" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* ATS Improvements */}
+                  <div className="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden">
+                    <div className="p-6">
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                        ATS Optimization
+                      </h3>
+                      <div className="relative">
+                        <div className="overflow-hidden">
+                          <motion.div
+                            animate={{ x: -currentCriticalIndex * 100 + '%' }}
+                            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                            className="flex"
+                          >
+                            {analysisResults.improvements.ats_improvements && analysisResults.improvements.ats_improvements.map((item, index) => (
+                              <div key={index} className="w-full flex-shrink-0 pr-4">
+                                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+                                  <div className="flex items-start">
+                                    <DocumentMagnifyingGlassIcon className="h-6 w-6 text-blue-500 mt-0.5 mr-3 flex-shrink-0" />
+                                    <div>
+                                      <h4 className="text-base font-medium text-blue-800 dark:text-blue-300 mb-2">{item.area}</h4>
+                                      <p className="text-sm text-blue-700 dark:text-blue-200">{item.suggestion}</p>
+                                      {item.impact && (
+                                        <div className="mt-3 flex items-center text-sm text-blue-600 dark:text-blue-300">
+                                          <SparklesIcon className="h-4 w-4 mr-1.5" />
+                                          <span className="font-medium">Impact:</span>
+                                          <span className="ml-1.5">{item.impact}</span>
+                                        </div>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </motion.div>
+                        </div>
+                        <div className="flex justify-between items-center mt-4">
+                          <button
+                            onClick={() => setCurrentCriticalIndex(Math.max(0, currentCriticalIndex - 1))}
+                            disabled={currentCriticalIndex === 0}
+                            className={`p-2 rounded-full ${
+                              currentCriticalIndex === 0
+                              ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
+                              : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
+                            }`}
+                          >
+                            <ChevronLeftIcon className="w-5 h-5" />
+                          </button>
+                          <span className="text-sm text-gray-500 dark:text-gray-400">
+                            {currentCriticalIndex + 1} of {analysisResults.improvements.ats_improvements && analysisResults.improvements.ats_improvements.length}
+                          </span>
+                          <button
+                            onClick={() => setCurrentCriticalIndex(Math.min(analysisResults.improvements.ats_improvements && analysisResults.improvements.ats_improvements.length - 1, currentCriticalIndex + 1))}
+                            disabled={currentCriticalIndex === analysisResults.improvements.ats_improvements && analysisResults.improvements.ats_improvements.length - 1}
+                            className={`p-2 rounded-full ${
+                              currentCriticalIndex === analysisResults.improvements.ats_improvements && analysisResults.improvements.ats_improvements.length - 1
                               ? 'text-gray-400 dark:text-gray-600 cursor-not-allowed'
                               : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
                             }`}
@@ -1536,11 +1633,11 @@ const ResumeAnalysis = () => {
               </div>
               <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3">
                 <motion.div 
+                  className="bg-indigo-600 h-3 rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${Math.round(results.scores.overall * 100)}%` }}
                   transition={{ duration: 1.5, ease: "easeOut" }}
-                  className="bg-indigo-600 h-3 rounded-full"
-                ></motion.div>
+                />
               </div>
             </div>
             
@@ -1563,11 +1660,11 @@ const ResumeAnalysis = () => {
               </div>
               <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
                 <motion.div 
+                  className="bg-blue-600 h-2.5 rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${Math.round(results.scores.skills * 100)}%` }}
                   transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
-                  className="bg-blue-600 h-2.5 rounded-full"
-                ></motion.div>
+                />
               </div>
             </div>
             
@@ -1590,11 +1687,11 @@ const ResumeAnalysis = () => {
               </div>
               <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
                 <motion.div 
+                  className="bg-green-600 h-2.5 rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${Math.round(results.scores.experience * 100)}%` }}
                   transition={{ duration: 1.5, ease: "easeOut", delay: 0.6 }}
-                  className="bg-green-600 h-2.5 rounded-full"
-                ></motion.div>
+                />
               </div>
             </div>
             
@@ -1617,11 +1714,11 @@ const ResumeAnalysis = () => {
               </div>
               <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
                 <motion.div 
+                  className="bg-purple-600 h-2.5 rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${Math.round(results.scores.education * 100)}%` }}
                   transition={{ duration: 1.5, ease: "easeOut", delay: 0.9 }}
-                  className="bg-purple-600 h-2.5 rounded-full"
-                ></motion.div>
+                />
               </div>
             </div>
           </div>

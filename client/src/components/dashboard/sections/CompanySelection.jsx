@@ -21,7 +21,7 @@ const companies = [
     id: 'tcs',
     name: 'TCS',
     fullName: 'Tata Consultancy Services',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg',
+    logo: 'https://www.tcs.com/content/dam/global-tcs/en/images/home/dark-theme.svg',
     description: 'Global leader in IT services, consulting, and business solutions with a large presence in India and worldwide.',
     roles: ['Associate Software Engineer', 'Product Manager', 'SDE']
   },
