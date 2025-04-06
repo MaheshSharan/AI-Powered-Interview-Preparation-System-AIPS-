@@ -143,44 +143,38 @@ const Header = () => {
                       </div>
                     )}
                   </div>
-
+                  
+                  {/* Separator line */}
+                  <div className="h-8 w-px bg-slate-700 mx-2"></div>
+                  
                   {/* User Menu */}
                   <div className="relative" ref={dropdownRef}>
-                    <Link
-                      to="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setShowDropdown(!showDropdown);
-                      }}
-                      className={`flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
-                        showDropdown 
-                          ? 'bg-white/10 text-white' 
-                          : 'text-slate-400 hover:text-white hover:bg-white/10'
-                      }`}
+                    <button 
+                      onClick={() => setShowDropdown(!showDropdown)}
+                      className="flex items-center bg-white/10 text-white px-3 py-1.5 rounded-lg transition-all duration-200"
                     >
-                      <span>Hi, {user?.name ? user.name.charAt(0).toUpperCase() + user.name.slice(1) : 'User'}</span>
-                      <ChevronDownIcon className={`ml-2 w-4 h-4 transition-transform duration-200 ${showDropdown ? 'rotate-180' : ''}`} />
-                    </Link>
+                      <span className="mr-1 text-sm font-medium">Hi {user?.name?.split(' ')[0] || 'User'}</span>
+                      <ChevronDownIcon className={`w-4 h-4 transition-all duration-200 ${showDropdown ? 'rotate-180' : ''}`} />
+                    </button>
+
                     {showDropdown && (
-                      <div className="absolute right-0 mt-2 w-48 bg-slate-900 rounded-lg shadow-lg border border-slate-800 py-2">
+                      <div className="absolute right-0 mt-2 bg-slate-800 border border-slate-700 rounded-lg shadow-xl w-48 py-1 z-10">
                         <Link
                           to="/dashboard/settings"
-                          onClick={() => setShowDropdown(false)}
-                          className="flex items-center w-full px-4 py-2 text-sm text-slate-400 hover:text-white hover:bg-white/10"
+                          className="flex items-center px-4 py-2 text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-100"
                         >
-                          <SettingsIcon className="w-5 h-5 mr-3" />
+                          <SettingsIcon className="w-4 h-4 mr-2" />
                           <span>Settings</span>
                         </Link>
                         <Link
                           to="#"
                           onClick={(e) => {
                             e.preventDefault();
-                            setShowDropdown(false);
                             handleLogout();
                           }}
-                          className="flex items-center w-full px-4 py-2 text-sm text-slate-400 hover:text-white hover:bg-white/10"
+                          className="flex items-center px-4 py-2 text-sm text-slate-400 hover:text-white hover:bg-white/5 transition-all duration-100"
                         >
-                          <SignOutIcon className="w-5 h-5 mr-3" />
+                          <SignOutIcon className="w-4 h-4 mr-2" />
                           <span>Sign Out</span>
                         </Link>
                       </div>

@@ -74,10 +74,10 @@ The AIPS system follows a sequential flow where users progress through different
 - [x] Create login functionality with JWT authentication
 - [x] Create basic user dashboard
 - [x] Implement session management and authentication state persistence
-- [ ] Complete dashboard design with navigation to all system modules
-- [ ] Implement password reset functionality
-- [ ] Design user profile management interface
-- [ ] Implement user settings and preferences
+- [x] Complete dashboard design with navigation to all system modules
+- [x] Implement password reset functionality
+- [x] Design user profile management interface
+- [x] Implement user settings and preferences
 - [x] Set up local storage for user data persistence
 - [x] Design first-time user onboarding flow with company selection prompt
 - [x] Create module access control based on user progress
@@ -219,17 +219,8 @@ graph TD
   - [x] Create actionable improvement points
   - [x] Generate skill enhancement suggestions
   - [x] Provide format optimization tips
-  - [ ] Generate resume-based interview questions for preparation
-
-### 3.6 Resume Improvement Module
-- [x] Design actionable feedback generation system
-- [x] Implement suggestion engine for missing skills or experiences
-- [x] Create company-specific resume optimization tips
-- [x] Implement before/after comparison visualization
-- [x] Design simple resume editor with improvement suggestions
-- [x] Create "Continue to Virtual Interview" button to guide users to next phase
-- [ ] Enhance feedback system to use AI-generated company-specific insights
-- [ ] Implement personalized improvement roadmap generation
+  - [x] Create "Continue to Virtual Interview" button to guide users to next phase
+  - [ ]Send all info of user resume to phase 4
 
 ## Phase 4: Interview Modules
 
@@ -238,206 +229,174 @@ graph TD
     A[Interview Setup] --> B[Virtual Interview]
     B --> C[Technical Assessment]
     C --> D[HR Interview]
-    D --> E[Behavioral Analysis]
-    E --> F[Comprehensive Feedback]
     
-    subgraph Setup
-    A
+    subgraph Behavioral Analysis
+    E[Real-time Analysis]
     end
     
-    subgraph Interview Rounds
-    B
-    C
-    D
-    end
-    
-    subgraph Analysis
-    E
-    F
-    end
+    B --> E
+    C --> E
+    D --> E
 ```
 
-### 4.1 Interview Dataset Creation
-- [ ] Create structured dataset schema with attributes (Question, Role, Company, Round, Answer)
-- [ ] Collect company-specific interview questions for major companies (TCS, Infosys, Microsoft, Google, etc.)
-- [ ] Gather HR round questions with expected response patterns
-- [ ] Compile behavioral interview questions with evaluation criteria
-- [ ] Create sample answers for technical questions
-- [ ] Design dataset with "All" company tag for generic questions
-- [ ] Implement data validation and quality control processes
-- [ ] Create data augmentation techniques for expanding the dataset
+### 4.1 Interview Setup & UI
+- [x] Design modern interview interface
+  - [x] Company branding integration
+  - [x] Role-specific customization
+  - [x] Experience level display
+  - [x] Professional UI/UX elements
+- [x] Create information dashboard
+  - [x] Resume data integration
+  - [x] Interview flow overview
+  - [x] Expected duration display
+- [x] Implement device setup
+  - [x] Camera/microphone permissions
+  - [x] Device testing interface
+  - [x] Network status check
+  - [x] System compatibility verification
+- [x] Design interview guidelines
+  - [x] Company-specific preparation tips
+  - [x] Technical requirements checklist
+  - [x] Behavioral expectations guide
 
-### 4.2 Interview Model Training
-- [ ] Select base models for fine-tuning (transformer-based models)
-- [ ] Implement fine-tuning pipeline for interview question generation
-- [ ] Create company-specific question generation models
-- [ ] Design round-specific models (Virtual, Technical, HR)
-- [ ] Create evaluation response model for technical answers
-- [ ] Design model compression for browser-based deployment
-- [ ] Implement WebAssembly optimization for local processing
-- [ ] Create model evaluation metrics and testing framework
+### 4.2 Virtual Interview Module
+- [ ] Implement interview flow management
+  - [ ] Default progression (Virtual → Technical → HR)
+  - [ ] Optional module selection
+  - [ ] Session state management
+- [ ] Create question generation system
+  - [ ] Resume-based questions using Gemini
+  - [ ] Company-specific behavioral questions
+  - [ ] Dynamic follow-up generation
+- [ ] Design answer evaluation
+  - [ ] Response timing tracking
+  - [ ] Communication assessment
+  - [ ] Answer completeness check
+- [ ] Implement interviewer interaction
+  - [ ] Natural conversation flow
+  - [ ] Professional tone maintenance
+  - [ ] Smooth transitions between topics
+- [ ] Create notification system
+  - [ ] Warning indicators for technical issues
+  - [ ] Interview status notifications (time, next steps)
+  - [ ] System alerts (connection, device issues)
 
-### 4.3 Interview Setup
-- [ ] Design virtual interview room interface
-- [ ] Implement webcam and microphone access
-- [ ] Create interview type selection (Virtual, Technical, HR)
-- [ ] Design company-specific interview configuration
-- [ ] Implement interview session recording
-- [ ] Create pre-interview checklist and guidelines
-- [ ] Design interview duration settings
-- [ ] Implement real-time behavioral analysis initialization
+### 4.3 Technical Assessment Module
+- [ ] Create problem management system
+  - [ ] Company-specific question database
+  - [ ] Difficulty level categorization
+  - [ ] Problem description formatting
+- [ ] Implement coding interface
+  - [ ] Monaco Editor integration
+  - [ ] Multi-language support
+  - [ ] Syntax highlighting
+  - [ ] Code formatting
+- [ ] Design server-side execution
+  - [ ] Secure code sandbox
+  - [ ] Test case runner
+  - [ ] Performance metrics
+  - [ ] Memory usage monitoring
+- [ ] Create evaluation system
+  - [ ] Code quality analysis
+  - [ ] Time complexity assessment
+  - [ ] Space complexity calculation
+  - [ ] Company-specific criteria
 
-### 4.4 Virtual Interview Module
-- [ ] Implement initial greeting and introduction by AI interviewer
-- [ ] Create personal background question generation
-- [ ] Design education background discussion flow
-- [ ] Implement project experience question generation
-- [ ] Create adaptive follow-up questions based on responses
-- [ ] Design personality assessment questions
-- [ ] Implement response evaluation for communication skills
-- [ ] Create transition to technical assessment
+### 4.4 HR Interview Module
+- [ ] Design HR question bank
+  - [ ] Situational questions
+  - [ ] Cultural fit assessment
+  - [ ] Career goals discussion
+- [ ] Implement response evaluation
+  - [ ] Answer relevance checking
+  - [ ] Professional attitude assessment
+  - [ ] Communication style analysis
+- [ ] Create salary discussion
+  - [ ] Expectation handling
+  - [ ] Negotiation simulation
+  - [ ] Market rate comparison
+- [ ] Design interview closure
+  - [ ] Next steps guidance
+  - [ ] Question handling
+  - [ ] Professional wrap-up
 
-### 4.5 Technical Assessment Module
-- [ ] Create database schema for technical problems
-- [ ] Implement company-specific problem categorization
-- [ ] Design difficulty levels (Easy, Medium, Hard)
-- [ ] Create problem description format with examples
-- [ ] Implement test case generation for problem validation
-- [ ] Design problem selection algorithm based on company and role
-- [ ] Create problem browsing interface with filters
-- [ ] Implement Monaco Editor for code editing
-- [ ] Create language selection (Java, Python, C++, JavaScript)
-- [ ] Design syntax highlighting and code formatting
-- [ ] Implement code execution environment
-- [ ] Create test case runner with input/output validation
-- [ ] Design performance metrics collection (time, space complexity)
-- [ ] Implement code saving and version history
-- [ ] Create automated test case validation
-- [ ] Implement code quality analysis
-- [ ] Design performance metrics visualization
-- [ ] Create feedback generation based on solution quality
-- [ ] Implement company-specific evaluation criteria
-- [ ] Design improvement suggestions for suboptimal solutions
-- [ ] Create transition to HR interview
+### 4.5 Behavioral Analysis Integration
+- [ ] Implement facial analysis
+  - [ ] Eye contact tracking
+  - [ ] Expression detection
+  - [ ] Posture monitoring
+- [ ] Create voice analysis
+  - [ ] Tone assessment
+  - [ ] Speech clarity check
+  - [ ] Confidence detection
+- [ ] Design real-time processing
+  - [ ] Lightweight model implementation
+  - [ ] Browser-optimized algorithms
+  - [ ] Resource usage optimization
+- [ ] Create feedback system
+  - [ ] Subtle warning triggers
+  - [ ] Performance metrics collection
+  - [ ] Post-interview report generation
 
-### 4.6 HR Interview Module
-- [ ] Design HR interview interface
-- [ ] Implement company-specific HR question generation
-- [ ] Create situational judgment question set
-- [ ] Design cultural fit assessment questions
-- [ ] Implement salary expectation and negotiation simulation
-- [ ] Create work preference and availability questions
-- [ ] Design career goal alignment assessment
-- [ ] Implement response evaluation for HR questions
-- [ ] Create interview conclusion and next steps guidance
+### 4.6 Results & Analytics
+- [ ] Create scoring system
+  - [ ] Technical performance metrics
+  - [ ] Communication assessment
+  - [ ] Behavioral analysis results
+- [ ] Design feedback reports
+  - [ ] Module-wise performance
+  - [ ] Improvement suggestions
+  - [ ] Company-specific insights
+- [ ] Implement progress tracking
+  - [ ] Historical comparisons
+  - [ ] Skill development monitoring
+  - [ ] Readiness assessment
 
-## Phase 5: Behavioral Analysis
+## Phase 6: Advanced Analytics & Learning System
 
 ```mermaid
 graph TD
-    A[Video/Audio Capture] --> B[Facial Expression Analysis]
-    B --> C[Voice Tone Analysis]
-    C --> D[Confidence Scoring]
-    D --> E[Real-time Feedback]
-    E --> F[Comprehensive Report]
-    
-    subgraph Data Collection
-    A
-    end
+    A[Historical Data] --> B[Learning Patterns]
+    B --> C[Personalization]
+    C --> D[Improvement Path]
     
     subgraph Analysis
-    B
-    C
-    D
-    end
-    
-    subgraph Feedback
-    E
-    F
-    end
-```
-
-### 5.1 Multi-Modal Analysis
-- [ ] Implement facial expression analysis using deepface library
-- [ ] Create emotion detection pipeline (happy, sad, angry, fear, surprise, neutral)
-- [ ] Design confidence measurement based on facial expressions
-- [ ] Implement eye contact tracking and analysis
-- [ ] Create voice tone analysis using Web Speech API
-- [ ] Design speech pattern analysis (pace, clarity, filler words)
-- [ ] Implement real-time feedback indicators during interview
-- [ ] Create comprehensive behavioral analysis dashboard
-- [ ] Design improvement suggestions for behavioral aspects
-- [ ] Implement comparison with benchmark metrics
-- [ ] Create continuous monitoring throughout all interview rounds
-- [ ] Design privacy-focused processing of facial and voice data
-- [ ] Implement local processing of all behavioral data
-
-### 5.2 API Integration
-- [ ] Implement Gemini API integration for enhanced capabilities
-- [ ] Create fallback mechanisms when local models are insufficient
-- [ ] Design hybrid approach combining fine-tuned models and APIs
-- [ ] Implement context management for API requests
-- [ ] Create caching system for API responses
-- [ ] Design cost optimization strategies for API usage
-- [ ] Implement seamless switching between local models and APIs
-
-## Phase 6: Analytics & Comprehensive Feedback
-
-```mermaid
-graph TD
-    A[Data Collection] --> B[Performance Metrics]
-    B --> C[Progress Tracking]
-    C --> D[Visualization]
-    D --> E[Recommendation Engine]
-    
-    subgraph Data Processing
     A
     B
     end
     
-    subgraph Insights
+    subgraph Recommendations
     C
     D
     end
-    
-    subgraph Actions
-    E
-    end
 ```
 
-### 6.1 Data Collection
-- [ ] Design analytics data schema
-- [ ] Implement session-based data collection
-- [ ] Create module-specific performance metrics
-- [ ] Design overall preparation score calculation
-- [ ] Implement data aggregation from all modules
-- [ ] Create data export functionality
-- [ ] Design privacy-focused data storage
+### 6.1 Historical Analytics
+- [ ] Design long-term data storage schema
+- [ ] Implement interview history tracking
+- [ ] Create performance trend analysis
+- [ ] Design learning pattern recognition
+- [ ] Implement multi-session comparison
+- [ ] Create data archival system
+- [ ] Design privacy-compliant data retention
 
-### 6.2 Analytics Dashboard
-- [ ] Create visual performance dashboard
-- [ ] Implement progress tracking visualization
-- [ ] Design company-specific readiness indicators
-- [ ] Create module completion status tracking
-- [ ] Implement performance comparison with peers (anonymized)
-- [ ] Design time-based improvement tracking
-- [ ] Create printable/shareable reports
+### 6.2 Learning Dashboard
+- [ ] Create personalized learning paths
+- [ ] Implement skill gap analysis
+- [ ] Design company-specific preparation tracks
+- [ ] Create practice recommendation engine
+- [ ] Implement resource suggestion system
+- [ ] Design progress milestones
+- [ ] Create achievement system
 
-### 6.3 Comprehensive Feedback System
-- [ ] Create detailed interview performance report
-- [ ] Implement strength and weakness identification across all modules
-- [ ] Design actionable improvement suggestions
-- [ ] Create company-specific feedback based on known criteria
-- [ ] Implement before/after comparison for repeated interviews
-- [ ] Design progress tracking visualization
-- [ ] Create exportable interview summary
-- [ ] Implement personalized improvement suggestions
-- [ ] Create resource recommendation system
-- [ ] Design focused practice area identification
-- [ ] Implement company-specific preparation recommendations
-- [ ] Create adaptive learning path based on performance
-- [ ] Design notification system for practice reminders
-- [ ] Implement goal setting and achievement tracking
+### 6.3 Improvement System
+- [ ] Create adaptive learning algorithms
+- [ ] Implement personalized practice sessions
+- [ ] Design targeted improvement exercises
+- [ ] Create custom preparation plans
+- [ ] Implement smart scheduling system
+- [ ] Design motivation and reminder system
+- [ ] Create performance prediction models
 
 ## Phase 7: Deployment & Optimization
 

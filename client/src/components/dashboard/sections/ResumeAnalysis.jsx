@@ -30,6 +30,7 @@ import { useAuthStore } from '../../../store/authStore';
 import useCompanyStore from '../../../store/companyStore';
 import useProgressStore from '../../../store/progressStore';
 import useResumeStore from '../../../store/resumeStore';
+import useInterviewStore from '../../../store/interviewStore'; // Import interview store
 import { parseResume, analyzeResumeForCompany, handleParsingError, testGeminiConnection } from '../../../utils/resumeParser';
 import LoadingScreen from '../../common/LoadingScreen';
 import { CountUp } from 'use-count-up';
@@ -694,7 +695,7 @@ const ResumeAnalysis = () => {
               className="inline-flex items-center text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300 transition-colors"
             >
               <ArrowLeftIcon className="h-4 w-4 mr-1" />
-              <span>Upload a different resume</span>
+              <span>Back to upload</span>
             </Link>
             
             <div className="flex space-x-4">
@@ -707,7 +708,13 @@ const ResumeAnalysis = () => {
               </button>
               
               <button
-                onClick={continueToInterview}
+                onClick={() => {
+                  // Save current analysis results to interview store
+                  const interviewStore = useInterviewStore.getState();
+                  interviewStore.initializeSession();
+                  // Navigate to interview setup
+                  navigate('/dashboard/interview');
+                }}
                 className="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
               >
                 Continue to Interview

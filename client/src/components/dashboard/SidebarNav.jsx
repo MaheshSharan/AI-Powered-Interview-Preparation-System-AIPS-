@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { 
   HomeIcon, 
   DocumentTextIcon, 
@@ -8,7 +8,8 @@ import {
   BuildingOfficeIcon,
   Cog6ToothIcon as SettingsIcon,
   QuestionMarkCircleIcon as SupportIcon,
-  BookOpenIcon as DocumentationIcon
+  BookOpenIcon as DocumentationIcon,
+  UserGroupIcon
 } from '@heroicons/react/24/outline';
 
 const navigationItems = [
@@ -31,15 +32,9 @@ const navigationItems = [
     to: '/dashboard/resume'
   },
   { 
-    id: 'technical', 
-    name: 'Technical', 
-    icon: CodeIcon,
-    to: '/dashboard/technical'
-  },
-  { 
     id: 'interview', 
     name: 'Interview', 
-    icon: VideoCameraIcon,
+    icon: UserGroupIcon,
     to: '/dashboard/interview'
   },
   { 
@@ -71,13 +66,10 @@ const bottomNavItems = [
   }
 ];
 
-const SidebarNav = ({ activeSection, setActiveSection }) => {
+const SidebarNav = () => {
   const navigate = useNavigate();
-
-  const handleNavClick = (item) => {
-    setActiveSection(item.id);
-    navigate(item.to);
-  };
+  const location = useLocation();
+  const activeSection = location.pathname.split('/').pop();
 
   return (
     <nav className="flex flex-col h-[calc(100vh-4rem)] bg-slate-900">
@@ -97,7 +89,7 @@ const SidebarNav = ({ activeSection, setActiveSection }) => {
               to={item.to}
               onClick={(e) => {
                 e.preventDefault();
-                handleNavClick(item);
+                navigate(item.to);
               }}
               className={`flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                 activeSection === item.id
@@ -123,7 +115,7 @@ const SidebarNav = ({ activeSection, setActiveSection }) => {
               to={item.to}
               onClick={(e) => {
                 e.preventDefault();
-                handleNavClick(item);
+                navigate(item.to);
               }}
               className={`flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
                 activeSection === item.id
