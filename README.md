@@ -57,7 +57,7 @@ This project is based on extensive research in:
 ## Authors
 
 - Mahesh Sharan (122111974)
-- Parnav Patil (12210496)
+- Pranav Patil (12210496)
 
 School of Computer Science  
 Lovely Professional University, Punjab, India
